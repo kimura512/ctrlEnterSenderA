@@ -5,7 +5,7 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
 
     // 0. Check blocked sites
     const hostname = window.location.hostname;
-
+    const isSlack = hostname.includes('slack.com');
 
     // Google Docs/Sheets/Slides: Enter behavior is complex and custom.
     if (hostname === 'docs.google.com') {
@@ -38,68 +38,59 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
         const role = element.getAttribute('role');
         if (role === 'searchbox') return false;
 
-        const type = element.getAttribute('type');
-        if (type === 'search' || type === 'email' || type === 'password' || type === 'number') return false;
+        // Exclude single-line text inputs
+        const ariaMultiline = element.getAttribute('aria-multiline');
+        if (ariaMultiline === 'false') return false;
+    }
 
-        // Check placeholder/aria-label for search keywords
-        const placeholder = element.getAttribute('placeholder')?.toLowerCase() || '';
-        const ariaLabel = element.getAttribute('aria-label')?.toLowerCase() || '';
-        const searchKeywords = ['search', 'find', '検索'];
-        if (searchKeywords.some(k => placeholder.includes(k) || ariaLabel.includes(k))) {
-            return false;
+    // 5. Explicit Slack detection
+    if (isSlack) {
+        // Slack uses Quill editor with .ql-editor class
+        if (element.classList.contains('ql-editor') && (element as HTMLElement).isContentEditable) {
+            return true;
         }
     }
 
-    // 5. Detection Logic
-
-    // <textarea>
-    if (element.tagName === 'TEXTAREA') {
-        const textarea = element as HTMLTextAreaElement;
-        // Google Meet specific check
-        if (textarea.id === 'bfTqV' || textarea.classList.contains('qdOxv-fmcmS-wGMbrd')) {
+    // 6. Explicit Google Meet detection
+    const isMeet = hostname.includes('meet.google.com');
+    if (isMeet) {
+        const id = element.getAttribute('id');
+        const className = element.className;
+        if (id === 'bfTqV' || className.includes('qdOxv-fmcmS-wGMbrd')) {
             return true;
         }
-
-        if (textarea.rows >= 2) return true;
-        // Check computed style height if needed, but rows is usually sufficient for initial check.
-        // Accessing computed style can be expensive, so we might want to defer or cache it.
-        // For now, let's assume rows check is primary.
-        if (element.clientHeight >= 40) return true;
-        return false;
     }
 
-    // contenteditable
-    if (element instanceof HTMLElement && element.isContentEditable) {
-        // Check specific classes/ids/aria-labels
-        const id = element.id.toLowerCase();
-        const className = element.className.toLowerCase();
-        const ariaLabel = element.getAttribute('aria-label')?.toLowerCase() || '';
-        const keywords = ['chat', 'message', 'input', 'prompt', 'comment', 'editor', 'prosemirror', 'body']; // 'body' for some editors
-
-        if (keywords.some(k => id.includes(k) || className.includes(k) || ariaLabel.includes(k))) {
-            return true;
-        }
-
-        // Google Chat specific check
+    // 7. Explicit Google Chat detection
+    const isGoogleChat = hostname.includes('chat.google.com') || hostname.includes('mail.google.com');
+    if (isGoogleChat) {
         if (element.getAttribute('g_editable') === 'true') {
             return true;
         }
+    }
 
-        // Check ARIA
+    // 8. Check for TEXTAREA
+    if (element.tagName === 'TEXTAREA') {
+        return true;
+    }
+
+    // 9. Check for contenteditable
+    if ((element as HTMLElement).isContentEditable) {
         const role = element.getAttribute('role');
-        const ariaMultiline = element.getAttribute('aria-multiline');
+        const ariaLabel = element.getAttribute('aria-label');
+        const id = element.getAttribute('id');
+        const className = element.className;
 
-        // Relaxed check: role="textbox" is usually enough if it's contenteditable and not explicitly a search box (checked above)
-        if (role === 'textbox') {
-            return true;
-        }
+        // Keywords that suggest this is a message input
+        const keywords = ['message', 'chat', 'compose', 'reply', 'comment', 'post', 'write', 'メッセージ', 'チャット', 'コメント'];
+        const hasKeyword = keywords.some(keyword =>
+            (ariaLabel && ariaLabel.toLowerCase().includes(keyword.toLowerCase())) ||
+            (id && id.toLowerCase().includes(keyword.toLowerCase())) ||
+            (className && className.toLowerCase().includes(keyword.toLowerCase()))
+        );
 
-        if (ariaMultiline === 'true') {
-            return true;
-        }
-
-        // If forceOn, be more aggressive
-        if (config?.mode === 'forceOn') {
+        // Accept if role is textbox or if it has message-related keywords
+        if (role === 'textbox' || hasKeyword) {
             return true;
         }
     }

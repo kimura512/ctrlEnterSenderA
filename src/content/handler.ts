@@ -16,6 +16,8 @@ export function handleKeyDown(event: KeyboardEvent, target: HTMLElement, _config
     // Check if we're on Discord or Teams
     const isDiscord = window.location.hostname.includes('discord.com');
     const isTeams = window.location.hostname.includes('teams.microsoft.com') || window.location.hostname.includes('teams.live.com');
+    // Slack is handled via triggerSend (button click) because simulating Enter might just insert a newline
+    // depending on user settings.
     const isComplexApp = isDiscord || isTeams;
 
     // Special handling for Complex Apps (Discord, Teams)
@@ -102,6 +104,46 @@ function insertNewline(target: HTMLElement) {
 }
 
 function triggerSend(target: HTMLElement) {
+    // Special handling for Slack
+    const isSlack = window.location.hostname.includes('slack.com');
+    if (isSlack) {
+        // Slack's DOM structure is complex. The input (.ql-editor) is deep inside.
+        // The send button (button[data-qa="texty_send_button"]) is usually in a toolbar or footer relative to the editor.
+
+        // Strategy 1: Find the main editor container and search within it.
+        // Known containers: .c-texty_input_unstyled__container, .c-message_kit__editor
+        let container = target.closest('.c-texty_input_unstyled__container') ||
+            target.closest('.c-message_kit__editor') ||
+            target.closest('[data-qa="message_editor"]');
+
+        if (container) {
+            // Sometimes the button is a sibling of the container's parent, or inside the container.
+            // Let's search inside first.
+            let sendButton = container.querySelector('button[data-qa="texty_send_button"]');
+
+            // If not found inside, check the parent (often the button is in a footer sibling)
+            if (!sendButton && container.parentElement) {
+                sendButton = container.parentElement.querySelector('button[data-qa="texty_send_button"]');
+            }
+
+            if (sendButton instanceof HTMLElement) {
+                sendButton.click();
+                return;
+            }
+        }
+
+        // Strategy 2: Traverse up manually a few levels
+        let current = target.parentElement;
+        for (let i = 0; i < 10 && current; i++) {
+            const sendButton = current.querySelector('button[data-qa="texty_send_button"]');
+            if (sendButton instanceof HTMLElement) {
+                sendButton.click();
+                return;
+            }
+            current = current.parentElement;
+        }
+    }
+
     // 1. Try form submission
     const form = target.closest('form');
     if (form) {
@@ -155,24 +197,8 @@ function triggerSend(target: HTMLElement) {
 
     if (button && button instanceof HTMLElement) {
         button.click();
-        console.log('Ctrl+Enter Sender: Clicked send button', button);
     } else {
-        console.log('Ctrl+Enter Sender: Could not find send button. Dispatching Enter event as fallback.');
-
         // Fallback: Dispatch a "real" Enter key event.
-        // Note: This might be caught by our own Capture listener if we are not careful?
-        // No, dispatchEvent is synchronous.
-        // But wait, if we dispatch 'Enter', our Capture listener in index.ts will see it!
-        // And it will block it!
-        // We need to make sure our Capture listener ignores THIS specific event.
-        // We can't easily tag the event object in a way that survives dispatch (unless we use a custom property, but TS hates that).
-        // However, index.ts checks `event.isTrusted`.
-        // dispatchEvent creates an untrusted event (isTrusted: false).
-        // index.ts has `if (!event.isTrusted) return;`.
-        // So our simulated event WILL pass through our blocker.
-        // The site will receive it.
-        // If the site accepts untrusted events, it will work.
-
         const enterEvent = new KeyboardEvent('keydown', {
             key: 'Enter',
             code: 'Enter',
