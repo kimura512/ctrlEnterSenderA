@@ -116,10 +116,6 @@ function triggerSend(target: HTMLElement) {
     }
 
     // 2. Search for send button
-    // Look for button in the same container or globally if needed.
-    // Strategy: Look up the tree for a container, then find submit button.
-
-    // Common selectors for send buttons
     const selectors = [
         'button[type="submit"]',
         'button[aria-label*="Send"]',
@@ -131,14 +127,19 @@ function triggerSend(target: HTMLElement) {
         'div[role="button"][aria-label*="Send"]', // Common in modern apps
         'div[role="button"][class*="send"]',
         'button[title*="Send"]',
-        'button[title*="送信"]'
+        'button[title*="送信"]',
+        // Slack
+        'button[data-qa="texty_send_button"]',
+        'button[aria-label="Send now"]',
+        // Google Chat / Meet
+        'div[role="button"][aria-label="Send message"]',
+        'div[role="button"][aria-label="メッセージを送信"]',
+        'button[aria-label="メッセージを送信"]', // Meet specific
+        'button[jsname="SoqoBf"]', // Meet specific jsname
+        // Messenger
+        'div[aria-label="Press Enter to send"]',
+        'div[aria-label="Send"]'
     ];
-
-    // Search strategy:
-    // a. Closest common container (e.g. the chat input wrapper)
-    // b. Document wide (risky, might hit search bar button)
-
-    // Let's try to find a button near the input first.
     let container = target.parentElement;
     let button: Element | null = null;
 

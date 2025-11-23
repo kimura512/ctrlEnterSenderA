@@ -55,6 +55,11 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
     // <textarea>
     if (element.tagName === 'TEXTAREA') {
         const textarea = element as HTMLTextAreaElement;
+        // Google Meet specific check
+        if (textarea.id === 'bfTqV' || textarea.classList.contains('qdOxv-fmcmS-wGMbrd')) {
+            return true;
+        }
+
         if (textarea.rows >= 2) return true;
         // Check computed style height if needed, but rows is usually sufficient for initial check.
         // Accessing computed style can be expensive, so we might want to defer or cache it.
@@ -65,19 +70,31 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
 
     // contenteditable
     if (element instanceof HTMLElement && element.isContentEditable) {
-        // Check specific classes/ids
+        // Check specific classes/ids/aria-labels
         const id = element.id.toLowerCase();
-        const className = element.className.toLowerCase(); // Note: className can be SVGAnimatedString for SVG elements, but we checked HTMLElement
-        const keywords = ['chat', 'message', 'input', 'prompt', 'comment', 'editor', 'prosemirror'];
+        const className = element.className.toLowerCase();
+        const ariaLabel = element.getAttribute('aria-label')?.toLowerCase() || '';
+        const keywords = ['chat', 'message', 'input', 'prompt', 'comment', 'editor', 'prosemirror', 'body']; // 'body' for some editors
 
-        if (keywords.some(k => id.includes(k) || className.includes(k))) {
+        if (keywords.some(k => id.includes(k) || className.includes(k) || ariaLabel.includes(k))) {
+            return true;
+        }
+
+        // Google Chat specific check
+        if (element.getAttribute('g_editable') === 'true') {
             return true;
         }
 
         // Check ARIA
         const role = element.getAttribute('role');
         const ariaMultiline = element.getAttribute('aria-multiline');
-        if (role === 'textbox' && ariaMultiline === 'true') {
+
+        // Relaxed check: role="textbox" is usually enough if it's contenteditable and not explicitly a search box (checked above)
+        if (role === 'textbox') {
+            return true;
+        }
+
+        if (ariaMultiline === 'true') {
             return true;
         }
 

@@ -42,56 +42,52 @@ function App() {
     }
 
     return (
-        <div style={{ width: '300px', padding: '16px', fontFamily: 'sans-serif' }}>
-            <h2 style={{ fontSize: '16px', margin: '0 0 16px' }}>Ctrl+Enter Sender</h2>
-
-            <div style={{ marginBottom: '16px' }}>
-                <div style={{ fontSize: '12px', color: '#666', marginBottom: '4px' }}>Current Domain</div>
-                <div style={{ fontWeight: 'bold', wordBreak: 'break-all' }}>{origin}</div>
+        <div className="container">
+            <div className="header">
+                <h2 className="title">Ctrl+Enter Sender</h2>
             </div>
 
-            <div style={{ marginBottom: '16px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                <label htmlFor="enabled-toggle" style={{ cursor: 'pointer' }}>Enable for this site</label>
-                <input
-                    id="enabled-toggle"
-                    type="checkbox"
-                    checked={config.enabled}
-                    onChange={handleEnabledChange}
-                    style={{ cursor: 'pointer' }}
-                />
+            <div className="card">
+                <div className="domain-label">Current Domain</div>
+                <div className="domain-value">{origin}</div>
             </div>
 
-            <div style={{ marginBottom: '16px' }}>
-                <label style={{ display: 'block', marginBottom: '8px', fontSize: '14px' }}>Detection Mode</label>
+            <div className="card row">
+                <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>Enable for this site</label>
+                <label className="switch">
+                    <input
+                        id="enabled-toggle"
+                        type="checkbox"
+                        checked={config.enabled}
+                        onChange={handleEnabledChange}
+                    />
+                    <span className="slider"></span>
+                </label>
+            </div>
+
+            <div className="card">
+                <label className="label" style={{ display: 'block', marginBottom: '12px' }}>Detection Mode</label>
                 <select
                     value={config.mode}
                     onChange={handleModeChange}
-                    style={{ width: '100%', padding: '4px' }}
                 >
                     <option value="default">Default (Auto Detect)</option>
                     <option value="forceOn">Force On (Aggressive)</option>
                     <option value="forceOff">Force Off (Disable)</option>
                 </select>
-                <div style={{ fontSize: '12px', color: '#666', marginTop: '4px' }}>
-                    {config.mode === 'default' && 'Standard detection logic.'}
-                    {config.mode === 'forceOn' && 'Treats most inputs as targets.'}
-                    {config.mode === 'forceOff' && 'Disables extension on this site.'}
+                <div className="description">
+                    {config.mode === 'default' && 'Standard detection logic. Works on most sites.'}
+                    {config.mode === 'forceOn' && 'Treats almost all inputs as targets. Use if detection fails.'}
+                    {config.mode === 'forceOff' && 'Completely disables the extension on this site.'}
                 </div>
             </div>
 
-            <div style={{ borderTop: '1px solid #eee', paddingTop: '16px', textAlign: 'right' }}>
+            <div className="footer">
                 <button
+                    className="link-button"
                     onClick={() => chrome.runtime.openOptionsPage()}
-                    style={{
-                        background: 'none',
-                        border: 'none',
-                        color: '#0066cc',
-                        cursor: 'pointer',
-                        fontSize: '12px',
-                        textDecoration: 'underline'
-                    }}
                 >
-                    Open Advanced Settings
+                    <span>⚙️</span> Advanced Settings
                 </button>
             </div>
         </div>
