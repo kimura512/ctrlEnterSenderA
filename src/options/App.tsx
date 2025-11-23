@@ -27,7 +27,18 @@ function App() {
 
     return (
         <div className="container">
-            <h1>Ctrl+Enter Sender Settings</h1>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+                <h1 style={{ margin: 0 }}>Ctrl+Enter Sender Settings</h1>
+                <a
+                    className="link-button"
+                    href="https://github.com/kimura512/ctrlEnterSenderA/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ fontSize: '14px' }}
+                >
+                    <span>🐛</span> Report Issue
+                </a>
+            </div>
 
             <div className="card">
                 <div className="card-header">

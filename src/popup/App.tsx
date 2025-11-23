@@ -89,6 +89,15 @@ function App() {
                 >
                     <span>⚙️</span> Advanced Settings
                 </button>
+                <span style={{ margin: '0 8px', color: 'var(--border-color)' }}>•</span>
+                <a
+                    className="link-button"
+                    href="https://github.com/kimura512/ctrlEnterSenderA/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span>🐛</span> Report Issue
+                </a>
             </div>
         </div>
     );
