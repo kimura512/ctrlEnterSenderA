@@ -16,8 +16,7 @@ export function handleKeyDown(event: KeyboardEvent, target: HTMLElement, _config
     // Check if we're on Discord or Teams
     const isDiscord = window.location.hostname.includes('discord.com');
     const isTeams = window.location.hostname.includes('teams.microsoft.com') || window.location.hostname.includes('teams.live.com');
-    // Slack is handled via triggerSend (button click) because simulating Enter might just insert a newline
-    // depending on user settings.
+    // Slack and ChatGPT are handled via triggerSend (button click)
     const isComplexApp = isDiscord || isTeams;
 
     // Special handling for Complex Apps (Discord, Teams)
@@ -56,7 +55,7 @@ export function handleKeyDown(event: KeyboardEvent, target: HTMLElement, _config
         return;
     }
 
-    // Non-Complex sites
+    // Non-Complex sites (Slack, ChatGPT, Standard Apps)
     if (isSendKey) {
         // If we reached here in Bubble phase and defaultPrevented is false (checked in index.ts),
         // it means the site didn't handle Ctrl+Enter. We should trigger send.
@@ -86,10 +85,12 @@ function insertNewline(target: HTMLElement) {
         const hostname = window.location.hostname;
         const needsShiftEnter = hostname.includes('slack.com') ||
             hostname.includes('discord.com') ||
-            hostname.includes('teams.microsoft.com');
+            hostname.includes('teams.microsoft.com') ||
+            hostname.includes('chatgpt.com') ||
+            hostname.includes('openai.com');
 
         if (needsShiftEnter) {
-            // For contenteditable (Slack, Discord, Teams), simulating Shift+Enter 
+            // For contenteditable (Slack, Discord, Teams, ChatGPT), simulating Shift+Enter 
             // is the most robust way to trigger the site's native newline insertion.
             const events = ['keydown', 'keypress', 'keyup'];
             events.forEach(eventType => {
@@ -106,7 +107,7 @@ function insertNewline(target: HTMLElement) {
                 target.dispatchEvent(event);
             });
         } else {
-            // Standard DOM insertion for others (ChatGPT, etc.)
+            // Standard DOM insertion for others
             // execCommand is deprecated but still the most reliable way for contentEditable
             // as it handles undo stack and cursor placement correctly.
             const success = document.execCommand('insertText', false, '\n');

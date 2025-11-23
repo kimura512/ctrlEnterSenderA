@@ -49,7 +49,8 @@ function attachListeners(doc: Document) {
 
         const isDiscord = hostname.includes('discord.com');
         const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
-        const isComplexApp = isDiscord || isTeams || isSlack;
+        const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
+        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT;
 
         // CASE 1: Complex Apps (Slack, Discord, Teams)
         // Handle BOTH Enter and Ctrl+Enter in Capture phase

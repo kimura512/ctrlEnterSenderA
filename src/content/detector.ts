@@ -82,7 +82,7 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
         const className = element.className;
 
         // Keywords that suggest this is a message input
-        const keywords = ['message', 'chat', 'compose', 'reply', 'comment', 'post', 'write', 'メッセージ', 'チャット', 'コメント'];
+        const keywords = ['message', 'chat', 'compose', 'reply', 'comment', 'post', 'write', 'prompt', 'メッセージ', 'チャット', 'コメント'];
         const hasKeyword = keywords.some(keyword =>
             (ariaLabel && ariaLabel.toLowerCase().includes(keyword.toLowerCase())) ||
             (id && id.toLowerCase().includes(keyword.toLowerCase())) ||
