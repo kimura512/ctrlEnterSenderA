@@ -90,7 +90,8 @@ function attachListeners(doc: Document) {
         const isDiscord = hostname.includes('discord.com');
         const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
         const isSlack = hostname.includes('slack.com');
-        const isComplexApp = isDiscord || isTeams || isSlack;
+        const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
+        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT;
 
         // Complex apps are fully handled in Capture phase, so ignore them here.
         if (isComplexApp) return;

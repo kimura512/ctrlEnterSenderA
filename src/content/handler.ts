@@ -83,23 +83,51 @@ function insertNewline(target: HTMLElement) {
         // Trigger input event
         textarea.dispatchEvent(new Event('input', { bubbles: true }));
     } else if (target.isContentEditable) {
-        // For contenteditable (Slack, Discord, Teams, etc.), simulating Shift+Enter 
-        // is the most robust way to trigger the site's native newline insertion.
-        // Manual DOM manipulation often conflicts with internal editor state (React/Slate).
-        const events = ['keydown', 'keypress', 'keyup'];
-        events.forEach(eventType => {
-            const event = new KeyboardEvent(eventType, {
-                key: 'Enter',
-                code: 'Enter',
-                keyCode: 13,
-                which: 13,
-                shiftKey: true, // Simulate Shift+Enter
-                bubbles: true,
-                cancelable: true,
-                view: window
+        const hostname = window.location.hostname;
+        const needsShiftEnter = hostname.includes('slack.com') ||
+            hostname.includes('discord.com') ||
+            hostname.includes('teams.microsoft.com');
+
+        if (needsShiftEnter) {
+            // For contenteditable (Slack, Discord, Teams), simulating Shift+Enter 
+            // is the most robust way to trigger the site's native newline insertion.
+            const events = ['keydown', 'keypress', 'keyup'];
+            events.forEach(eventType => {
+                const event = new KeyboardEvent(eventType, {
+                    key: 'Enter',
+                    code: 'Enter',
+                    keyCode: 13,
+                    which: 13,
+                    shiftKey: true, // Simulate Shift+Enter
+                    bubbles: true,
+                    cancelable: true,
+                    view: window
+                });
+                target.dispatchEvent(event);
             });
-            target.dispatchEvent(event);
-        });
+        } else {
+            // Standard DOM insertion for others (ChatGPT, etc.)
+            // execCommand is deprecated but still the most reliable way for contentEditable
+            // as it handles undo stack and cursor placement correctly.
+            const success = document.execCommand('insertText', false, '\n');
+
+            if (!success) {
+                // Fallback: Range manipulation
+                const selection = window.getSelection();
+                if (selection && selection.rangeCount > 0) {
+                    const range = selection.getRangeAt(0);
+                    const br = document.createTextNode('\n');
+                    range.deleteContents();
+                    range.insertNode(br);
+                    range.setStartAfter(br);
+                    range.setEndAfter(br);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                    // Trigger input event
+                    target.dispatchEvent(new Event('input', { bubbles: true }));
+                }
+            }
+        }
     }
 }
 
