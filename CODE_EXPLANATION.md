@@ -20,17 +20,17 @@ graph TB
     Browser[Chrome Browser]
     
     subgraph WebPage["Web Page (any site)"]
-        InputField["[input field]<br/>TEXTAREA or<br/>contenteditable"]
+        InputField["[input field]<br>TEXTAREA or<br>contenteditable"]
     end
     
     subgraph Extension["Extension"]
-        ContentScript["Content Script<br/>(content/)<br/>• detector.ts<br/>• handler.ts<br/>• index.ts"]
-        Background["Background<br/>Service Worker<br/>(background/)<br/>• index.ts<br/>• storage.ts"]
-        PopupUI["Popup UI<br/>(popup/)<br/>current site settings"]
-        OptionsPage["Options Page<br/>(options/)<br/>all domains settings"]
+        ContentScript["Content Script<br>(content/)<br>• detector.ts<br>• handler.ts<br>• index.ts"]
+        Background["Background<br>Service Worker<br>(background/)<br>• index.ts<br>• storage.ts"]
+        PopupUI["Popup UI<br>(popup/)<br>current site settings"]
+        OptionsPage["Options Page<br>(options/)<br>all domains settings"]
     end
     
-    Storage[Chrome Storage<br/>(config data)]
+    Storage["Chrome Storage<br>(config data)"]
     
     ContentScript -.monitor.-> InputField
     ContentScript --> Background
@@ -115,15 +115,15 @@ sequenceDiagram
     
     Note over Chrome,Storage: ページ読み込み時
     Chrome->>Page: 1. ページ読み込み
-    Page->>CS: 2. Content Script注入<br/>(document_end)
+    Page->>CS: 2. Content Script注入<br>(document_end)
     CS->>CS: content/index.ts実行
     CS->>Storage: 3. getDomainConfig()
     Storage-->>CS: 設定を返す
-    CS->>CS: 4. chrome.storage.onChanged<br/>リスナー登録
+    CS->>CS: 4. chrome.storage.onChanged<br>リスナー登録
     CS->>CS: 5. attachListeners(document)
     CS->>CS: Capture Phase Listener
     CS->>CS: Bubble Phase Listener
-    CS->>CS: 6. MutationObserver開始<br/>iframe監視
+    CS->>CS: 6. MutationObserver開始<br>iframe監視
 ```
 
 ### 概念説明
@@ -217,7 +217,7 @@ document.querySelectorAll('iframe').forEach(iframe => {
 
 ```mermaid
 flowchart TD
-    Start[ユーザーがキーを押す] --> Capture[Capture Phase Listener<br/>content/index.ts:31]
+    Start[ユーザーがキーを押す] --> Capture[Capture Phase Listener<br>content/index.ts:31]
     
     Capture --> Check1{event.isTrusted?}
     Check1 -->|NO| End1[終了]
@@ -227,17 +227,17 @@ flowchart TD
     Check3 -->|NO| End3[終了]
     Check3 -->|YES| AppType{アプリタイプ判定}
     
-    AppType -->|Complex App<br/>Discord/Teams/Slack/ChatGPT| ComplexHandle[Ctrl+Enter or Enter<br/>→ handler]
-    AppType -->|Standard App| StandardEnter[Enter → handler<br/>Ctrl+EnterはBubbleで処理]
+    AppType -->|Complex App<br>Discord/Teams/Slack/ChatGPT| ComplexHandle[Ctrl+Enter or Enter<br>→ handler]
+    AppType -->|Standard App| StandardEnter[Enter → handler<br>Ctrl+EnterはBubbleで処理]
     
     ComplexHandle --> Handler
-    StandardEnter --> Bubble[Bubble Phase Listener<br/>content/index.ts:74]
+    StandardEnter --> Bubble[Bubble Phase Listener<br>content/index.ts:74]
     
-    Bubble --> BubbleCheck{Standard App かつ<br/>Ctrl+Enter かつ<br/>!defaultPrevented?}
+    Bubble --> BubbleCheck{Standard App かつ<br>Ctrl+Enter かつ<br>!defaultPrevented?}
     BubbleCheck -->|YES| Handler
     BubbleCheck -->|NO| End4[終了]
     
-    Handler[handleKeyDown<br/>content/handler.ts:3] --> IME{IME入力中?}
+    Handler[handleKeyDown<br>content/handler.ts:3] --> IME{IME入力中?}
     IME -->|YES| End5[終了]
     IME -->|NO| HandlerType{アプリタイプ別処理}
     
@@ -368,13 +368,13 @@ function attachListeners(doc: Document) {
 flowchart TD
     Start[isMultiLineEditable呼び出し] --> BlockSite{docs.google.com?}
     BlockSite -->|YES| ReturnFalse1[return false]
-    BlockSite -->|NO| CustomExcludes{element.matches<br/>customExcludes?}
+    BlockSite -->|NO| CustomExcludes{element.matches<br>customExcludes?}
     
     CustomExcludes -->|YES| ReturnFalse2[return false]
-    CustomExcludes -->|NO| CustomTargets{element.matches<br/>customTargets?}
+    CustomExcludes -->|NO| CustomTargets{element.matches<br>customTargets?}
     
     CustomTargets -->|YES| ReturnTrue1[return true]
-    CustomTargets -->|NO| ForceOff{config.mode ===<br/>forceOff?}
+    CustomTargets -->|NO| ForceOff{config.mode ===<br>forceOff?}
     
     ForceOff -->|YES| ReturnFalse3[return false]
     ForceOff -->|NO| ForceOn{forceOnでない場合}
@@ -517,46 +517,46 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
 
 ```mermaid
 flowchart TD
-    Start[handleKeyDown呼び出し] --> IME{IME入力中?<br/>isComposing || keyCode===229}
+    Start[handleKeyDown呼び出し] --> IME{IME入力中?<br>isComposing || keyCode===229}
     IME -->|YES| End1[return 処理しない]
     IME -->|NO| KeyType{キー種別判定}
     
-    KeyType -->|isSendKey<br/>Ctrl+Enter/Cmd+Enter| SendKey
-    KeyType -->|isPlainEnter<br/>単独Enter| PlainEnter
+    KeyType -->|isSendKey<br>Ctrl+Enter/Cmd+Enter| SendKey
+    KeyType -->|isPlainEnter<br>単独Enter| PlainEnter
     
     SendKey --> AppType1{アプリタイプ判定}
     PlainEnter --> AppType2{アプリタイプ判定}
     
-    AppType1 -->|Complex App<br/>Discord/Teams| ComplexCtrl[Ctrl+Enter処理]
-    AppType1 -->|Standard App<br/>Slack/ChatGPT/その他| StandardCtrl[Ctrl+Enter処理]
+    AppType1 -->|Complex App<br>Discord/Teams| ComplexCtrl[Ctrl+Enter処理]
+    AppType1 -->|Standard App<br>Slack/ChatGPT/その他| StandardCtrl[Ctrl+Enter処理]
     
     AppType2 -->|Complex App| ComplexEnter[Enter処理]
     AppType2 -->|Standard App| StandardEnter[Enter処理]
     
-    ComplexCtrl --> Prevent1[preventDefault<br/>stopImmediatePropagation]
-    Prevent1 --> SimEnter[Enterイベントをシミュレート<br/>keydown/keypress/keyup]
+    ComplexCtrl --> Prevent1[preventDefault<br>stopImmediatePropagation]
+    Prevent1 --> SimEnter[Enterイベントをシミュレート<br>keydown/keypress/keyup]
     
-    ComplexEnter --> Prevent2[preventDefault<br/>stopImmediatePropagation]
+    ComplexEnter --> Prevent2[preventDefault<br>stopImmediatePropagation]
     Prevent2 --> InsertNewline1[insertNewline]
     InsertNewline1 --> SimShiftEnter[Shift+Enterをシミュレート]
     
-    StandardCtrl --> Prevent3[preventDefault<br/>stopImmediatePropagation]
+    StandardCtrl --> Prevent3[preventDefault<br>stopImmediatePropagation]
     Prevent3 --> TriggerSend[triggerSend]
     TriggerSend --> SlackCheck{Slack?}
-    SlackCheck -->|YES| SlackButton[Slack専用処理<br/>ボタン検索]
+    SlackCheck -->|YES| SlackButton[Slack専用処理<br>ボタン検索]
     SlackCheck -->|NO| FormCheck{form要素?}
     FormCheck -->|YES| FormSubmit[form.requestSubmit]
-    FormCheck -->|NO| ButtonSearch[送信ボタン検索<br/>複数セレクタ]
-    ButtonSearch -->|見つからない| FallbackEnter[Enterイベント発火<br/>フォールバック]
+    FormCheck -->|NO| ButtonSearch[送信ボタン検索<br>複数セレクタ]
+    ButtonSearch -->|見つからない| FallbackEnter[Enterイベント発火<br>フォールバック]
     
-    StandardEnter --> Prevent4[preventDefault<br/>stopImmediatePropagation]
+    StandardEnter --> Prevent4[preventDefault<br>stopImmediatePropagation]
     Prevent4 --> InsertNewline2[insertNewline]
     InsertNewline2 --> ElementType{TEXTAREA?}
     ElementType -->|YES| SetRangeText[setRangeText'\n']
     ElementType -->|NO| ContentEditable{contenteditable?}
     ContentEditable -->|Complex App| SimShiftEnter2[Shift+Enterシミュレート]
     ContentEditable -->|Standard App| ExecCommand[execCommand'insertText']
-    ExecCommand -->|失敗| RangeOp[Range操作<br/>フォールバック]
+    ExecCommand -->|失敗| RangeOp[Range操作<br>フォールバック]
 ```
 
 ### 概念説明
@@ -796,11 +796,11 @@ function triggerSend(target: HTMLElement) {
 
 ```mermaid
 graph LR
-    Storage[Chrome Storage<br/>chrome.storage.sync<br/><br/>ctrl_enter_sender_config:<br/>domains:<br/>  slack.com: enabled, mode<br/>  discord.com: enabled, mode]
+    Storage["Chrome Storage<br>chrome.storage.sync<br>config data"]
     
-    Popup[Popup UI<br/>popup/App.tsx<br/>current site settings]
-    Options[Options Page<br/>options/App.tsx<br/>all domains list & edit]
-    Content[Content Script<br/>content/<br/>load config<br/>monitor storage changes]
+    Popup["Popup UI<br>popup/App.tsx<br>current site settings"]
+    Options["Options Page<br>options/App.tsx<br>all domains list & edit"]
+    Content["Content Script<br>content/<br>load config<br>monitor storage changes"]
     
     Popup -->|setDomainConfig| Storage
     Options -->|setDomainConfig| Storage
@@ -895,15 +895,15 @@ export interface StorageSchema {
 graph TB
     subgraph Popup["Popup UI (popup/App.tsx)"]
         PopupTitle["Ctrl+Enter Sender"]
-        PopupDomain["Current Domain<br/>https://slack.com"]
-        PopupToggle["Enable for this site<br/>[Toggle Switch]"]
-        PopupMode["Detection Mode<br/>[Default ▼]<br/>Standard detection logic..."]
+        PopupDomain["Current Domain<br>https://slack.com"]
+        PopupToggle["Enable for this site<br>[Toggle Switch]"]
+        PopupMode["Detection Mode<br>[Default ▼]<br>Standard detection logic..."]
         PopupFooter["⚙️ Advanced Settings • 🐛 Report Issue"]
     end
     
     subgraph Options["Options Page (options/App.tsx)"]
-        OptionsTitle["Ctrl+Enter Sender Settings<br/>🐛 Report Issue"]
-        OptionsTable["Configured Domains (3)<br/><br/>Domain | Enabled | Mode | Actions<br/>slack.com | ☑ | Default | Reset<br/>discord.com | ☑ | ForceOn | Reset<br/>teams... | ☐ | Default | Reset"]
+        OptionsTitle["Ctrl+Enter Sender Settings<br>🐛 Report Issue"]
+        OptionsTable["Configured Domains (3)<br><br>Domain | Enabled | Mode | Actions<br>slack.com | ☑ | Default | Reset<br>discord.com | ☑ | ForceOn | Reset<br>teams... | ☐ | Default | Reset"]
     end
     
     PopupTitle --> PopupDomain

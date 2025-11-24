@@ -20,17 +20,17 @@ graph TB
     Browser[Chrome Browser]
     
     subgraph WebPage["Web Page (any site)"]
-        InputField["[input field]<br/>TEXTAREA or<br/>contenteditable"]
+        InputField["[input field]<br>TEXTAREA or<br>contenteditable"]
     end
     
     subgraph Extension["Extension"]
-        ContentScript["Content Script<br/>(content/)<br/>• detector.ts<br/>• handler.ts<br/>• index.ts"]
-        Background["Background<br/>Service Worker<br/>(background/)<br/>• index.ts<br/>• storage.ts"]
-        PopupUI["Popup UI<br/>(popup/)<br/>current site settings"]
-        OptionsPage["Options Page<br/>(options/)<br/>all domains settings"]
+        ContentScript["Content Script<br>(content/)<br>• detector.ts<br>• handler.ts<br>• index.ts"]
+        Background["Background<br>Service Worker<br>(background/)<br>• index.ts<br>• storage.ts"]
+        PopupUI["Popup UI<br>(popup/)<br>current site settings"]
+        OptionsPage["Options Page<br>(options/)<br>all domains settings"]
     end
     
-    Storage[Chrome Storage<br/>(config data)]
+    Storage[Chrome Storage<br>(config data)]
     
     ContentScript -.monitor.-> InputField
     ContentScript --> Background
@@ -115,15 +115,15 @@ sequenceDiagram
     
     Note over Chrome,Storage: Page Load
     Chrome->>Page: 1. Page loads
-    Page->>CS: 2. Inject Content Script<br/>(document_end)
+    Page->>CS: 2. Inject Content Script<br>(document_end)
     CS->>CS: Execute content/index.ts
     CS->>Storage: 3. getDomainConfig()
     Storage-->>CS: Return config
-    CS->>CS: 4. Register chrome.storage.onChanged<br/>listener
+    CS->>CS: 4. Register chrome.storage.onChanged<br>listener
     CS->>CS: 5. attachListeners(document)
     CS->>CS: Capture Phase Listener
     CS->>CS: Bubble Phase Listener
-    CS->>CS: 6. Start MutationObserver<br/>iframe monitoring
+    CS->>CS: 6. Start MutationObserver<br>iframe monitoring
 ```
 
 ### Concept Explanation
@@ -217,7 +217,7 @@ document.querySelectorAll('iframe').forEach(iframe => {
 
 ```mermaid
 flowchart TD
-    Start[User presses key] --> Capture[Capture Phase Listener<br/>content/index.ts:31]
+    Start[User presses key] --> Capture[Capture Phase Listener<br>content/index.ts:31]
     
     Capture --> Check1{event.isTrusted?}
     Check1 -->|NO| End1[Exit]
@@ -227,17 +227,17 @@ flowchart TD
     Check3 -->|NO| End3[Exit]
     Check3 -->|YES| AppType{App type determination}
     
-    AppType -->|Complex App<br/>Discord/Teams/Slack/ChatGPT| ComplexHandle[Ctrl+Enter or Enter<br/>→ handler]
-    AppType -->|Standard App| StandardEnter[Enter → handler<br/>Ctrl+Enter handled in Bubble]
+    AppType -->|Complex App<br>Discord/Teams/Slack/ChatGPT| ComplexHandle[Ctrl+Enter or Enter<br>→ handler]
+    AppType -->|Standard App| StandardEnter[Enter → handler<br>Ctrl+Enter handled in Bubble]
     
     ComplexHandle --> Handler
-    StandardEnter --> Bubble[Bubble Phase Listener<br/>content/index.ts:74]
+    StandardEnter --> Bubble[Bubble Phase Listener<br>content/index.ts:74]
     
-    Bubble --> BubbleCheck{Standard App AND<br/>Ctrl+Enter AND<br/>!defaultPrevented?}
+    Bubble --> BubbleCheck{Standard App AND<br>Ctrl+Enter AND<br>!defaultPrevented?}
     BubbleCheck -->|YES| Handler
     BubbleCheck -->|NO| End4[Exit]
     
-    Handler[handleKeyDown<br/>content/handler.ts:3] --> IME{IME input active?}
+    Handler[handleKeyDown<br>content/handler.ts:3] --> IME{IME input active?}
     IME -->|YES| End5[Exit]
     IME -->|NO| HandlerType{App type specific processing}
     
@@ -368,13 +368,13 @@ function attachListeners(doc: Document) {
 flowchart TD
     Start[isMultiLineEditable call] --> BlockSite{docs.google.com?}
     BlockSite -->|YES| ReturnFalse1[return false]
-    BlockSite -->|NO| CustomExcludes{element.matches<br/>customExcludes?}
+    BlockSite -->|NO| CustomExcludes{element.matches<br>customExcludes?}
     
     CustomExcludes -->|YES| ReturnFalse2[return false]
-    CustomExcludes -->|NO| CustomTargets{element.matches<br/>customTargets?}
+    CustomExcludes -->|NO| CustomTargets{element.matches<br>customTargets?}
     
     CustomTargets -->|YES| ReturnTrue1[return true]
-    CustomTargets -->|NO| ForceOff{config.mode ===<br/>forceOff?}
+    CustomTargets -->|NO| ForceOff{config.mode ===<br>forceOff?}
     
     ForceOff -->|YES| ReturnFalse3[return false]
     ForceOff -->|NO| ForceOn{Not forceOn mode}
@@ -517,46 +517,46 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
 
 ```mermaid
 flowchart TD
-    Start[handleKeyDown call] --> IME{IME input active?<br/>isComposing || keyCode===229}
+    Start[handleKeyDown call] --> IME{IME input active?<br>isComposing || keyCode===229}
     IME -->|YES| End1[return Do not process]
     IME -->|NO| KeyType{Key type determination}
     
-    KeyType -->|isSendKey<br/>Ctrl+Enter/Cmd+Enter| SendKey
-    KeyType -->|isPlainEnter<br/>Plain Enter| PlainEnter
+    KeyType -->|isSendKey<br>Ctrl+Enter/Cmd+Enter| SendKey
+    KeyType -->|isPlainEnter<br>Plain Enter| PlainEnter
     
     SendKey --> AppType1{App type determination}
     PlainEnter --> AppType2{App type determination}
     
-    AppType1 -->|Complex App<br/>Discord/Teams| ComplexCtrl[Ctrl+Enter processing]
-    AppType1 -->|Standard App<br/>Slack/ChatGPT/Others| StandardCtrl[Ctrl+Enter processing]
+    AppType1 -->|Complex App<br>Discord/Teams| ComplexCtrl[Ctrl+Enter processing]
+    AppType1 -->|Standard App<br>Slack/ChatGPT/Others| StandardCtrl[Ctrl+Enter processing]
     
     AppType2 -->|Complex App| ComplexEnter[Enter processing]
     AppType2 -->|Standard App| StandardEnter[Enter processing]
     
-    ComplexCtrl --> Prevent1[preventDefault<br/>stopImmediatePropagation]
-    Prevent1 --> SimEnter[Simulate Enter event<br/>keydown/keypress/keyup]
+    ComplexCtrl --> Prevent1[preventDefault<br>stopImmediatePropagation]
+    Prevent1 --> SimEnter[Simulate Enter event<br>keydown/keypress/keyup]
     
-    ComplexEnter --> Prevent2[preventDefault<br/>stopImmediatePropagation]
+    ComplexEnter --> Prevent2[preventDefault<br>stopImmediatePropagation]
     Prevent2 --> InsertNewline1[insertNewline]
     InsertNewline1 --> SimShiftEnter[Simulate Shift+Enter]
     
-    StandardCtrl --> Prevent3[preventDefault<br/>stopImmediatePropagation]
+    StandardCtrl --> Prevent3[preventDefault<br>stopImmediatePropagation]
     Prevent3 --> TriggerSend[triggerSend]
     TriggerSend --> SlackCheck{Slack?}
-    SlackCheck -->|YES| SlackButton[Slack-specific processing<br/>Button search]
+    SlackCheck -->|YES| SlackButton[Slack-specific processing<br>Button search]
     SlackCheck -->|NO| FormCheck{form element?}
     FormCheck -->|YES| FormSubmit[form.requestSubmit]
-    FormCheck -->|NO| ButtonSearch[Send button search<br/>Multiple selectors]
-    ButtonSearch -->|Not found| FallbackEnter[Dispatch Enter event<br/>Fallback]
+    FormCheck -->|NO| ButtonSearch[Send button search<br>Multiple selectors]
+    ButtonSearch -->|Not found| FallbackEnter[Dispatch Enter event<br>Fallback]
     
-    StandardEnter --> Prevent4[preventDefault<br/>stopImmediatePropagation]
+    StandardEnter --> Prevent4[preventDefault<br>stopImmediatePropagation]
     Prevent4 --> InsertNewline2[insertNewline]
     InsertNewline2 --> ElementType{TEXTAREA?}
     ElementType -->|YES| SetRangeText[setRangeText'\n']
     ElementType -->|NO| ContentEditable{contenteditable?}
     ContentEditable -->|Complex App| SimShiftEnter2[Simulate Shift+Enter]
     ContentEditable -->|Standard App| ExecCommand[execCommand'insertText']
-    ExecCommand -->|Failed| RangeOp[Range operation<br/>Fallback]
+    ExecCommand -->|Failed| RangeOp[Range operation<br>Fallback]
 ```
 
 ### Concept Explanation
@@ -796,11 +796,11 @@ function triggerSend(target: HTMLElement) {
 
 ```mermaid
 graph LR
-    Storage[Chrome Storage<br/>chrome.storage.sync<br/><br/>ctrl_enter_sender_config:<br/>domains:<br/>  slack.com: enabled, mode<br/>  discord.com: enabled, mode]
+    Storage["Chrome Storage<br>chrome.storage.sync<br>config data"]
     
-    Popup[Popup UI<br/>popup/App.tsx<br/>current site settings]
-    Options[Options Page<br/>options/App.tsx<br/>all domains list & edit]
-    Content[Content Script<br/>content/<br/>load config<br/>monitor storage changes]
+    Popup["Popup UI<br>popup/App.tsx<br>current site settings"]
+    Options["Options Page<br>options/App.tsx<br>all domains list & edit"]
+    Content["Content Script<br>content/<br>load config<br>monitor storage changes"]
     
     Popup -->|setDomainConfig| Storage
     Options -->|setDomainConfig| Storage
@@ -895,15 +895,15 @@ export interface StorageSchema {
 graph TB
     subgraph Popup["Popup UI (popup/App.tsx)"]
         PopupTitle["Ctrl+Enter Sender"]
-        PopupDomain["Current Domain<br/>https://slack.com"]
-        PopupToggle["Enable for this site<br/>[Toggle Switch]"]
-        PopupMode["Detection Mode<br/>[Default ▼]<br/>Standard detection logic..."]
+        PopupDomain["Current Domain<br>https://slack.com"]
+        PopupToggle["Enable for this site<br>[Toggle Switch]"]
+        PopupMode["Detection Mode<br>[Default ▼]<br>Standard detection logic..."]
         PopupFooter["⚙️ Advanced Settings • 🐛 Report Issue"]
     end
     
     subgraph Options["Options Page (options/App.tsx)"]
-        OptionsTitle["Ctrl+Enter Sender Settings<br/>🐛 Report Issue"]
-        OptionsTable["Configured Domains (3)<br/><br/>Domain | Enabled | Mode | Actions<br/>slack.com | ☑ | Default | Reset<br/>discord.com | ☑ | ForceOn | Reset<br/>teams... | ☐ | Default | Reset"]
+        OptionsTitle["Ctrl+Enter Sender Settings<br>🐛 Report Issue"]
+        OptionsTable["Configured Domains (3)<br><br>Domain | Enabled | Mode | Actions<br>slack.com | ☑ | Default | Reset<br>discord.com | ☑ | ForceOn | Reset<br>teams... | ☐ | Default | Reset"]
     end
     
     PopupTitle --> PopupDomain
