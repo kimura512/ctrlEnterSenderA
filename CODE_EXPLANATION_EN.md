@@ -19,18 +19,18 @@
 graph TB
     Browser[Chrome Browser]
     
-    subgraph WebPage["Web Page (any site)"]
-        InputField["[input field]<br>TEXTAREA or<br>contenteditable"]
+    subgraph WebPage["Web Page - any site"]
+        InputField["input field<br>TEXTAREA or<br>contenteditable"]
     end
     
     subgraph Extension["Extension"]
-        ContentScript["Content Script<br>(content/)<br>• detector.ts<br>• handler.ts<br>• index.ts"]
-        Background["Background<br>Service Worker<br>(background/)<br>• index.ts<br>• storage.ts"]
-        PopupUI["Popup UI<br>(popup/)<br>current site settings"]
-        OptionsPage["Options Page<br>(options/)<br>all domains settings"]
+        ContentScript["Content Script<br>content/<br>detector.ts<br>handler.ts<br>index.ts"]
+        Background["Background<br>Service Worker<br>background/<br>index.ts<br>storage.ts"]
+        PopupUI["Popup UI<br>popup/<br>current site settings"]
+        OptionsPage["Options Page<br>options/<br>all domains settings"]
     end
     
-    Storage[Chrome Storage<br>(config data)]
+    Storage["Chrome Storage<br>config data"]
     
     ContentScript -.monitor.-> InputField
     ContentScript --> Background
