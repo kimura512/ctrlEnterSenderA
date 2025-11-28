@@ -374,7 +374,7 @@ flowchart TD
     CustomExcludes -->|NO| CustomTargets{element.matches<br>customTargets?}
     
     CustomTargets -->|YES| ReturnTrue1[return true]
-    CustomTargets -->|NO| ForceOff{config.mode ===<br>forceOff?}
+    CustomTargets -->|NO| ForceOff{config.mode equals<br>forceOff?}
     
     ForceOff -->|YES| ReturnFalse3[return false]
     ForceOff -->|NO| ForceOn{Not forceOn mode}
@@ -517,7 +517,7 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
 
 ```mermaid
 flowchart TD
-    Start[handleKeyDown call] --> IME{IME input active?<br>isComposing || keyCode===229}
+    Start[handleKeyDown call] --> IME{IME input active?<br>isComposing OR keyCode=229}
     IME -->|YES| End1[return Do not process]
     IME -->|NO| KeyType{Key type determination}
     

@@ -30,7 +30,7 @@ graph TB
         OptionsPage["Options Page<br>(options/)<br>all domains settings"]
     end
     
-    Storage["Chrome Storage<br>(config data)"]
+    Storage["Chrome Storage<br>config data"]
     
     ContentScript -.monitor.-> InputField
     ContentScript --> Background
@@ -374,7 +374,7 @@ flowchart TD
     CustomExcludes -->|NO| CustomTargets{element.matches<br>customTargets?}
     
     CustomTargets -->|YES| ReturnTrue1[return true]
-    CustomTargets -->|NO| ForceOff{config.mode ===<br>forceOff?}
+    CustomTargets -->|NO| ForceOff{config.mode equals<br>forceOff?}
     
     ForceOff -->|YES| ReturnFalse3[return false]
     ForceOff -->|NO| ForceOn{forceOnでない場合}
@@ -517,7 +517,7 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
 
 ```mermaid
 flowchart TD
-    Start[handleKeyDown呼び出し] --> IME{IME入力中?<br>isComposing || keyCode===229}
+    Start[handleKeyDown呼び出し] --> IME{IME入力中?<br>isComposing OR keyCode=229}
     IME -->|YES| End1[return 処理しない]
     IME -->|NO| KeyType{キー種別判定}
     
