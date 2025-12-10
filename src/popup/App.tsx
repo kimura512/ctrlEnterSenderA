@@ -1,12 +1,35 @@
 import React, { useEffect, useState } from 'react';
-import { getDomainConfig, setDomainConfig } from '../background/storage';
+import { getDomainConfig, setDomainConfig, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
 import { DomainConfig, DomainMode } from '../types';
+import { getMessage } from '../utils/i18n';
+import { Onboarding } from '../components/Onboarding';
+import { WhatsNew } from '../components/WhatsNew';
 
 function App() {
     const [origin, setOrigin] = useState<string>('');
     const [config, setConfig] = useState<DomainConfig | null>(null);
+    const [showOnboarding, setShowOnboarding] = useState<boolean>(false);
+    const [showWhatsNew, setShowWhatsNew] = useState<boolean>(false);
+    const [currentVersion, setCurrentVersion] = useState<string>('');
 
     useEffect(() => {
+        // Get current version from manifest
+        const manifest = chrome.runtime.getManifest();
+        const version = manifest.version;
+        setCurrentVersion(version);
+        // Check if onboarding should be shown
+        hasOnboardingBeenShown().then(shown => {
+            if (!shown) {
+                setShowOnboarding(true);
+                setOnboardingShown();
+            } else {
+                // Only show What's New if onboarding was already shown
+                shouldShowWhatsNew(version).then(show => {
+                    setShowWhatsNew(show);
+                });
+            }
+        });
+
         chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
             const tab = tabs[0];
             if (tab?.url) {
@@ -34,26 +57,33 @@ function App() {
     };
 
     if (!origin) {
-        return <div style={{ padding: '16px' }}>Loading...</div>;
+        return <div style={{ padding: '16px' }}>{getMessage('loading')}</div>;
     }
 
     if (!config) {
-        return <div style={{ padding: '16px' }}>Loading config...</div>;
+        return <div style={{ padding: '16px' }}>{getMessage('loadingConfig')}</div>;
     }
 
     return (
-        <div className="container">
+        <>
+            {showOnboarding && (
+                <Onboarding onClose={() => setShowOnboarding(false)} />
+            )}
+            {showWhatsNew && currentVersion && (
+                <WhatsNew onClose={() => setShowWhatsNew(false)} version={currentVersion} />
+            )}
+            <div className="container">
             <div className="header">
-                <h2 className="title">Ctrl+Enter Sender</h2>
+                <h2 className="title">{getMessage('popupTitle')}</h2>
             </div>
 
             <div className="card">
-                <div className="domain-label">Current Domain</div>
+                <div className="domain-label">{getMessage('currentDomain')}</div>
                 <div className="domain-value">{origin}</div>
             </div>
 
             <div className="card row">
-                <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>Enable for this site</label>
+                <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>{getMessage('enableForThisSite')}</label>
                 <label className="switch">
                     <input
                         id="enabled-toggle"
@@ -66,19 +96,19 @@ function App() {
             </div>
 
             <div className="card">
-                <label className="label" style={{ display: 'block', marginBottom: '12px' }}>Detection Mode</label>
+                <label className="label" style={{ display: 'block', marginBottom: '12px' }}>{getMessage('detectionMode')}</label>
                 <select
                     value={config.mode}
                     onChange={handleModeChange}
                 >
-                    <option value="default">Default (Auto Detect)</option>
-                    <option value="forceOn">Force On (Aggressive)</option>
-                    <option value="forceOff">Force Off (Disable)</option>
+                    <option value="default">{getMessage('modeDefault')}</option>
+                    <option value="forceOn">{getMessage('modeForceOn')}</option>
+                    <option value="forceOff">{getMessage('modeForceOff')}</option>
                 </select>
                 <div className="description">
-                    {config.mode === 'default' && 'Standard detection logic. Works on most sites.'}
-                    {config.mode === 'forceOn' && 'Treats almost all inputs as targets. Use if detection fails.'}
-                    {config.mode === 'forceOff' && 'Completely disables the extension on this site.'}
+                    {config.mode === 'default' && getMessage('modeDefaultDescription')}
+                    {config.mode === 'forceOn' && getMessage('modeForceOnDescription')}
+                    {config.mode === 'forceOff' && getMessage('modeForceOffDescription')}
                 </div>
             </div>
 
@@ -87,7 +117,7 @@ function App() {
                     className="link-button"
                     onClick={() => chrome.runtime.openOptionsPage()}
                 >
-                    <span>⚙️</span> Advanced Settings
+                    <span>⚙️</span> {getMessage('advancedSettings')}
                 </button>
                 <span style={{ margin: '0 8px', color: 'var(--border-color)' }}>•</span>
                 <a
@@ -96,10 +126,11 @@ function App() {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    <span>🐛</span> Report Issue
+                    <span>🐛</span> {getMessage('reportIssue')}
                 </a>
             </div>
         </div>
+        </>
     );
 }
 

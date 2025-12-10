@@ -12,3 +12,6 @@ Thumbs.db
 .idea/
 *.swp
 *.swo
+
+# AI
+GEMINI.md

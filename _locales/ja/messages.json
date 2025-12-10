@@ -1,0 +1,169 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "拡張機能名"
+  },
+  "extensionDescription": {
+    "message": "様々なウェブサイトでCtrl+Enterで送信、Enterで改行できるようにする拡張機能です。",
+    "description": "拡張機能の説明"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "ポップアップのタイトル"
+  },
+  "currentDomain": {
+    "message": "現在のドメイン",
+    "description": "現在のドメインラベル"
+  },
+  "enableForThisSite": {
+    "message": "このサイトで有効にする",
+    "description": "有効化トグルのラベル"
+  },
+  "detectionMode": {
+    "message": "検出モード",
+    "description": "検出モードのラベル"
+  },
+  "modeDefault": {
+    "message": "デフォルト（自動検出）",
+    "description": "デフォルトモードのオプション"
+  },
+  "modeForceOn": {
+    "message": "強制ON（積極的）",
+    "description": "強制ONモードのオプション"
+  },
+  "modeForceOff": {
+    "message": "強制OFF（無効化）",
+    "description": "強制OFFモードのオプション"
+  },
+  "modeDefaultDescription": {
+    "message": "標準的な検出ロジック。ほとんどのサイトで動作します。",
+    "description": "デフォルトモードの説明"
+  },
+  "modeForceOnDescription": {
+    "message": "ほぼすべての入力欄を対象として扱います。検出が失敗する場合に使用してください。",
+    "description": "強制ONモードの説明"
+  },
+  "modeForceOffDescription": {
+    "message": "このサイトで拡張機能を完全に無効化します。",
+    "description": "強制OFFモードの説明"
+  },
+  "advancedSettings": {
+    "message": "詳細設定",
+    "description": "詳細設定へのリンク"
+  },
+  "reportIssue": {
+    "message": "問題を報告",
+    "description": "問題報告へのリンク"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender 設定",
+    "description": "オプションページのタイトル"
+  },
+  "configuredDomains": {
+    "message": "設定済みドメイン",
+    "description": "設定済みドメインのヘッダー"
+  },
+  "domain": {
+    "message": "ドメイン",
+    "description": "ドメイン列のヘッダー"
+  },
+  "enabled": {
+    "message": "有効",
+    "description": "有効列のヘッダー"
+  },
+  "mode": {
+    "message": "モード",
+    "description": "モード列のヘッダー"
+  },
+  "actions": {
+    "message": "操作",
+    "description": "操作列のヘッダー"
+  },
+  "noDomainsConfigured": {
+    "message": "まだドメイン設定が保存されていません。サイトを訪問してポップアップから設定してください。",
+    "description": "空の状態のメッセージ"
+  },
+  "reset": {
+    "message": "リセット",
+    "description": "リセットボタン"
+  },
+  "resetConfirm": {
+    "message": "$DOMAIN$ の設定をリセットしてもよろしいですか？",
+    "description": "リセット確認メッセージ",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "loading": {
+    "message": "読み込み中...",
+    "description": "読み込みメッセージ"
+  },
+  "loadingConfig": {
+    "message": "設定を読み込み中...",
+    "description": "設定読み込みメッセージ"
+  },
+  "onboardingTitle": {
+    "message": "Ctrl+Enter Sender へようこそ！",
+    "description": "オンボーディングのタイトル"
+  },
+  "onboardingDescription": {
+    "message": "この拡張機能はEnterキーの動作を変更します：",
+    "description": "オンボーディングの説明開始"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → 改行",
+    "description": "Enterキーの動作"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → 送信",
+    "description": "Ctrl+Enterキーの動作"
+  },
+  "onboardingSiteToggle": {
+    "message": "ポップアップからサイトごとに拡張機能のON/OFFを切り替えできます。",
+    "description": "サイト切り替えの説明"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "詳細設定から検出モードの設定や全ドメインの管理ができます。",
+    "description": "詳細設定の説明"
+  },
+  "onboardingGotIt": {
+    "message": "了解！",
+    "description": "了解ボタン"
+  },
+  "whatsNewTitle": {
+    "message": "更新内容",
+    "description": "更新内容のタイトル"
+  },
+  "whatsNewClose": {
+    "message": "閉じる",
+    "description": "閉じるボタン"
+  },
+  "supportDeveloper": {
+    "message": "開発者を支援",
+    "description": "支援セクションのタイトル"
+  },
+  "supportDescription": {
+    "message": "この拡張機能が役に立ったら、開発者を支援してみませんか：",
+    "description": "支援の説明"
+  },
+  "buyMeACoffee": {
+    "message": "Buy Me a Coffee",
+    "description": "Buy Me a Coffeeへのリンク"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreonへのリンク"
+  },
+  "whatsNewDescription": {
+    "message": "最新の更新内容と改善点をご確認ください！",
+    "description": "更新内容の説明"
+  },
+  "version": {
+    "message": "バージョン",
+    "description": "バージョンラベル"
+  }
+}
+

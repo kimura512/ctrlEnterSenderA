@@ -1,0 +1,169 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Send messages with Ctrl+Enter and insert newlines with Enter on various websites.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Current Domain",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Enable for this site",
+    "description": "Enable toggle label"
+  },
+  "detectionMode": {
+    "message": "Detection Mode",
+    "description": "Detection mode label"
+  },
+  "modeDefault": {
+    "message": "Default (Auto Detect)",
+    "description": "Default mode option"
+  },
+  "modeForceOn": {
+    "message": "Force On (Aggressive)",
+    "description": "Force On mode option"
+  },
+  "modeForceOff": {
+    "message": "Force Off (Disable)",
+    "description": "Force Off mode option"
+  },
+  "modeDefaultDescription": {
+    "message": "Standard detection logic. Works on most sites.",
+    "description": "Default mode description"
+  },
+  "modeForceOnDescription": {
+    "message": "Treats almost all inputs as targets. Use if detection fails.",
+    "description": "Force On mode description"
+  },
+  "modeForceOffDescription": {
+    "message": "Completely disables the extension on this site.",
+    "description": "Force Off mode description"
+  },
+  "advancedSettings": {
+    "message": "Advanced Settings",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Report Issue",
+    "description": "Report Issue link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender Settings",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Configured Domains",
+    "description": "Configured domains header"
+  },
+  "domain": {
+    "message": "Domain",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Enabled",
+    "description": "Enabled column header"
+  },
+  "mode": {
+    "message": "Mode",
+    "description": "Mode column header"
+  },
+  "actions": {
+    "message": "Actions",
+    "description": "Actions column header"
+  },
+  "noDomainsConfigured": {
+    "message": "No domain configurations saved yet. Visit a site and use the popup to configure.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Reset",
+    "description": "Reset button"
+  },
+  "resetConfirm": {
+    "message": "Are you sure you want to reset settings for $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "loading": {
+    "message": "Loading...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Loading config...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Welcome to Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "This extension changes Enter key behavior:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → New line",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Send",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "You can enable/disable the extension per site using the popup.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Visit Advanced Settings to configure detection modes and manage all domains.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Got it!",
+    "description": "Got it button"
+  },
+  "whatsNewTitle": {
+    "message": "What's New",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Close",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Support the Developer",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "If you find this extension useful, consider supporting the developer:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Buy Me a Coffee",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Check out the latest updates and improvements!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  }
+}
+
