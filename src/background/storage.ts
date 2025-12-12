@@ -206,3 +206,67 @@ export async function shouldShowWhatsNew(currentVersion: string): Promise<boolea
     }
     return false;
 }
+
+const MIGRATION_VERSION_KEY = 'ctrl_enter_sender_migration_version';
+
+async function getMigrationVersion(): Promise<string | null> {
+    const data = await chrome.storage.local.get(MIGRATION_VERSION_KEY);
+    return data[MIGRATION_VERSION_KEY] || null;
+}
+
+async function setMigrationVersion(version: string): Promise<void> {
+    await chrome.storage.local.set({ [MIGRATION_VERSION_KEY]: version });
+}
+
+/**
+ * Migrate storage data to remove deprecated properties
+ * This function removes the 'mode' property from all domain configs
+ */
+export async function migrateStorage(): Promise<void> {
+    try {
+        const currentVersion = chrome.runtime.getManifest().version;
+        const lastMigrationVersion = await getMigrationVersion();
+        
+        // Skip if already migrated to current version
+        if (lastMigrationVersion === currentVersion) {
+            return;
+        }
+        
+        const data = await chrome.storage.sync.get(STORAGE_KEY);
+        const schema = (data[STORAGE_KEY] as StorageSchema) || { domains: {} };
+        
+        let hasChanges = false;
+        const cleanedDomains: { [origin: string]: DomainConfig } = {};
+        
+        // Clean up all domain configs
+        for (const [origin, config] of Object.entries(schema.domains)) {
+            // Remove deprecated 'mode' property and other invalid properties
+            const cleanConfig: DomainConfig = {
+                enabled: config.enabled ?? true,
+                ...(config.customTargets && { customTargets: config.customTargets }),
+                ...(config.customExcludes && { customExcludes: config.customExcludes })
+            };
+            
+            // Check if config was modified (had mode or other invalid properties)
+            const originalKeys = Object.keys(config);
+            const cleanKeys = Object.keys(cleanConfig);
+            if (originalKeys.length !== cleanKeys.length || 
+                originalKeys.some(key => !cleanKeys.includes(key))) {
+                hasChanges = true;
+            }
+            
+            cleanedDomains[origin] = cleanConfig;
+        }
+        
+        // Save cleaned configs if there were changes
+        if (hasChanges) {
+            await chrome.storage.sync.set({ [STORAGE_KEY]: { domains: cleanedDomains } });
+        }
+        
+        // Mark migration as completed for this version
+        await setMigrationVersion(currentVersion);
+    } catch (error) {
+        console.error('Migration failed:', error);
+        // Don't throw - migration failures shouldn't break the extension
+    }
+}
