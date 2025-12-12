@@ -102,11 +102,11 @@
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
-    "message": "Enter → 换行",
+    "message": "换行",
     "description": "Enter key behavior"
   },
   "onboardingCtrlEnterSend": {
-    "message": "Ctrl+Enter → 发送",
+    "message": "发送",
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {

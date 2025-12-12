@@ -102,11 +102,11 @@
     "description": "オンボーディングの説明開始"
   },
   "onboardingEnterNewline": {
-    "message": "Enter → 改行",
+    "message": "改行",
     "description": "Enterキーの動作"
   },
   "onboardingCtrlEnterSend": {
-    "message": "Ctrl+Enter → 送信",
+    "message": "送信",
     "description": "Ctrl+Enterキーの動作"
   },
   "onboardingSiteToggle": {

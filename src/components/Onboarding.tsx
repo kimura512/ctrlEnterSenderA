@@ -14,12 +14,10 @@ export function Onboarding({ onClose }: OnboardingProps) {
                 <div className="onboarding-features">
                     <div className="onboarding-feature">
                         <span className="onboarding-key">Enter</span>
-                        <span className="onboarding-arrow">→</span>
                         <span className="onboarding-action">{getMessage('onboardingEnterNewline')}</span>
                     </div>
                     <div className="onboarding-feature">
                         <span className="onboarding-key">Ctrl+Enter</span>
-                        <span className="onboarding-arrow">→</span>
                         <span className="onboarding-action">{getMessage('onboardingCtrlEnterSend')}</span>
                     </div>
                 </div>

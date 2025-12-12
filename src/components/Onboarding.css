@@ -6,9 +6,15 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.7);
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     z-index: 10000;
+    overflow-y: auto;
+    padding:
+        max(24px, env(safe-area-inset-top))
+        max(16px, env(safe-area-inset-right))
+        max(24px, env(safe-area-inset-bottom))
+        max(16px, env(safe-area-inset-left));
 }
 
 .onboarding-modal {
@@ -19,6 +25,8 @@
     width: 90%;
     border: 1px solid var(--border-color);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    max-height: calc(100dvh - 48px);
+    overflow-y: auto;
 }
 
 .onboarding-title {
@@ -64,11 +72,6 @@
     border: 1px solid var(--border-color);
     min-width: 100px;
     text-align: center;
-}
-
-.onboarding-arrow {
-    color: var(--text-secondary);
-    font-size: 20px;
 }
 
 .onboarding-action {

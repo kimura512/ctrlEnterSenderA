@@ -102,11 +102,11 @@
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
-    "message": "Enter → New line",
+    "message": "New line",
     "description": "Enter key behavior"
   },
   "onboardingCtrlEnterSend": {
-    "message": "Ctrl+Enter → Send",
+    "message": "Send",
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {

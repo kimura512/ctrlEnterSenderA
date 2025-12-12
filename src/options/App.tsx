@@ -193,21 +193,43 @@ function App() {
                         <h3 style={{ marginTop: 0, marginBottom: '16px' }}>{getMessage('onboardingTitle')}</h3>
                         <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>{getMessage('onboardingDescription')}</p>
                         <div style={{ marginBottom: '16px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                            <div style={{ marginBottom: '8px' }}>
                                 <span style={{ fontWeight: '600' }}>Enter</span>
-                                <span>→</span>
-                                <span>{getMessage('onboardingEnterNewline')}</span>
+                                <span style={{ marginLeft: '8px' }}>{getMessage('onboardingEnterNewline')}</span>
                             </div>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <div>
                                 <span style={{ fontWeight: '600' }}>Ctrl+Enter</span>
-                                <span>→</span>
-                                <span>{getMessage('onboardingCtrlEnterSend')}</span>
+                                <span style={{ marginLeft: '8px' }}>{getMessage('onboardingCtrlEnterSend')}</span>
                             </div>
                         </div>
                         <div style={{ lineHeight: '1.6' }}>
                             <p style={{ marginBottom: '12px' }}>{getMessage('onboardingDefaultEnabled')}</p>
                             <p style={{ marginBottom: '12px' }}>{getMessage('onboardingSiteToggle')}</p>
-                            <p>{getMessage('onboardingAdvancedSettings')}</p>
+                            <p style={{ marginBottom: '24px' }}>{getMessage('onboardingAdvancedSettings')}</p>
+                        </div>
+                        <div style={{ marginTop: '24px', paddingTop: '24px', borderTop: '1px solid var(--border-color)' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                <a
+                                    href="https://chromewebstore.google.com/detail/ctrl+enter-sender/ljdnloldejpgadgefnpmkngnapfbepig"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ color: 'var(--accent-primary)', textDecoration: 'none', fontSize: '14px' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+                                >
+                                    🌐 Chrome Web Store
+                                </a>
+                                <a
+                                    href="https://github.com/kimura512/ctrlEnterSenderA"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    style={{ color: 'var(--accent-primary)', textDecoration: 'none', fontSize: '14px' }}
+                                    onMouseEnter={(e) => e.currentTarget.style.textDecoration = 'underline'}
+                                    onMouseLeave={(e) => e.currentTarget.style.textDecoration = 'none'}
+                                >
+                                    💻 GitHub Repository
+                                </a>
+                            </div>
                         </div>
                     </div>
                 )}
