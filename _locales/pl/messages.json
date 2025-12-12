@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Wysyłaj wiadomości za pomocą Ctrl+Enter i wstawiaj nowe linie za pomocą Enter na różnych stronach internetowych.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Obecna domena",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Włącz dla tej strony",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Ustawienia zaawansowane",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ustawienia Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Skonfigurowane domeny",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Domyślne skonfigurowane domeny",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Domeny skonfigurowane przez użytkownika",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domena",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Włączone",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Nie zapisano jeszcze żadnych konfiguracji domen. Odwiedź stronę i użyj wyskakującego okienka, aby skonfigurować.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Resetuj",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Czy na pewno chcesz zresetować ustawienia dla $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Ładowanie...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Ładowanie konfiguracji...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Witamy w Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "To rozszerzenie zmienia zachowanie klawisza Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Nowa linia",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Wyślij",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Możesz włączyć/wyłączyć rozszerzenie dla każdej strony za pomocą wyskakującego okienka.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "Domyślnie rozszerzenie jest włączone dla większości stron, z wyjątkiem niektórych stron, takich jak X/Twitter i Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Odwiedź Ustawienia zaawansowane, aby skonfigurować tryby wykrywania i zarządzać wszystkimi domenami.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Rozumiem!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Pomoc",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Co nowego",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Zamknij",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Wspieraj programistę",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Jeśli uważasz to rozszerzenie za przydatne, rozważ wsparcie programisty:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Postaw mi kawę",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Sprawdź najnowsze aktualizacje i ulepszenia!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Wersja",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Ostrzeżenie: Proszę, absolutnie nie klikaj!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Nawet jeśli uważasz, że to rozszerzenie jest \"dobre\" lub \"pomocne\", proszę nie klikać przycisków poniżej.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Nie wspieraj nawet jedną filiżanką kawy.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Nie mogę powiedzieć dlaczego...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Dodawanie",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "komentarza z podziękowaniem",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "wraz ze wsparciem jest absolutnie zabronione.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Rozumiesz? Absolutnie nie klikaj!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Zignoruj ostrzeżenie i kontynuuj",
+    "description": "Checkbox label to ignore warning"
+  }
+}

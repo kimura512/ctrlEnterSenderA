@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "在各種網站上使用 Ctrl+Enter 發送訊息，使用 Enter 換行。",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "目前網域",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "在此網站啟用",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "進階設定",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "バグ報告 | 機能要望",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender 設定",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "已設定的網域",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "預設設定的網域",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "使用者設定的網域",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "網域",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "啟用",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "尚未儲存任何網域設定。訪問網站並使用彈出視窗進行設定。",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "重設",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "確定要重設 $DOMAIN$ 的設定嗎？",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "載入中...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "正在載入設定...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "歡迎使用 Ctrl+Enter Sender！",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "此擴充功能變更 Enter 鍵的行為：",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → 換行",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → 發送",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "您可以使用彈出視窗為每個網站啟用/停用擴充功能。",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "除部分網站（X/Twitter、Google搜尋等）外，預設情況下為開啟狀態。",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "訪問進階設定以配置偵測模式並管理所有網域。",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "明白了！",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "說明",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "更新內容",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "關閉",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "支持開發者",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "如果您覺得這個擴充功能有用，請考慮支持開發者：",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "請我喝杯咖啡",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "查看最新的更新和改進！",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "版本",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ 警告：請絕對不要點擊！",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "即使您覺得這個擴充功能「很好」或「有幫助」，也請不要點擊下面的按鈕。",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "即使只是一杯咖啡的支持，也請不要做。",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "我不能告訴您原因...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "在支持的同時添加",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "感謝評論",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "是絕對不允許的。",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "您明白了嗎？絕對不要點擊！！",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "忽略警告並繼續",
+    "description": "Checkbox label to ignore warning"
+  }
+}

@@ -19,41 +19,13 @@
     "message": "このサイトで有効にする",
     "description": "有効化トグルのラベル"
   },
-  "detectionMode": {
-    "message": "検出モード",
-    "description": "検出モードのラベル"
-  },
-  "modeDefault": {
-    "message": "デフォルト（自動検出）",
-    "description": "デフォルトモードのオプション"
-  },
-  "modeForceOn": {
-    "message": "強制ON（積極的）",
-    "description": "強制ONモードのオプション"
-  },
-  "modeForceOff": {
-    "message": "強制OFF（無効化）",
-    "description": "強制OFFモードのオプション"
-  },
-  "modeDefaultDescription": {
-    "message": "標準的な検出ロジック。ほとんどのサイトで動作します。",
-    "description": "デフォルトモードの説明"
-  },
-  "modeForceOnDescription": {
-    "message": "ほぼすべての入力欄を対象として扱います。検出が失敗する場合に使用してください。",
-    "description": "強制ONモードの説明"
-  },
-  "modeForceOffDescription": {
-    "message": "このサイトで拡張機能を完全に無効化します。",
-    "description": "強制OFFモードの説明"
-  },
   "advancedSettings": {
     "message": "詳細設定",
     "description": "詳細設定へのリンク"
   },
   "reportIssue": {
-    "message": "問題を報告",
-    "description": "問題報告へのリンク"
+    "message": "バグ報告 | 機能要望",
+    "description": "バグ報告・機能要望へのリンク"
   },
   "optionsTitle": {
     "message": "Ctrl+Enter Sender 設定",
@@ -63,6 +35,14 @@
     "message": "設定済みドメイン",
     "description": "設定済みドメインのヘッダー"
   },
+  "defaultConfiguredDomains": {
+    "message": "初期設定済みドメイン",
+    "description": "初期設定済みドメインのヘッダー"
+  },
+  "userConfiguredDomains": {
+    "message": "ユーザー設定ドメイン",
+    "description": "ユーザー設定ドメインのヘッダー"
+  },
   "domain": {
     "message": "ドメイン",
     "description": "ドメイン列のヘッダー"
@@ -71,14 +51,6 @@
     "message": "有効",
     "description": "有効列のヘッダー"
   },
-  "mode": {
-    "message": "モード",
-    "description": "モード列のヘッダー"
-  },
-  "actions": {
-    "message": "操作",
-    "description": "操作列のヘッダー"
-  },
   "noDomainsConfigured": {
     "message": "まだドメイン設定が保存されていません。サイトを訪問してポップアップから設定してください。",
     "description": "空の状態のメッセージ"
@@ -86,6 +58,14 @@
   "reset": {
     "message": "リセット",
     "description": "リセットボタン"
+  },
+  "resetAll": {
+    "message": "初期化",
+    "description": "全体を初期化するボタン"
+  },
+  "resetAllConfirm": {
+    "message": "全ての設定が初期化されますが、初期化してもよろしいですか？",
+    "description": "全体初期化確認メッセージ"
   },
   "resetConfirm": {
     "message": "$DOMAIN$ の設定をリセットしてもよろしいですか？",
@@ -96,6 +76,14 @@
         "example": "https://example.com"
       }
     }
+  },
+  "noDomainAvailable": {
+    "message": "（なし）",
+    "description": "ドメインが取得できない場合のメッセージ"
+  },
+  "specialPageNotSupported": {
+    "message": "このページでは拡張機能は動作しません。",
+    "description": "特殊なページでは機能が使えない説明"
   },
   "loading": {
     "message": "読み込み中...",
@@ -125,6 +113,10 @@
     "message": "ポップアップからサイトごとに拡張機能のON/OFFを切り替えできます。",
     "description": "サイト切り替えの説明"
   },
+  "onboardingDefaultEnabled": {
+    "message": "一部のサイト（X/Twitter、Google検索など）を除き、デフォルトでONになっています。",
+    "description": "デフォルトでONになっていることの説明"
+  },
   "onboardingAdvancedSettings": {
     "message": "詳細設定から検出モードの設定や全ドメインの管理ができます。",
     "description": "詳細設定の説明"
@@ -132,6 +124,10 @@
   "onboardingGotIt": {
     "message": "了解！",
     "description": "了解ボタン"
+  },
+  "helpTitle": {
+    "message": "ヘルプ",
+    "description": "ヘルプセクションのタイトル"
   },
   "whatsNewTitle": {
     "message": "更新内容",
@@ -146,7 +142,7 @@
     "description": "支援セクションのタイトル"
   },
   "supportDescription": {
-    "message": "この拡張機能が役に立ったら、開発者を支援してみませんか：",
+    "message": "私がEnterキーを「ッターン！」しました。コーディングのほとんどはAIですが、最後にカッコよくEnterキーを押したのは私だけです。その爽快な打鍵音に対して、投げ銭をする権利をあなたに差し上げます。",
     "description": "支援の説明"
   },
   "buyMeACoffee": {
@@ -164,6 +160,42 @@
   "version": {
     "message": "バージョン",
     "description": "バージョンラベル"
+  },
+  "supportWarningTitle": {
+    "message": "※警告：お願いです、絶対に押さないでください！",
+    "description": "支援警告のタイトル"
+  },
+  "supportWarningMessage1": {
+    "message": "この拡張機能が「いいな」とか「助かったな」と思っても、下のボタンを押さないでください。",
+    "description": "支援警告メッセージ1"
+  },
+  "supportWarningMessage2": {
+    "message": "わずかコーヒー1杯分の支援ですら、しないでください。",
+    "description": "支援警告メッセージ2"
+  },
+  "supportWarningMessage3": {
+    "message": "理由は言えません…。",
+    "description": "支援警告メッセージ3"
+  },
+  "supportWarningMessage4": {
+    "message": "支援とともに",
+    "description": "支援警告メッセージ4（前半）"
+  },
+  "supportWarningMessage5": {
+    "message": "感謝のコメント",
+    "description": "支援警告メッセージ5（隠しコメント部分）"
+  },
+  "supportWarningMessage6": {
+    "message": "を入れるなんてのはもう、それは絶対にダメです。",
+    "description": "支援警告メッセージ6（後半）"
+  },
+  "supportWarningMessage7": {
+    "message": "いいですか？絶対押しちゃダメですからね！！",
+    "description": "支援警告メッセージ7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "警告を無視して実行する",
+    "description": "警告を無視するチェックボックスのラベル"
   }
 }
 

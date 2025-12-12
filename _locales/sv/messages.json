@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Skicka meddelanden med Ctrl+Enter och infoga nya rader med Enter på olika webbplatser.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Nuvarande domän",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Aktivera för denna webbplats",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Avancerade inställningar",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Inställningar för Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Konfigurerade domäner",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Standardkonfigurerade domäner",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Användarkonfigurerade domäner",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domän",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Aktiverad",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Inga domänkonfigurationer sparade än. Besök en webbplats och använd popup-fönstret för att konfigurera.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Återställ",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Är du säker på att du vill återställa inställningarna för $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Laddar...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Laddar konfiguration...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Välkommen till Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Detta tillägg ändrar beteendet för Enter-tangenten:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Ny rad",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Skicka",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Du kan aktivera/inaktivera tillägget per webbplats med popup-fönstret.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Besök Avancerade inställningar för att konfigurera detekteringslägen och hantera alla domäner.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Uppfattat!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Vad är nytt",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Stäng",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Stöd utvecklaren",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Om du tycker att detta tillägg är användbart, överväg att stödja utvecklaren:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Köp mig en kaffe",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Kolla in de senaste uppdateringarna och förbättringarna!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Version",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Varning: Snälla, klicka absolut inte!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Även om du tycker att detta tillägg är \"bra\" eller \"hjälpsamt\", klicka inte på knapparna nedan.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Stöd inte ens med bara en kopp kaffe.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Jag kan inte berätta varför...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Att lägga till",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "en tackkommentar",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "tillsammans med stöd är absolut förbjudet.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Förstår du? Klicka absolut inte!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ignorera varning och fortsätt",
+    "description": "Checkbox label to ignore warning"
+  }
+}

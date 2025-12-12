@@ -158,3 +158,37 @@ input[type="checkbox"] {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 230, 118, 0.2);
 }
+
+/* Report Issue Link */
+.report-issue-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--accent-primary);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.report-issue-link:hover {
+    color: var(--accent-primary);
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+/* Hidden Comment - マウスオーバーで見えるように */
+.hidden-comment {
+    background-color: black;
+    color: black;
+    user-select: none;
+    padding: 2px 4px;
+    border-radius: 3px;
+    transition: all 0.2s;
+}
+
+.hidden-comment:hover {
+    background-color: var(--input-bg);
+    color: var(--text-primary);
+    cursor: text;
+}

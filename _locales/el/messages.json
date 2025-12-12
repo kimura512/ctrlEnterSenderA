@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Στείλτε μηνύματα με Ctrl+Enter και εισάγετε νέες γραμμές με Enter σε διάφορους ιστότοπους.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Τρέχων τομέας",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Ενεργοποίηση για αυτόν τον ιστότοπο",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Σύνθετες ρυθμίσεις",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ρυθμίσεις Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Διαμορφωμένοι τομείς",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Προεπιλεγμένοι διαμορφωμένοι τομείς",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Τομείς διαμορφωμένοι από τον χρήστη",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Τομέας",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Ενεργοποιημένο",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Δεν έχουν αποθηκευτεί ακόμα διαμορφώσεις τομέα. Επισκεφθείτε έναν ιστότοπο και χρησιμοποιήστε το αναδυόμενο παράθυρο για διαμόρφωση.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Επαναφορά",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Είστε βέβαιοι ότι θέλετε να επαναφέρετε τις ρυθμίσεις για το $DOMAIN$;",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Φόρτωση...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Φόρτωση διαμόρφωσης...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Καλώς ήρθατε στο Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Αυτή η επέκταση αλλάζει τη συμπεριφορά του πλήκτρου Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Νέα γραμμή",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Αποστολή",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Μπορείτε να ενεργοποιήσετε/απενεργοποιήσετε την επέκταση ανά ιστότοπο χρησιμοποιώντας το αναδυόμενο παράθυρο.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Επισκεφθείτε τις Σύνθετες ρυθμίσεις για να διαμορφώσετε τις λειτουργίες ανίχνευσης και να διαχειριστείτε όλους τους τομείς.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Το κατάλαβα!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Τι νέο υπάρχει",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Κλείσιμο",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Υποστήριξη του προγραμματιστή",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Εάν βρίσκετε αυτή την επέκταση χρήσιμη, σκεφτείτε να υποστηρίξετε τον προγραμματιστή:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Κεράστε με έναν καφέ",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Δείτε τις τελευταίες ενημερώσεις και βελτιώσεις!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Έκδοση",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Προειδοποίηση: Παρακαλώ, μην κάνετε απολύτως κλικ!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Ακόμα κι αν νομίζετε ότι αυτή η επέκταση είναι \"καλή\" ή \"χρήσιμη\", παρακαλώ μην κάνετε κλικ στα κουμπιά παρακάτω.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Μην υποστηρίζετε ούτε με ένα φλιτζάνι καφέ.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Δεν μπορώ να σας πω γιατί...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Η προσθήκη",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "ενός ευχαριστήριου σχολίου",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "μαζί με την υποστήριξη απαγορεύεται αυστηρά.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Καταλαβαίνετε; Μην κάνετε απολύτως κλικ!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Αγνόηση προειδοποίησης και συνέχεια",
+    "description": "Checkbox label to ignore warning"
+  }
+}

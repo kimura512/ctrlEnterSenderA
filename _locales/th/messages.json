@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "ส่งข้อความด้วย Ctrl+Enter และขึ้นบรรทัดใหม่ด้วย Enter บนเว็บไซต์ต่างๆ",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "โดเมนปัจจุบัน",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "เปิดใช้งานสำหรับเว็บไซต์นี้",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "การตั้งค่าขั้นสูง",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "การตั้งค่า Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "โดเมนที่กำหนดค่า",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "โดเมนที่กำหนดค่าเริ่มต้น",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "โดเมนที่กำหนดค่าโดยผู้ใช้",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "โดเมน",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "เปิดใช้งาน",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "ยังไม่มีการบันทึกการกำหนดค่าโดเมน เยี่ยมชมเว็บไซต์และใช้ป๊อปอัปเพื่อกำหนดค่า",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "รีเซ็ต",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "คุณแน่ใจหรือไม่ว่าต้องการรีเซ็ตการตั้งค่าสำหรับ $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "กำลังโหลด...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "กำลังโหลดการกำหนดค่า...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "ยินดีต้อนรับสู่ Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "ส่วนขยายนี้เปลี่ยนพฤติกรรมของปุ่ม Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → บรรทัดใหม่",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → ส่ง",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "คุณสามารถเปิด/ปิดส่วนขยายต่อเว็บไซต์ได้โดยใช้ป๊อปอัป",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "โดยค่าเริ่มต้น ส่วนขยายจะเปิดใช้งานสำหรับเว็บไซต์ส่วนใหญ่ ยกเว้นเว็บไซต์บางแห่ง เช่น X/Twitter และ Google Search",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "เยี่ยมชมการตั้งค่าขั้นสูงเพื่อกำหนดค่าโหมดการตรวจจับและจัดการโดเมนทั้งหมด",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "เข้าใจแล้ว!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "ความช่วยเหลือ",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "มีอะไรใหม่",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "ปิด",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "สนับสนุนนักพัฒนา",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "หากคุณพบว่าส่วนขยายนี้มีประโยชน์ โปรดพิจารณาสนับสนุนนักพัฒนา:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "เลี้ยงกาแฟฉัน",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "ตรวจสอบการอัปเดตและการปรับปรุงล่าสุด!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "เวอร์ชัน",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ คำเตือน: ได้โปรด อย่าคลิกเด็ดขาด!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "แม้ว่าคุณจะคิดว่าส่วนขยายนี้ \"ดี\" หรือ \"มีประโยชน์\" โปรดอย่าคลิกปุ่มด้านล่าง",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "อย่าสนับสนุนแม้แต่กาแฟเพียงแก้วเดียว",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "ฉันบอกเหตุผลไม่ได้...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "การเพิ่ม",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "ความคิดเห็นขอบคุณ",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "พร้อมกับการสนับสนุนเป็นสิ่งต้องห้ามอย่างเด็ดขาด",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "คุณเข้าใจไหม? ห้ามคลิกเด็ดขาด!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "เพิกเฉยต่อคำเตือนและดำเนินการต่อ",
+    "description": "Checkbox label to ignore warning"
+  }
+}

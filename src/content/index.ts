@@ -9,7 +9,6 @@ const origin = window.location.origin;
 // Initial config load
 getDomainConfig(origin).then(config => {
     currentConfig = config;
-    console.log('Ctrl+Enter Sender: Config loaded', config);
 });
 
 // Listen for storage changes
@@ -17,13 +16,11 @@ chrome.storage.onChanged.addListener((changes, area) => {
     if (area === 'sync' && changes['ctrl_enter_sender_config']) {
         getDomainConfig(origin).then(config => {
             currentConfig = config;
-            console.log('Ctrl+Enter Sender: Config updated', config);
         });
     }
 });
 
 function attachListeners(doc: Document) {
-    console.log('Ctrl+Enter Sender: Attaching listeners to', doc);
     // Unified Keydown Listener (Capture Phase)
     // We use Capture phase for:
     // 1. Plain Enter on ALL sites (to prevent default newline)

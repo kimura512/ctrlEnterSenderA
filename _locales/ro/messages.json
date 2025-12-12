@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Trimiteți mesaje cu Ctrl+Enter și introduceți rânduri noi cu Enter pe diverse site-uri web.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Domeniu curent",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Activează pentru acest site",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Setări avansate",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Setări Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Domenii configurate",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Domenii configurate implicit",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Domenii configurate de utilizator",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domeniu",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Activat",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Nicio configurație de domeniu salvată încă. Vizitați un site și folosiți popup-ul pentru a configura.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Resetează",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Sigur doriți să resetați setările pentru $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Se încarcă...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Se încarcă configurația...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Bun venit la Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Această extensie schimbă comportamentul tastei Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Rând nou",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Trimite",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Puteți activa/dezactiva extensia pe site folosind popup-ul.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Vizitați Setările avansate pentru a configura modurile de detectare și a gestiona toate domeniile.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Am înțeles!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Ce este nou",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Închide",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Susține dezvoltatorul",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Dacă găsiți această extensie utilă, vă rugăm să luați în considerare susținerea dezvoltatorului:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Cumpără-mi o cafea",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Verificați ultimele actualizări și îmbunătățiri!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Versiune",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Avertisment: Vă rog, absolut nu dați clic!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Chiar dacă credeți că această extensie este \"bună\" sau \"utilă\", vă rugăm să nu dați clic pe butoanele de mai jos.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Nu susțineți nici măcar cu o ceașcă de cafea.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Nu vă pot spune de ce...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Adăugarea",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "unui comentariu de mulțumire",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "împreună cu suportul este absolut interzisă.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Înțelegeți? Absolut nu dați clic!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ignoră avertismentul și continuă",
+    "description": "Checkbox label to ignore warning"
+  }
+}

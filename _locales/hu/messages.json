@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Küldjön üzeneteket a Ctrl+Enter billentyűkombinációval, és szúrjon be új sorokat az Enter billentyűvel különböző webhelyeken.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Jelenlegi tartomány",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Engedélyezés ezen a webhelyen",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Speciális beállítások",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender Beállítások",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Konfigurált tartományok",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Alapértelmezetten konfigurált tartományok",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Felhasználó által konfigurált tartományok",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Tartomány",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Engedélyezve",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Még nincs mentve tartománykonfiguráció. Látogasson el egy webhelyre, és használja az előugró ablakot a konfiguráláshoz.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Visszaállítás",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Biztosan vissza akarja állítani a beállításokat a(z) $DOMAIN$ tartományhoz?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Betöltés...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Konfiguráció betöltése...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Üdvözli a Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Ez a bővítmény megváltoztatja az Enter billentyű viselkedését:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Új sor",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Küldés",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Az előugró ablak segítségével webhelyenként engedélyezheti/letilthatja a bővítményt.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Látogasson el a Speciális beállításokhoz az észlelési módok konfigurálásához és az összes tartomány kezeléséhez.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Értem!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Mi az újdonság",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Bezárás",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Fejlesztő támogatása",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Ha hasznosnak találja ezt a bővítményt, fontolja meg a fejlesztő támogatását:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Vegyél nekem egy kávét",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Tekintse meg a legújabb frissítéseket és fejlesztéseket!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Verzió",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Figyelmeztetés: Kérjük, egyáltalán ne kattintson!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Még akkor se, ha úgy gondolja, hogy ez a bővítmény \"jó\" vagy \"hasznos\", kérjük, ne kattintson az alábbi gombokra.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Ne támogasson még egy csésze kávéval sem.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Nem mondhatom el, miért...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Hozzáadása",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "egy köszönő megjegyzés",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "a támogatással együtt szigorúan tilos.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Érti? Egyáltalán ne kattintson!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Figyelmeztetés figyelmen kívül hagyása és folytatás",
+    "description": "Checkbox label to ignore warning"
+  }
+}

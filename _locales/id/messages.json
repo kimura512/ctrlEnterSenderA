@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Kirim pesan dengan Ctrl+Enter dan masukkan baris baru dengan Enter di berbagai situs web.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Domain Saat Ini",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Aktifkan untuk situs ini",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Pengaturan Lanjutan",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Pengaturan Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Domain Terkonfigurasi",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Domain Terkonfigurasi Default",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Domain Terkonfigurasi Pengguna",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domain",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Aktif",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Belum ada konfigurasi domain yang disimpan. Kunjungi situs dan gunakan popup untuk mengonfigurasi.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Atur Ulang",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Apakah Anda yakin ingin mengatur ulang pengaturan untuk $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Memuat...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Memuat konfigurasi...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Selamat datang di Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Ekstensi ini mengubah perilaku tombol Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Baris baru",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Kirim",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Anda dapat mengaktifkan/menonaktifkan ekstensi per situs menggunakan popup.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Kunjungi Pengaturan Lanjutan untuk mengonfigurasi mode deteksi dan mengelola semua domain.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Mengerti!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Apa yang Baru",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Tutup",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Dukung Pengembang",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Jika Anda merasa ekstensi ini berguna, pertimbangkan untuk mendukung pengembang:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Belikan Saya Kopi",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Lihat pembaruan dan perbaikan terbaru!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Versi",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Peringatan: Tolong, jangan klik sama sekali!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Meskipun Anda menganggap ekstensi ini \"bagus\" atau \"membantu\", tolong jangan klik tombol di bawah ini.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Jangan mendukung bahkan hanya dengan secangkir kopi.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Saya tidak bisa memberi tahu Anda alasannya...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Menambahkan",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "komentar terima kasih",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "bersama dengan dukungan sangat dilarang.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Apakah Anda mengerti? Jangan klik sama sekali!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Abaikan peringatan dan lanjutkan",
+    "description": "Checkbox label to ignore warning"
+  }
+}

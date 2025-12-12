@@ -1,16 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState, ChangeEvent } from 'react';
 import { getDomainConfig, setDomainConfig, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
-import { DomainConfig, DomainMode } from '../types';
+import { DomainConfig } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
 import { WhatsNew } from '../components/WhatsNew';
 
 function App() {
-    const [origin, setOrigin] = useState<string>('');
+    const [origin, setOrigin] = useState<string | null>(null); // null = まだ読み込み中、'' = 取得不可
     const [config, setConfig] = useState<DomainConfig | null>(null);
     const [showOnboarding, setShowOnboarding] = useState<boolean>(false);
     const [showWhatsNew, setShowWhatsNew] = useState<boolean>(false);
     const [currentVersion, setCurrentVersion] = useState<string>('');
+    const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
     useEffect(() => {
         // Get current version from manifest
@@ -30,39 +31,92 @@ function App() {
             }
         });
 
-        chrome.tabs.query({ active: true, currentWindow: true }, async (tabs) => {
-            const tab = tabs[0];
-            if (tab?.url) {
-                const url = new URL(tab.url);
-                const tabOrigin = url.origin;
-                setOrigin(tabOrigin);
-                const loadedConfig = await getDomainConfig(tabOrigin);
-                setConfig(loadedConfig);
+        let isCancelled = false;
+        let timeoutId: number | null = null;
+
+        // Timeout fallback (2 seconds) - only fires if loadTabInfo doesn't complete
+        timeoutId = setTimeout(() => {
+            if (!isCancelled) {
+                setOrigin('');
+                setConfig({ enabled: false });
+                setIsLoaded(true);
             }
-        });
+        }, 2000);
+
+        const loadTabInfo = async () => {
+            try {
+                const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
+                if (isCancelled) return;
+                
+                const tab = tabs[0];
+                if (tab?.url && !tab.url.startsWith('chrome://') && !tab.url.startsWith('chrome-extension://') && !tab.url.startsWith('about:')) {
+                    const url = new URL(tab.url);
+                    const tabOrigin = url.origin;
+                    if (!isCancelled) {
+                        setOrigin(tabOrigin);
+                        const loadedConfig = await getDomainConfig(tabOrigin);
+                        if (!isCancelled) {
+                            setConfig(loadedConfig);
+                            setIsLoaded(true);
+                            // Clear timeout since we successfully loaded
+                            if (timeoutId) {
+                                clearTimeout(timeoutId);
+                                timeoutId = null;
+                            }
+                        }
+                    }
+                } else {
+                    // Special page (chrome://, about:, etc.)
+                    if (!isCancelled) {
+                        setOrigin('');
+                        setConfig({ enabled: false });
+                        setIsLoaded(true);
+                        // Clear timeout since we handled the special page
+                        if (timeoutId) {
+                            clearTimeout(timeoutId);
+                            timeoutId = null;
+                        }
+                    }
+                }
+            } catch (error) {
+                if (!isCancelled) {
+                    setOrigin('');
+                    setConfig({ enabled: false });
+                    setIsLoaded(true);
+                    // Clear timeout since we handled the error
+                    if (timeoutId) {
+                        clearTimeout(timeoutId);
+                        timeoutId = null;
+                    }
+                }
+            }
+        };
+
+        loadTabInfo();
+
+        return () => {
+            isCancelled = true;
+            if (timeoutId) {
+                clearTimeout(timeoutId);
+            }
+        };
     }, []);
 
-    const handleEnabledChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleEnabledChange = async (e: ChangeEvent<HTMLInputElement>) => {
         if (!config || !origin) return;
         const newConfig = { ...config, enabled: e.target.checked };
         setConfig(newConfig);
         await setDomainConfig(origin, newConfig);
     };
 
-    const handleModeChange = async (e: React.ChangeEvent<HTMLSelectElement>) => {
-        if (!config || !origin) return;
-        const newConfig = { ...config, mode: e.target.value as DomainMode };
-        setConfig(newConfig);
-        await setDomainConfig(origin, newConfig);
-    };
 
-    if (!origin) {
+    // まだ読み込み中（origin === null）の場合のみローディング表示
+    if (origin === null && !isLoaded) {
         return <div style={{ padding: '16px' }}>{getMessage('loading')}</div>;
     }
 
-    if (!config) {
-        return <div style={{ padding: '16px' }}>{getMessage('loadingConfig')}</div>;
-    }
+    // 特殊なページの場合は最低限のUIを表示
+    const isSpecialPage = !origin;
 
     return (
         <>
@@ -79,38 +133,29 @@ function App() {
 
             <div className="card">
                 <div className="domain-label">{getMessage('currentDomain')}</div>
-                <div className="domain-value">{origin}</div>
+                <div className="domain-value">{origin || getMessage('noDomainAvailable')}</div>
             </div>
 
-            <div className="card row">
-                <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>{getMessage('enableForThisSite')}</label>
-                <label className="switch">
-                    <input
-                        id="enabled-toggle"
-                        type="checkbox"
-                        checked={config.enabled}
-                        onChange={handleEnabledChange}
-                    />
-                    <span className="slider"></span>
-                </label>
-            </div>
-
-            <div className="card">
-                <label className="label" style={{ display: 'block', marginBottom: '12px' }}>{getMessage('detectionMode')}</label>
-                <select
-                    value={config.mode}
-                    onChange={handleModeChange}
-                >
-                    <option value="default">{getMessage('modeDefault')}</option>
-                    <option value="forceOn">{getMessage('modeForceOn')}</option>
-                    <option value="forceOff">{getMessage('modeForceOff')}</option>
-                </select>
-                <div className="description">
-                    {config.mode === 'default' && getMessage('modeDefaultDescription')}
-                    {config.mode === 'forceOn' && getMessage('modeForceOnDescription')}
-                    {config.mode === 'forceOff' && getMessage('modeForceOffDescription')}
+            {!isSpecialPage && config && (
+                <div className="card row">
+                    <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>{getMessage('enableForThisSite')}</label>
+                    <label className="switch">
+                        <input
+                            id="enabled-toggle"
+                            type="checkbox"
+                            checked={config.enabled}
+                            onChange={handleEnabledChange}
+                        />
+                        <span className="slider"></span>
+                    </label>
                 </div>
-            </div>
+            )}
+
+            {isSpecialPage && (
+                <div className="card" style={{ padding: '12px', color: 'var(--text-secondary)', fontSize: '13px' }}>
+                    {getMessage('specialPageNotSupported')}
+                </div>
+            )}
 
             <div className="footer">
                 <button

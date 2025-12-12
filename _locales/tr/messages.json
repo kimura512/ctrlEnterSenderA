@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Çeşitli web sitelerinde Ctrl+Enter ile mesaj gönderin ve Enter ile yeni satır ekleyin.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Mevcut Etki Alanı",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Bu site için etkinleştir",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Gelişmiş Ayarlar",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender Ayarları",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Yapılandırılmış Etki Alanları",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Varsayılan Yapılandırılmış Etki Alanları",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Kullanıcı Tarafından Yapılandırılmış Etki Alanları",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Etki Alanı",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Etkin",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Henüz kaydedilmiş etki alanı yapılandırması yok. Bir siteyi ziyaret edin ve yapılandırmak için açılır pencereyi kullanın.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Sıfırla",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "$DOMAIN$ için ayarları sıfırlamak istediğinizden emin misiniz?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Yükleniyor...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Yapılandırma yükleniyor...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Ctrl+Enter Sender'a Hoş Geldiniz!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Bu uzantı Enter tuşu davranışını değiştirir:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Yeni satır",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Gönder",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Açılır pencereyi kullanarak uzantıyı site bazında etkinleştirebilir/devre dışı bırakabilirsiniz.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Algılama modlarını yapılandırmak ve tüm etki alanlarını yönetmek için Gelişmiş Ayarlar'ı ziyaret edin.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Anladım!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Yenilikler",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Kapat",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Geliştiriciyi Destekle",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Bu uzantıyı yararlı buluyorsanız, geliştiriciyi desteklemeyi düşünün:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Bana Bir Kahve Ismarla",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "En son güncellemeleri ve iyileştirmeleri kontrol edin!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Sürüm",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Uyarı: Lütfen, kesinlikle tıklamayın!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Bu uzantının \"iyi\" veya \"yararlı\" olduğunu düşünseniz bile, lütfen aşağıdaki düğmelere tıklamayın.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Sadece bir fincan kahveyle bile desteklemeyin.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Size nedenini söyleyemem...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Destekle birlikte",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "bir teşekkür yorumu",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "eklemek kesinlikle yasaktır.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Anlıyor musunuz? Kesinlikle tıklamayın!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Uyarıyı yoksay ve devam et",
+    "description": "Checkbox label to ignore warning"
+  }
+}

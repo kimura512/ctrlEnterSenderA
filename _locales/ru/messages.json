@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Отправляйте сообщения с помощью Ctrl+Enter и вставляйте новые строки с помощью Enter на различных веб-сайтах.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Текущий домен",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Включить для этого сайта",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Расширенные настройки",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Настройки Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Настроенные домены",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Домены по умолчанию",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Пользовательские домены",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Домен",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Включено",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Настройки доменов не сохранены. Посетите сайт и используйте всплывающее окно для настройки.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Сброс",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Вы уверены, что хотите сбросить настройки для $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Загрузка...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Загрузка конфигурации...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Добро пожаловать в Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Это расширение меняет поведение клавиши Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Новая строка",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Отправить",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Вы можете включать/отключать расширение для каждого сайта через всплывающее окно.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "По умолчанию расширение включено для большинства сайтов, кроме некоторых сайтов, таких как X/Twitter и Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Посетите расширенные настройки для настройки режимов и управления доменами.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Понятно!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Помощь",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Что нового",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Закрыть",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Поддержать разработчика",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Если вы находите это расширение полезным, рассмотрите возможность поддержки разработчика:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Купить мне кофе",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Узнайте о последних обновлениях и улучшениях!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Версия",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Внимание: Пожалуйста, абсолютно не нажимайте!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Даже если вы считаете это расширение \"хорошим\" или \"полезным\", пожалуйста, не нажимайте кнопки ниже.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Не поддерживайте даже чашкой кофе.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Я не могу сказать вам почему...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Добавление",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "комментария с благодарностью",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "вместе с поддержкой абсолютно запрещено.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Вы понимаете? Абсолютно не нажимайте!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Игнорировать предупреждение и продолжить",
+    "description": "Checkbox label to ignore warning"
+  }
+}

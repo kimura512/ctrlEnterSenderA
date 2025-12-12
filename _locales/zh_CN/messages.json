@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "在各种网站上使用 Ctrl+Enter 发送消息，使用 Enter 换行。",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "当前域名",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "在此网站启用",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "高级设置",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "バグ報告 | 機能要望",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender 设置",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "已配置的域名",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "默认配置的域名",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "用户配置的域名",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "域名",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "启用",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "尚未保存任何域名配置。访问网站并使用弹出窗口进行配置。",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "重置",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "初始化",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "所有设置将被初始化，确定要初始化吗？",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "确定要重置 $DOMAIN$ 的设置吗？",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "（无）",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "此扩展程序在此页面上不起作用。",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "加载中...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "正在加载配置...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "欢迎使用 Ctrl+Enter Sender！",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "此扩展更改 Enter 键的行为：",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → 换行",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → 发送",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "您可以使用弹出窗口为每个站点启用/禁用扩展。",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "除部分网站（X/Twitter、Google搜索等）外，默认情况下为开启状态。",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "访问高级设置以配置检测模式并管理所有域名。",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "明白了！",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "帮助",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "更新内容",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "关闭",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "支持开发者",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "如果您觉得这个扩展有用，请考虑支持开发者：",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "请我喝杯咖啡",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "查看最新的更新和改进！",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "版本",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ 警告：请绝对不要点击！",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "即使您觉得这个扩展“很好”或“有帮助”，也请不要点击下面的按钮。",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "即使只是一杯咖啡的支持，也请不要做。",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "我不能告诉您原因...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "在支持的同时添加",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "感谢评论",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "是绝对不允许的。",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "您明白了吗？绝对不要点击！！",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "忽略警告并继续",
+    "description": "Checkbox label to ignore warning"
+  }
+}

@@ -3,7 +3,8 @@ import { DomainConfig, StorageSchema } from '../types';
 const STORAGE_KEY = 'ctrl_enter_sender_config';
 
 // Domains that are disabled by default
-const DEFAULT_DISABLED_DOMAINS = ['x.com', 'google.com'];
+// Note: google.com is added but only exact match (not subdomains) to allow gemini.google.com and other Google services
+const DEFAULT_DISABLED_DOMAINS = ['x.com', 'twitter.com', 'google.com', 'docs.google.com'];
 
 function getHostnameFromOrigin(origin: string): string {
     try {
@@ -15,9 +16,46 @@ function getHostnameFromOrigin(origin: string): string {
     }
 }
 
+// Get normalized origin (wwwなし) from origin string
+export function getNormalizedOrigin(origin: string): string {
+    try {
+        const url = new URL(origin);
+        const normalizedHostname = url.hostname.replace(/^www\./, '');
+        return `${url.protocol}//${normalizedHostname}`;
+    } catch {
+        return origin;
+    }
+}
+
+// Get both wwwあり and wwwなし origins from a normalized origin
+function getBothOrigins(normalizedOrigin: string): string[] {
+    try {
+        const url = new URL(normalizedOrigin);
+        const hostname = url.hostname;
+        const origins = [`${url.protocol}//${hostname}`];
+        // If hostname doesn't start with www, also add www version
+        if (!hostname.startsWith('www.')) {
+            origins.push(`${url.protocol}//www.${hostname}`);
+        }
+        return origins;
+    } catch {
+        return [normalizedOrigin];
+    }
+}
+
 function isDefaultDisabledDomain(origin: string): boolean {
     const hostname = getHostnameFromOrigin(origin);
-    return DEFAULT_DISABLED_DOMAINS.some(domain => hostname === domain || hostname.endsWith('.' + domain));
+    // For google.com, only check exact match to allow subdomains like gemini.google.com
+    // For other domains, check exact match or subdomain match
+    return DEFAULT_DISABLED_DOMAINS.some(domain => {
+        if (domain === 'google.com') {
+            // Only exact match for google.com (www.google.com becomes google.com after normalization)
+            return hostname === domain;
+        } else {
+            // For other domains, check exact match or subdomain match
+            return hostname === domain || hostname.endsWith('.' + domain);
+        }
+    });
 }
 
 export async function getDomainConfig(origin: string): Promise<DomainConfig> {
@@ -25,21 +63,26 @@ export async function getDomainConfig(origin: string): Promise<DomainConfig> {
     const config = data[STORAGE_KEY] as StorageSchema | undefined;
 
     if (config?.domains?.[origin]) {
-        return config.domains[origin];
+        const savedConfig = config.domains[origin];
+        // Remove mode property if it exists (for backward compatibility)
+        const cleanConfig: DomainConfig = {
+            enabled: savedConfig.enabled,
+            ...(savedConfig.customTargets && { customTargets: savedConfig.customTargets }),
+            ...(savedConfig.customExcludes && { customExcludes: savedConfig.customExcludes })
+        };
+        return cleanConfig;
     }
 
     // Check if this is a default disabled domain
     if (isDefaultDisabledDomain(origin)) {
         return {
-            enabled: false,
-            mode: 'default'
+            enabled: false
         };
     }
 
     // Default config
     return {
-        enabled: true,
-        mode: 'default'
+        enabled: true
     };
 }
 
@@ -47,40 +90,80 @@ export async function setDomainConfig(origin: string, config: DomainConfig): Pro
     const data = await chrome.storage.sync.get(STORAGE_KEY);
     const currentSchema = (data[STORAGE_KEY] as StorageSchema) || { domains: {} };
 
-    currentSchema.domains[origin] = config;
+    // Normalize origin (wwwなし) and apply to both wwwあり and wwwなし
+    const normalizedOrigin = getNormalizedOrigin(origin);
+    const bothOrigins = getBothOrigins(normalizedOrigin);
+    
+    // Remove mode property if it exists (for backward compatibility)
+    const cleanConfig: DomainConfig = {
+        enabled: config.enabled,
+        ...(config.customTargets && { customTargets: config.customTargets }),
+        ...(config.customExcludes && { customExcludes: config.customExcludes })
+    };
+    
+    for (const orig of bothOrigins) {
+        currentSchema.domains[orig] = cleanConfig;
+    }
 
     await chrome.storage.sync.set({ [STORAGE_KEY]: currentSchema });
 }
 
-export async function getAllConfigs(): Promise<StorageSchema> {
-    const data = await chrome.storage.sync.get(STORAGE_KEY);
-    const schema = (data[STORAGE_KEY] as StorageSchema) || { domains: {} };
+// Get grouped domains by normalized origin (wwwありなしを統合)
+export function groupDomainsByNormalizedOrigin(domains: { [origin: string]: DomainConfig }): { [normalizedOrigin: string]: DomainConfig } {
+    const grouped: { [normalizedOrigin: string]: DomainConfig } = {};
     
-    // Include default disabled domains if they're not already in the config
-    const allDomains = { ...schema.domains };
-    
-    // Add default disabled domains that aren't explicitly configured
-    // We need to check common origin patterns for these domains
-    const defaultDisabledOrigins = [
-        'https://x.com',
-        'https://www.x.com',
-        'https://twitter.com',
-        'https://www.twitter.com',
-        'https://google.com',
-        'https://www.google.com'
-    ];
-    
-    for (const origin of defaultDisabledOrigins) {
-        // Only add if not already configured and matches default disabled domain
-        if (!allDomains[origin] && isDefaultDisabledDomain(origin)) {
-            allDomains[origin] = {
-                enabled: false,
-                mode: 'default'
-            };
+    for (const origin of Object.keys(domains)) {
+        const normalizedOrigin = getNormalizedOrigin(origin);
+        // Use the first config found (wwwありとwwwなしで同じ設定が前提)
+        if (!grouped[normalizedOrigin]) {
+            grouped[normalizedOrigin] = domains[origin];
         }
     }
     
-    return { domains: allDomains };
+    return grouped;
+}
+
+export async function getAllConfigs(): Promise<StorageSchema> {
+    try {
+        const data = await chrome.storage.sync.get(STORAGE_KEY);
+        const schema = (data[STORAGE_KEY] as StorageSchema) || { domains: {} };
+        
+        // Include default disabled domains if they're not already in the config
+        const allDomains = { ...schema.domains };
+        
+        // Add default disabled domains that aren't explicitly configured
+        // We need to check common origin patterns for these domains
+        // Note: google.com is added but only exact match (not subdomains) to allow gemini.google.com and other Google services
+        const defaultDisabledOrigins = [
+            'https://x.com',
+            'https://www.x.com',
+            'https://twitter.com',
+            'https://www.twitter.com',
+            'https://google.com',
+            'https://www.google.com',
+            'https://docs.google.com'
+        ];
+        
+        for (const origin of defaultDisabledOrigins) {
+            // Only add if not already configured and matches default disabled domain
+            if (!allDomains[origin] && isDefaultDisabledDomain(origin)) {
+                allDomains[origin] = {
+                    enabled: false
+                };
+            }
+        }
+        
+        return { domains: allDomains };
+    } catch (error) {
+        console.error('Failed to get all configs:', error);
+        // エラーが発生した場合は空のデータを返す
+        return { domains: {} };
+    }
+}
+
+// Check if an origin is a default disabled domain (for UI display)
+export function isDefaultDisabledOrigin(origin: string): boolean {
+    return isDefaultDisabledDomain(origin);
 }
 
 export function getDefaultDisabledDomains(): string[] {

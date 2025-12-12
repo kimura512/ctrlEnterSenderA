@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Send meldinger med Ctrl+Enter og sett inn nye linjer med Enter på ulike nettsteder.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Gjeldende domene",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Aktiver for dette nettstedet",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Avanserte innstillinger",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender Innstillinger",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Konfigurerte domener",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Standard konfigurerte domener",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Brukerkonfigurerte domener",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domene",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Aktivert",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Ingen domenekonfigurasjoner lagret ennå. Besøk et nettsted og bruk popup-vinduet for å konfigurere.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Tilbakestill",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Er du sikker på at du vil tilbakestille innstillingene for $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Laster...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Laster konfigurasjon...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Velkommen til Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Denne utvidelsen endrer Enter-tastens oppførsel:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Ny linje",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Send",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Du kan aktivere/deaktivere utvidelsen per nettsted ved hjelp av popup-vinduet.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Besøk Avanserte innstillinger for å konfigurere deteksjonsmoduser og administrere alle domener.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Skjønner!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Hva er nytt",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Lukk",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Støt udvikleren",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Hvis du finder denne utvidelsen nyttig, vurder å støtte utvikleren:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Kjøp meg en kaffe",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Sjekk de siste oppdateringene og forbedringene!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Versjon",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Advarsel: Vær så snill, absolutt ikke klikk!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Selv om du synes denne utvidelsen er \"bra\" eller \"hjelpsom\", vennligst ikke klikk på knappene nedenfor.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Ikke støtt selv med bare en kopp kaffe.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Jeg kan ikke fortelle deg hvorfor...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Å legge til",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "en takkommentar",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "sammen med støtte er absoluut forbudt.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Forstår du? Absolutt ikke klikk!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ignorer advarsel og fortsett",
+    "description": "Checkbox label to ignore warning"
+  }
+}

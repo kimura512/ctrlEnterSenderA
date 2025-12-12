@@ -1,15 +1,21 @@
 import { useEffect, useState } from 'react';
-import { getAllConfigs, setDomainConfig, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
+import { getAllConfigs, setDomainConfig, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin } from '../background/storage';
 import { StorageSchema, DomainConfig } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
 import { WhatsNew } from '../components/WhatsNew';
 
 function App() {
-    const [data, setData] = useState<StorageSchema | null>(null);
+    // 初期状態を空のデータに設定（オフラインでも表示できるように）
+    const [data, setData] = useState<StorageSchema>({ domains: {} });
     const [showOnboarding, setShowOnboarding] = useState<boolean>(false);
     const [showWhatsNew, setShowWhatsNew] = useState<boolean>(false);
     const [currentVersion, setCurrentVersion] = useState<string>('');
+    const [showDefaultDomains, setShowDefaultDomains] = useState<boolean>(false);
+    const [showUserDomains, setShowUserDomains] = useState<boolean>(false);
+    const [showHelp, setShowHelp] = useState<boolean>(false);
+    const [showSupport, setShowSupport] = useState<boolean>(false);
+    const [ignoreWarning, setIgnoreWarning] = useState<boolean>(false);
 
     useEffect(() => {
         // Get current version from manifest
@@ -33,20 +39,73 @@ function App() {
     }, []);
 
     const loadData = async () => {
-        const configs = await getAllConfigs();
-        setData(configs);
+        try {
+            // タイムアウトを設定（3秒でタイムアウト）
+            const timeoutPromise = new Promise<StorageSchema>((_, reject) => {
+                setTimeout(() => reject(new Error('Timeout')), 3000);
+            });
+            
+            const configs = await Promise.race([
+                getAllConfigs(),
+                timeoutPromise
+            ]);
+            
+            setData(configs);
+        } catch (error) {
+            // Continue with empty data on error (for offline support)
+            setData({ domains: {} });
+        }
     };
 
     const handleConfigChange = async (origin: string, newConfig: DomainConfig) => {
-        await setDomainConfig(origin, newConfig);
-        await loadData();
+        try {
+            await setDomainConfig(origin, newConfig);
+            await loadData();
+        } catch (error) {
+            await loadData();
+        }
     };
 
-    if (!data) {
-        return <div style={{ padding: '24px' }}>{getMessage('loading')}</div>;
-    }
+    // Group domains by normalized origin
+    const groupedDomains = groupDomainsByNormalizedOrigin(data.domains);
+    const normalizedOrigins = Object.keys(groupedDomains);
+    
+    // Separate default disabled domains and user configured domains
+    const defaultDisabledOrigins = normalizedOrigins
+        .filter(origin => isDefaultDisabledOrigin(origin))
+        .sort();
+    const userConfiguredOrigins = normalizedOrigins
+        .filter(origin => !isDefaultDisabledOrigin(origin))
+        .sort();
 
-    const domains = Object.keys(data.domains);
+    // Domain table component
+    const DomainTable = ({ origins }: { origins: string[] }) => (
+        <table>
+            <thead>
+                <tr>
+                    <th>{getMessage('domain')}</th>
+                    <th>{getMessage('enabled')}</th>
+                </tr>
+            </thead>
+            <tbody>
+                {origins.map(normalizedOrigin => {
+                    const config = groupedDomains[normalizedOrigin];
+                    return (
+                        <tr key={normalizedOrigin}>
+                            <td className="domain-cell">{normalizedOrigin}</td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    checked={config.enabled}
+                                    onChange={(e) => handleConfigChange(normalizedOrigin, { ...config, enabled: e.target.checked })}
+                                />
+                            </td>
+                        </tr>
+                    );
+                })}
+            </tbody>
+        </table>
+    );
 
     return (
         <>
@@ -57,109 +116,177 @@ function App() {
                 <WhatsNew onClose={() => setShowWhatsNew(false)} version={currentVersion} />
             )}
             <div className="container">
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '24px' }}>
+            <div style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <h1 style={{ margin: 0 }}>{getMessage('optionsTitle')}</h1>
-                <a
-                    className="link-button"
-                    href="https://github.com/kimura512/ctrlEnterSenderA/issues"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ fontSize: '14px' }}
+                <button
+                    className="btn-reset"
+                    onClick={async () => {
+                        const confirmMsg = getMessage('resetAllConfirm');
+                        if (confirm(confirmMsg)) {
+                            // 初期設定済みドメインを全て無効に
+                            for (const normalizedOrigin of defaultDisabledOrigins) {
+                                await setDomainConfig(normalizedOrigin, { enabled: false });
+                            }
+                            // ユーザー設定ドメインを全て有効に
+                            for (const normalizedOrigin of userConfiguredOrigins) {
+                                await setDomainConfig(normalizedOrigin, { enabled: true });
+                            }
+                            await loadData();
+                        }
+                    }}
                 >
-                    <span>🐛</span> {getMessage('reportIssue')}
-                </a>
+                    {getMessage('resetAll')}
+                </button>
             </div>
 
-            <div className="card">
-                <div className="card-header">
-                    {getMessage('configuredDomains')} ({domains.length})
+            {/* 初期設定済みドメイン */}
+            {defaultDisabledOrigins.length > 0 && (
+                <div className="card">
+                    <div 
+                        className="card-header" 
+                        style={{ cursor: 'pointer', userSelect: 'none', justifyContent: 'flex-start' }}
+                        onClick={() => setShowDefaultDomains(!showDefaultDomains)}
+                    >
+                        <span style={{ marginRight: '8px' }}>{showDefaultDomains ? '▼' : '▶'}</span>
+                        {getMessage('defaultConfiguredDomains')} ({defaultDisabledOrigins.length})
+                    </div>
+
+                    {showDefaultDomains && <DomainTable origins={defaultDisabledOrigins} />}
+                </div>
+            )}
+
+            {/* ユーザー設定ドメイン */}
+            <div className="card" style={{ marginTop: defaultDisabledOrigins.length > 0 ? '24px' : '0' }}>
+                <div 
+                    className="card-header" 
+                    style={{ cursor: 'pointer', userSelect: 'none', justifyContent: 'flex-start' }}
+                    onClick={() => setShowUserDomains(!showUserDomains)}
+                >
+                    <span style={{ marginRight: '8px' }}>{showUserDomains ? '▼' : '▶'}</span>
+                    {getMessage('userConfiguredDomains')} ({userConfiguredOrigins.length})
                 </div>
 
-                {domains.length === 0 ? (
-                    <div className="empty-state">
-                        {getMessage('noDomainsConfigured')}
+                {showUserDomains && (
+                    userConfiguredOrigins.length === 0 ? (
+                        <div className="empty-state">
+                            {getMessage('noDomainsConfigured')}
+                        </div>
+                    ) : (
+                        <DomainTable origins={userConfiguredOrigins} />
+                    )
+                )}
+            </div>
+
+
+            {/* ヘルプ */}
+            <div className="card" style={{ marginTop: '24px' }}>
+                <div 
+                    className="card-header" 
+                    style={{ cursor: 'pointer', userSelect: 'none', justifyContent: 'flex-start' }}
+                    onClick={() => setShowHelp(!showHelp)}
+                >
+                    <span style={{ marginRight: '8px' }}>{showHelp ? '▼' : '▶'}</span>
+                    {getMessage('helpTitle')}
+                </div>
+                {showHelp && (
+                    <div style={{ padding: '20px' }}>
+                        <h3 style={{ marginTop: 0, marginBottom: '16px' }}>{getMessage('onboardingTitle')}</h3>
+                        <p style={{ marginBottom: '16px', lineHeight: '1.6' }}>{getMessage('onboardingDescription')}</p>
+                        <div style={{ marginBottom: '16px' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+                                <span style={{ fontWeight: '600' }}>Enter</span>
+                                <span>→</span>
+                                <span>{getMessage('onboardingEnterNewline')}</span>
+                            </div>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <span style={{ fontWeight: '600' }}>Ctrl+Enter</span>
+                                <span>→</span>
+                                <span>{getMessage('onboardingCtrlEnterSend')}</span>
+                            </div>
+                        </div>
+                        <div style={{ lineHeight: '1.6' }}>
+                            <p style={{ marginBottom: '12px' }}>{getMessage('onboardingDefaultEnabled')}</p>
+                            <p style={{ marginBottom: '12px' }}>{getMessage('onboardingSiteToggle')}</p>
+                            <p>{getMessage('onboardingAdvancedSettings')}</p>
+                        </div>
                     </div>
-                ) : (
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>{getMessage('domain')}</th>
-                                <th>{getMessage('enabled')}</th>
-                                <th>{getMessage('mode')}</th>
-                                <th>{getMessage('actions')}</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {domains.map(origin => {
-                                const config = data.domains[origin];
-                                return (
-                                    <tr key={origin}>
-                                        <td className="domain-cell">{origin}</td>
-                                        <td>
-                                            <input
-                                                type="checkbox"
-                                                checked={config.enabled}
-                                                onChange={(e) => handleConfigChange(origin, { ...config, enabled: e.target.checked })}
-                                            />
-                                        </td>
-                                        <td>
-                                            <select
-                                                value={config.mode}
-                                                onChange={(e) => handleConfigChange(origin, { ...config, mode: e.target.value as any })}
-                                            >
-                                                <option value="default">{getMessage('modeDefault')}</option>
-                                                <option value="forceOn">{getMessage('modeForceOn')}</option>
-                                                <option value="forceOff">{getMessage('modeForceOff')}</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <button
-                                                className="btn-reset"
-                                                onClick={() => {
-                                                    const confirmMsg = getMessage('resetConfirm', origin);
-                                                    if (confirm(confirmMsg)) {
-                                                        handleConfigChange(origin, { enabled: true, mode: 'default' });
-                                                    }
-                                                }}
-                                            >
-                                                {getMessage('reset')}
-                                            </button>
-                                        </td>
-                                    </tr>
-                                );
-                            })}
-                        </tbody>
-                    </table>
                 )}
             </div>
 
             <div className="card" style={{ marginTop: '24px' }}>
-                <div className="card-header">
+                <div 
+                    className="card-header" 
+                    style={{ cursor: 'pointer', userSelect: 'none', justifyContent: 'flex-start' }}
+                    onClick={() => setShowSupport(!showSupport)}
+                >
+                    <span style={{ marginRight: '8px' }}>{showSupport ? '▼' : '▶'}</span>
                     {getMessage('supportDeveloper')}
                 </div>
-                <div style={{ padding: '20px' }}>
-                    <p style={{ margin: '0 0 16px 0', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
-                        {getMessage('supportDescription')}
-                    </p>
-                    <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
-                        <a
-                            href="https://buymeacoffee.com/kimura512"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="support-link"
-                        >
-                            ☕ {getMessage('buyMeACoffee')}
-                        </a>
-                        <a
-                            href="https://www.patreon.com/c/kimura512"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="support-link"
-                        >
-                            🎨 {getMessage('patreon')}
-                        </a>
+                {showSupport && (
+                    <div style={{ padding: '20px' }}>
+                        <div style={{ marginBottom: '20px', padding: '16px', backgroundColor: 'rgba(255, 82, 82, 0.1)', border: '1px solid var(--danger-color)', borderRadius: '8px' }}>
+                            <p style={{ margin: '0 0 12px 0', color: 'var(--text-primary)', lineHeight: '1.6', fontWeight: '600', fontSize: '16px' }}>
+                                {getMessage('supportWarningTitle')}
+                            </p>
+                            <p style={{ margin: '0 0 12px 0', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                                {getMessage('supportWarningMessage1')}
+                            </p>
+                            <p style={{ margin: '0 0 12px 0', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                                {getMessage('supportWarningMessage2')}
+                            </p>
+                            <p style={{ margin: '0 0 12px 0', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                                {getMessage('supportWarningMessage3')}
+                            </p>
+                            <p style={{ margin: '0 0 12px 0', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+                                {getMessage('supportWarningMessage4')} <span className="hidden-comment">{getMessage('supportWarningMessage5')}</span> {getMessage('supportWarningMessage6')}
+                            </p>
+                            <p style={{ margin: '0 0 16px 0', color: 'var(--text-primary)', lineHeight: '1.6', fontWeight: '600' }}>
+                                {getMessage('supportWarningMessage7')}
+                            </p>
+                            <label style={{ display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', userSelect: 'none' }}>
+                                <input
+                                    type="checkbox"
+                                    checked={ignoreWarning}
+                                    onChange={(e) => setIgnoreWarning(e.target.checked)}
+                                />
+                                <span style={{ color: 'var(--text-secondary)' }}>{getMessage('ignoreWarningCheckbox')}</span>
+                            </label>
+                        </div>
+                        {ignoreWarning && (
+                            <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                                <a
+                                    href="https://buymeacoffee.com/kimura512"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="support-link"
+                                >
+                                    ☕ {getMessage('buyMeACoffee')}
+                                </a>
+                                <a
+                                    href="https://www.patreon.com/c/kimura512"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="support-link"
+                                >
+                                    🎨 {getMessage('patreon')}
+                                </a>
+                            </div>
+                        )}
                     </div>
-                </div>
+                )}
+            </div>
+
+            {/* バグ報告 | 機能要望 */}
+            <div className="card" style={{ marginTop: '24px' }}>
+                <a
+                    className="report-issue-link"
+                    href="https://github.com/kimura512/ctrlEnterSenderA/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ display: 'block', padding: '20px' }}
+                >
+                    <span>🐛</span> {getMessage('reportIssue')}
+                </a>
             </div>
         </div>
         </>

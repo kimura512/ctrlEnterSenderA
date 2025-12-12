@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "বিভিন্ন ওয়েবসাইটে Ctrl+Enter দিয়ে বার্তা পাঠান এবং Enter দিয়ে নতুন লাইন সন্নিবেশ করুন।",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "বর্তমান ডোমেইন",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "এই সাইটের জন্য সক্ষম করুন",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "উন্নত সেটিংস",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender সেটিংস",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "কনফিগার করা ডোমেইন",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "ডিফল্ট কনফিগার করা ডোমেইন",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "ব্যবহারকারী কনফিগার করা ডোমেইন",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "ডোমেইন",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "সক্ষম",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "এখনও কোনও ডোমেইন কনফিগারেশন সংরক্ষিত হয়নি৷ একটি সাইট দেখুন এবং কনফিগার করতে পপআপ ব্যবহার করুন৷",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "রিসেট",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "আপনি কি নিশ্চিত যে আপনি $DOMAIN$ এর জন্য সেটিংস রিসেট করতে চান?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "লোড হচ্ছে...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "কনফিগারেশন লোড হচ্ছে...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Ctrl+Enter Sender এ স্বাগতম!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "এই এক্সটেনশনটি Enter কী এর আচরণ পরিবর্তন করে:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → নতুন লাইন",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → পাঠান",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "আপনি পপআপ ব্যবহার করে প্রতি সাইটে এক্সটেনশন সক্ষম/নিষ্ক্রিয় করতে পারেন।",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "শনাক্তকরণ মোড কনফিগার করতে এবং সমস্ত ডোমেইন পরিচালনা করতে উন্নত সেটিংসে যান৷",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "বুঝেছি!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "নতুন কি",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "বন্ধ করুন",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "ডেভেলপারকে সমর্থন করুন",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "আপনি যদি এই এক্সটেনশনটি দরকারী মনে করেন তবে ডেভেলপারকে সমর্থন করার কথা বিবেচনা করুন:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "আমাকে একটি কফি কিনুন",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "সর্বশেষ আপডেট এবং উন্নতি দেখুন!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "সংস্করণ",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ সতর্কতা: দয়া করে, একেবারে ক্লিক করবেন না!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "এমনকি আপনি যদি মনে করেন যে এই এক্সটেনশনটি \"ভাল\" বা \"সহায়ক\", দয়া করে নীচের বোতামগুলিতে ক্লিক করবেন না।",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "এমনকি এক কাপ কফির সাথেও সমর্থন করবেন না।",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "আমি আপনাকে কারণ বলতে পারি না...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "সমর্থনের সাথে",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "ধন্যবাদ মন্তব্য",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "যোগ করা একেবারে নিষিদ্ধ।",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "আপনি কি বুঝতে পেরেছেন? একেবারে ক্লিক করবেন না!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "সতর্কতা উপেক্ষা করুন এবং চালিয়ে যান",
+    "description": "Checkbox label to ignore warning"
+  }
+}

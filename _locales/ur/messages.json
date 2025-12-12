@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "مختلف ویب سائٹس پر Ctrl+Enter کے ساتھ پیغامات بھیجیں اور Enter کے ساتھ نئی لائنیں داخل کریں۔",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "موجودہ ڈومین",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "اس سائٹ کے لیے فعال کریں",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "اعلی درجے کی ترتیبات",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender ترتیبات",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "کنفیگرڈ ڈومینز",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "پہلے سے طے شدہ کنفیگرڈ ڈومینز",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "صارف کے کنفیگرڈ ڈومینز",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "ڈومین",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "فعال",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "ابھی تک کوئی ڈومین کنفیگریشن محفوظ نہیں کی گئی۔ سائٹ پر جائیں اور کنفیگر کرنے کے لیے پاپ اپ کا استعمال کریں۔",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "ری سیٹ",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "کیا آپ واقعی $DOMAIN$ کے لیے ترتیبات کو دوبارہ ترتیب دینا چاہتے ہیں؟",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "لوڈ ہو رہا ہے...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "کنفیگریشن لوڈ ہو رہی ہے...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Ctrl+Enter Sender میں خوش آمدید!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "یہ ایکسٹینشن Enter کلید کے رویے کو تبدیل کرتی ہے:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → نئی لائن",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → بھیجیں",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "آپ پاپ اپ کا استعمال کرتے ہوئے ہر سائٹ کے لیے ایکسٹینشن کو فعال/غیر فعال کر سکتے ہیں۔",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "پتہ لگانے کے طریقوں کو کنفیگر کرنے اور تمام ڈومینز کا نظم کرنے کے لیے اعلی درجے کی ترتیبات پر جائیں۔",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "سمجھ گیا!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "نیا کیا ہے",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "بند کریں",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "ڈویلپر کی مدد کریں",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "اگر آپ کو یہ ایکسٹینشن مفید لگتا ہے، تو ڈویلپر کی مدد کرنے پر غور کریں:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "میرے لیے کافی خریدیں",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "تازہ ترین اپ ڈیٹس اور بہتری چیک کریں!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "ورژن",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ انتباہ: براہ کرم، بالکل کلک نہ کریں!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "یہاں تک کہ اگر آپ کو لگتا ہے کہ یہ ایکسٹینشن \"اچھی\" یا \"مددگار\" ہے، براہ کرم نیچے دیئے گئے بٹنوں پر کلک نہ کریں۔",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "صرف ایک کپ کافی کے ساتھ بھی مدد نہ کریں۔",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "میں آپ کو وجہ نہیں بتا سکتا...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "مدد کے ساتھ",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "شکریہ کا تبصرہ",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "شامل کرنا بالکل ممنوع ہے۔",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "کیا آپ سمجھتے ہیں؟ بالکل کلک نہ کریں!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "انتباہ کو نظر انداز کریں اور جاری رکھیں",
+    "description": "Checkbox label to ignore warning"
+  }
+}

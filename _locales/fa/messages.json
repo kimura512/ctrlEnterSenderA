@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "پیام ها را با Ctrl+Enter ارسال کنید و خطوط جدید را با Enter در وب سایت های مختلف وارد کنید.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "دامنه فعلی",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "فعال کردن برای این سایت",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "تنظیمات پیشرفته",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "تنظیمات Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "دامنه های پیکربندی شده",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "دامنه های پیکربندی شده پیش فرض",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "دامنه های پیکربندی شده توسط کاربر",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "دامنه",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "فعال",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "هنوز هیچ پیکربندی دامنه ای ذخیره نشده است. از یک سایت بازدید کنید و از پنجره بازشو برای پیکربندی استفاده کنید.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "بازنشانی",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "آیا مطمئن هستید که می خواهید تنظیمات را برای $DOMAIN$ بازنشانی کنید؟",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "در حال بارگذاری...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "در حال بارگذاری پیکربندی...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "به Ctrl+Enter Sender خوش آمدید!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "این افزونه رفتار کلید Enter را تغییر می دهد:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter ← خط جدید",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter ← ارسال",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "می توانید افزونه را برای هر سایت با استفاده از پنجره بازشو فعال/غیرفعال کنید.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "برای پیکربندی حالت های تشخیص و مدیریت همه دامنه ها به تنظیمات پیشرفته بروید.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "متوجه شدم!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "چه خبر",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "بستن",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "حمایت از توسعه دهنده",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "اگر این افزونه را مفید می دانید، لطفاً حمایت از توسعه دهنده را در نظر بگیرید:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "برایم قهوه بخرید",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "آخرین به روز رسانی ها و پیشرفت ها را بررسی کنید!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "نسخه",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ هشدار: لطفاً، مطلقاً کلیک نکنید!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "حتی اگر فکر می کنید این افزونه \"خوب\" یا \"مفید\" است، لطفاً روی دکمه های زیر کلیک نکنید.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "حتی با یک فنجان قهوه هم حمایت نکنید.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "من نمی توانم دلیل آن را به شما بگویم...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "اضافه کردن",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "نظر تشکر",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "همراه با حمایت کاملاً ممنوع است.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "آیا متوجه هستید؟ مطلقاً کلیک نکنید!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "نادیده گرفتن هشدار و ادامه",
+    "description": "Checkbox label to ignore warning"
+  }
+}

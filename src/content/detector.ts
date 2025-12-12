@@ -26,22 +26,15 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
         }
     }
 
-    // 3. Check forceOff
-    if (config?.mode === 'forceOff') {
-        return false;
-    }
+    // 3. Default exclusion rules
+    if (element.tagName === 'INPUT') return false;
 
-    // 4. Default exclusion rules (unless forceOn)
-    if (config?.mode !== 'forceOn') {
-        if (element.tagName === 'INPUT') return false;
+    const role = element.getAttribute('role');
+    if (role === 'searchbox') return false;
 
-        const role = element.getAttribute('role');
-        if (role === 'searchbox') return false;
-
-        // Exclude single-line text inputs
-        const ariaMultiline = element.getAttribute('aria-multiline');
-        if (ariaMultiline === 'false') return false;
-    }
+    // Exclude single-line text inputs
+    const ariaMultiline = element.getAttribute('aria-multiline');
+    if (ariaMultiline === 'false') return false;
 
     // 5. Explicit Slack detection
     if (isSlack) {

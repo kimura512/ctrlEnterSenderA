@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "أرسل الرسائل باستخدام Ctrl+Enter وأدخل أسطرًا جديدة باستخدام Enter على مواقع الويب المختلفة.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "النطاق الحالي",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "تمكين لهذا الموقع",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "إعدادات متقدمة",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "إعدادات Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "النطاقات المكونة",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "النطاقات المكونة افتراضيًا",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "النطاقات المكونة من قبل المستخدم",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "النطاق",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "مفعل",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "لم يتم حفظ تكوينات النطاق بعد. قم بزيارة موقع واستخدم النافذة المنبثقة للتكوين.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "إعادة تعيين",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "هل أنت متأكد أنك تريد إعادة تعيين الإعدادات لـ $DOMAIN$؟",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "جارٍ التحميل...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "جارٍ تحميل التكوين...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "مرحبًا بك في Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "يغير هذا الامتداد سلوك مفتاح Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter ← سطر جديد",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter ← إرسال",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "يمكنك تمكين/تعطيل الامتداد لكل موقع باستخدام النافذة المنبثقة.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "قم بزيارة الإعدادات المتقدمة لتكوين أوضاع الكشف وإدارة جميع النطاقات.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "فهمت!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "ما الجديد",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "إغلاق",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "دعم المطور",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "إذا وجدت هذا الامتداد مفيدًا، يرجى التفكير في دعم المطور:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "اشترِ لي قهوة",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "تحقق من آخر التحديثات والتحسينات!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "الإصدار",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ تحذير: من فضلك، لا تنقر مطلقًا!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "حتى لو كنت تعتقد أن هذا الامتداد \"جيد\" أو \"مفيد\"، يرجى عدم النقر فوق الأزرار أدناه.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "لا تدعم حتى بفنجان قهوة.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "لا أستطيع إخبارك بالسبب...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "إضافة",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "تعليق شكر",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "مع الدعم ممنوع منعًا باتًا.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "هل تفهم؟ لا تنقر مطلقًا!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "تجاهل التحذير والمتابعة",
+    "description": "Checkbox label to ignore warning"
+  }
+}

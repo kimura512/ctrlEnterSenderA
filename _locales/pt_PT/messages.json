@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Envie mensagens com Ctrl+Enter e insira quebras de linha com Enter em vários sites.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Domínio Atual",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Ativar para este site",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Definições Avançadas",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Definições do Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Domínios Configurados",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Domínios Configurados por Omissão",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Domínios Configurados pelo Utilizador",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domínio",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Ativado",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Nenhuma configuração de domínio guardada ainda. Visite um site e use o popup para configurar.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Repor",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Tem a certeza que deseja repor as definições para $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "A carregar...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "A carregar configuração...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Bem-vindo ao Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Esta extensão altera o comportamento da tecla Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Nova linha",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Enviar",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Pode ativar/desativar a extensão por site usando o popup.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Visite as Definições Avançadas para configurar modos de deteção e gerir todos os domínios.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Entendi!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "O que há de novo",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Fechar",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Apoie o Programador",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Se acha esta extensão útil, considere apoiar o programador:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Pague-me um café",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Confira as últimas atualizações e melhorias!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Versão",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Aviso: Por favor, absolutamente não clique!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Mesmo que ache esta extensão \"boa\" ou \"útil\", por favor, não clique nos botões abaixo.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Não apoie nem mesmo com uma chávena de café.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Eu não lhe posso dizer o porquê...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Adicionar",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "um comentário de agradecimento",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "junto com o apoio é absolutamente proibido.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Percebe? Absolutamente não clique!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ignorar aviso e prosseguir",
+    "description": "Checkbox label to ignore warning"
+  }
+}

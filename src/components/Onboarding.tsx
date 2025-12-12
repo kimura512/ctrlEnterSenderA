@@ -24,6 +24,7 @@ export function Onboarding({ onClose }: OnboardingProps) {
                     </div>
                 </div>
                 <div className="onboarding-info">
+                    <p>{getMessage('onboardingDefaultEnabled')}</p>
                     <p>{getMessage('onboardingSiteToggle')}</p>
                     <p>{getMessage('onboardingAdvancedSettings')}</p>
                 </div>

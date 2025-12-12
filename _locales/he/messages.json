@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "שלח הודעות עם Ctrl+Enter והכנס שורות חדשות עם Enter באתרים שונים.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "דומיין נוכחי",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "הפעל עבור אתר זה",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "הגדרות מתקדמות",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "הגדרות Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "דומיינים מוגדרים",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "דומיינים מוגדרים כברירת מחדל",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "דומיינים שהוגדרו על ידי המשתמש",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "דומיין",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "מופעל",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "עדיין לא נשמרו תצורות דומיין. בקר באתר והשתמש בחלונית הקופצת כדי להגדיר.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "אפס",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "האם אתה בטוח שברצונך לאפס את ההגדרות עבור $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "טוען...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "טוען תצורה...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "ברוכים הבאים ל-Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "תוסף זה משנה את התנהגות מקש Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → שורה חדשה",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter ← שלח",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "אתה יכול להפעיל/להשבית את התוסף לכל אתר באמצעות החלונית הקופצת.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "בקר בהגדרות מתקדמות כדי להגדיר מצבי זיהוי ולנהל את כל הדומיינים.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "הבנתי!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "מה חדש",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "סגור",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "תמוך במפתח",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "אם אתה מוצא את התוסף הזה שימושי, שקול לתמוך במפתח:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "קנה לי קפה",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "בדוק את העדכונים והשיפורים האחרונים!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "גרסה",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ אזהרה: בבקשה, אל תלחץ בשום אופן!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "גם אם אתה חושב שהתוסף הזה \"טוב\" או \"מועיל\", בבקשה אל תלחץ על הכפתורים למטה.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "אל תתמוך אפילו בספל קפה אחד.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "אני לא יכול לומר לך למה...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "הוספת",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "תגובת תודה",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "יחד עם התמיכה אסורה בהחלט.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "אתה מבין? אל תלחץ בשום אופן!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "התעלם מהאזהרה והמשך",
+    "description": "Checkbox label to ignore warning"
+  }
+}

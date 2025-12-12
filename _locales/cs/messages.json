@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Odesílejte zprávy pomocí Ctrl+Enter a vkládejte nové řádky pomocí Enter na různých webových stránkách.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Aktuální doména",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Povolit pro tento web",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Pokročilá nastavení",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Nastavení Ctrl+Enter Sender",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Nakonfigurované domény",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Výchozí nakonfigurované domény",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Uživatelem nakonfigurované domény",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Doména",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Povoleno",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Zatím nejsou uloženy žádné konfigurace domén. Navštivte web a použijte vyskakovací okno pro konfiguraci.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Obnovit",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Opravdu chcete obnovit nastavení pro $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Načítání...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Načítání konfigurace...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Vítejte v Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Toto rozšíření mění chování klávesy Enter:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Nový řádek",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Odeslat",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Rozšíření můžete povolit/zakázat pro každý web pomocí vyskakovacího okna.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Navštivte Pokročilá nastavení pro konfiguraci režimů detekce a správu všech domén.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Rozumím!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Co je nového",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Zavřít",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Podpořit vývojáře",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Pokud považujete toto rozšíření za užitečné, zvažte podporu vývojáře:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Kupte mi kávu",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Podívejte se na nejnovější aktualizace a vylepšení!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Verze",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Varování: Prosím, absolutně neklikejte!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "I když si myslíte, že toto rozšíření je \"dobré\" nebo \"užitečné\", neklikejte prosím na tlačítka níže.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Nepodporujte ani šálkem kávy.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Nemohu vám říct proč...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Přidání",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "děkovného komentáře",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "spolu s podporou je absolutně zakázáno.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Rozumíte? Absolutně neklikejte!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ignorovat varování a pokračovat",
+    "description": "Checkbox label to ignore warning"
+  }
+}

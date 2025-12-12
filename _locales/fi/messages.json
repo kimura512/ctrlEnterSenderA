@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Lähetä viestejä Ctrl+Enterillä ja lisää uusia rivejä Enterillä eri verkkosivustoilla.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Nykyinen verkkotunnus",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Ota käyttöön tällä sivustolla",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Lisäasetukset",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender Asetukset",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Määritetyt verkkotunnukset",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Oletusmääritetyt verkkotunnukset",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Käyttäjän määrittämät verkkotunnukset",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Verkkotunnus",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Käytössä",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Ei tallennettuja verkkotunnusasetuksia vielä. Vieraile sivustolla ja käytä ponnahdusikkunaa määrittämiseen.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Nollaa",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Haluatko varmasti nollata asetukset verkkotunnukselle $DOMAIN$?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Ladataan...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Ladataan asetuksia...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Tervetuloa Ctrl+Enter Senderiin!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Tämä laajennus muuttaa Enter-näppäimen toimintaa:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Uusi rivi",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Lähetä",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "Voit ottaa laajennuksen käyttöön/poistaa käytöstä sivustokohtaisesti ponnahdusikkunan avulla.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Käy Lisäasetuksissa määrittääksesi tunnistustilat ja hallitaksesi kaikkia verkkotunnuksia.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Ymmärretty!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Mitä uutta",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Sulje",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Tue kehittäjää",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Jos tämä laajennus on mielestäsi hyödyllinen, harkitse kehittäjän tukemista:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Osta minulle kahvi",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Tarkista uusimmat päivitykset ja parannukset!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Versio",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Varoitus: Ole hyvä, älä missään tapauksessa klikkaa!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Vaikka luulet, että tämä laajennus on \"hyvä\" tai \"hyödyllinen\", älä klikkaa alla olevia painikkeita.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Älä tue edes yhdellä kupilla kahvia.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "En voi kertoa sinulle miksi...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Lisääminen",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "kiitoskommentti",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "yhdessä tuen kanssa on ehdottomasti kielletty.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Ymmärrätkö? Älä missään tapauksessa klikkaa!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ohita varoitus ja jatka",
+    "description": "Checkbox label to ignore warning"
+  }
+}

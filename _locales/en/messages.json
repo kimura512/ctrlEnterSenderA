@@ -19,41 +19,13 @@
     "message": "Enable for this site",
     "description": "Enable toggle label"
   },
-  "detectionMode": {
-    "message": "Detection Mode",
-    "description": "Detection mode label"
-  },
-  "modeDefault": {
-    "message": "Default (Auto Detect)",
-    "description": "Default mode option"
-  },
-  "modeForceOn": {
-    "message": "Force On (Aggressive)",
-    "description": "Force On mode option"
-  },
-  "modeForceOff": {
-    "message": "Force Off (Disable)",
-    "description": "Force Off mode option"
-  },
-  "modeDefaultDescription": {
-    "message": "Standard detection logic. Works on most sites.",
-    "description": "Default mode description"
-  },
-  "modeForceOnDescription": {
-    "message": "Treats almost all inputs as targets. Use if detection fails.",
-    "description": "Force On mode description"
-  },
-  "modeForceOffDescription": {
-    "message": "Completely disables the extension on this site.",
-    "description": "Force Off mode description"
-  },
   "advancedSettings": {
     "message": "Advanced Settings",
     "description": "Advanced Settings link"
   },
   "reportIssue": {
-    "message": "Report Issue",
-    "description": "Report Issue link"
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
   },
   "optionsTitle": {
     "message": "Ctrl+Enter Sender Settings",
@@ -63,6 +35,14 @@
     "message": "Configured Domains",
     "description": "Configured domains header"
   },
+  "defaultConfiguredDomains": {
+    "message": "Default Configured Domains",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "User Configured Domains",
+    "description": "User configured domains header"
+  },
   "domain": {
     "message": "Domain",
     "description": "Domain column header"
@@ -71,14 +51,6 @@
     "message": "Enabled",
     "description": "Enabled column header"
   },
-  "mode": {
-    "message": "Mode",
-    "description": "Mode column header"
-  },
-  "actions": {
-    "message": "Actions",
-    "description": "Actions column header"
-  },
   "noDomainsConfigured": {
     "message": "No domain configurations saved yet. Visit a site and use the popup to configure.",
     "description": "Empty state message"
@@ -86,6 +58,14 @@
   "reset": {
     "message": "Reset",
     "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
   },
   "resetConfirm": {
     "message": "Are you sure you want to reset settings for $DOMAIN$?",
@@ -96,6 +76,14 @@
         "example": "https://example.com"
       }
     }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
   },
   "loading": {
     "message": "Loading...",
@@ -125,6 +113,10 @@
     "message": "You can enable/disable the extension per site using the popup.",
     "description": "Site toggle explanation"
   },
+  "onboardingDefaultEnabled": {
+    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
   "onboardingAdvancedSettings": {
     "message": "Visit Advanced Settings to configure detection modes and manage all domains.",
     "description": "Advanced settings explanation"
@@ -132,6 +124,10 @@
   "onboardingGotIt": {
     "message": "Got it!",
     "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
   },
   "whatsNewTitle": {
     "message": "What's New",
@@ -164,6 +160,42 @@
   "version": {
     "message": "Version",
     "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Warning: Please, absolutely do not click!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Even if you think this extension is \"nice\" or \"helpful\", please do not click the buttons below.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Do not support even with just a cup of coffee.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "I cannot tell you why...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Adding",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "a thank you comment",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "along with support is absolutely not allowed.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Do you understand? Absolutely do not click!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Ignore warning and proceed",
+    "description": "Checkbox label to ignore warning"
   }
 }
 

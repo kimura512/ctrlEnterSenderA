@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "다양한 웹사이트에서 Ctrl+Enter로 메시지를 보내고 Enter로 줄바꿈을 삽입합니다.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "현재 도메인",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "이 사이트에서 활성화",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "고급 설정",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender 설정",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "구성된 도메인",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "기본 구성된 도메인",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "사용자 구성 도메인",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "도메인",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "활성화됨",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "저장된 도메인 구성이 없습니다. 사이트를 방문하여 팝업을 사용하여 구성하세요.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "초기화",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "$DOMAIN$에 대한 설정을 초기화하시겠습니까?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "로딩 중...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "구성 로딩 중...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Ctrl+Enter Sender에 오신 것을 환영합니다!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "이 확장 프로그램은 Enter 키 동작을 변경합니다:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → 줄바꿈",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → 전송",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "팝업을 사용하여 사이트별로 확장 프로그램을 활성화/비활성화할 수 있습니다.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "기본적으로 확장 프로그램은 X/Twitter 및 Google 검색과 같은 일부 사이트를 제외하고 대부분의 사이트에서 활성화되어 있습니다.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "감지 모드를 구성하고 모든 도메인을 관리하려면 고급 설정을 방문하세요.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "알겠습니다!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "도움말",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "새로운 기능",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "닫기",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "개발자 후원",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "이 확장 프로그램이 유용하다면 개발자 후원을 고려해 보세요:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "커피 한 잔 사주기",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "최신 업데이트와 개선 사항을 확인하세요!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "버전",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ 경고: 제발, 절대 클릭하지 마세요!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "이 확장 프로그램이 \"좋다\"거나 \"도움이 된다\"고 생각하더라도 아래 버튼을 클릭하지 마세요.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "커피 한 잔으로도 후원하지 마세요.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "이유는 말씀드릴 수 없습니다...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "후원과 함께",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "감사 댓글",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "을 남기는 것은 절대 금지입니다.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "이해하셨나요? 절대 클릭하지 마세요!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "경고를 무시하고 진행",
+    "description": "Checkbox label to ignore warning"
+  }
+}

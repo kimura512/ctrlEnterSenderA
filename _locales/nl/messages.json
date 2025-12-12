@@ -1,0 +1,200 @@
+{
+  "extensionName": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Extension name"
+  },
+  "extensionDescription": {
+    "message": "Berichten verzenden met Ctrl+Enter en nieuwe regels invoegen met Enter op verschillende websites.",
+    "description": "Extension description"
+  },
+  "popupTitle": {
+    "message": "Ctrl+Enter Sender",
+    "description": "Popup title"
+  },
+  "currentDomain": {
+    "message": "Huidig domein",
+    "description": "Current domain label"
+  },
+  "enableForThisSite": {
+    "message": "Inschakelen voor deze site",
+    "description": "Enable toggle label"
+  },
+  "advancedSettings": {
+    "message": "Geavanceerde instellingen",
+    "description": "Advanced Settings link"
+  },
+  "reportIssue": {
+    "message": "Bug Report | Feature Request",
+    "description": "Bug Report and Feature Request link"
+  },
+  "optionsTitle": {
+    "message": "Ctrl+Enter Sender Instellingen",
+    "description": "Options page title"
+  },
+  "configuredDomains": {
+    "message": "Geconfigureerde domeinen",
+    "description": "Configured domains header"
+  },
+  "defaultConfiguredDomains": {
+    "message": "Standaard geconfigureerde domeinen",
+    "description": "Default configured domains header"
+  },
+  "userConfiguredDomains": {
+    "message": "Door gebruiker geconfigureerde domeinen",
+    "description": "User configured domains header"
+  },
+  "domain": {
+    "message": "Domein",
+    "description": "Domain column header"
+  },
+  "enabled": {
+    "message": "Ingeschakeld",
+    "description": "Enabled column header"
+  },
+  "noDomainsConfigured": {
+    "message": "Nog geen domeinconfiguraties opgeslagen. Bezoek een site en gebruik de pop-up om te configureren.",
+    "description": "Empty state message"
+  },
+  "reset": {
+    "message": "Resetten",
+    "description": "Reset button"
+  },
+  "resetAll": {
+    "message": "Reset All",
+    "description": "Button to reset all settings"
+  },
+  "resetAllConfirm": {
+    "message": "All settings will be reset. Are you sure you want to reset?",
+    "description": "Reset all confirmation message"
+  },
+  "resetConfirm": {
+    "message": "Weet u zeker dat u de instellingen voor $DOMAIN$ wilt resetten?",
+    "description": "Reset confirmation message",
+    "placeholders": {
+      "domain": {
+        "content": "$1",
+        "example": "https://example.com"
+      }
+    }
+  },
+  "noDomainAvailable": {
+    "message": "(None)",
+    "description": "Message when domain is not available"
+  },
+  "specialPageNotSupported": {
+    "message": "This extension does not work on this page.",
+    "description": "Explanation that extension does not work on special pages"
+  },
+  "loading": {
+    "message": "Laden...",
+    "description": "Loading message"
+  },
+  "loadingConfig": {
+    "message": "Configuratie laden...",
+    "description": "Loading config message"
+  },
+  "onboardingTitle": {
+    "message": "Welkom bij Ctrl+Enter Sender!",
+    "description": "Onboarding title"
+  },
+  "onboardingDescription": {
+    "message": "Deze extensie verandert het gedrag van de Enter-toets:",
+    "description": "Onboarding description start"
+  },
+  "onboardingEnterNewline": {
+    "message": "Enter → Nieuwe regel",
+    "description": "Enter key behavior"
+  },
+  "onboardingCtrlEnterSend": {
+    "message": "Ctrl+Enter → Verzenden",
+    "description": "Ctrl+Enter key behavior"
+  },
+  "onboardingSiteToggle": {
+    "message": "U kunt de extensie per site in-/uitschakelen via de pop-up.",
+    "description": "Site toggle explanation"
+  },
+  "onboardingDefaultEnabled": {
+    "message": "Standaard is de extensie ingeschakeld voor de meeste sites, behalve voor sommige sites zoals X/Twitter en Google Search.",
+    "description": "Explanation that extension is ON by default"
+  },
+  "onboardingAdvancedSettings": {
+    "message": "Bezoek Geavanceerde instellingen om detectiemodi te configureren en alle domeinen te beheren.",
+    "description": "Advanced settings explanation"
+  },
+  "onboardingGotIt": {
+    "message": "Begrepen!",
+    "description": "Got it button"
+  },
+  "helpTitle": {
+    "message": "Help",
+    "description": "Help section title"
+  },
+  "whatsNewTitle": {
+    "message": "Wat is nieuw",
+    "description": "What's new title"
+  },
+  "whatsNewClose": {
+    "message": "Sluiten",
+    "description": "Close button"
+  },
+  "supportDeveloper": {
+    "message": "Ontwikkelaar steunen",
+    "description": "Support section title"
+  },
+  "supportDescription": {
+    "message": "Als u deze extensie nuttig vindt, overweeg dan om de ontwikkelaar te steunen:",
+    "description": "Support description"
+  },
+  "buyMeACoffee": {
+    "message": "Koop een koffie voor me",
+    "description": "Buy Me a Coffee link"
+  },
+  "patreon": {
+    "message": "Patreon",
+    "description": "Patreon link"
+  },
+  "whatsNewDescription": {
+    "message": "Bekijk de laatste updates en verbeteringen!",
+    "description": "What's new description"
+  },
+  "version": {
+    "message": "Versie",
+    "description": "Version label"
+  },
+  "supportWarningTitle": {
+    "message": "⚠️ Waarschuwing: Klik alsjeblieft absoluut niet!",
+    "description": "Support warning title"
+  },
+  "supportWarningMessage1": {
+    "message": "Zelfs als u denkt dat deze extensie \"goed\" of \"nuttig\", klik dan niet op de onderstaande knoppen.",
+    "description": "Support warning message 1"
+  },
+  "supportWarningMessage2": {
+    "message": "Steun zelfs niet met slechts een kopje koffie.",
+    "description": "Support warning message 2"
+  },
+  "supportWarningMessage3": {
+    "message": "Ik kan u niet vertellen waarom...",
+    "description": "Support warning message 3"
+  },
+  "supportWarningMessage4": {
+    "message": "Het toevoegen van",
+    "description": "Support warning message 4 (first part)"
+  },
+  "supportWarningMessage5": {
+    "message": "een bedankje",
+    "description": "Support warning message 5 (hidden comment part)"
+  },
+  "supportWarningMessage6": {
+    "message": "samen met steun is absoluut verboden.",
+    "description": "Support warning message 6 (latter part)"
+  },
+  "supportWarningMessage7": {
+    "message": "Begrijpt u het? Klik absoluut niet!!",
+    "description": "Support warning message 7"
+  },
+  "ignoreWarningCheckbox": {
+    "message": "Waarschuwing negeren en doorgaan",
+    "description": "Checkbox label to ignore warning"
+  }
+}
