@@ -1,0 +1,48 @@
+★★ Hagyja abba a véletlen "szerelmes levelek" küldését a főnökének. ★★
+
+Íme néhány teljesen kitalált statisztika, amely mégis érzelmileg pontosnak tűnik:
+
+● 5 új alkalmazottból 1-et "megkeresztelnek" a munkahelyen egy befejezetlen Slack/Teams üzenet elküldésével.
+● 5 emberből 5 tiszta kétségbeesést él át, amikor a ChatGPT válaszol egy olyan mondatra, amelyet soha nem fejeztek be.
+
+És aztán ott vannak ezek... az igazán félelmetes balesetek:
+
+【1. példa】
+Az "Agresszív elírás"
+Ön ezt írta: "Megöllek" (Szándékolt: "Megölöm a jegyedet a rendszerben" - azaz lezárom.)
+
+【2. példa】
+A "Hirtelen vallomás"
+Ön ezt írta: "Szeretlek" (Szándékolt: "Szeretem az ilyen frissítéseket.")
+
+Mindannyian voltunk már így. De nem kell így maradnunk.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Főbb jellemzők
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Véletlen küldés megakadályozása
+Az Enter többé nem küld üzeneteket.
+Egyszerűen beszúr egy új sort – pontosan úgy, ahogy a civilizált kommunikációnak lennie kellene.
+
+▼ Egységes parancsikonok mindenhol
+Küldés Ctrl+Enter (vagy Mac-en Cmd+Enter) billentyűkombinációval minden támogatott oldalon.
+
+▼ Működik a főbb platformokon
+MI: ChatGPT / Claude / Gemini
+Munka: Slack / Microsoft Teams / Google Meet
+Közösségi: Discord / Facebook Messenger / X (Twitter)
+...és még sok más.
+*Megjegyzés: A Google Chat és a YouTube Live Chat jelenleg nem támogatott.*
+
+▼ Intelligens észlelés és vezérlés
+Automatikusan észleli a csevegési bemeneteket a legtöbb webhelyen.
+Kapcsolja BE/KI a bővítményt webhelyenként az ikonon keresztül.
+Most egyszerűbb, mint valaha – nincsenek bonyolult módok, csak működik.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Adatvédelmi irányelvek
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Ez a bővítmény NEM gyűjt, tárol vagy továbbít semmilyen billentyűleütést vagy üzenettartalmat. Csak az Ön beállításai (engedélyezett/letiltott webhelyek) tárolódnak helyileg a böngészőjében. További részletekért kérjük, látogasson el a GitHub oldalra:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

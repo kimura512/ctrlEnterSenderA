@@ -1,0 +1,48 @@
+★★ Lopeta tahattomien "rakkauskirjeiden" lähettäminen pomollesi. ★★
+
+Tässä on joitain täysin fiktiivisiä tilastoja, jotka tuntuvat silti tunnetasolla tarkoilta:
+
+● 1 viidestä uudesta työntekijästä "kastetaan" työssä lähettämällä keskeneräinen Slack/Teams-viesti.
+● 5 viidestä ihmisestä kokee puhdasta epätoivoa, kun ChatGPT vastaa lauseeseen, jota he eivät koskaan lopettaneet.
+
+Ja sitten on nämä... todella kauhistuttavat onnettomuudet:
+
+【Esimerkki 1】
+"Aggressiivinen kirjoitusvirhe"
+Kirjoitit: "Tapan sinut" (Tarkoitettu: "Tapan lippusi järjestelmässä" - eli suljen sen.)
+
+【Esimerkki 2】
+"Äkillinen tunnustus"
+Kirjoitit: "Rakastan sinua" (Tarkoitettu: "Rakastan tällaisia päivityksiä.")
+
+Olemme kaikki olleet siellä. Mutta meidän ei tarvitse jäädä sinne.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Tärkeimmät ominaisuudet
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Estä tahattomat lähetykset
+Enter ei enää lähetä viestejä.
+Se lisää yksinkertaisesti uuden rivin – juuri niin kuin sivistyneen viestinnän pitäisi olla.
+
+▼ Yhtenäiset pikanäppäimet kaikkialla
+Lähetä painamalla Ctrl+Enter (tai Cmd+Enter Macissa) kaikilla tuetuilla sivustoilla.
+
+▼ Toimii suurimmilla alustoilla
+Tekoäly: ChatGPT / Claude / Gemini
+Työ: Slack / Microsoft Teams / Google Meet
+Sosiaalinen: Discord / Facebook Messenger / X (Twitter)
+...ja monet muut.
+*Huomaa: Google Chat ja YouTube Live Chat eivät ole tällä hetkellä tuettuja.*
+
+▼ Älykäs tunnistus ja hallinta
+Tunnistaa automaattisesti chat-syötteet useimmilla verkkosivustoilla.
+Kytke laajennus PÄÄLLE/POIS sivustokohtaisesti kuvakkeen kautta.
+Nyt yksinkertaisempaa kuin koskaan – ei monimutkaisia tiloja, se vain toimii.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Tietosuojakäytäntö
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Tämä laajennus EI kerää, tallenna tai lähetä mitään näppäilyjäsi tai viestiesi sisältöä. Vain asetusvalintasi (käytössä olevat/poistetut sivustot) tallennetaan paikallisesti selaimeesi. Lisätietoja saat GitHub-sivulta:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

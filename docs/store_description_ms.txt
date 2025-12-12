@@ -1,0 +1,48 @@
+★★ Berhenti menghantar "Surat Cinta" secara tidak sengaja kepada bos anda. ★★
+
+Berikut adalah beberapa statistik yang benar-benar rekaan tetapi masih terasa tepat dari segi emosi:
+
+● 1 daripada 5 pekerja baharu "dibaptiskan" di tempat kerja dengan menghantar mesej Slack/Teams yang belum selesai.
+● 5 daripada 5 orang mengalami keputusasaan tulen apabila ChatGPT membalas ayat yang tidak pernah mereka selesaikan.
+
+Dan kemudian ada kemalangan yang... benar-benar menakutkan ini:
+
+【Contoh 1】
+"Typo Agresif"
+Anda menaip: "Saya akan membunuh awak" (Bertujuan: "Saya akan membunuh tiket awak dalam sistem" - iaitu menutupnya.)
+
+【Contoh 2】
+"Pengakuan Tiba-tiba"
+Anda menaip: "Saya sayang awak" (Bertujuan: "Saya sayang kemas kini seperti ini.")
+
+Kita semua pernah melaluinya. Tetapi kita tidak perlu kekal di sana.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Ciri Utama
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Cegah Penghantaran Tidak Sengaja
+Enter tidak lagi menghantar mesej.
+Ia hanya memasukkan baris baharu—betul-betul bagaimana komunikasi bertamadun sepatutnya.
+
+▼ Pintasan Bersatu Di Mana-mana
+Hantar dengan Ctrl+Enter (atau Cmd+Enter pada Mac) merentasi semua tapak yang disokong.
+
+▼ Berfungsi pada Platform Utama
+AI: ChatGPT / Claude / Gemini
+Kerja: Slack / Microsoft Teams / Google Meet
+Sosial: Discord / Facebook Messenger / X (Twitter)
+...dan banyak lagi.
+*Nota: Google Chat dan YouTube Live Chat pada masa ini tidak disokong.*
+
+▼ Pengesanan & Kawalan Pintar
+Mengesan input sembang secara automatik pada kebanyakan tapak web.
+Togol sambungan HIDUP/MATI setiap tapak melalui ikon.
+Kini lebih mudah daripada sebelumnya—tiada mod kompleks, ia hanya berfungsi.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Dasar Privasi
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Sambungan ini TIDAK mengumpul, menyimpan atau menghantar mana-mana ketukan kekunci atau kandungan mesej anda. Hanya tetapan keutamaan anda (tapak didayakan/dilumpuhkan) disimpan secara setempat dalam penyemak imbas anda. Untuk butiran lanjut, sila lawati halaman GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

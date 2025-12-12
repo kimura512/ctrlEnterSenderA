@@ -1,0 +1,48 @@
+★★ Ngừng vô tình gửi "Thư tình" cho sếp của bạn. ★★
+
+Dưới đây là một số thống kê hoàn toàn hư cấu nhưng vẫn cho cảm giác chính xác về mặt cảm xúc:
+
+● 1 trong 5 nhân viên mới được "rửa tội" tại nơi làm việc bằng cách gửi một tin nhắn Slack/Teams chưa hoàn thành.
+● 5 trong 5 người trải qua sự tuyệt vọng thuần túy khi ChatGPT trả lời một câu mà họ chưa bao giờ viết xong.
+
+Và sau đó là những... tai nạn thực sự đáng sợ này:
+
+【Ví dụ 1】
+"Lỗi đánh máy hung hãn"
+Bạn đã gõ: "Tôi sẽ giết bạn" (Ý định: "Tôi sẽ giết vé của bạn trong hệ thống" - tức là đóng nó.)
+
+【Ví dụ 2】
+"Lời thú nhận bất ngờ"
+Bạn đã gõ: "Tôi yêu bạn" (Ý định: "Tôi yêu những cập nhật như thế này.")
+
+Tất cả chúng ta đều đã từng ở đó. Nhưng chúng ta không cần phải ở lại đó.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Các tính năng chính
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Ngăn chặn việc gửi vô tình
+Enter không còn gửi tin nhắn nữa.
+Nó chỉ đơn giản là chèn một dòng mới — chính xác là cách giao tiếp văn minh nên diễn ra.
+
+▼ Phím tắt thống nhất ở mọi nơi
+Gửi bằng Ctrl+Enter (hoặc Cmd+Enter trên Mac) trên tất cả các trang web được hỗ trợ.
+
+▼ Hoạt động trên các nền tảng chính
+AI: ChatGPT / Claude / Gemini
+Công việc: Slack / Microsoft Teams / Google Meet
+Xã hội: Discord / Facebook Messenger / X (Twitter)
+...và nhiều hơn nữa.
+*Lưu ý: Google Chat và YouTube Live Chat hiện không được hỗ trợ.*
+
+▼ Phát hiện và kiểm soát thông minh
+Tự động phát hiện đầu vào trò chuyện trên hầu hết các trang web.
+Bật/Tắt tiện ích mở rộng cho từng trang web thông qua biểu tượng.
+Bây giờ đơn giản hơn bao giờ hết — không có chế độ phức tạp, nó chỉ hoạt động.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Chính sách quyền riêng tư
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Tiện ích mở rộng này KHÔNG thu thập, lưu trữ hoặc truyền bất kỳ lần nhấn phím hoặc nội dung tin nhắn nào của bạn. Chỉ các cài đặt tùy chọn của bạn (trang web được bật/tắt) được lưu trữ cục bộ trong trình duyệt của bạn. Để biết thêm chi tiết, vui lòng truy cập trang GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

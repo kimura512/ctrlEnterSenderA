@@ -1,0 +1,48 @@
+★★ Sluta skicka oavsiktliga "Kärleksbrev" till din chef. ★★
+
+Här är lite helt fiktiv statistik som ändå känns känslomässigt korrekt:
+
+● 1 av 5 nyanställda blir "döpta" på jobbet genom att skicka ett oavslutat Slack/Teams-meddelande.
+● 5 av 5 personer upplever ren förtvivlan när ChatGPT svarar på en mening de aldrig avslutat.
+
+Och sedan finns det dessa... verkligen skrämmande olyckor:
+
+【Exempel 1】
+Det "Aggressiva Slantrycket"
+Du skrev: "Jag ska döda dig" (Avsett: "Jag ska döda din biljett i systemet." - alltså stänga den.)
+
+【Exempel 2】
+Det "Plötsliga Erkännandet"
+Du skrev: "Jag älskar dig" (Avsett: "Jag älskar uppdateringar som denna.")
+
+Vi har alla varit där. Men vi behöver inte stanna där.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Nyckelfunktioner
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Förhindra Oavsiktliga Skickningar
+Enter skickar inte längre meddelanden.
+Det infogar helt enkelt en ny rad - precis som civiliserad kommunikation borde vara.
+
+▼ Enhetliga Genvägar Överallt
+Skicka med Ctrl+Enter (eller Cmd+Enter på Mac) på alla webbplatser som stöds.
+
+▼ Fungerar på Stora Plattformar
+AI: ChatGPT / Claude / Gemini
+Jobb: Slack / Microsoft Teams / Google Meet
+Socialt: Discord / Facebook Messenger / X (Twitter)
+...och många fler.
+*Obs: Google Chat och YouTube Live Chat stöds inte för närvarande.*
+
+▼ Smart Detektering & Kontroll
+Detekterar automatiskt chattinmatningar på de flesta webbplatser.
+Slå på/av tillägget per webbplats via ikonen.
+Nu enklare än någonsin - inga komplexa lägen, det bara fungerar.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Integritetspolicy
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Detta tillägg samlar INTE in, lagrar eller överför några av dina tangenttryckningar eller meddelandeinnehåll. Endast dina preferensinställningar (aktiverade/inaktiverade webbplatser) lagras lokalt i din webbläsare. För mer information, besök GitHub-sidan:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

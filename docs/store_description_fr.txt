@@ -1,0 +1,48 @@
+★★ Arrêtez d'envoyer accidentellement des "lettres d'amour" à votre patron. ★★
+
+Voici quelques statistiques complètement fictives mais qui semblent émotionnellement exactes :
+
+● 1 nouvelle recrue sur 5 se fait "baptiser" au travail en envoyant un message Slack/Teams inachevé.
+● 5 personnes sur 5 éprouvent un pur désespoir lorsque ChatGPT répond à une phrase qu'elles n'ont jamais terminée.
+
+Et puis il y a ces... accidents vraiment terrifiants :
+
+【Exemple 1】
+La "Faute de frappe agressive"
+Vous avez tapé : "Je vais te tuer" (Prévu : "Je vais tuer ton ticket dans le système." - c'est-à-dire le fermer)
+
+【Exemple 2】
+La "Confession soudaine"
+Vous avez tapé : "Je t'aime" (Prévu : "J'aime les mises à jour comme celle-ci.")
+
+Nous sommes tous passés par là. Mais nous ne sommes pas obligés d'y rester.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Fonctionnalités clés
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Empêcher les envois accidentels
+Entrée n'envoie plus de messages.
+Cela insère simplement une nouvelle ligne — exactement comme une communication civilisée devrait l'être.
+
+▼ Raccourcis unifiés partout
+Envoyez avec Ctrl+Entrée (ou Cmd+Entrée sur Mac) sur tous les sites pris en charge.
+
+▼ Fonctionne sur les principales plateformes
+IA : ChatGPT / Claude / Gemini
+Travail : Slack / Microsoft Teams / Google Meet
+Social : Discord / Facebook Messenger / X (Twitter)
+...et bien d'autres.
+*Remarque : Google Chat et YouTube Live Chat ne sont actuellement pas pris en charge.*
+
+▼ Détection et contrôle intelligents
+Détecte automatiquement les champs de saisie de chat sur la plupart des sites Web.
+Activez/désactivez l'extension par site via l'icône.
+Maintenant plus simple que jamais — pas de modes complexes, ça marche tout simplement.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Politique de confidentialité
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Cette extension ne collecte, ne stocke ni ne transmet AUCUNE de vos frappes ou contenu de message. Seuls vos paramètres de préférence (sites activés/désactivés) sont stockés localement dans votre navigateur. Pour plus de détails, veuillez visiter la page GitHub :
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

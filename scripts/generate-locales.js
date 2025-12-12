@@ -1555,7 +1555,7 @@ const translations = {
         "ignoreWarningCheckbox": "Αγνόηση προειδοποίησης και συνέχεια"
     },
     // 28. ヘブライ語
-    'he': {
+    'iw': {
         "extensionName": "Ctrl+Enter Sender",
         "extensionDescription": "שלח הודעות עם Ctrl+Enter והכנס שורות חדשות עם Enter באתרים שונים.",
         "popupTitle": "Ctrl+Enter Sender",
@@ -1717,7 +1717,7 @@ const translations = {
         "ignoreWarningCheckbox": "Ohita varoitus ja jatka"
     },
     // 31. ノルウェー語 (Bokmål)
-    'nb': {
+    'no': {
         "extensionName": "Ctrl+Enter Sender",
         "extensionDescription": "Send meldinger med Ctrl+Enter og sett inn nye linjer med Enter på ulike nettsteder.",
         "popupTitle": "Ctrl+Enter Sender",

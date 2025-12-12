@@ -1,0 +1,46 @@
+★★ Stop sending accidental "Love Letters" to your boss. ★★
+
+Here are some completely fictional statistics that still feel emotionally accurate:
+
+● 1 in 5 new hires gets “baptized” at work by sending an unfinished Slack/Teams message.
+● 5 out of 5 people experience pure despair when ChatGPT responds to a sentence they never finished.
+
+And then there are these… truly terrifying accidents:
+
+【Example 1】
+The "Aggressive Typo" You typed: "I will kill you" (Intended: "I will kill your ticket in the system.")
+
+【Example 2】
+The "Sudden Confession" You typed: "I love u" (Intended: "I love updates like this one.")
+
+We’ve all been there. But we don’t have to stay there.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Key Features
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Prevent Accidental Sends
+Enter no longer sends messages.
+It simply inserts a new line—exactly how civilized communication should be.
+
+▼ Unified Shortcuts Everywhere
+Send with Ctrl+Enter (or Cmd+Enter on Mac) across all supported sites.
+
+▼ Works on Major Platforms
+AI: ChatGPT / Claude / Gemini
+Work: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter)
+…and many more.
+*Note: Google Chat and YouTube Live Chat are currently not supported.*
+
+▼ Smart Detection & Control
+Automatically detects chat inputs on most websites.
+Toggle the extension ON/OFF per site through the icon.
+Now simpler than ever—no complex modes, just works.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Privacy Policy
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+This extension does NOT collect, store, or transmit any of your keystrokes or message content. Only your preference settings (enabled/disabled sites) are stored locally in your browser. For more details, please visit the GitHub page:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

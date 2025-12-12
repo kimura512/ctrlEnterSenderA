@@ -1,0 +1,48 @@
+★★ Încetați să mai trimiteți accidental „Scrisori de dragoste” șefului dumneavoastră. ★★
+
+Iată câteva statistici complet fictive, dar care se simt precise din punct de vedere emoțional:
+
+● 1 din 5 noi angajați este „botezat” la locul de muncă trimițând un mesaj Slack/Teams neterminat.
+● 5 din 5 persoane experimentează disperare pură când ChatGPT răspunde la o propoziție pe care nu au terminat-o niciodată.
+
+Și apoi sunt aceste... accidente cu adevărat terifiante:
+
+【Exemplul 1】
+„Greșeala de tipar agresivă”
+Ați tastat: „Te voi ucide” (Intenționat: „Voi ucide tichetul tău în sistem” - adică îl voi închide.)
+
+【Exemplul 2】
+„Mărturisirea bruscă”
+Ați tastat: „Te iubesc” (Intenționat: „Iubesc actualizările ca aceasta.”)
+
+Cu toții am trecut prin asta. Dar nu trebuie să rămânem acolo.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Caracteristici cheie
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Preveniți trimiterile accidentale
+Enter nu mai trimite mesaje.
+Pur și simplu introduce o linie nouă — exact așa cum ar trebui să fie comunicarea civilizată.
+
+▼ Comenzi rapide unificate peste tot
+Trimiteți cu Ctrl+Enter (sau Cmd+Enter pe Mac) pe toate site-urile acceptate.
+
+▼ Funcționează pe platformele majore
+AI: ChatGPT / Claude / Gemini
+Muncă: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter)
+...și multe altele.
+*Notă: Google Chat și YouTube Live Chat nu sunt acceptate momentan.*
+
+▼ Detectare și control inteligent
+Detectează automat intrările de chat pe majoritatea site-urilor web.
+Activați/Dezactivați extensia pentru fiecare site prin intermediul pictogramei.
+Acum mai simplu ca niciodată — fără moduri complexe, pur și simplu funcționează.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Politica de confidențialitate
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Această extensie NU colectează, stochează sau transmite niciuna dintre apăsările de taste sau conținutul mesajelor dumneavoastră. Doar setările de preferințe (site-uri activate/dezactivate) sunt stocate local în browserul dumneavoastră. Pentru mai multe detalii, vă rugăm să vizitați pagina GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+

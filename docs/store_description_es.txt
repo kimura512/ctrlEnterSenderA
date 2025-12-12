@@ -1,0 +1,48 @@
+★★ Deja de enviar "cartas de amor" accidentales a tu jefe. ★★
+
+Aquí hay algunas estadísticas completamente ficticias que aún se sienten emocionalmente precisas:
+
+● 1 de cada 5 nuevos empleados es "bautizado" en el trabajo enviando un mensaje de Slack/Teams sin terminar.
+● 5 de cada 5 personas experimentan pura desesperación cuando ChatGPT responde a una oración que nunca terminaron.
+
+Y luego están estos... accidentes verdaderamente aterradores:
+
+【Ejemplo 1】
+El "Error tipográfico agresivo"
+Escribiste: "Te mataré" (Pretendido: "Mataré tu ticket en el sistema" - es decir, lo cerraré).
+
+【Ejemplo 2】
+La "Confesión repentina"
+Escribiste: "Te amo" (Pretendido: "Amo las actualizaciones como esta").
+
+Todos hemos estado allí. Pero no tenemos que quedarnos allí.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Características principales
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Prevenir envíos accidentales
+Enter ya no envía mensajes.
+Simplemente inserta una nueva línea, exactamente como debería ser la comunicación civilizada.
+
+▼ Atajos unificados en todas partes
+Envía con Ctrl+Enter (o Cmd+Enter en Mac) en todos los sitios compatibles.
+
+▼ Funciona en las principales plataformas
+IA: ChatGPT / Claude / Gemini
+Trabajo: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter)
+...y muchos más.
+*Nota: Google Chat y YouTube Live Chat no son compatibles actualmente.*
+
+▼ Detección y control inteligente
+Detecta automáticamente las entradas de chat en la mayoría de los sitios web.
+Activa/desactiva la extensión por sitio a través del icono.
+Ahora más simple que nunca: sin modos complejos, simplemente funciona.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Política de privacidad
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Esta extensión NO recopila, almacena ni transmite ninguna de tus pulsaciones de teclas o contenido de mensajes. Solo tus configuraciones de preferencia (sitios habilitados/deshabilitados) se almacenan localmente en tu navegador. Para más detalles, visita la página de GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+
