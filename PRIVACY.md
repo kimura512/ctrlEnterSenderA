@@ -19,7 +19,8 @@ Specifically, we do NOT collect:
 ## Local Storage
 The extension only stores user preferences **locally in your browser** using Chrome's storage API. This data includes:
 - Whether the extension is enabled or disabled for specific websites
-- Detection mode settings (default, force on, or force off)
+- Custom target selectors (optional)
+- Custom exclude selectors (optional)
 
 **This data:**
 - Never leaves your device

@@ -300,7 +300,7 @@ The options page lists and manages settings for all domains:
 - **Default Configured Domains**: List of domains disabled by default (toggleable)
 - **User Configured Domains**: List of domains configured by user (toggleable)
 - **Help Section**: Explains how to use the extension (toggleable)
-- **Support Developer Section**: Support links (with reverse psychology marketing, toggleable)
+- **Support Developer Section**: Support links (toggleable)
 - **Reset All Button**: Resets all settings to initial installation state
 
 ### Onboarding

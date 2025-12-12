@@ -4,28 +4,28 @@ This document outlines the development workflows and rules for the **Ctrl+Enter 
 
 ## 🚀 Release Workflow
 
-We use `npm version` to manage versioning, which automates updating `package.json`, `manifest.json`, and creating Git tags.
+We use `pnpm version` to manage versioning, which automates updating `package.json`, `manifest.json`, and creating Git tags.
 
 **To release a new version, run one of the following commands:**
 
 - **Patch Release** (Bug fixes, small tweaks): `1.0.2` -> `1.0.3`
   ```bash
-  npm version patch
+  pnpm version patch
   ```
 
 - **Minor Release** (New features, non-breaking changes): `1.0.2` -> `1.1.0`
   ```bash
-  npm version minor
+  pnpm version minor
   ```
 
 - **Major Release** (Breaking changes): `1.0.2` -> `2.0.0`
   ```bash
-  npm version major
+  pnpm version major
   ```
 
 ### What happens automatically?
 
-When you run `npm version <type>`, the following steps are executed automatically:
+When you run `pnpm version <type>`, the following steps are executed automatically:
 
 1.  **Update `package.json`**: Increments the version number.
 2.  **Run `scripts/update-manifest-version.js`**: Copies the new version from `package.json` to `manifest.json`.
@@ -54,5 +54,5 @@ git push && git push --tags
 
 ## 📦 Build Commands
 
-- `npm run dev`: Start dev server.
-- `npm run build`: Build for production.
+- `pnpm run dev`: Start dev server (HMR support).
+- `pnpm run build`: Build for production.
