@@ -8,15 +8,10 @@
 
 ## Changelog
 
-### v1.1.2 (2024-12-18)
+### v1.2.0 (2024-12-18)
 
 #### New Features
-- **Claude.ai support**: Added support for Claude AI chat. Fixed an issue where Enter was sending messages on the start screen.
-
-### v1.1.1 (2024-12-18)
-
-#### New Features
-- **Grok (grok.com) support**: Added support for Grok AI chat. Enter now inserts a newline, and Ctrl+Enter (Cmd+Enter on Mac) sends the message.
+- **AI Chat Support**: Added dedicated support for **Grok (grok.com)** and **Claude.ai**. In these apps, Enter now inserts a newline, and Ctrl+Enter (Cmd+Enter on Mac) sends the message.
 
 #### Bug Fixes
 - **Gmail compatibility**: Fixed an issue where the extension was interfering with Gmail's native behavior. Gmail (mail.google.com) is now completely excluded from the extension's scope, preserving its native Enter=newline, Ctrl+Enter=send behavior.
