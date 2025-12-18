@@ -15,12 +15,13 @@ export function handleKeyDown(event: KeyboardEvent, target: HTMLElement, _config
 
     const hostname = window.location.hostname;
 
-    // Check if we're on Discord, Teams, or Grok
+    // Check if we're on Discord, Teams, Grok, or Claude
     const isDiscord = hostname.includes('discord.com');
     const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
     const isGrok = hostname.includes('grok.com');
+    const isClaude = hostname.includes('claude.ai');
     // These apps send on Enter natively, so we need special handling
-    const isEnterToSendApp = isDiscord || isTeams || isGrok;
+    const isEnterToSendApp = isDiscord || isTeams || isGrok || isClaude;
 
     // Special handling for Enter-to-Send Apps
     if (isEnterToSendApp) {
@@ -75,7 +76,8 @@ function insertNewline(target: HTMLElement) {
             hostname.includes('teams.microsoft.com') ||
             hostname.includes('chatgpt.com') ||
             hostname.includes('openai.com') ||
-            hostname.includes('grok.com');
+            hostname.includes('grok.com') ||
+            hostname.includes('claude.ai');
 
         if (needsShiftEnter) {
             // For contenteditable (Slack, Discord, Teams, ChatGPT, Grok), simulating Shift+Enter 
@@ -175,6 +177,24 @@ function triggerSend(target: HTMLElement) {
                 container.querySelector('button[aria-label="送信"]') ||
                 container.querySelector('button[aria-label="Send"]') ||
                 container.querySelector('button[type="submit"]');
+            if (sendButton instanceof HTMLElement) {
+                sendButton.click();
+                return;
+            }
+            container = container.parentElement;
+        }
+    }
+
+    // Special handling for Claude.ai
+    const isClaude = hostname.includes('claude.ai');
+    if (isClaude) {
+        // Claude.ai uses a button with aria-label="メッセージを送信" or "Send message"
+        let container = target.parentElement;
+        for (let i = 0; i < 10 && container; i++) {
+            const sendButton = container.querySelector('button[aria-label="メッセージを送信"]') ||
+                container.querySelector('button[aria-label="Send message"]') ||
+                container.querySelector('button[aria-label*="送信"]') ||
+                container.querySelector('button[aria-label*="Send"]');
             if (sendButton instanceof HTMLElement) {
                 sendButton.click();
                 return;

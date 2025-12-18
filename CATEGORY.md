@@ -9,7 +9,7 @@
 | カテゴリ | サイト | 特徴 |
 |----------|--------|------|
 | **A. Standard Apps** | Gmail, ほとんどのサイト | 汎用ロジックで対応 |
-| **B. Complex Apps (Enter=送信系)** | Discord, Teams, Grok | Enter で送信、特殊処理必要 |
+| **B. Complex Apps (Enter=送信系)** | Discord, Teams, Grok, Claude.ai | Enter で送信、特殊処理必要 |
 | **C. Complex Apps (ボタンクリック系)** | Slack, ChatGPT | ボタンクリックで送信 |
 | **D. Google Apps** | Google Meet, Google Chat | 独自属性を持つ特殊対応 |
 | **E. Blocked Sites** | Google Docs | 対応していない（意図的） |
@@ -76,6 +76,7 @@ const keywords = ['message', 'chat', 'compose', 'reply', 'comment', 'post', 'wri
 | Discord | `discord.com` | カスタムエディタ |
 | Microsoft Teams | `teams.microsoft.com`, `teams.live.com` | カスタムエディタ |
 | Grok | `grok.com` | TipTap (ProseMirror) |
+| Claude.ai | `claude.ai` | TipTap (ProseMirror) |
 
 ### 技術的特徴
 - **デフォルトでEnterが送信**になっている
@@ -93,7 +94,7 @@ const keywords = ['message', 'chat', 'compose', 'reply', 'comment', 'post', 'wri
 
 送信方法:
 ├─ Discord/Teams → Enter キーイベントをシミュレーション
-└─ Grok → 送信ボタンクリック
+└─ Grok / Claude.ai → 送信ボタンクリック
 ```
 
 ### コード例（送信時のEnterシミュレーション）
@@ -113,21 +114,23 @@ events.forEach(eventType => {
     target.dispatchEvent(newEvent);
 });
 ```
-
-### Grok専用の検出・送信ロジック
+### Grok / Claude.ai 専用の検出・送信ロジック
 ```typescript
-// 検出: TipTap/ProseMirror エディタ
+// 検出: TipTap/ProseMirror エディタ (共通)
 if (element.classList.contains('tiptap') && 
     element.classList.contains('ProseMirror') && 
     element.isContentEditable) {
     return true;
 }
 
-// 送信: aria-label="送信" または "Send" のボタンを検索
-const sendButton = container.querySelector('button[type="submit"][aria-label]') ||
+// 送信 (Grok): aria-label="送信" または "Send" のボタンを検索
+const grokButton = container.querySelector('button[type="submit"][aria-label]') ||
     container.querySelector('button[aria-label="送信"]') ||
-    container.querySelector('button[aria-label="Send"]') ||
-    container.querySelector('button[type="submit"]');
+    container.querySelector('button[aria-label="Send"]');
+
+// 送信 (Claude.ai): aria-label="メッセージを送信" または "Send message"
+const claudeButton = container.querySelector('button[aria-label="メッセージを送信"]') ||
+    container.querySelector('button[aria-label="Send message"]');
 ```
 
 ---
@@ -294,6 +297,7 @@ if (hostname === 'docs.google.com') {
 | Discord | B | ✅ 動作 |
 | Microsoft Teams | B | ✅ 動作 |
 | Grok | B | ✅ 動作 |
+| Claude.ai | B | ✅ 動作 |
 | Slack | C | ✅ 動作 |
 | ChatGPT / OpenAI | C | ✅ 動作 |
 | Google Meet | D | ✅ 動作 |

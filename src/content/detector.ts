@@ -60,10 +60,11 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
         }
     }
 
-    // 7. Explicit Grok detection
+    // 7. Explicit Grok and Claude.ai detection (both use TipTap/ProseMirror editor)
     const isGrok = hostname.includes('grok.com');
-    if (isGrok) {
-        // Grok uses TipTap/ProseMirror editor
+    const isClaude = hostname.includes('claude.ai');
+    if (isGrok || isClaude) {
+        // Grok and Claude.ai use TipTap/ProseMirror editor
         if (element.classList.contains('tiptap') && element.classList.contains('ProseMirror') && (element as HTMLElement).isContentEditable) {
             return true;
         }

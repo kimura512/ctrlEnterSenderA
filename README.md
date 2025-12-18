@@ -8,6 +8,11 @@
 
 ## Changelog
 
+### v1.1.2 (2024-12-18)
+
+#### New Features
+- **Claude.ai support**: Added support for Claude AI chat. Fixed an issue where Enter was sending messages on the start screen.
+
 ### v1.1.1 (2024-12-18)
 
 #### New Features

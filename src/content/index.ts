@@ -48,9 +48,10 @@ function attachListeners(doc: Document) {
         const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
         const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
         const isGrok = hostname.includes('grok.com');
-        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok;
+        const isClaude = hostname.includes('claude.ai');
+        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok || isClaude;
 
-        // CASE 1: Complex Apps (Slack, Discord, Teams, ChatGPT, Grok)
+        // CASE 1: Complex Apps (Slack, Discord, Teams, ChatGPT, Grok, Claude)
         // Handle BOTH Enter and Ctrl+Enter in Capture phase
         if (isComplexApp) {
             if (isSendKey || isPlainEnter) {
@@ -91,7 +92,8 @@ function attachListeners(doc: Document) {
         const isSlack = hostname.includes('slack.com');
         const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
         const isGrok = hostname.includes('grok.com');
-        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok;
+        const isClaude = hostname.includes('claude.ai');
+        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok || isClaude;
 
         // Complex apps are fully handled in Capture phase, so ignore them here.
         if (isComplexApp) return;
