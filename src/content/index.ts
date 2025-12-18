@@ -47,9 +47,10 @@ function attachListeners(doc: Document) {
         const isDiscord = hostname.includes('discord.com');
         const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
         const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
-        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT;
+        const isGrok = hostname.includes('grok.com');
+        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok;
 
-        // CASE 1: Complex Apps (Slack, Discord, Teams)
+        // CASE 1: Complex Apps (Slack, Discord, Teams, ChatGPT, Grok)
         // Handle BOTH Enter and Ctrl+Enter in Capture phase
         if (isComplexApp) {
             if (isSendKey || isPlainEnter) {
@@ -89,7 +90,8 @@ function attachListeners(doc: Document) {
         const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
         const isSlack = hostname.includes('slack.com');
         const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
-        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT;
+        const isGrok = hostname.includes('grok.com');
+        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok;
 
         // Complex apps are fully handled in Capture phase, so ignore them here.
         if (isComplexApp) return;
@@ -108,7 +110,7 @@ function attachListeners(doc: Document) {
 // Attach to main document
 attachListeners(document);
 
-// Handle iframes (like Google Chat)
+// Handle iframes
 const observer = new MutationObserver((mutations) => {
     mutations.forEach((mutation) => {
         mutation.addedNodes.forEach((node) => {

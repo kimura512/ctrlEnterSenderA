@@ -13,40 +13,27 @@ export function handleKeyDown(event: KeyboardEvent, target: HTMLElement, _config
 
     const isPlainEnter = event.key === 'Enter' && !event.shiftKey && !event.ctrlKey && !event.metaKey && !event.altKey;
 
-    // Check if we're on Discord or Teams
-    const isDiscord = window.location.hostname.includes('discord.com');
-    const isTeams = window.location.hostname.includes('teams.microsoft.com') || window.location.hostname.includes('teams.live.com');
-    // Slack and ChatGPT are handled via triggerSend (button click)
-    const isComplexApp = isDiscord || isTeams;
+    const hostname = window.location.hostname;
 
-    // Special handling for Complex Apps (Discord, Teams)
-    if (isComplexApp) {
+    // Check if we're on Discord, Teams, or Grok
+    const isDiscord = hostname.includes('discord.com');
+    const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
+    const isGrok = hostname.includes('grok.com');
+    // These apps send on Enter natively, so we need special handling
+    const isEnterToSendApp = isDiscord || isTeams || isGrok;
+
+    // Special handling for Enter-to-Send Apps
+    if (isEnterToSendApp) {
         if (isSendKey) {
-            // Ctrl+Enter on Complex Apps: Trigger Send
-            // These apps usually send on Enter.
-            // We simulate a plain Enter keypress to trigger their send action.
+            // Ctrl+Enter: Trigger Send
             event.preventDefault();
             event.stopImmediatePropagation();
-
-            const events = ['keydown', 'keypress', 'keyup'];
-            events.forEach(eventType => {
-                const newEvent = new KeyboardEvent(eventType, {
-                    key: 'Enter',
-                    code: 'Enter',
-                    keyCode: 13,
-                    which: 13,
-                    bubbles: true,
-                    cancelable: true,
-                    view: window
-                });
-                target.dispatchEvent(newEvent);
-            });
+            triggerSend(target);
             return;
         }
 
         if (isPlainEnter) {
-            // Plain Enter: simulate Shift+Enter (newline)
-            // These apps natively handle Shift+Enter to insert a newline.
+            // Plain Enter: Insert newline (simulate Shift+Enter)
             event.preventDefault();
             event.stopImmediatePropagation();
             insertNewline(target);
@@ -55,7 +42,7 @@ export function handleKeyDown(event: KeyboardEvent, target: HTMLElement, _config
         return;
     }
 
-    // Non-Complex sites (Slack, ChatGPT, Standard Apps)
+    // Non-Enter-to-Send sites (Slack, ChatGPT, Standard Apps)
     if (isSendKey) {
         // If we reached here in Bubble phase and defaultPrevented is false (checked in index.ts),
         // it means the site didn't handle Ctrl+Enter. We should trigger send.
@@ -87,10 +74,11 @@ function insertNewline(target: HTMLElement) {
             hostname.includes('discord.com') ||
             hostname.includes('teams.microsoft.com') ||
             hostname.includes('chatgpt.com') ||
-            hostname.includes('openai.com');
+            hostname.includes('openai.com') ||
+            hostname.includes('grok.com');
 
         if (needsShiftEnter) {
-            // For contenteditable (Slack, Discord, Teams, ChatGPT), simulating Shift+Enter 
+            // For contenteditable (Slack, Discord, Teams, ChatGPT, Grok), simulating Shift+Enter 
             // is the most robust way to trigger the site's native newline insertion.
             const events = ['keydown', 'keypress', 'keyup'];
             events.forEach(eventType => {
@@ -133,8 +121,10 @@ function insertNewline(target: HTMLElement) {
 }
 
 function triggerSend(target: HTMLElement) {
+    const hostname = window.location.hostname;
+
     // Special handling for Slack
-    const isSlack = window.location.hostname.includes('slack.com');
+    const isSlack = hostname.includes('slack.com');
     if (isSlack) {
         // Slack's DOM structure is complex. The input (.ql-editor) is deep inside.
         // The send button (button[data-qa="texty_send_button"]) is usually in a toolbar or footer relative to the editor.
@@ -173,6 +163,26 @@ function triggerSend(target: HTMLElement) {
         }
     }
 
+    // Special handling for Grok
+    const isGrok = hostname.includes('grok.com');
+    if (isGrok) {
+        // Grok uses a submit button with aria-label="送信" or "Send"
+        // The button is usually near the input area
+        let container = target.closest('form') || target.parentElement;
+        for (let i = 0; i < 10 && container; i++) {
+            // Try various selectors for Grok's send button
+            const sendButton = container.querySelector('button[type="submit"][aria-label]') ||
+                container.querySelector('button[aria-label="送信"]') ||
+                container.querySelector('button[aria-label="Send"]') ||
+                container.querySelector('button[type="submit"]');
+            if (sendButton instanceof HTMLElement) {
+                sendButton.click();
+                return;
+            }
+            container = container.parentElement;
+        }
+    }
+
     // 1. Try form submission
     const form = target.closest('form');
     if (form) {
@@ -202,7 +212,7 @@ function triggerSend(target: HTMLElement) {
         // Slack
         'button[data-qa="texty_send_button"]',
         'button[aria-label="Send now"]',
-        // Google Chat / Meet
+        // Google Meet
         'div[role="button"][aria-label="Send message"]',
         'div[role="button"][aria-label="メッセージを送信"]',
         'button[aria-label="メッセージを送信"]', // Meet specific

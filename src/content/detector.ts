@@ -12,6 +12,12 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
         return false;
     }
 
+    // Gmail: Do NOT interfere with Gmail's mail compose (Enter=newline, Ctrl+Enter=send natively)
+    // Gmail already has the desired behavior, so we skip it entirely.
+    if (hostname === 'mail.google.com') {
+        return false;
+    }
+
     // 1. Check custom excludes
     if (config?.customExcludes) {
         if (element.matches(config.customExcludes.join(','))) {
@@ -54,10 +60,11 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
         }
     }
 
-    // 7. Explicit Google Chat detection
-    const isGoogleChat = hostname.includes('chat.google.com') || hostname.includes('mail.google.com');
-    if (isGoogleChat) {
-        if (element.getAttribute('g_editable') === 'true') {
+    // 7. Explicit Grok detection
+    const isGrok = hostname.includes('grok.com');
+    if (isGrok) {
+        // Grok uses TipTap/ProseMirror editor
+        if (element.classList.contains('tiptap') && element.classList.contains('ProseMirror') && (element as HTMLElement).isContentEditable) {
             return true;
         }
     }

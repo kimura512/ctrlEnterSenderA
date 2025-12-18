@@ -15,3 +15,4 @@ export function isJapanese(): boolean {
     return lang.startsWith('ja');
 }
 
+
