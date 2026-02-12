@@ -217,14 +217,6 @@ export async function getAllConfigs(): Promise<StorageSchema> {
     }
 }
 
-// Check if an origin is a default disabled domain (for UI display)
-// Check if an origin is a default disabled domain (for UI display)
-// export function isDefaultDisabledOrigin(origin: string): boolean {
-//     return isDefaultDisabledDomain(origin);
-// }
-// This was duplicate, removing it. Actually, I need to keep one export.
-// The previous edit added one at the top. I should remove this one at the bottom.
-
 
 export function getDefaultDisabledDomains(): string[] {
     return DEFAULT_DISABLED_DOMAINS;
