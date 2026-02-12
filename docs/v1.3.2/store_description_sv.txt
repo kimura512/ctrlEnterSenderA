@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Sluta skicka oavsiktliga "Kärleksbrev" till din chef. ★★
 
 Här är lite helt fiktiv statistik som ändå känns känslomässigt korrekt:
@@ -14,10 +15,27 @@ Du skrev: "Jag ska döda dig" (Avsett: "Jag ska döda din biljett i systemet." -
 【Exempel 2】
 Det "Plötsliga Erkännandet"
 Du skrev: "Jag älskar dig" (Avsett: "Jag älskar uppdateringar som denna.")
+=======
+★★ Sluta skicka oavsiktliga "kärleksbrev" till din chef. ★★
+
+Här är några helt påhittade statistiker som ändå känns känslomässigt korrekta:
+
+● 1 av 5 nyanställda får sitt "elddop" på jobbet genom att skicka ett oavslutat Slack/Teams-meddelande.
+● 5 av 5 personer upplever ren desperation när ChatGPT svarar på en mening de aldrig skrivit klart.
+
+Och sedan har vi dessa… verkligen skrämmande olyckor:
+
+【Exempel 1】
+Det "aggressiva felskrivningen". Du skrev: "I will kill you" (Avsett: "I will kill your ticket in the system." — Jag ska stänga ditt ärende i systemet).
+
+【Exempel 2】
+Den "plötsliga bekännelsen". Du skrev: "I love u" (Avsett: "I love updates like this one." — Jag älskar uppdateringar som denna).
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 Vi har alla varit där. Men vi behöver inte stanna där.
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 ◆ Nyckelfunktioner
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -39,10 +57,33 @@ Socialt: Discord / Facebook Messenger / X (Twitter)
 Detekterar automatiskt chattinmatningar på de flesta webbplatser.
 Slå på/av tillägget per webbplats via ikonen.
 Nu enklare än någonsin - inga komplexa lägen, det bara fungerar.
+=======
+◆ Huvudfunktioner
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Förhindra oavsiktliga sändningar
+Enter skickar inte längre meddelanden.
+Det infogar helt enkelt en ny rad — precis som civiliserad kommunikation bör vara.
+
+▼ Enhetliga genvägar överallt
+Skicka med Ctrl+Enter (eller Cmd+Enter på Mac) på alla webbplatser som stöds.
+
+▼ Aktiveringslägen
+Du kan nu välja mellan lägena "Standard PÅ (Blacklist)" och "Standard AV (Whitelist)" via inställningarna.
+Slå PÅ/AV tillägget per webbplats via ikonen.
+
+▼ Fungerar på stora plattformar
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Arbete: Slack / Microsoft Teams / Google Meet
+Socialt: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…och många fler.
+*Obs: Google Chat och YouTube Live Chat stöds för närvarande inte.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Integritetspolicy
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Detta tillägg samlar INTE in, lagrar eller överför några av dina tangenttryckningar eller meddelandeinnehåll. Endast dina preferensinställningar (aktiverade/inaktiverade webbplatser) lagras lokalt i din webbläsare. För mer information, besök GitHub-sidan:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +94,7 @@ Du kan nu välja mellan lägena "Standard PÅ (Svartlista)" och "Standard AV (Vi
 
 ▼ Webbplatser som stöds (Vitlisteläge)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Detta tillägg samlar INTE in, lagrar eller överför några av dina knapptryckningar eller meddelandeinnehåll. Endast dina inställningar (aktiverade/inaktiverade webbplatser) lagras lokalt i din webbläsare. För mer information, besök GitHub-sidan:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

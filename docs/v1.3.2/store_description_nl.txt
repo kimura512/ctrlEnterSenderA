@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Stop met het per ongeluk sturen van "Liefdesbrieven" naar je baas. ★★
 
 Hier zijn wat volledig fictieve statistieken die toch emotioneel accuraat aanvoelen:
@@ -53,3 +54,49 @@ U kunt nu kiezen tussen de modi "Standaard AAN (Zwarte lijst)" en "Standaard UIT
 
 ▼ Ondersteunde sites (Witte lijst-modus)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+★★ Stop met het per ongeluk versturen van "liefdesbrieven" naar je baas. ★★
+
+Hier zijn enkele volledig fictieve statistieken die nog steeds emotioneel accuraat aanvoelen:
+
+● 1 op de 5 nieuwe medewerkers krijgt hun "doop" op het werk door een onafgemaakt Slack/Teams-bericht te sturen.
+● 5 van de 5 mensen ervaren pure wanhoop wanneer ChatGPT reageert op een zin die ze nooit hebben afgemaakt.
+
+En dan zijn er deze… werkelijk angstaanjagende ongelukken:
+
+【Voorbeeld 1】
+De "agressieve typefout". Je typte: "I will kill you" (Bedoeld: "I will kill your ticket in the system." — Ik zal je ticket in het systeem afhandelen).
+
+【Voorbeeld 2】
+De "plotselinge bekentenis". Je typte: "I love u" (Bedoeld: "I love updates like this one." — Ik hou van updates zoals deze).
+
+We hebben het allemaal meegemaakt. Maar het hoeft niet zo te blijven.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Belangrijkste kenmerken
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Voorkom per ongeluk verzenden
+Enter verstuurt geen berichten meer.
+Het voegt gewoon een nieuwe regel in — precies zoals beschaafde communicatie hoort te zijn.
+
+▼ Overal uniforme sneltoetsen
+Verzend met Ctrl+Enter (of Cmd+Enter op Mac) op alle ondersteunde sites.
+
+▼ Activeringsmodi
+U kunt nu via de opties kiezen tussen de modi "Standaard AAN (Blacklist)" and "Standaard UIT (Whitelist)".
+Schakel de extensie per site AAN/UIT via het pictogram.
+
+▼ Werkt op grote platforms
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Werk: Slack / Microsoft Teams / Google Meet
+Sociaal: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…en nog veel meer.
+*Opmerking: Google Chat en YouTube Live Chat worden momenteel niet ondersteund.*
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Privacybeleid
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Deze extensie verzamelt, bewaart of verzendt GEEN van uw toetsaanslagen of berichtinhoud. Alleen uw voorkeursinstellingen (ingeschakelde/uitgeschakelde sites) worden lokaal in uw browser opgeslagen. Voor meer details kunt u de GitHub-pagina bezoeken:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

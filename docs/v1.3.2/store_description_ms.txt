@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Berhenti menghantar "Surat Cinta" secara tidak sengaja kepada bos anda. ★★
 
 Berikut adalah beberapa statistik yang benar-benar rekaan tetapi masih terasa tepat dari segi emosi:
@@ -39,10 +40,51 @@ Sosial: Discord / Facebook Messenger / X (Twitter)
 Mengesan input sembang secara automatik pada kebanyakan tapak web.
 Togol sambungan HIDUP/MATI setiap tapak melalui ikon.
 Kini lebih mudah daripada sebelumnya—tiada mod kompleks, ia hanya berfungsi.
+=======
+★★ Berhenti menghantar "surat cinta" yang tidak disengajakan kepada bos anda. ★★
+
+Berikut adalah beberapa statistik rekaan yang masih terasa tepat dari segi emosi:
+
+● 1 daripada 5 pekerja baru mendapat "baptisan" di tempat kerja dengan menghantar mesej Slack/Teams yang belum selesai.
+● 5 daripada 5 orang mengalami keputusasaan murni apabila ChatGPT menjawab ayat yang tidak pernah mereka selesaikan.
+
+Dan terdapat juga ini… kemalangan yang benar-benar menakutkan:
+
+【Contoh 1】
+"Salah Taip yang Agresif". Anda menaip: "I will kill you" (Maksud asal: "I will kill your ticket in the system." — Saya akan menyelesaikan tiket anda dalam sistem).
+
+【Contoh 2】
+"Pengakuan Tiba-tiba". Anda menaip: "I love u" (Maksud asal: "I love updates like this one." — Saya suka kemas kini seperti ini).
+
+Kita semua pernah mengalaminya. Tetapi kita tidak perlu terus begitu.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Ciri-ciri Utama
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Mencegah Penghantaran Tidak Sengaja
+Enter tidak lagi menghantar mesej.
+Ia hanya memasukkan baris baru — tepat seperti bagaimana komunikasi yang beradab sepatutnya.
+
+▼ Pintasan Seragam Di Mana-mana
+Hantar dengan Ctrl+Enter (atau Cmd+Enter pada Mac) di semua tapak yang disokong.
+
+▼ Mod Pengaktifan
+Anda kini boleh memilih antara mod "Default HIDUP (Senarai Hitam)" dan "Default MATI (Senarai Putih)" melalui pilihan.
+Togol sambungan HIDUP/MATI bagi setiap tapak melalui ikon.
+
+▼ Berfungsi pada Platform Utama
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Kerja: Slack / Microsoft Teams / Google Meet
+Sosial: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…dan banyak lagi.
+*Nota: Google Chat dan YouTube Live Chat tidak disokong buat masa ini.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Dasar Privasi
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Sambungan ini TIDAK mengumpul, menyimpan atau menghantar mana-mana ketukan kekunci atau kandungan mesej anda. Hanya tetapan keutamaan anda (tapak didayakan/dilumpuhkan) disimpan secara setempat dalam penyemak imbas anda. Untuk butiran lanjut, sila lawati halaman GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +95,7 @@ Anda kini boleh memilih antara mod "Lalai HIDUP (Senarai Hitam)" dan "Lalai MATI
 
 ▼ Laman yang Disokong (Mod Senarai Putih)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Sambungan ini TIDAK mengumpul, menyimpan, atau menghantar sebarang ketukan kekunci atau kandungan mesej anda. Hanya tetapan pilihan anda (tapak yang didayakan/dilumpuhkan) disimpan secara tempatan dalam penyemak imbas anda. Untuk butiran lanjut, sila lawati halaman GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

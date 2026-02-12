@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Lopeta tahattomien "rakkauskirjeiden" lähettäminen pomollesi. ★★
 
 Tässä on joitain täysin fiktiivisiä tilastoja, jotka tuntuvat silti tunnetasolla tarkoilta:
@@ -16,11 +17,30 @@ Kirjoitit: "Tapan sinut" (Tarkoitettu: "Tapan lippusi järjestelmässä" - eli s
 Kirjoitit: "Rakastan sinua" (Tarkoitettu: "Rakastan tällaisia päivityksiä.")
 
 Olemme kaikki olleet siellä. Mutta meidän ei tarvitse jäädä sinne.
+=======
+★★ Lopeta vahingossa lähetetyt ”rakkauskirjeet” pomollesi. ★★
+
+Tässä on joitakin täysin kuvitteellisia tilastoja, jotka tuntuvat silti emotionaalisesti tuskallisen tutuilta:
+
+● Joka viides uusi työntekijä saa ”tulikasteensa” töissä lähettämällä keskeneräisen Slack/Teams-viestin.
+● 5/5 ihmisestä kokee puhdasta epätoivoa, kun ChatGPT vastaa lauseeseen, jota he eivät koskaan kirjoittaneet loppuun.
+
+Ja sitten on näitä… todella pelottavia vahinkoja:
+
+【Esimerkki 1】
+”Aggressiivinen kirjoitusvirhe”. Kirjoitit: ”I will kill you” (Tarkoitus oli: ”I will kill your ticket in the system.” – Suljen tikettisi järjestelmässä.)
+
+【Esimerkki 2】
+”Yllättävä tunnustus”. Kirjoitit: ”I love u” (Tarkoitus oli: ”I love updates like this one.” – Rakastan tällaisia päivityksiä.)
+
+Me kaikki olemme kokeneet tämän. Mutta meidän ei tarvitse enää kärsiä siitä.
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Tärkeimmät ominaisuudet
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ Estä tahattomat lähetykset
 Enter ei enää lähetä viestejä.
 Se lisää yksinkertaisesti uuden rivin – juuri niin kuin sivistyneen viestinnän pitäisi olla.
@@ -39,10 +59,30 @@ Sosiaalinen: Discord / Facebook Messenger / X (Twitter)
 Tunnistaa automaattisesti chat-syötteet useimmilla verkkosivustoilla.
 Kytke laajennus PÄÄLLE/POIS sivustokohtaisesti kuvakkeen kautta.
 Nyt yksinkertaisempaa kuin koskaan – ei monimutkaisia tiloja, se vain toimii.
+=======
+▼ Estä vahingossa tapahtuva lähetys
+Enter ei enää lähetä viestejä.
+Se vain lisää uuden rivin – juuri niin kuin sivistyneen viestinnän kuuluukin toimia.
+
+▼ Yhtenäiset pikanäppäimet kaikkialla
+Lähetä Ctrl+Enter-yhdistelmällä (tai Macilla Cmd+Enter) kaikilla tuetuilla sivustoilla.
+
+▼ Aktivointitilat
+Voit nyt valita asetuksista joko ”Oletuksena PÄÄLLÄ (musta lista)” tai ”Oletuksena POIS (valkoinen lista)” -tilan.
+Käännä laajennus PÄÄLLE/POIS sivustokohtaisesti kuvakkeen kautta.
+
+▼ Toimii suurimmilla alustoilla
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Työ: Slack / Microsoft Teams / Google Meet
+Sosiaaliset mediat: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…ja monet muut.
+*Huomautus: Google Chat ja YouTube Live Chat eivät ole tällä hetkellä tuettuja.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Tietosuojakäytäntö
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Tämä laajennus EI kerää, tallenna tai lähetä mitään näppäilyjäsi tai viestiesi sisältöä. Vain asetusvalintasi (käytössä olevat/poistetut sivustot) tallennetaan paikallisesti selaimeesi. Lisätietoja saat GitHub-sivulta:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +93,7 @@ Voit nyt valita tilojen "Oletus PÄÄLLÄ (Musta lista)" ja "Oletus POIS (Valkoi
 
 ▼ Tuetut sivustot (Valkoinen lista -tila)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Tämä laajennus EI kerää, tallenna tai välitä näppäinpainalluksiasi tai viestiesi sisältöä. Vain mieltymysasetuksesi (käytössä olevat/pois käytöstä olevat sivustot) tallennetaan paikallisesti selaimeesi. Lisätietoja saat GitHub-sivulta:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

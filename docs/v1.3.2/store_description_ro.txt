@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Încetați să mai trimiteți accidental „Scrisori de dragoste” șefului dumneavoastră. ★★
 
 Iată câteva statistici complet fictive, dar care se simt precise din punct de vedere emoțional:
@@ -16,11 +17,30 @@ Ați tastat: „Te voi ucide” (Intenționat: „Voi ucide tichetul tău în si
 Ați tastat: „Te iubesc” (Intenționat: „Iubesc actualizările ca aceasta.”)
 
 Cu toții am trecut prin asta. Dar nu trebuie să rămânem acolo.
+=======
+★★ Nu mai trimite accidental „scrisori de dragoste” șefului tău. ★★
+
+Iată câteva statistici complet fictive, care se simt totuși exacte din punct de vedere emoțional:
+
+● 1 din 5 noi angajați primește „botezul” la locul de muncă trimitând un mesaj Slack/Teams neterminat.
+● 5 din 5 persoane experimentează disperarea pură atunci când ChatGPT răspunde la o propoziție pe care nu au terminat-o niciodată.
+
+Și mai sunt și aceste… accidente cu adevărat terifiante:
+
+【Exemplul 1】
+„Greșeala de dactilografiere agresivă”. Ai tastat: „I will kill you” (Intenția: „I will kill your ticket in the system.” — Voi închide tichetul tău în sistem).
+
+【Exemplul 2】
+„Mărturisirea bruscă”. Ai tastat: „I love u” (Intenția: „I love updates like this one.” — Îmi plac actualizările ca aceasta).
+
+Am trecut cu toții prin asta. Dar nu trebuie să rămânem așa.
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Caracteristici cheie
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ Preveniți trimiterile accidentale
 Enter nu mai trimite mesaje.
 Pur și simplu introduce o linie nouă — exact așa cum ar trebui să fie comunicarea civilizată.
@@ -39,10 +59,30 @@ Social: Discord / Facebook Messenger / X (Twitter)
 Detectează automat intrările de chat pe majoritatea site-urilor web.
 Activați/Dezactivați extensia pentru fiecare site prin intermediul pictogramei.
 Acum mai simplu ca niciodată — fără moduri complexe, pur și simplu funcționează.
+=======
+▼ Prevenirea trimiterii accidentale
+Tasta Enter nu mai trimite mesaje.
+Pur și simplu inserează o linie nouă — exact așa cum ar trebui să fie comunicarea civilizată.
+
+▼ Scurtături unificate peste tot
+Trimite cu Ctrl+Enter (sau Cmd+Enter pe Mac) pe toate site-urile acceptate.
+
+▼ Moduri de activare
+Acum puteți alege între modurile „Implicit PORNIT (Lista neagră)” și „Implicit OPRIT (Lista albă)” prin intermediul opțiunilor.
+Activați/dezactivați extensia pentru fiecare site în parte prin intermediul pictogramei.
+
+▼ Funcționează pe platformele majore
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Muncă: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…și multe altele.
+*Notă: Google Chat și YouTube Live Chat nu sunt acceptate în prezent.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Politica de confidențialitate
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Această extensie NU colectează, stochează sau transmite niciuna dintre apăsările de taste sau conținutul mesajelor dumneavoastră. Doar setările de preferințe (site-uri activate/dezactivate) sunt stocate local în browserul dumneavoastră. Pentru mai multe detalii, vă rugăm să vizitați pagina GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +93,7 @@ Acum puteți alege între modurile „Implicit PORNIT (Lista neagră)” și „
 
 ▼ Site-uri acceptate (Modul Lista albă)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Această extensie NU colectează, nu stochează și nu transmite nicio apăsare de tastă sau conținut de mesaj. Doar setările de preferințe (site-uri activate/dezactivate) sunt stocate local în browserul tău. Pentru mai multe detalii, te rugăm să vizitezi pagina GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

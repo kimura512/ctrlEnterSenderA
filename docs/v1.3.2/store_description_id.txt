@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Berhenti mengirim "Surat Cinta" yang tidak disengaja kepada bos Anda. ★★
 
 Berikut adalah beberapa statistik yang sepenuhnya fiksi namun terasa akurat secara emosional:
@@ -16,11 +17,30 @@ Anda mengetik: "Aku akan membunuhmu" (Dimaksudkan: "Aku akan membunuh tiketmu di
 Anda mengetik: "Aku mencintaimu" (Dimaksudkan: "Aku menyukai pembaruan seperti ini.")
 
 Kita semua pernah mengalaminya. Tapi kita tidak harus tetap di sana.
+=======
+★★ Berhenti mengirim "surat cinta" yang tidak sengaja kepada bos Anda. ★★
+
+Berikut adalah beberapa statistik fiktif yang terasa akurat secara emosional:
+
+● 1 dari 5 karyawan baru mendapatkan "baptisan" di tempat kerja dengan mengirimkan pesan Slack/Teams yang belum selesai.
+● 5 dari 5 orang mengalami keputusasaan murni saat ChatGPT menanggapi kalimat yang belum mereka selesaikan.
+
+Dan ada juga ini… kecelakaan yang benar-benar menakutkan:
+
+【Contoh 1】
+"Salah Ketik yang Agresif". Anda mengetik: "I will kill you" (Maksudnya: "I will kill your ticket in the system." — Saya akan menyelesaikan tiket Anda di sistem).
+
+【Contoh 2】
+"Pengakuan Tiba-tiba". Anda mengetik: "I love u" (Maksudnya: "I love updates like this one." — Saya suka pembaruan seperti ini).
+
+Kita semua pernah mengalaminya. Tapi kita tidak harus terus seperti itu.
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Fitur Utama
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ Cegah Pengiriman Tidak Disengaja
 Enter tidak lagi mengirim pesan.
 Itu hanya menyisipkan baris baru—persis bagaimana komunikasi yang beradab seharusnya.
@@ -39,10 +59,30 @@ Sosial: Discord / Facebook Messenger / X (Twitter)
 Secara otomatis mendeteksi input obrolan di sebagian besar situs web.
 Aktifkan/Nonaktifkan ekstensi per situs melalui ikon.
 Sekarang lebih sederhana dari sebelumnya—tidak ada mode yang rumit, hanya berfungsi.
+=======
+▼ Mencegah Pengiriman Tidak Sengaja
+Enter tidak lagi mengirim pesan.
+Enter hanya akan memasukkan baris baru — persis seperti seharusnya komunikasi yang beradab.
+
+▼ Pintasan Seragam Di Mana Saja
+Kirim dengan Ctrl+Enter (atau Cmd+Enter di Mac) di semua situs yang didukung.
+
+▼ Mode Aktivasi
+Sekarang Anda dapat memilih antara mode "Default AKTIF (Daftar Hitam)" dan "Default MATI (Daftar Putih)" melalui opsi.
+Aktifkan/nonaktifkan ekstensi per situs melalui ikon.
+
+▼ Berkerja di Platform Utama
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Kerja: Slack / Microsoft Teams / Google Meet
+Sosial: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…dan masih banyak lagi.
+*Catatan: Google Chat dan YouTube Live Chat saat ini tidak didukung.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Kebijakan Privasi
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Ekstensi ini TIDAK mengumpulkan, menyimpan, atau mengirimkan penekanan tombol atau konten pesan Anda. Hanya pengaturan preferensi Anda (situs yang diaktifkan/dinonaktifkan) yang disimpan secara lokal di browser Anda. Untuk detail lebih lanjut, silakan kunjungi halaman GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +93,7 @@ Anda sekarang dapat memilih antara mode "Default NYALA (Daftar Hitam)" dan "Defa
 
 ▼ Situs yang Didukung (Mode Daftar Putih)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Ekstensi ini TIDAK mengumpulkan, menyimpan, atau mengirimkan ketikan tombol atau konten pesan Anda. Hanya pengaturan preferensi Anda (situs yang diaktifkan/dinonaktifkan) yang disimpan secara lokal di browser Anda. Untuk detail lebih lanjut, silakan kunjungi halaman GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

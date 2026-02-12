@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Tør ikke sende utilsigtede "Kærlighedsbreve" til din chef. ★★
 
 Her er nogle helt fiktive statistikker, der stadig føles følelsesmæssigt nøjagtige:
@@ -14,6 +15,22 @@ Du skrev: "Jeg vil dræbe dig" (Tilsigtet: "Jeg vil dræbe din billet i systemet
 【Eksempel 2】
 Den "Pludselige Tilståelse"
 Du skrev: "Jeg elsker dig" (Tilsigtet: "Jeg elsker opdateringer som denne.")
+=======
+★★ Stop med at sende utilsigtede "kærlighedsbreve" til din chef. ★★
+
+Her er nogle helt fiktive statistikker, der stadig føles følelsesmæssigt præcise:
+
+● 1 ud af 5 nyansatte får deres "dåb" på arbejdet ved at sende en uafsluttet Slack/Teams-besked.
+● 5 ud af 5 personer oplever ren fortvivlelse, når ChatGPT svarer på en sætning, de aldrig har gjort færdig.
+
+Og så er der disse… virkelig skræmmende uheld:
+
+【Eksempel 1】
+Den "aggressive tastefejl". Du skrev: "I will kill you" (Tilsigtet: "I will kill your ticket in the system." — Jeg vil lukke din sag i systemet).
+
+【Eksempel 2】
+Den "pludselige tilståelse". Du skrev: "I love u" (Tilsigtet: "I love updates like this one." — Jeg elsker opdateringer som denne).
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 Vi har alle været der. Men vi behøver ikke at blive der.
 
@@ -21,6 +38,7 @@ Vi har alle været der. Men vi behøver ikke at blive der.
 ◆ Nøglefunktioner
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ Forhindr Utilsigtede Sendelser
 Enter sender ikke længere beskeder.
 Det indsætter simpelthen en ny linje - præcis hvordan civiliseret kommunikation burde være.
@@ -39,10 +57,30 @@ Social: Discord / Facebook Messenger / X (Twitter)
 Detekterer automatisk chat-input på de fleste hjemmesider.
 Slå udvidelsen TIL/FRA pr. side via ikonet.
 Nu enklere end nogensinde - ingen komplekse tilstande, det virker bare.
+=======
+▼ Forebyg utilsigtede afsendelser
+Enter sender ikke længere beskeder.
+Det indsætter blot en ny linje — præcis som civiliseret kommunikation bør være.
+
+▼ Ensartede genveje overalt
+Send med Ctrl+Enter (eller Cmd+Enter på Mac) på alle understøttede websteder.
+
+▼ Aktiveringstilstande
+Du kan nu vælge mellem tilstandene "Standard TIL (Blacklist)" og "Standard FRA (Whitelist)" via indstillingerne.
+Slå udvidelsen TIL/FRA pr. websted via ikonet.
+
+▼ Fungerer på store platforme
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Arbejde: Slack / Microsoft Teams / Google Meet
+Socialt: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…og mange flere.
+*Bemærk: Google Chat og YouTube Live Chat understøttes i øjeblikket ikke.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Privatlivspolitik
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Denne udvidelse indsamler, gemmer eller transmitterer IKKE nogen af dine tastetryk eller beskedindhold. Kun dine præferenceindstillinger (aktiverede/deaktiverede sider) gemmes lokalt i din browser. For flere detaljer, besøg venligst GitHub-siden:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +91,7 @@ Du kan nu vælge mellem tilstandene "Standard TIL (Sortliste)" og "Standard FRA 
 
 ▼ Understøttede websteder (Hvidlistetilstand)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Denne udvidelse indsamler, gemmer eller transmitterer IKKE dine tastetryk eller beskedindhold. Kun dine præferenceindstillinger (aktiverede/deaktiverede websteder) gemmes lokalt i din browser. For flere detaljer, besøg venligst GitHub-siden:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

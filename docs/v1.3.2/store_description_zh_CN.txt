@@ -1,5 +1,6 @@
 ★★ 别再给老板误发“情书”了。 ★★
 
+<<<<<<< HEAD
 以下是一些完全虚构但感觉非常真实的统计数据：
 
 ● 5名新员工中就有1名因发送未写完的Slack/Teams消息而在工作中受到“洗礼”。
@@ -16,11 +17,28 @@
 你输入：“我爱你”（原意：“我爱这样的更新。”）
 
 我们都经历过。但我们不必一直这样。
+=======
+这里有一些虽然是虚构的、但听起来在情感上非常真实的统计数据：
+
+● 1/5 的新员工通过发送未完成的 Slack/Teams 消息在工作中接受“洗礼”。
+● 5/5 的人在 ChatGPT 回复了他们还没写完的句子时感到纯粹的绝望。
+
+然后还有这些……真正恐怖的事故：
+
+【示例 1】
+“挑衅性拼写错误” 你输入的是："I will kill you"（原意："I will kill your ticket in the system." 我会在系统中关闭你的工单。）
+
+【示例 2】
+“猝不及防的表白” 你输入的是："I love u"（原意："I love updates like this one." 我喜欢这样的更新。）
+
+我们都经历过这些。但我们不必一直忍受。
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ 主要功能
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ 防止误发送
 Enter键不再发送消息。
 它只会插入换行符——这才是文明沟通应有的方式。
@@ -39,10 +57,30 @@ AI：ChatGPT / Claude / Gemini
 自动检测大多数网站上的聊天输入。
 通过图标切换每个网站的扩展开/关。
 现在比以往更简单——没有复杂的模式，直接可用。
+=======
+▼ 防止误发
+按 Enter 键不再发送消息。
+它只会插入换行符——这才是文明沟通该有的样子。
+
+▼ 到处通用的统一快捷键
+在所有支持的网站上通过 Ctrl+Enter（Mac 上为 Cmd+Enter）发送。
+
+▼ 激活模式
+现在您可以在设置中选择“默认开启（黑名单）”和“默认关闭（白名单）”模式。
+通过图标针对每个网站单独开启/关闭扩展程序。
+
+▼ 支持主要平台
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+办公: Slack / Microsoft Teams / Google Meet
+社交: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+……以及更多。
+*注意：目前不支持 Google Chat 和 YouTube 直播聊天。*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ 隐私政策
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 本扩展程序绝不会收集、存储或传输您的任何按键或消息内容。只有您的偏好设置（启用/禁用的网站）会存储在您的浏览器本地。详情请访问 GitHub 页面：
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +91,7 @@ https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
 ▼ 支持的站点（白名单模式）
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+此扩展程序不会收集、存储或传输您的任何按键信息 or 消息内容。只有您的偏好设置（启用/禁用的网站）会存储在您的浏览器本地。更多详情，请访问 GitHub 页面：
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

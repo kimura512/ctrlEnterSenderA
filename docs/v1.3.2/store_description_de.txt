@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Hören Sie auf, versehentlich "Liebesbriefe" an Ihren Chef zu senden. ★★
 
 Hier sind einige völlig fiktive Statistiken, die sich dennoch emotional akkurat anfühlen:
@@ -53,3 +54,49 @@ Sie können jetzt zwischen den Modi "Standard EIN (Blacklist)" und "Standard AUS
 
 ▼ Unterstützte Websites (Whitelist-Modus)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+★★ Hör auf, versehentlich „Liebesbriefe“ an deinen Chef zu schicken. ★★
+
+Hier sind einige völlig fiktive Statistiken, die sich dennoch emotional zutreffend anfühlen:
+
+● 1 von 5 Neueinstellungen wird bei der Arbeit „getauft“, indem eine unfertige Slack-/Teams-Nachricht gesendet wird.
+● 5 von 5 Personen erleben pure Verzweiflung, wenn ChatGPT auf einen Satz antwortet, den sie nie beendet haben.
+
+Und dann gibt es noch diese… wirklich schrecklichen Unfälle:
+
+【Beispiel 1】
+Der „aggressive Vertipper“ Du hast getippt: „I will kill you“ (Beabsichtigt: „I will kill your ticket in the system.“ – Ich werde dein Ticket im System abschließen.)
+
+【Beispiel 2】
+Das „plötzliche Geständnis“ Du hast getippt: „I love u“ (Beabsichtigt: „I love updates like this one.“ – Ich liebe solche Updates.)
+
+Wir alle haben das schon erlebt. Aber das muss nicht so bleiben.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Hauptmerkmale
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Versehentliches Senden verhindern
+Die Eingabetaste sendet keine Nachrichten mehr.
+Sie fügt einfach eine neue Zeile ein – genau so, wie zivilisierte Kommunikation sein sollte.
+
+▼ Einheitliche Tastenkombinationen überall
+Senden Sie mit Strg+Eingabe (oder Cmd+Eingabe auf dem Mac) auf allen unterstützten Websites.
+
+▼ Aktivierungsmodi
+Ab sofort können Sie in den Optionen zwischen den Modi „Standard AN (Whitelist)“ und „Standard AUS (Blacklist)“ wählen.
+Schalten Sie die Erweiterung pro Website über das Icon EIN oder AUS.
+
+▼ Funktioniert auf den wichtigsten Plattformen
+KI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Arbeit: Slack / Microsoft Teams / Google Meet
+Soziale Medien: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…und viele mehr.
+*Hinweis: Google Chat und YouTube Live Chat werden derzeit nicht unterstützt.*
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Datenschutzbestimmungen
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Diese Erweiterung sammelt, speichert oder überträgt KEINE Ihrer Tastatureingaben oder Nachrichteninhalte. Nur Ihre bevorzugten Einstellungen (aktivierte/deaktivierte Websites) werden lokal in Ihrem Browser gespeichert. Weitere Informationen finden Sie auf der GitHub-Seite:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

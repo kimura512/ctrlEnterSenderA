@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Přestaňte svému šéfovi omylem posílat "milostné dopisy". ★★
 
 Zde jsou některé zcela fiktivní statistiky, které jsou však emocionálně přesné:
@@ -39,10 +40,51 @@ Sociální sítě: Discord / Facebook Messenger / X (Twitter)
 Automaticky detekuje chatovací vstupy na většině webových stránek.
 Přepínejte rozšíření ZAP/VYP pro každou stránku pomocí ikony.
 Nyní jednodušší než kdy dřív – žádné složité režimy, prostě to funguje.
+=======
+★★ Přestaňte svému šéfovi posílat nechtěné „milostné dopisy“. ★★
+
+Zde jsou některé zcela smyšlené statistiky, které přesto působí emocionálně přesně:
+
+● 1 z 5 nových zaměstnanců projde v práci „křtem“ tím, že pošle nedokončenou zprávu na Slacku/Teamsech.
+● 5 z 5 lidí zažívá čisté zoufalství, když ChatGPT odpoví na větu, kterou nikdy nedokončili.
+
+A pak jsou tu tyhle… skutečně děsivé nehody:
+
+【Příklad 1】
+„Agresivní překlep“. Napsali jste: „I will kill you“ (Mělo být: „I will kill your ticket in the system“ — „Vyřídím váš požadavek v systému“).
+
+【Příklad 2】
+„Náhlé přiznání“. Napsali jste: „I love u“ (Mělo být: „I love updates like this one“ — „Miluji takové aktualizace“).
+
+Všichni jsme to zažili. Ale nemusíme u toho zůstávat.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Hlavní funkce
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Prevence nechtěného odeslání
+Klávesa Enter již neodesílá zprávy.
+Jednoduše vloží nový řádek — přesně tak, jak by měla vypadat civilizovaná komunikace.
+
+▼ Jednotné zkratky všude
+Odesílejte pomocí Ctrl+Enter (nebo Cmd+Enter na Macu) na všech podporovaných webech.
+
+▼ Režimy aktivace
+Nyní si můžete v nastavení vybrat mezi režimy „Výchozí ZAPNUTO (Blacklist)“ a „Výchozí VYPNUTO (Whitelist)“.
+Zapněte/vypněte rozšíření pro každý web zvlášť pomocí ikony.
+
+▼ Funguje na hlavních platformách
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Práce: Slack / Microsoft Teams / Google Meet
+Sociální sítě: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…a mnoho dalších.
+*Poznámka: Google Chat a YouTube Live Chat nejsou v současné době podporovány.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Zásady ochrany osobních údajů
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Toto rozšíření NESBÍRÁ, neukládá ani nepřenáší žádné vaše stisky kláves ani obsah zpráv. Pouze vaše nastavení preferencí (povolené/zakázané stránky) jsou uloženy lokálně ve vašem prohlížeči. Pro více podrobností navštivte stránku GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +95,7 @@ Nyní si můžete vybrat mezi režimy „Výchozí ZAPNUTO (Černá listina)“ 
 
 ▼ Podporované stránky (Režim bílé listiny)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Toto rozšíření NESHROMAŽĎUJE, neukládá ani nepřenáší žádné vaše stisky kláves ani obsah zpráv. Ve vašem prohlížeči jsou lokálně uložena pouze vaše nastavení předvoleb (povolené/zakázané weby). Další podrobnosti naleznete na stránce GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

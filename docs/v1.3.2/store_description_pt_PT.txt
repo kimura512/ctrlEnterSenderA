@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Pare de enviar acidentalmente "Cartas de Amor" ao seu chefe. ★★
 
 Aqui estão algumas estatísticas completamente fictícias, mas que parecem emocionalmente precisas:
@@ -16,11 +17,30 @@ A "Confissão Repentina"
 Digitou: "Amo-te" (Pretendido: "Amo atualizações como esta.")
 
 Todos nós já passámos por isso. Mas não precisamos de ficar lá.
+=======
+★★ Pare de enviar "cartas de amor" acidentais ao seu chefe. ★★
+
+Aqui estão algumas estatísticas completamente fictícias que ainda parecem emocionalmente precisas:
+
+● 1 em cada 5 recém-contratados recebe o seu “batismo” no trabalho enviando uma mensagem inacabada no Slack/Teams.
+● 5 em cada 5 pessoas experimentam puro desespero quando o ChatGPT responde a une frase que elas nunca terminaram.
+
+E depois há estes… acidentes verdadeiramente aterrorizantes:
+
+【Exemplo 1】
+O "erro de dactilografia agressivo". Escreveu: "I will kill you" (Intenção: "I will kill your ticket in the system." - Vou encerrar o seu ticket no sistema).
+
+【Exemplo 2】
+A "confissão repentina". Escreveu: "I love u" (Intenção: "I love updates like this one." - Eu adoro atualizações como esta).
+
+Todos nós já passámos por isso. Mas não temos de continuar assim.
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Principais Recursos
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ Prevenir Envios Acidentais
 Enter não envia mais mensagens.
 Ele simplesmente insere uma nova linha — exatamente como a comunicação civilizada deveria ser.
@@ -39,10 +59,30 @@ Social: Discord / Facebook Messenger / X (Twitter)
 Deteta automaticamente entradas de chat na maioria dos websites.
 Ative/Desative a extensão por site através do ícone.
 Agora mais simples do que nunca — sem modos complexos, simplesmente funciona.
+=======
+▼ Prevenir envios acidentais
+O Enter já não envia mensagens.
+Simplesmente insere uma nova linha — exactamente como uma comunicação civilizada deve ser.
+
+▼ Atalhos unificados em todos os lugares
+Envie com Ctrl+Enter (ou Cmd+Enter no Mac) em todos os sites suportados.
+
+▼ Modos de Activação
+Agora pode escolher entre os modos "Activado por padrão (Lista negra)" e "Desactivado por padrão (Lista branca)" via opções.
+Active/desactive a extensão por site através do ícone.
+
+▼ Funciona nas principais plataformas
+IA: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Trabalho: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…e muitos outros.
+*Nota: Google Chat e YouTube Live Chat não são suportados actualmente.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Política de Privacidade
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Esta extensão NÃO recolhe, armazena ou transmite nenhuma das suas teclas digitadas ou conteúdo de mensagens. Apenas as suas definições de preferência (sites ativados/desativados) são armazenadas localmente no seu navegador. Para mais detalhes, visite a página do GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +93,7 @@ Agora você pode escolher entre os modos "Padrão LIGADO (Lista Negra)" e "Padr�
 
 ▼ Sites Suportados (Modo Lista Branca)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Esta extensão NÃO recolhe, armazena ou transmite nenhuma das suas teclas digitadas ou conteúdo de mensagens. Apenas as suas configurações de preferência (sites activados/desactivados) são armazenadas localmente no seu navegador. Para mais detalhes, visite a página do GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

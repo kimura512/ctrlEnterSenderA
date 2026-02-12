@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Przestań przypadkowo wysyłać "Listy Miłosne" do swojego szefa. ★★
 
 Oto kilka całkowicie fikcyjnych statystyk, które jednak wydają się emocjonalnie trafne:
@@ -14,10 +15,27 @@ Napisałeś: "Zabiję cię" (Zamierzone: "Zabiję twój bilet w systemie" - czyl
 【Przykład 2】
 "Nagłe Wyznanie"
 Napisałeś: "Kocham cię" (Zamierzone: "Kocham takie aktualizacje.")
+=======
+★★ Przestań wysyłać przypadkowe „listy miłosne” do swojego szefa. ★★
+
+Oto kilka całkowicie fikcyjnych statystyk, które wciąż wydają się emocjonalnie trafne:
+
+● 1 na 5 nowych pracowników przechodzi „chrzest” w pracy, wysyłając niedokończoną wiadomość na Slacku/Teamsach.
+● 5 na 5 osób doświadcza czystej rozpaczy, gdy ChatGPT odpowiada na zdanie, którego nigdy nie skończyli.
+
+A są jeszcze te… naprawdę przerażające wypadki:
+
+【Przykład 1】
+„Agresywna literówka”. Napisałeś: „I will kill you” (Miało być: „I will kill your ticket in the system” — „Zamknę Twoje zgłoszenie w systemie”).
+
+【Przykład 2】
+„Nagle wyznanie”. Napisałeś: „I love u” (Miało być: „I love updates like this one” — „Uwielbiam takie aktualizacje”).
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 Wszyscy tam byliśmy. Ale nie musimy tam zostawać.
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 ◆ Kluczowe Cechy
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -53,3 +71,31 @@ Teraz możesz wybierać między trybami „Domyślnie WŁĄCZONE (Czarna lista)�
 
 ▼ Obsługiwane strony (Tryb białej listy)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+◆ Kluczowe funkcje
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Zapobieganie przypadkowemu wysyłaniu
+Klawisz Enter nie wysyła już wiadomości.
+Po prostu wstawia nową linię — dokładnie tak, jak powinna wyglądać cywilizowana komunikacja.
+
+▼ Jednolite skróty wszędzie
+Wysyłaj za pomocą Ctrl+Enter (lub Cmd+Enter na komputerach Mac) we wszystkich obsługiwanych witrynach.
+
+▼ Tryby aktywacji
+Możesz teraz wybierać między trybami „Domyślnie WŁĄCZONE (Czarna lista)” i „Domyślnie WYŁĄCZONE (Biała lista)” w opcjach.
+Przełączaj rozszerzenie WŁ./WYŁ. dla każdej witryny za pomocą ikony.
+
+▼ Działa na głównych platformach
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Praca: Slack / Microsoft Teams / Google Meet
+Społeczności: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…i wiele innych.
+*Uwaga: Google Chat i YouTube Live Chat nie są obecnie obsługiwane.*
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Polityka prywatności
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+To rozszerzenie NIE gromadzi, nie przechowuje ani nie przesyła żadnych naciśnięć klawiszy ani treści wiadomości. Tylko Twoje ustawienia preferencji (włączone/wyłączone witryny) są przechowywane lokalnie w Twojej przeglądarce. Aby uzyskać więcej informacji, odwiedź stronę na GitHubie:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

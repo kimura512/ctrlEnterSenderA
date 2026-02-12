@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ 別再給老闆誤發「情書」了。 ★★
 
 以下是一些完全虛構但感覺非常真實的統計數據：
@@ -16,11 +17,30 @@
 你輸入：「我愛你」（原意：「我愛這樣的更新。」）
 
 我們都經歷過。但我們不必一直這樣。
+=======
+★★ 別再給老闆誤發“情書”了。 ★★
+
+這裡有一些雖然是虛構的、但聽起來在情感上非常真實的統計數據：
+
+● 1/5 的新員工通過發送未完成的 Slack/Teams 消息在工作中接受“洗禮”。
+● 5/5 的人在 ChatGPT 回覆了他們還沒寫完的句子時感到純粹的絕望。
+
+然後還有這些……真正恐怖的事故：
+
+【示例 1】
+“挑釁性拼寫錯誤” 你輸入的是："I will kill you"（原意："I will kill your ticket in the system." 我會在系統中關閉你的工单。）
+
+【示例 2】
+“猝不及防的表白” 你輸入的是："I love u"（原意："I love updates like this one." 我喜歡這樣的更新。）
+
+我們都經歷過這些。但我們不必一直忍受。
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ 主要功能
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ 防止誤發送
 Enter鍵不再發送訊息。
 它只會插入換行符——這才是文明溝通應有的方式。
@@ -53,3 +73,28 @@ https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
 ▼ 支援的網站（白名單模式）
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+▼ 防止誤發
+按 Enter 鍵不再發送消息。
+它只會插入換行符——這才是文明溝通該有的樣子。
+
+▼ 到處通用的統一快捷鍵
+在所有支持的網站上通過 Ctrl+Enter（Mac 上為 Cmd+Enter）發送。
+
+▼ 激活模式
+現在您可以在設置中選擇“默認開啟（黑名單）”和“默認關閉（白名單）”模式。
+通過圖標針對每個網站單獨開啟/關閉擴充功能。
+
+▼ 支持主要平台
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+辦公: Slack / Microsoft Teams / Google Meet
+社交: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+……以及更多。
+*注意：目前不支持 Google Chat 和 YouTube 直播聊天。*
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ 隱私政策
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+此擴充功能不會收集、存儲或傳輸您的任何按鍵信息或消息內容。只有您的偏好設置（啟用/禁用的網站）會存儲在您的瀏覽器本地。更多詳情，請訪問 GitHub 頁面：
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

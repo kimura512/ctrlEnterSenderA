@@ -26,6 +26,7 @@ It simply inserts a new line—exactly how civilized communication should be.
 ▼ Unified Shortcuts Everywhere
 Send with Ctrl+Enter (or Cmd+Enter on Mac) across all supported sites.
 
+<<<<<<< HEAD
 ▼ Works on Major Platforms
 AI: ChatGPT / Claude / Gemini
 Work: Slack / Microsoft Teams / Google Meet
@@ -38,11 +39,25 @@ Automatically detects chat inputs on most websites.
 Toggle the extension ON/OFF per site through the icon.
 Now simpler than ever—no complex modes, just works.
 
+=======
+▼ Activation Modes
+You can now choose between "Default ON (Blacklist)" and "Default OFF (Whitelist)" modes via options.
+Toggle the extension ON/OFF per site via the icon.
+
+▼ Works on Major Platforms
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Work: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…and many more.
+*Note: Google Chat and YouTube Live Chat are currently not supported.*
+
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Privacy Policy
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 This extension does NOT collect, store, or transmit any of your keystrokes or message content. Only your preference settings (enabled/disabled sites) are stored locally in your browser. For more details, please visit the GitHub page:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+<<<<<<< HEAD
 
 
 
@@ -51,3 +66,5 @@ You can now choose between "Default ON (Blacklist)" and "Default OFF (Whitelist)
 
 ▼ Supported Sites (Whitelist Mode)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

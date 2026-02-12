@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ★★ Ngừng vô tình gửi "Thư tình" cho sếp của bạn. ★★
 
 Dưới đây là một số thống kê hoàn toàn hư cấu nhưng vẫn cho cảm giác chính xác về mặt cảm xúc:
@@ -16,18 +17,43 @@ Bạn đã gõ: "Tôi sẽ giết bạn" (Ý định: "Tôi sẽ giết vé củ
 Bạn đã gõ: "Tôi yêu bạn" (Ý định: "Tôi yêu những cập nhật như thế này.")
 
 Tất cả chúng ta đều đã từng ở đó. Nhưng chúng ta không cần phải ở lại đó.
+=======
+★★ Đừng để xảy ra việc vô tình gửi "thư tình" cho sếp của bạn nữa. ★★
+
+Dưới đây là một số thống kê hoàn toàn hư cấu nhưng vẫn mang lại cảm giác chính xác về mặt cảm xúc:
+
+● Cứ 5 nhân viên mới thì có 1 người được "rửa tội" tại nơi làm việc bằng cách gửi một tin nhắn Slack/Teams chưa hoàn thiện.
+● 5 trên 5 người cảm thấy thất vọng tột độ khi ChatGPT phản hồi một câu mà họ thậm chí còn chưa viết xong.
+
+Và rồi còn có những… tai nạn thực sự kinh hoàng này:
+
+【Ví dụ 1】
+"Lỗi đánh máy gây hấn". Bạn đã nhập: "I will kill you" (Ý định là: "I will kill your ticket in the system." — Tôi sẽ đóng phiếu hỗ trợ của bạn trên hệ thống).
+
+【Ví dụ 2】
+"Lời thú nhận bất ngờ". Bạn đã nhập: "I love u" (Ý định là: "I love updates like this one." — Tôi thích những cập nhật như thế này).
+
+Tất cả chúng ta đều đã từng gặp phải tình huống đó. Nhưng chúng ta không nhất thiết phải để nó tiếp tục.
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Các tính năng chính
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
+<<<<<<< HEAD
 ▼ Ngăn chặn việc gửi vô tình
 Enter không còn gửi tin nhắn nữa.
 Nó chỉ đơn giản là chèn một dòng mới — chính xác là cách giao tiếp văn minh nên diễn ra.
+=======
+▼ Ngăn chặn việc gửi tin nhắn ngoài ý muốn
+Phím Enter sẽ không còn dùng để gửi tin nhắn nữa.
+Nó chỉ đơn giản là chèn một dòng mới — chính xác là cách mà giao tiếp văn minh nên diễn ra.
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ▼ Phím tắt thống nhất ở mọi nơi
 Gửi bằng Ctrl+Enter (hoặc Cmd+Enter trên Mac) trên tất cả các trang web được hỗ trợ.
 
+<<<<<<< HEAD
 ▼ Hoạt động trên các nền tảng chính
 AI: ChatGPT / Claude / Gemini
 Công việc: Slack / Microsoft Teams / Google Meet
@@ -39,10 +65,23 @@ Xã hội: Discord / Facebook Messenger / X (Twitter)
 Tự động phát hiện đầu vào trò chuyện trên hầu hết các trang web.
 Bật/Tắt tiện ích mở rộng cho từng trang web thông qua biểu tượng.
 Bây giờ đơn giản hơn bao giờ hết — không có chế độ phức tạp, nó chỉ hoạt động.
+=======
+▼ Chế độ kích hoạt
+Giờ đây, bạn có thể chọn giữa chế độ "Mặc định BẬT (Danh sách đen)" và "Mặc định TẮT (Danh sách trắng)" thông qua tùy chọn.
+BẬT/TẮT tiện ích mở rộng cho từng trang web thông qua biểu tượng.
+
+▼ Hoạt động trên các nền tảng chính
+AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
+Công việc: Slack / Microsoft Teams / Google Meet
+Mạng xã hội: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
+…và nhiều nền tảng khác.
+*Lưu ý: Google Chat và YouTube Live Chat hiện không được hỗ trợ.*
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Chính sách quyền riêng tư
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+<<<<<<< HEAD
 Tiện ích mở rộng này KHÔNG thu thập, lưu trữ hoặc truyền bất kỳ lần nhấn phím hoặc nội dung tin nhắn nào của bạn. Chỉ các cài đặt tùy chọn của bạn (trang web được bật/tắt) được lưu trữ cục bộ trong trình duyệt của bạn. Để biết thêm chi tiết, vui lòng truy cập trang GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
 
@@ -53,3 +92,7 @@ Bây giờ bạn có thể chọn giữa chế độ "Mặc định BẬT (Danh 
 
 ▼ Các trang web được hỗ trợ (Chế độ danh sách trắng)
 Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
+=======
+Tiện ích mở rộng này KHÔNG thu thập, lưu trữ hoặc truyền tải bất kỳ thao tác nhấn phím hoặc nội dung tin nhắn nào của bạn. Chỉ các cài đặt tùy chọn của bạn (các trang web được bật/tắt) mới được lưu trữ cục bộ trong trình duyệt của bạn. Để biết thêm chi tiết, vui lòng truy cập trang GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+>>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
