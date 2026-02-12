@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "기본적으로 모든 웹사이트에서 'Enter' 동작이 '전송'에서 '줄바꿈'으로 변경됩니다.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

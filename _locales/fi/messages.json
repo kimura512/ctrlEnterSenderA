@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Oletuksena 'Enter'-näppäimen toiminta kaikilla verkkosivustoilla muutetaan 'Lähetä' -toiminnosta 'Uusi rivi' -toimintoon.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

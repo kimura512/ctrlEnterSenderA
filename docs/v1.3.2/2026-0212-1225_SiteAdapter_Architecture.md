@@ -47,7 +47,7 @@ graph TD
 
 ### Core Interface
 
-#### [NEW] [types.ts 追記](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/types.ts)
+#### [NEW] [types.ts 追記](src/content/types.ts)
 
 `SiteAdapter` インターフェースを定義:
 
@@ -81,7 +81,7 @@ export interface SiteAdapter {
 
 ### Adapters
 
-#### [NEW] [adapters/discord.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/discord.ts)
+#### [NEW] [adapters/discord.ts](src/content/adapters/discord.ts)
 
 - `matches`: `hostname.includes('discord.com')`
 - `listenerTarget`: `'document'` ←元の動作を維持
@@ -90,22 +90,22 @@ export interface SiteAdapter {
 - `triggerSend`: Discord 専用のボタン検索ロジック追加
 - `insertNewline`: Shift+Enter シミュレーション
 
-#### [NEW] [adapters/claude.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/claude.ts)
+#### [NEW] [adapters/claude.ts](src/content/adapters/claude.ts)
 
 - `listenerTarget`: `'window'` ←Claude 専用
 - `isEditable`: `.closest('.tiptap.ProseMirror')`
 - `triggerSend`: 既存の Claude 専用ロジック移植
 - `insertNewline`: Shift+Enter シミュレーション
 
-#### [NEW] [adapters/slack.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/slack.ts)
+#### [NEW] [adapters/slack.ts](src/content/adapters/slack.ts)
 
-#### [NEW] [adapters/grok.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/grok.ts)
+#### [NEW] [adapters/grok.ts](src/content/adapters/grok.ts)
 
-#### [NEW] [adapters/chatgpt.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/chatgpt.ts)
+#### [NEW] [adapters/chatgpt.ts](src/content/adapters/chatgpt.ts)
 
-#### [NEW] [adapters/teams.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/teams.ts)
+#### [NEW] [adapters/teams.ts](src/content/adapters/teams.ts)
 
-#### [NEW] [adapters/default.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/default.ts)
+#### [NEW] [adapters/default.ts](src/content/adapters/default.ts)
 
 - 汎用フォールバック（textarea、contentEditable の標準検出）
 
@@ -113,7 +113,7 @@ export interface SiteAdapter {
 
 ### Registry
 
-#### [NEW] [adapters/registry.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/adapters/registry.ts)
+#### [NEW] [adapters/registry.ts](src/content/adapters/registry.ts)
 
 ```typescript
 export function getAdapter(hostname: string): SiteAdapter {
@@ -131,7 +131,7 @@ export function getAdapter(hostname: string): SiteAdapter {
 
 ### Engine (リファクタリング)
 
-#### [MODIFY] [index.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/index.ts)
+#### [MODIFY] [index.ts](src/content/index.ts)
 
 - **サイト固有のif文を全て削除**
 - `getAdapter(hostname)` でアダプタ取得
@@ -139,11 +139,11 @@ export function getAdapter(hostname: string): SiteAdapter {
 - `adapter.isEditable()` でエディタ判定
 - Enter / Ctrl+Enter の判定後、`adapter.insertNewline()` or `adapter.triggerSend()` を呼ぶ
 
-#### [DELETE] [handler.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/handler.ts)
+#### [DELETE] [handler.ts](src/content/handler.ts)
 
 - ロジックは各アダプタに分散。このファイルは不要に。
 
-#### [DELETE] [detector.ts](file:///home/kimura512/dev/ctrlEnterSenderA/src/content/detector.ts)
+#### [DELETE] [detector.ts](src/content/detector.ts)
 
 - 各アダプタの `isEditable()` に移行。このファイルは不要に。
 

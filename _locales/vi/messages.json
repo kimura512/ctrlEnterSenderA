@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Theo mặc định, hành vi của phím 'Enter' trên tất cả các trang web được thay đổi từ 'Gửi' sang 'Dòng mới'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

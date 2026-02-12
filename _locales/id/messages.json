@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Secara default, perilaku 'Enter' di semua situs web diubah dari 'Kirim' ke 'Baris Baru'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

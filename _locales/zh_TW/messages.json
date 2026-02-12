@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "預設情況下，所有網站上的「Enter」行為都會從「發送」變更為「換行」。",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

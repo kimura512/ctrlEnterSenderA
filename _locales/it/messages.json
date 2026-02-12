@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Per impostazione predefinita, il comportamento di 'Invio' su tutti i siti web viene modificato da 'Invia' a 'Nuova riga'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

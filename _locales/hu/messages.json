@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Alapértelmezés szerint az 'Enter' viselkedése minden webhelyen 'Küldés'-ről 'Új sor'-ra változik.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

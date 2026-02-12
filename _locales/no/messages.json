@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Som standard endres 'Enter'-oppførselen på alle nettsteder fra 'Send' til 'Ny linje'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

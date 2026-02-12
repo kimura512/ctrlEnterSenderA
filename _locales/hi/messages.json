@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "डिफ़ॉल्ट रूप से, सभी वेबसाइटों पर 'Enter' का व्यवहार 'भेजें' से 'नई पंक्ति' में बदल दिया जाता है।",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "โดยค่าเริ่มต้น พฤติกรรมของ 'Enter' ในทุกเว็บไซต์จะเปลี่ยนจาก 'ส่ง' เป็น 'บรรทัดใหม่'",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

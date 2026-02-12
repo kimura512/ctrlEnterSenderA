@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "În mod implicit, comportamentul tastei 'Enter' pe toate site-urile web este schimbat de la 'Trimite' la 'Linie nouă'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

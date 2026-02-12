@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Varsayılan olarak, tüm web sitelerinde 'Enter' davranışı 'Gönder' yerine 'Yeni Satır' olarak değiştirilir.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {

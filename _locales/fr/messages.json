@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
+    "message": "Par défaut, le comportement de la touche 'Entrée' sur tous les sites Web passe de 'Envoyer' à 'Nouvelle ligne'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
