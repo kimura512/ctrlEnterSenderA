@@ -12,6 +12,11 @@
   --hover-bg: #333333;
 }
 
+html {
+  height: 700px;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family:
@@ -20,7 +25,8 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   width: 320px;
-  min-height: 700px;
+  height: 700px;
+  overflow: hidden;
 }
 
 .container {

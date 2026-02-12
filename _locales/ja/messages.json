@@ -206,7 +206,7 @@
     "description": "有効化モードの説明"
   },
   "blacklistMode": {
-    "message": "ブラックリストモード（デフォルトON）",
+    "message": "デフォルトON（ブラックリストモード）",
     "description": "ブラックリストモードのオプションラベル"
   },
   "blacklistModeDesc": {
@@ -214,7 +214,7 @@
     "description": "ブラックリストモードの説明"
   },
   "whitelistMode": {
-    "message": "ホワイトリストモード（デフォルトOFF）",
+    "message": "デフォルトOFF（ホワイトリストモード）",
     "description": "ホワイトリストモードのオプションラベル"
   },
   "whitelistModeDesc": {

@@ -206,7 +206,7 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Blacklist Mode (Default ON)",
+    "message": "Default ON (Blacklist Mode)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
@@ -214,7 +214,7 @@
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Whitelist Mode (Default OFF)",
+    "message": "Default OFF (Whitelist Mode)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
