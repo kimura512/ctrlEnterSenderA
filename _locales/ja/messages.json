@@ -98,7 +98,7 @@
     "description": "オンボーディングのタイトル"
   },
   "onboardingDescription": {
-    "message": "デフォルトで全ウェブサイトの送信動作が「Ctrl+Enter」に変更されます。",
+    "message": "デフォルトで全ウェブサイトでEnterが「チャット送信」から「改行」に変更されます。",
     "description": "オンボーディングの説明開始"
   },
   "onboardingEnterNewline": {
@@ -110,11 +110,11 @@
     "description": "Ctrl+Enterキーの動作"
   },
   "onboardingSiteToggle": {
-    "message": "設定から「デフォルトOFF（ホワイトリストモード）」への変更も可能です。",
+    "message": "どちらのモードでも、ポップアップから拡張機能のON/OFFを個別に切り替えられます。",
     "description": "サイト切り替えの説明（変更）"
   },
   "onboardingDefaultEnabled": {
-    "message": "どちらのモードでも、ポップアップから拡張機能のON/OFFを個別に切り替えられます。",
+    "message": "設定から「デフォルトOFF（ホワイトリストモード）」への変更も可能です。",
     "description": "デフォルトでONになっていることの説明（変更）"
   },
   "onboardingAdvancedSettings": {
