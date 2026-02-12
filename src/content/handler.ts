@@ -195,7 +195,13 @@ function triggerSend(target: HTMLElement) {
                 container.querySelector('button[aria-label="Send message"]') ||
                 container.querySelector('button[aria-label*="送信"]') ||
                 container.querySelector('button[aria-label*="Send"]');
+                
             if (sendButton instanceof HTMLElement) {
+                // React 18 or some frameworks might verify user interaction strictly
+                // Dispatch mousedown/mouseup before click
+                const eventOptions = { bubbles: true, cancelable: true, view: window };
+                sendButton.dispatchEvent(new MouseEvent('mousedown', eventOptions));
+                sendButton.dispatchEvent(new MouseEvent('mouseup', eventOptions));
                 sendButton.click();
                 return;
             }
