@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Denne udvidelse ændrer Enter-tastens adfærd:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Du kan aktivere/deaktivere udvidelsen pr. websted ved hjelp af popup-vinduet.",
+    "message": "I begge tilstande kan du individuelt slå udvidelsen TIL/FRA fra pop op-vinduet.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Du kan også skifte til 'Standard FRA (Hvidliste-tilstand)' fra indstillingerne.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Besøg Avancerede indstillinger for at konfigurere detektionstilstande og administrere alle domæner.",
+    "message": "* Nogle websteder (som Twitter, Google Søgning) har forskellige standardindstillinger.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Aktiveringstilstand",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Vælg, hvordan udvidelsen aktiveres på websteder.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Standard TIL (Sortliste-tilstand)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Aktiveret på alle websteder som standard. Deaktiver bestemte websteder.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Standard FRA (Hvidliste-tilstand)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Deaktiveret på alle websteder som standard. Aktiver bestemte websteder.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Ændring af aktiveringstilstand vil påvirke, hvordan udvidelsen fungerer på alle websteder. Fortsæt?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Sortliste",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Hvidliste",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Denne udvidelse forhindrer 'Enter for at sende' på websteder og ændrer det til 'Ctrl+Enter' for at sende.\nVælg din foretrukne aktiveringstilstand (Hvidliste/Sortliste), og konfigurer indstillinger pr. websted efter behov.",
+    "description": "Options page description"
   }
 }

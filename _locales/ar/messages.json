@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "يغير هذا الامتداد سلوك مفتاح Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "يمكنك تمكين/تعطيل الامتداد لكل موقع باستخدام النافذة المنبثقة.",
+    "message": "في أي من الوضعين، يمكنك تشغيل/إيقاف الامتداد بشكل فردي من النافذة المنبثقة.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "يمكنك أيضًا التغيير إلى 'افتراضي إيقاف (وضع القائمة البيضاء)' من الإعدادات.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "قم بزيارة الإعدادات المتقدمة لتكوين أوضاع الكشف وإدارة جميع النطاقات.",
+    "message": "* بعض المواقع (مثل Twitter، بحث Google) لها إعدادات افتراضية مختلفة.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "وضع التنشيط",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "اختر كيفية تنشيط الامتداد على مواقع الويب.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "افتراضي تشغيل (وضع القائمة السوداء)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "ممكن في جميع المواقع بشكل افتراضي. تعطيل مواقع محددة.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "افتراضي إيقاف (وضع القائمة البيضاء)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "معطل في جميع المواقع بشكل افتراضي. تمكين مواقع محددة.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "سيؤثر تغيير وضع التنشيط على كيفية عمل الامتداد على جميع مواقع الويب. هل تريد المتابعة؟",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "قائمة سوداء",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "قائمة بيضاء",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "يمنع هذا الامتداد 'Enter للإرسال' على مواقع الويب ويغيره إلى 'Ctrl+Enter' للإرسال.\nحدد وضع التنشيط المفضل لديك (القائمة البيضاء/القائمة السوداء) وقم بتكوين الإعدادات لكل موقع حسب الحاجة.",
+    "description": "Options page description"
   }
 }

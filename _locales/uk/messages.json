@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Це розширення змінює поведінку клавіші Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Ви можете вмикати/вимикати розширення для кожного сайту за допомогою спливаючого вікна.",
+    "message": "У будь-якому режимі ви можете індивідуально вмикати/вимикати розширення зі спливаючого вікна.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Ви також можете змінити на 'За замовчуванням ВИМК (Режим білого списку)' в налаштуваннях.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Відвідайте розширені налаштування, щоб налаштувати режими виявлення та керувати всіма доменами.",
+    "message": "* Деякі сайти (наприклад, Twitter, Google Пошук) мають інші налаштування за замовчуванням.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Режим активації",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Виберіть, як розширення активується на веб-сайтах.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "За замовчуванням УВІМК (Режим чорного списку)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Увімкнено на всіх сайтах за замовчуванням. Вимкнути певні сайти.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "За замовчуванням ВИМК (Режим білого списку)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Вимкнено на всіх сайтах за замовчуванням. Увімкнути певні сайти.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Зміна режиму активації вплине на роботу розширення на всіх веб-сайтах. Продовжити?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Чорний список",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Білий список",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Це розширення запобігає 'Enter для відправлення' на веб-сайтах і змінює його на 'Ctrl+Enter' для відправлення.\nВиберіть бажаний режим активації (Білий список/Чорний список) і налаштуйте параметри для кожного сайту за потреби.",
+    "description": "Options page description"
   }
 }

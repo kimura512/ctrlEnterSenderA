@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Tiện ích mở rộng này thay đổi hành vi của phím Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Bạn có thể bật/tắt tiện ích mở rộng cho từng trang web bằng cửa sổ bật lên.",
+    "message": "Ở cả hai chế độ, bạn có thể bật/tắt tiện ích mở rộng riêng lẻ từ cửa sổ bật lên.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "Theo mặc định, tiện ích mở rộng được bật cho hầu hết các trang web, ngoại trừ một số trang web như X/Twitter và Google Search.",
+    "message": "Bạn cũng có thể thay đổi sang 'Mặc định TẮT (Chế độ Danh sách trắng)' từ cài đặt.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Truy cập Cài đặt nâng cao để định cấu hình chế độ phát hiện và quản lý tất cả các miền.",
+    "message": "* Một số trang web (như Twitter, Google Tìm kiếm) có cài đặt mặc định khác nhau.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Chế độ Kích hoạt",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Chọn cách tiện ích mở rộng được kích hoạt trên các trang web.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Mặc định BẬT (Chế độ Danh sách đen)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Được bật trên tất cả các trang web theo mặc định. Tắt các trang web cụ thể.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Mặc định TẮT (Chế độ Danh sách trắng)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Bị tắt trên tất cả các trang web theo mặc định. Bật các trang web cụ thể.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Thay đổi chế độ kích hoạt sẽ ảnh hưởng đến cách tiện ích mở rộng hoạt động trên tất cả các trang web. Tiếp tục?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Danh sách đen",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Danh sách trắng",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Tiện ích mở rộng này ngăn 'Enter để Gửi' trên các trang web và thay đổi thành 'Ctrl+Enter' để gửi.\nChọn chế độ kích hoạt ưa thích của bạn (Danh sách trắng/Danh sách đen) và định cấu hình cài đặt cho từng trang web nếu cần.",
+    "description": "Options page description"
   }
 }

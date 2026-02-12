@@ -1,0 +1,55 @@
+★★ Tør ikke sende utilsigtede "Kærlighedsbreve" til din chef. ★★
+
+Her er nogle helt fiktive statistikker, der stadig føles følelsesmæssigt nøjagtige:
+
+● 1 ud af 5 nyansatte bliver "døbt" på arbejdet ved at sende en ufærdig Slack/Teams-besked.
+● 5 ud af 5 personer oplever ren fortvivlelse, når ChatGPT svarer på en sætning, de aldrig blev færdige med.
+
+Og så er der disse... virkelig skræmmende ulykker:
+
+【Eksempel 1】
+Den "Aggressive Tastefejl"
+Du skrev: "Jeg vil dræbe dig" (Tilsigtet: "Jeg vil dræbe din billet i systemet.")
+
+【Eksempel 2】
+Den "Pludselige Tilståelse"
+Du skrev: "Jeg elsker dig" (Tilsigtet: "Jeg elsker opdateringer som denne.")
+
+Vi har alle været der. Men vi behøver ikke at blive der.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Nøglefunktioner
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Forhindr Utilsigtede Sendelser
+Enter sender ikke længere beskeder.
+Det indsætter simpelthen en ny linje - præcis hvordan civiliseret kommunikation burde være.
+
+▼ Forenede Genveje Overalt
+Send med Ctrl+Enter (eller Cmd+Enter på Mac) på alle understøttede sider.
+
+▼ Fungerer på Store Platforme
+AI: ChatGPT / Claude / Gemini
+Arbejde: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter)
+...og mange flere.
+*Bemærk: Google Chat og YouTube Live Chat understøttes ikke i øjeblikket.*
+
+▼ Smart Detektion & Kontrol
+Detekterer automatisk chat-input på de fleste hjemmesider.
+Slå udvidelsen TIL/FRA pr. side via ikonet.
+Nu enklere end nogensinde - ingen komplekse tilstande, det virker bare.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Privatlivspolitik
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Denne udvidelse indsamler, gemmer eller transmitterer IKKE nogen af dine tastetryk eller beskedindhold. Kun dine præferenceindstillinger (aktiverede/deaktiverede sider) gemmes lokalt i din browser. For flere detaljer, besøg venligst GitHub-siden:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+
+
+
+▼ Aktiveringstilstande
+Du kan nu vælge mellem tilstandene "Standard TIL (Sortliste)" og "Standard FRA (Hvidliste)".
+
+▼ Understøttede websteder (Hvidlistetilstand)
+Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai

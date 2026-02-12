@@ -1,10 +1,13 @@
-import { isMultiLineEditable } from './detector';
-import { handleKeyDown } from './handler';
+import { getAdapter } from './adapters/registry';
 import { getDomainConfig } from '../background/storage';
 import { DomainConfig } from '../types';
 
 let currentConfig: DomainConfig | null = null;
 const origin = window.location.origin;
+const hostname = window.location.hostname;
+
+// Resolve the adapter for this site (once, at load time)
+const adapter = getAdapter(hostname);
 
 // Initial config load
 getDomainConfig(origin).then(config => {
@@ -21,99 +24,84 @@ chrome.storage.onChanged.addListener((changes, area) => {
 });
 
 function attachListeners(doc: Document) {
-    // Unified Keydown Listener (Capture Phase)
-    // We use Capture phase for:
-    // 1. Plain Enter on ALL sites (to prevent default newline)
-    // 2. Ctrl+Enter on Complex Apps (Slack, Discord, Teams) to ensure we intercept before they do.
-    // Use window (not document) for capture phase to fire BEFORE
-    // any document-level listeners registered by the site (e.g. Claude.ai's React/TipTap).
-    // Capture phase order: window -> document -> html -> ... -> target
-    const win = doc.defaultView || window;
-    win.addEventListener('keydown', (event) => {
+    const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
+
+    // Determine listener target based on adapter config
+    const captureTarget: EventTarget = adapter.listenerTarget === 'window'
+        ? (doc.defaultView || window)
+        : doc;
+
+    // --- Capture Phase Listener ---
+    // Handles ALL key interception for this adapter.
+    captureTarget.addEventListener('keydown', (evt) => {
+        const event = evt as KeyboardEvent;
         if (!event.isTrusted) return;
-
-        const target = event.target as HTMLElement;
-        const hostname = window.location.hostname;
-
-
         if (!currentConfig || !currentConfig.enabled) return;
 
-        const isSlack = hostname.includes('slack.com');
+        const target = event.target as HTMLElement;
 
-        // Check if target is editable
-        if (!isMultiLineEditable(target, currentConfig)) {
-            return;
-        }
+        // Check if target is an editable area handled by this adapter
+        if (!adapter.isEditable(target, currentConfig)) return;
 
-        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
         const isSendKey = isMac
             ? event.metaKey && event.key === 'Enter'
             : event.ctrlKey && event.key === 'Enter';
-        const isPlainEnter = event.key === 'Enter' && !event.shiftKey && !event.ctrlKey && !event.metaKey && !event.altKey;
+        const isPlainEnter = event.key === 'Enter'
+            && !event.shiftKey && !event.ctrlKey && !event.metaKey && !event.altKey;
 
-        const isDiscord = hostname.includes('discord.com');
-        const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
-        const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
-        const isGrok = hostname.includes('grok.com');
-        const isClaude = hostname.includes('claude.ai');
-        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok || isClaude;
-
-        // CASE 1: Complex Apps (Slack, Discord, Teams, ChatGPT, Grok, Claude)
-        // Handle BOTH Enter and Ctrl+Enter in Capture phase
-        if (isComplexApp) {
-            if (isSendKey || isPlainEnter) {
-                handleKeyDown(event, target, currentConfig);
+        if (adapter.nativeSendKey === 'enter') {
+            // --- Enter-to-Send apps (Discord, Claude, Grok, Teams, ChatGPT, Slack) ---
+            // We intercept BOTH Enter and Ctrl+Enter in capture phase.
+            if (isSendKey) {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                adapter.triggerSend(target);
+                return;
             }
-            return;
+            if (isPlainEnter) {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                adapter.insertNewline(target);
+                return;
+            }
+        } else {
+            // --- Standard apps (nativeSendKey === 'ctrl+enter') ---
+            // Only handle plain Enter in capture phase (to prevent default send/newline).
+            // Ctrl+Enter is handled in bubble phase (see below).
+            if (isPlainEnter) {
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                adapter.insertNewline(target);
+                return;
+            }
         }
-
-        // CASE 2: Standard Apps
-        // Handle Plain Enter in Capture phase (to prevent default newline)
-        if (isPlainEnter) {
-            handleKeyDown(event, target, currentConfig);
-        }
-
-        // Ctrl+Enter for standard apps is handled in Bubble phase (see below)
     }, true);
 
-    // Bubble Phase Listener (for Standard Apps Ctrl+Enter)
-    doc.addEventListener('keydown', (event) => {
-        if (!event.isTrusted) return;
-        if (!currentConfig || !currentConfig.enabled) return;
+    // --- Bubble Phase Listener (Standard apps only) ---
+    // For sites where nativeSendKey is 'ctrl+enter', we handle Ctrl+Enter in bubble phase.
+    // This allows the site to handle it first (e.g., Gmail).
+    if (adapter.nativeSendKey === 'ctrl+enter') {
+        doc.addEventListener('keydown', (event) => {
+            if (!event.isTrusted) return;
+            if (!currentConfig || !currentConfig.enabled) return;
 
-        const target = event.target as HTMLElement;
-        const hostname = window.location.hostname;
+            const target = event.target as HTMLElement;
+            if (!adapter.isEditable(target, currentConfig)) return;
 
-        // Check if target is editable
-        if (!isMultiLineEditable(target, currentConfig)) {
-            return;
-        }
+            const isSendKey = isMac
+                ? event.metaKey && event.key === 'Enter'
+                : event.ctrlKey && event.key === 'Enter';
 
-        const isMac = navigator.platform.toUpperCase().indexOf('MAC') >= 0;
-        const isSendKey = isMac
-            ? event.metaKey && event.key === 'Enter'
-            : event.ctrlKey && event.key === 'Enter';
+            if (isSendKey) {
+                // If the site already handled it, don't interfere.
+                if (event.defaultPrevented) return;
 
-        const isDiscord = hostname.includes('discord.com');
-        const isTeams = hostname.includes('teams.microsoft.com') || hostname.includes('teams.live.com');
-        const isSlack = hostname.includes('slack.com');
-        const isChatGPT = hostname.includes('chatgpt.com') || hostname.includes('openai.com');
-        const isGrok = hostname.includes('grok.com');
-        const isClaude = hostname.includes('claude.ai');
-        const isComplexApp = isDiscord || isTeams || isSlack || isChatGPT || isGrok || isClaude;
-
-        // Complex apps are fully handled in Capture phase, so ignore them here.
-        if (isComplexApp) return;
-
-        // Handle Ctrl+Enter for Standard Apps
-        // We wait for the site to handle it. If they didn't (defaultPrevented is false), we trigger send.
-        if (isSendKey) {
-            // If the site already handled it (e.g. Gmail), don't interfere.
-            if (event.defaultPrevented) return;
-
-            handleKeyDown(event, target, currentConfig);
-        }
-    }, false);
+                event.preventDefault();
+                event.stopImmediatePropagation();
+                adapter.triggerSend(target);
+            }
+        }, false);
+    }
 }
 
 // Attach to main document
@@ -125,12 +113,10 @@ const observer = new MutationObserver((mutations) => {
         mutation.addedNodes.forEach((node) => {
             if (node instanceof HTMLIFrameElement) {
                 try {
-                    // Try to access iframe document (only works for same-origin)
                     const iframeDoc = node.contentDocument;
                     if (iframeDoc) {
                         attachListeners(iframeDoc);
                     } else {
-                        // Wait for load
                         node.addEventListener('load', () => {
                             const loadedDoc = node.contentDocument;
                             if (loadedDoc) {

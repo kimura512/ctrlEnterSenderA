@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Sambungan ini mengubah kelakuan kekunci Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Anda boleh mendayakan/melumpuhkan sambungan setiap laman menggunakan pop timbul.",
+    "message": "Dalam mana-mana mod, anda boleh menukar sambungan ON/OFF secara individu daripada tetingkap timbul.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Anda juga boleh menukar kepada 'Lalai OFF (Mod Senarai Putih)' daripada tetapan.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Lawati Tetapan Lanjutan untuk mengkonfigurasi mod pengesanan dan mengurus semua domain.",
+    "message": "* Sesetengah laman (seperti Twitter, Carian Google) mempunyai tetapan lalai yang berbeza.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Mod Pengaktifan",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Pilih cara sambungan diaktifkan pada laman web.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Lalai ON (Mod Senarai Hitam)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Didayakan pada semua laman secara lalai. Lumpuhkan laman tertentu.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Lalai OFF (Mod Senarai Putih)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Dilumpuhkan pada semua laman secara lalai. Dayakan laman tertentu.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Menukar mod pengaktifan akan menjejaskan cara sambungan berfungsi pada semua laman web. Teruskan?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Senarai Hitam",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Senarai Putih",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Sambungan ini menghalang 'Enter untuk Hantar' pada laman web dan menukarnya kepada 'Ctrl+Enter' untuk menghantar.\nPilih mod pengaktifan pilihan anda (Senarai Putih/Senarai Hitam) dan konfigurasikan tetapan mengikut laman jika perlu.",
+    "description": "Options page description"
   }
 }

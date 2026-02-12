@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "此扩展更改 Enter 键的行为：",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "您可以使用弹出窗口为每个站点启用/禁用扩展。",
+    "message": "无论在哪种模式下，您都可以通过弹窗单独开启/关闭扩展功能。",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "除部分网站（X/Twitter、Google搜索等）外，默认情况下为开启状态。",
+    "message": "您也可以在设置中切换为“默认关闭（白名单模式）”。",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "访问高级设置以配置检测模式并管理所有域名。",
+    "message": "※ 部分网站（如 Twitter, Google 搜索）有不同的默认设置。",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "激活模式",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "选择扩展在网站上的激活方式。",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "默认开启（黑名单模式）",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "默认在所有网站开启。可禁用特定网站。",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "默认关闭（白名单模式）",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "默认在所有网站关闭。可开启特定网站。",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "更改激活模式将影响扩展在所有网站上的工作方式。是否继续？",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "黑名单",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "白名单",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "此扩展防止在网站上“按 Enter 发送”，并将其更改为“按 Ctrl+Enter”发送。\n选择您首选的激活模式（白名单/黑名单），并根据需要配置每个站点的设置。",
+    "description": "Options page description"
   }
 }

@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Detta tillägg ändrar beteendet för Enter-tangenten:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Du kan aktivera/inaktivera tillägget per webbplats med popup-fönstret.",
+    "message": "I endera läget kan du individuellt växla tillägget PÅ/AV från popup-fönstret.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Du kan också ändra till 'Standard AV (Vitlistläge)' från inställningarna.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Besök Avancerade inställningar för att konfigurera detekteringslägen och hantera alla domäner.",
+    "message": "* Vissa webbplatser (som Twitter, Google Sök) har olika standardinställningar.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Aktiveringsläge",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Välj hur tillägget aktiveras på webbplatser.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Standard PÅ (Svartlistläge)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Aktiverat på alla webbplatser som standard. Inaktivera specifika webbplatser.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Standard AV (Vitlistläge)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Inaktiverat på alla webbplatser som standard. Aktivera specifika webbplatser.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Att ändra aktiveringsläge påverkar hur tillägget fungerar på alla webbplatser. Fortsätta?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Svartlista",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Vitlista",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Detta tillägg förhindrar 'Enter för att skicka' på webbplatser och ändrar det till 'Ctrl+Enter' för att skicka.\nVälj ditt föredragna aktiveringsläge (Vitlista/Svartlista) och konfigurera inställningar per webbplats vid behov.",
+    "description": "Options page description"
   }
 }

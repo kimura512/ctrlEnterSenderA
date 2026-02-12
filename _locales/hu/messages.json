@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Ez a bővítmény megváltoztatja az Enter billentyű viselkedését:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Az előugró ablak segítségével webhelyenként engedélyezheti/letilthatja a bővítményt.",
+    "message": "Bármelyik módban egyénileg BE/KI kapcsolhatja a bővítményt a felugró ablakból.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "A beállításokban átválthat az 'Alapértelmezett KI (Fehérlista mód)' lehetőségre is.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Látogasson el a Speciális beállításokhoz az észlelési módok konfigurálásához és az összes tartomány kezeléséhez.",
+    "message": "* Egyes oldalak (mint a Twitter, Google Keresés) eltérő alapértelmezett beállításokkal rendelkeznek.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Aktiválási Mód",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Válassza ki, hogyan aktiválódjon a bővítmény a webhelyeken.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Alapértelmezett BE (Feketelista mód)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Alapértelmezés szerint engedélyezve minden oldalon. Adott oldalak letiltása.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Alapértelmezett KI (Fehérlista mód)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Alapértelmezés szerint letiltva minden oldalon. Adott oldalak engedélyezése.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Az aktiválási mód megváltoztatása befolyásolja a bővítmény működését minden webhelyen. Folytatja?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Feketelista",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Fehérlista",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Ez a bővítmény megakadályozza az 'Enter küldéshez' funkciót a webhelyeken, és 'Ctrl+Enter'-re módosítja a küldéshez.\nVálassza ki a preferált aktiválási módot (Fehérlista/Feketelista), és szükség szerint konfigurálja a webhelyenkénti beállításokat.",
+    "description": "Options page description"
   }
 }

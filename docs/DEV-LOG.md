@@ -12,3 +12,7 @@
 | 2026-0212-1040 | Claude.ai の送信ボタンクリック処理強化（mousedown/mouseup追加）。                                                                                                            |
 | 2026-0212-1045 | Claude.ai Enter キー問題修正: detector.ts で `.closest()` を使い `<p>` 子要素からも TipTap エディタを検出可能に。                                                        |
 | 2026-0212-1115 | Claude.ai Enter キー問題完全修正: capture リスナーを `window` に付け替え、サイト側のイベントリスナーより先に発火させるように修正。　→　対応成功。                         |
+| 2026-0212-1230 | Site Adapter アーキテクチャへリファクタリング。handler.ts / detector.ts 削除、7アダプタ + registry + engine に分離。 |
+| 2026-0212-1250 | ドキュメント更新 (README.md, docs/README_*.md, docs/ARCHITECTURE_*.md)。v1.3.2の内容反映。 |
+| 2026-0212-1255 | ストア説明文 (docs/store_description_*.txt) 全37言語更新。起動モードと対応サイト一覧を追記。 |
+| 2026-0212-1300 | ストア説明文i18n修正 (手動翻訳反映)。ルートREADMEリンク修正 (docs/v1.3.2/へ)。 |

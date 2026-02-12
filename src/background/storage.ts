@@ -7,7 +7,21 @@ const STORAGE_KEY = 'ctrl_enter_sender_config';
 const DEFAULT_DISABLED_DOMAINS = ['x.com', 'twitter.com', 'google.com', 'docs.google.com'];
 
 // Domains that are enabled by default in whitelist mode
-const DEFAULT_WHITELIST_DOMAINS = ['chatgpt.com', 'claude.ai'];
+const DEFAULT_WHITELIST_DOMAINS = [
+    'chatgpt.com',
+    'claude.ai',
+    'gemini.google.com',
+    'grok.com',
+    'chat.deepseek.com',
+    'z.ai',
+    'chat.z.ai',
+    'perplexity.ai',
+    'web.telegram.org',
+    'app.slack.com',
+    'discord.com',
+    'teams.live.com',
+    'wechat.com',
+];
 
 function getHostnameFromOrigin(origin: string): string {
     try {
@@ -197,7 +211,18 @@ export async function getAllConfigs(): Promise<StorageSchema> {
         if (mode === 'whitelist') {
             const defaultWhitelistOrigins = [
                 'https://chatgpt.com',
-                'https://claude.ai'
+                'https://claude.ai',
+                'https://gemini.google.com',
+                'https://grok.com',
+                'https://chat.deepseek.com',
+                'https://z.ai',
+                'https://chat.z.ai',
+                'https://www.perplexity.ai',
+                'https://web.telegram.org',
+                'https://app.slack.com',
+                'https://discord.com',
+                'https://teams.live.com',
+                'https://www.wechat.com',
             ];
             
             for (const origin of defaultWhitelistOrigins) {

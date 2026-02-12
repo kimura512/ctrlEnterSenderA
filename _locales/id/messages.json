@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Ekstensi ini mengubah perilaku tombol Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Anda dapat mengaktifkan/menonaktifkan ekstensi per situs menggunakan popup.",
+    "message": "Dalam mode mana pun, Anda dapat menyalakan/mematikan ekstensi secara individual dari popup.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Anda juga dapat mengubah ke 'Default MATI (Mode Daftar Putih)' dari pengaturan.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Kunjungi Pengaturan Lanjutan untuk mengonfigurasi mode deteksi dan mengelola semua domain.",
+    "message": "* Beberapa situs (seperti Twitter, Google Search) memiliki pengaturan default yang berbeda.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Mode Aktivasi",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Pilih bagaimana ekstensi diaktifkan di situs web.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Default NYALA (Mode Daftar Hitam)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Diaktifkan di semua situs secara default. Nonaktifkan situs tertentu.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Default MATI (Mode Daftar Putih)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Dinonaktifkan di semua situs secara default. Aktifkan situs tertentu.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Mengubah mode aktivasi akan memengaruhi cara kerja ekstensi di semua situs web. Lanjutkan?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Daftar Hitam",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Daftar Putih",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Ekstensi ini mencegah 'Enter untuk Mengirim' di situs web dan mengubahnya menjadi 'Ctrl+Enter' untuk mengirim.\nPilih mode aktivasi pilihan Anda (Daftar Putih/Daftar Hitam) dan konfigurasikan pengaturan per situs sesuai kebutuhan.",
+    "description": "Options page description"
   }
 }

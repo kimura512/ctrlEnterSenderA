@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Questa estensione modifica il comportamento del tasto Invio:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Puoi abilitare/disabilitare l'estensione per sito usando il popup.",
+    "message": "In entrambe le modalità, puoi attivare/disattivare individualmente l'estensione dal popup.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "Per impostazione predefinita, l'estensione è attiva per la maggior parte dei siti, eccetto alcuni siti come X/Twitter e Google Search.",
+    "message": "Puoi anche passare a 'Predefinito SPENTO (Modalità Lista bianca)' dalle impostazioni.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Visita le impostazioni avanzate per configurare le modalità di rilevamento e gestire tutti i domini.",
+    "message": "* Alcuni siti (come Twitter, Ricerca Google) hanno impostazioni predefinite diverse.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -198,39 +198,43 @@
     "description": "Checkbox label to ignore warning"
   },
   "activationMode": {
-    "message": "Activation Mode",
+    "message": "Modalità di attivazione",
     "description": "Activation mode section title"
   },
   "activationModeDescription": {
-    "message": "Choose how the extension is activated on websites.",
+    "message": "Scegli come l'estensione viene attivata sui siti web.",
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Predefinito ACCESO (Modalità Lista nera)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Abilitato su tutti i siti per impostazione predefinita. Disabilita siti specifici.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Predefinito SPENTO (Modalità Lista bianca)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Disabilitato su tutti i siti per impostazione predefinita. Abilita siti specifici.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
-    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "message": "Modificare la modalità di attivazione influirà sul funzionamento dell'estensione su tutti i siti web. Continuare?",
     "description": "Confirmation message when changing activation mode"
   },
   "modeBlacklist": {
-    "message": "Blacklist",
+    "message": "Lista nera",
     "description": "Short label for blacklist mode"
   },
   "modeWhitelist": {
-    "message": "Whitelist",
+    "message": "Lista bianca",
     "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Questa estensione impedisce 'Invio per inviare' sui siti web e lo cambia in 'Ctrl+Invio' per inviare.\nSeleziona la tua modalità di attivazione preferita (Lista bianca/Lista nera) e configura le impostazioni per sito secondo necessità.",
+    "description": "Options page description"
   }
 }
