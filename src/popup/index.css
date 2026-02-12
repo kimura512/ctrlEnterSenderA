@@ -12,11 +12,6 @@
   --hover-bg: #333333;
 }
 
-html {
-  height: 700px;
-  overflow: hidden;
-}
-
 body {
   margin: 0;
   font-family:
@@ -25,8 +20,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   width: 320px;
-  height: 700px;
-  overflow: hidden;
 }
 
 .container {
@@ -53,7 +46,32 @@ body {
     var(--accent-secondary)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.help-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.help-button:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  background: rgba(0, 230, 118, 0.1);
 }
 
 .card {

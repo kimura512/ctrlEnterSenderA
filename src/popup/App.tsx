@@ -132,6 +132,13 @@ function App() {
             <div className="container">
             <div className="header">
                 <h2 className="title">{getMessage('popupTitle')}</h2>
+                <button
+                    className="help-button"
+                    onClick={() => setShowOnboarding(true)}
+                    title={getMessage('helpTitle')}
+                >
+                    ?
+                </button>
             </div>
 
             <div className="card">

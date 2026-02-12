@@ -9,7 +9,7 @@
     align-items: flex-start;
     justify-content: center;
     z-index: 10000;
-    overflow-y: auto;
+    overflow: hidden;
     padding:
         max(24px, env(safe-area-inset-top))
         max(16px, env(safe-area-inset-right))
