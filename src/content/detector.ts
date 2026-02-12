@@ -61,11 +61,13 @@ export function isMultiLineEditable(element: Element, config?: DomainConfig): bo
     }
 
     // 7. Explicit Grok and Claude.ai detection (both use TipTap/ProseMirror editor)
+    // NOTE: The event target is often a child element (e.g. <p>) inside the editor,
+    // NOT the editor div itself. We use .closest() to traverse upward.
     const isGrok = hostname.includes('grok.com');
     const isClaude = hostname.includes('claude.ai');
     if (isGrok || isClaude) {
-        // Grok and Claude.ai use TipTap/ProseMirror editor
-        if (element.classList.contains('tiptap') && element.classList.contains('ProseMirror') && (element as HTMLElement).isContentEditable) {
+        const editorEl = (element as HTMLElement).closest('.tiptap.ProseMirror');
+        if (editorEl && (editorEl as HTMLElement).isContentEditable) {
             return true;
         }
     }

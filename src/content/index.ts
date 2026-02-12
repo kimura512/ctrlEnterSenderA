@@ -25,12 +25,19 @@ function attachListeners(doc: Document) {
     // We use Capture phase for:
     // 1. Plain Enter on ALL sites (to prevent default newline)
     // 2. Ctrl+Enter on Complex Apps (Slack, Discord, Teams) to ensure we intercept before they do.
-    doc.addEventListener('keydown', (event) => {
+    // Use window (not document) for capture phase to fire BEFORE
+    // any document-level listeners registered by the site (e.g. Claude.ai's React/TipTap).
+    // Capture phase order: window -> document -> html -> ... -> target
+    const win = doc.defaultView || window;
+    win.addEventListener('keydown', (event) => {
         if (!event.isTrusted) return;
-        if (!currentConfig || !currentConfig.enabled) return;
 
         const target = event.target as HTMLElement;
         const hostname = window.location.hostname;
+
+
+        if (!currentConfig || !currentConfig.enabled) return;
+
         const isSlack = hostname.includes('slack.com');
 
         // Check if target is editable
