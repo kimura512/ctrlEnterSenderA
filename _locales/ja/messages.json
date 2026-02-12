@@ -98,7 +98,7 @@
     "description": "オンボーディングのタイトル"
   },
   "onboardingDescription": {
-    "message": "この拡張機能はEnterキーの動作を変更します：",
+    "message": "デフォルトで全ウェブサイトの送信動作が「Ctrl+Enter」に変更されます。",
     "description": "オンボーディングの説明開始"
   },
   "onboardingEnterNewline": {
@@ -110,16 +110,20 @@
     "description": "Ctrl+Enterキーの動作"
   },
   "onboardingSiteToggle": {
-    "message": "ポップアップからサイトごとに拡張機能のON/OFFを切り替えできます。",
-    "description": "サイト切り替えの説明"
+    "message": "設定から「デフォルトOFF（ホワイトリストモード）」への変更も可能です。",
+    "description": "サイト切り替えの説明（変更）"
   },
   "onboardingDefaultEnabled": {
-    "message": "一部のサイト（X/Twitter、Google検索など）を除き、デフォルトでONになっています。",
-    "description": "デフォルトでONになっていることの説明"
+    "message": "どちらのモードでも、ポップアップから拡張機能のON/OFFを個別に切り替えられます。",
+    "description": "デフォルトでONになっていることの説明（変更）"
   },
   "onboardingAdvancedSettings": {
-    "message": "詳細設定から検出モードの設定や全ドメインの管理ができます。",
-    "description": "詳細設定の説明"
+    "message": "※一部のサイト（Twitter, Google検索など）は例外的にデフォルト設定が異なります。",
+    "description": "詳細設定の説明（変更）"
+  },
+  "optionsDescription": {
+    "message": "この拡張機能は、ウェブサイト上の「Enterキーで送信」を防ぎ、「Ctrl+Enter」でのみ送信するように変更します。\n基本的な動作モード（ホワイトリスト/ブラックリスト）を選択し、必要に応じてサイトごとの設定を行ってください。",
+    "description": "オプションページ冒頭の説明"
   },
   "onboardingGotIt": {
     "message": "了解！",

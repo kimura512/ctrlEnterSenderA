@@ -148,6 +148,10 @@ function App() {
                 </button>
             </div>
 
+            <p style={{ margin: '0 0 24px 0', color: 'var(--text-secondary)', lineHeight: '1.6', whiteSpace: 'pre-wrap' }}>
+                {getMessage('optionsDescription')}
+            </p>
+
             {/* モード切替セクション */}
             <div className="card" style={{ marginBottom: '24px' }}>
                 <div className="card-header" style={{ justifyContent: 'flex-start' }}>
