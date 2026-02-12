@@ -237,6 +237,11 @@ async function setMigrationVersion(version: string): Promise<void> {
     await chrome.storage.local.set({ [MIGRATION_VERSION_KEY]: version });
 }
 
+// Reset all settings to default
+export async function resetAllSettings(): Promise<void> {
+    await chrome.storage.sync.remove(STORAGE_KEY);
+}
+
 /**
  * Migrate storage data to remove deprecated properties
  * This function removes the 'mode' property from all domain configs

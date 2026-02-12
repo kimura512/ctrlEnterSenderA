@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAllConfigs, setDomainConfig, getActivationMode, setActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin } from '../background/storage';
+import { getAllConfigs, setDomainConfig, getActivationMode, setActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin, resetAllSettings } from '../background/storage';
 import { StorageSchema, DomainConfig, ActivationMode } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
@@ -136,15 +136,11 @@ function App() {
                     onClick={async () => {
                         const confirmMsg = getMessage('resetAllConfirm');
                         if (confirm(confirmMsg)) {
-                            // 初期設定済みドメインを全て無効に
-                            for (const normalizedOrigin of defaultDisabledOrigins) {
-                                await setDomainConfig(normalizedOrigin, { enabled: false });
-                            }
-                            // ユーザー設定ドメインを全て有効に
-                            for (const normalizedOrigin of userConfiguredOrigins) {
-                                await setDomainConfig(normalizedOrigin, { enabled: true });
-                            }
+                            // 全設定をリセット（ドメインリストもクリア）
+                            await resetAllSettings();
                             await loadData();
+                            // モードも初期化
+                            setActivationModeState('blacklist');
                         }
                     }}
                 >
