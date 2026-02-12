@@ -20,7 +20,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   width: 320px;
-  min-height: 600px;
+  min-height: 700px;
 }
 
 .container {
