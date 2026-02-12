@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Это расширение меняет поведение клавиши Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Вы можете включать/отключать расширение для каждого сайта через всплывающее окно.",
+    "message": "В любом режиме вы можете индивидуально включить/выключить расширение во всплывающем окне.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "По умолчанию расширение включено для большинства сайтов, кроме некоторых сайтов, таких как X/Twitter и Google Search.",
+    "message": "Вы также можете переключиться на «По умолчанию ВЫКЛ (Режим белого списка)» в настройках.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Посетите расширенные настройки для настройки режимов и управления доменами.",
+    "message": "* Некоторые сайты (например, Twitter, Google Поиск) имеют другие настройки по умолчанию.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Игнорировать предупреждение и продолжить",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Режим активации",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Выберите, как расширение активируется на веб-сайтах.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "По умолчанию ВКЛ (Режим черного списка)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Включено на всех сайтах по умолчанию. Отключить для конкретных сайтов.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "По умолчанию ВЫКЛ (Режим белого списка)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Отключено на всех сайтах по умолчанию. Включить для конкретных сайтов.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Изменение режима активации повлияет на работу расширения на всех веб-сайтах. Продолжить?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Черный список",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Белый список",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Это расширение предотвращает отправку по Enter на веб-сайтах, меняя ее на Ctrl+Enter.\nВыберите предпочтительный режим активации (Белый список/Черный список) и настройте параметры для каждого сайта по мере необходимости.",
+    "description": "Options page description"
   }
 }

@@ -43,7 +43,7 @@ h1 {
 }
 
 .card-header {
-    padding: 20px;
+    padding: 12px 20px;
     border-bottom: 1px solid var(--border-color);
     font-weight: 600;
     font-size: 16px;

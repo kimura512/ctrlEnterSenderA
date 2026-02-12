@@ -9,7 +9,7 @@
     align-items: flex-start;
     justify-content: center;
     z-index: 10000;
-    overflow-y: auto;
+    overflow: hidden;
     padding:
         max(24px, env(safe-area-inset-top))
         max(16px, env(safe-area-inset-right))
@@ -20,13 +20,14 @@
 .onboarding-modal {
     background-color: var(--surface-color);
     border-radius: 16px;
-    padding: 32px;
-    max-width: 500px;
+    padding: 24px;
+    max-width: 450px;
     width: 90%;
     border: 1px solid var(--border-color);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-    max-height: calc(100dvh - 48px);
+    max-height: 80vh;
     overflow-y: auto;
+    box-sizing: border-box;
 }
 
 .onboarding-title {
@@ -49,7 +50,7 @@
     flex-direction: column;
     gap: 16px;
     margin-bottom: 24px;
-    padding: 20px;
+    padding: 16px;
     background-color: var(--input-bg);
     border-radius: 12px;
     border: 1px solid var(--border-color);

@@ -46,6 +46,7 @@ Once installed, the extension works automatically on supported sites.
 ### Popup Menu
 
 Click the extension icon in the toolbar to access settings for the current site:
+
 - **Enable/Disable**: Toggle the extension for the current domain.
 
 ### Options Page
@@ -59,6 +60,7 @@ Right-click the extension icon and select "Options" to view and manage settings 
 ## Development
 
 This project is built with:
+
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Vite](https://vitejs.dev/)
@@ -73,7 +75,16 @@ This project is built with:
 
 This extension supports 30+ languages. The appropriate language is automatically selected based on your browser's language settings.
 
+## Changelog
+
+### v1.3.2 (2026-02-12)
+
+- **Site Adapter Architecture**: Completely rewritten internal engine with isolated site-specific logic. This prevents regressions where fixing one site breaks another.
+- **New Supported Sites (for Whitelist Mode)**: Added 11 sites to default whitelist:
+  - Gemini, Grok, DeepSeek, Perplexity, Telegram, Discord, Slack, Microsoft Teams, WeChat, z.ai
+- **Onboarding & UI**: Improved onboarding text and layout for better clarity.
+- **i18n**: Fully localized onboarding and options pages into 37 languages.
+
 ## License
 
 MIT
-

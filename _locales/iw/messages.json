@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "תוסף זה משנה את התנהגות מקש Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "אתה יכול להפעיל/להשבית את התוסף לכל אתר באמצעות החלונית הקופצת.",
+    "message": "בכל מצב, ניתן להפעיל/לכבות את התוסף באופן פרטני מהחלונית הקופצת.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "ניתן גם לשנות ל-'ברירת מחדל כבוי (מצב רשימה לבנה)' מההגדרות.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "בקר בהגדרות מתקדמות כדי להגדיר מצבי זיהוי ולנהל את כל הדומיינים.",
+    "message": "* לאתרים מסוימים (כמו טוויטר, חיפוש גוגל) יש הגדרות ברירת מחדל שונות.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "התעלם מהאזהרה והמשך",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "מצב הפעלה",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "בחר כיצד התוסף מופעל באתרי אינטרנט.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "ברירת מחדל פועל (מצב רשימה שחורה)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "מופעל בכל האתרים כברירת מחדל. השבת אתרים ספציפיים.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "ברירת מחדל כבוי (מצב רשימה לבנה)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "מושבת בכל האתרים כברירת מחדל. הפעל אתרים ספציפיים.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "שינוי מצב ההפעלה ישפיע על אופן פעולת התוסף בכל אתרי האינטרנט. להמשיך?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "רשימה שחורה",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "רשימה לבנה",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "תוסף זה מונע את 'Enter לשליחה' באתרי אינטרנט ומשנה אותו ל-'Ctrl+Enter' לשליחה.\nבחר את מצב ההפעלה המועדף עליך (רשימה לבנה/רשימה שחורה) והגדר את ההגדרות לכל אתר לפי הצורך.",
+    "description": "Options page description"
   }
 }

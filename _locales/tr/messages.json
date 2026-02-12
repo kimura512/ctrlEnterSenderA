@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Bu uzantı Enter tuşu davranışını değiştirir:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Açılır pencereyi kullanarak uzantıyı site bazında etkinleştirebilir/devre dışı bırakabilirsiniz.",
+    "message": "Her iki modda da, uzantıyı açılır pencereden ayrı ayrı AÇIK/KAPALI duruma getirebilirsiniz.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Ayarlardan 'Varsayılan KAPALI (Beyaz Liste Modu)'na da geçebilirsiniz.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Algılama modlarını yapılandırmak ve tüm etki alanlarını yönetmek için Gelişmiş Ayarlar'ı ziyaret edin.",
+    "message": "* Bazı sitelerin (Twitter, Google Arama gibi) farklı varsayılan ayarları vardır.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Uyarıyı yoksay ve devam et",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Etkinleştirme Modu",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Uzantının web sitelerinde nasıl etkinleştirileceğini seçin.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Varsayılan AÇIK (Kara Liste Modu)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Varsayılan olarak tüm sitelerde etkin. Belirli siteleri devre dışı bırakın.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Varsayılan KAPALI (Beyaz Liste Modu)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Varsayılan olarak tüm sitelerde devre dışı. Belirli siteleri etkinleştirin.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Etkinleştirme modunu değiştirmek, uzantının tüm web sitelerinde nasıl çalışacağını etkileyecektir. Devam edilsin mi?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Kara Liste",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Beyaz Liste",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Bu uzantı, web sitelerinde 'Göndermek için Enter'ı engeller ve göndermek için 'Ctrl+Enter' olarak değiştirir.\nTercih ettiğiniz etkinleştirme modunu (Beyaz Liste/Kara Liste) seçin ve site başına ayarları gerektiği gibi yapılandırın.",
+    "description": "Options page description"
   }
 }

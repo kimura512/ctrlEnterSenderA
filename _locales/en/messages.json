@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "This extension changes Enter key behavior:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,16 +110,20 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "You can enable/disable the extension per site using the popup.",
+    "message": "In either mode, you can individually toggle the extension ON/OFF from the popup.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "You can also change to 'Default OFF (Whitelist Mode)' from the settings.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Visit Advanced Settings to configure detection modes and manage all domains.",
+    "message": "* Some sites (like Twitter, Google Search) have different default settings.",
     "description": "Advanced settings explanation"
+  },
+  "optionsDescription": {
+    "message": "This extension prevents 'Enter to Send' on websites and changes it to 'Ctrl+Enter' to send.\nSelect your preferred activation mode (Whitelist/Blacklist) and configure per-site settings as needed.",
+    "description": "Options page description"
   },
   "onboardingGotIt": {
     "message": "Got it!",
@@ -196,7 +200,41 @@
   "ignoreWarningCheckbox": {
     "message": "Ignore warning and proceed",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Activation Mode",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Choose how the extension is activated on websites.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Default ON (Blacklist Mode)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Enabled on all sites by default. Disable specific sites.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Default OFF (Whitelist Mode)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Disabled on all sites by default. Enable specific sites.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Blacklist",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Whitelist",
+    "description": "Short label for whitelist mode"
   }
 }
-
-

@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Toto rozšíření mění chování klávesy Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Rozšíření můžete povolit/zakázat pro každý web pomocí vyskakovacího okna.",
+    "message": "V obou režimech můžete rozšíření individuálně zapnout/vypnout z vyskakovacího okna.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "V nastavení můžete také přepnout na 'Výchozí VYPNUTO (Režim povolených)'.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Navštivte Pokročilá nastavení pro konfiguraci režimů detekce a správu všech domén.",
+    "message": "* Některé weby (jako Twitter, Vyhledávání Google) mají odlišná výchozí nastavení.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Ignorovat varování a pokračovat",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Režim aktivace",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Vyberte, jak se rozšíření aktivuje na webových stránkách.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Výchozí ZAPNUTO (Režim blokovaných)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Ve výchozím nastavení povoleno na všech webech. Zakázat konkrétní weby.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Výchozí VYPNUTO (Režim povolených)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Ve výchozím nastavení zakázáno na všech webech. Povolit konkrétní weby.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Změna režimu aktivace ovlivní fungování rozšíření na všech webových stránkách. Pokračovat?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Seznam blokovaných",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Seznam povolených",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Toto rozšíření zabraňuje 'Enter pro odeslání' na webových stránkách a mění jej na 'Ctrl+Enter' pro odeslání.\nVyberte preferovaný režim aktivace (Seznam povolených/Seznam blokovaných) a podle potřeby nakonfigurujte nastavení pro jednotlivé weby.",
+    "description": "Options page description"
   }
 }

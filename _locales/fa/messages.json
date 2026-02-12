@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "این افزونه رفتار کلید Enter را تغییر می دهد:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "می توانید افزونه را برای هر سایت با استفاده از پنجره بازشو فعال/غیرفعال کنید.",
+    "message": "در هر حالتی، می‌توانید افزونه را به‌صورت جداگانه از پنجره بازشو روشن/خاموش کنید.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "همچنین می‌توانید از تنظیمات به «پیش‌فرض خاموش (حالت لیست سفید)» تغییر دهید.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "برای پیکربندی حالت های تشخیص و مدیریت همه دامنه ها به تنظیمات پیشرفته بروید.",
+    "message": "* برخی سایت‌ها (مانند توییتر، جستجوی گوگل) تنظیمات پیش‌فرض متفاوتی دارند.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "نادیده گرفتن هشدار و ادامه",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "حالت فعال‌سازی",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "انتخاب کنید که افزونه چگونه در وب‌سایت‌ها فعال شود.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "پیش‌فرض روشن (حالت لیست سیاه)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "به‌صورت پیش‌فرض در همه سایت‌ها فعال است. سایت‌های خاصی را غیرفعال کنید.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "پیش‌فرض خاموش (حالت لیست سفید)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "به‌صورت پیش‌فرض در همه سایت‌ها غیرفعال است. سایت‌های خاصی را فعال کنید.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "تغییر حالت فعال‌سازی بر نحوه عملکرد افزونه در همه وب‌سایت‌ها تأثیر می‌گذارد. ادامه می‌دهید؟",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "لیست سیاه",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "لیست سفید",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "این افزونه از «Enter برای ارسال» در وب‌سایت‌ها جلوگیری می‌کند و آن را به «Ctrl+Enter» برای ارسال تغییر می‌دهد.\nحالت فعال‌سازی مورد نظر خود (لیست سفید/لیست سیاه) را انتخاب کنید و تنظیمات هر سایت را در صورت نیاز پیکربندی کنید.",
+    "description": "Options page description"
   }
 }

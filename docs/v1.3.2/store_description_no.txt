@@ -1,0 +1,55 @@
+★★ Slutt å sende "Kjærlighetsbrev" til sjefen din ved et uhell. ★★
+
+Her er noen helt fiktive statistikker som fortsatt føles følelsesmessig nøyaktige:
+
+● 1 av 5 nyansatte blir "døpt" på jobb ved å sende en uferdig Slack/Teams-melding.
+● 5 av 5 personer opplever ren fortvilelse når ChatGPT svarer på en setning de aldri ble ferdige med.
+
+Og så er det disse... virkelig skremmende ulykkene:
+
+【Eksempel 1】
+Den "Aggressive Skrivefeilen"
+Du skrev: "Jeg skal drepe deg" (Ment: "Jeg skal drepe billetten din i systemet." - altså lukke den.)
+
+【Eksempel 2】
+Den "Plutselige Tilståelsen"
+Du skrev: "Jeg elsker deg" (Ment: "Jeg elsker oppdateringer som dette.")
+
+Vi har alle vært der. Men vi trenger ikke å bli der.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Nøkkelfunksjoner
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Forhindre Utilsiktede Sendinger
+Enter sender ikke lenger meldinger.
+Det setter rett og slett inn en ny linje – nøyaktig slik sivilisert kommunikasjon skal være.
+
+▼ Forente Snarveier Overalt
+Send med Ctrl+Enter (eller Cmd+Enter på Mac) på alle støttede nettsteder.
+
+▼ Fungerer på Store Plattformer
+AI: ChatGPT / Claude / Gemini
+Jobb: Slack / Microsoft Teams / Google Meet
+Sosialt: Discord / Facebook Messenger / X (Twitter)
+...og mange flere.
+*Merk: Google Chat og YouTube Live Chat støttes ikke for øyeblikket.*
+
+▼ Smart Deteksjon og Kontroll
+Oppdager automatisk chat-inndata på de fleste nettsteder.
+Slå utvidelsen PÅ/AV per nettsted via ikonet.
+Nå enklere enn noensinne – ingen komplekse moduser, det bare fungerer.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Personvernerklæring
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Denne utvidelsen samler IKKE inn, lagrer eller overfører noen av dine tastetrykk eller meldingsinnhold. Bare dine preferanseinnstillinger (aktiverte/deaktiverte nettsteder) lagres lokalt i nettleseren din. For flere detaljer, vennligst besøk GitHub-siden:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+
+
+
+▼ Aktiveringsmoduser
+Du kan nå velge mellom modusene "Standard PÅ (Svarteliste)" og "Standard AV (Hviteliste)".
+
+▼ Støttede nettsteder (Hviteliste-modus)
+Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai

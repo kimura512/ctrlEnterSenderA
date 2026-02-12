@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "یہ ایکسٹینشن Enter کلید کے رویے کو تبدیل کرتی ہے:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "آپ پاپ اپ کا استعمال کرتے ہوئے ہر سائٹ کے لیے ایکسٹینشن کو فعال/غیر فعال کر سکتے ہیں۔",
+    "message": "کسی بھی موڈ میں، آپ پاپ اپ سے انفرادی طور پر ایکسٹینشن کو آن/آف کر سکتے ہیں۔",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "آپ ترتیبات سے 'ڈیفالٹ آف (وائٹ لسٹ موڈ)' میں بھی تبدیل کر سکتے ہیں۔",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "پتہ لگانے کے طریقوں کو کنفیگر کرنے اور تمام ڈومینز کا نظم کرنے کے لیے اعلی درجے کی ترتیبات پر جائیں۔",
+    "message": "* کچھ سائٹس (جیسے ٹویٹر، گوگل سرچ) کی مختلف ڈیفالٹ ترتیبات ہیں۔",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "انتباہ کو نظر انداز کریں اور جاری رکھیں",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "ایکٹیویشن موڈ",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "منتخب کریں کہ ویب سائٹس پر ایکسٹینشن کیسے ایکٹیویٹ ہوتی ہے۔",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "ڈیفالٹ آن (بلیک لسٹ موڈ)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "ڈیفالٹ کے طور پر تمام سائٹس پر فعال۔ مخصوص سائٹس کو غیر فعال کریں۔",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "ڈیفالٹ آف (وائٹ لسٹ موڈ)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "ڈیفالٹ کے طور پر تمام سائٹس پر غیر فعال۔ مخصوص سائٹس کو فعال کریں۔",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "ایکٹیویشن موڈ کو تبدیل کرنا اس بات پر اثر انداز ہوگا کہ ایکسٹینشن تمام ویب سائٹس پر کیسے کام کرتی ہے۔ جاری رکھیں؟",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "بلیک لسٹ",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "وائٹ لسٹ",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "یہ ایکسٹینشن ویب سائٹس پر 'بھیجنے کے لیے Enter' کو روکتی ہے اور بھیجنے کے لیے اسے 'Ctrl+Enter' میں تبدیل کرتی ہے۔\nاپنا پسندیدہ ایکٹیویشن موڈ (وائٹ لسٹ/بلیک لسٹ) منتخب کریں اور ضرورت کے مطابق فی سائٹ ترتیبات کو کنفیگر کریں۔",
+    "description": "Options page description"
   }
 }

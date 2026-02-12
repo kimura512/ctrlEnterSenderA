@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Esta extensão altera o comportamento da tecla Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Você pode ativar/desativar a extensão por site usando o popup.",
+    "message": "Em qualquer modo, você pode ativar/desativar individualmente a extensão no pop-up.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "Por padrão, a extensão está ativada para a maioria dos sites, exceto alguns sites como X/Twitter e Google Search.",
+    "message": "Você também pode mudar para 'Padrão DESLIGADO (Modo Lista Branca)' nas configurações.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Visite as Configurações Avançadas para configurar modos de detecção e gerenciar todos os domínios.",
+    "message": "* Alguns sites (como Twitter, Busca do Google) têm configurações padrão diferentes.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Ignorar aviso e prosseguir",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Modo de Ativação",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Escolha como a extensão é ativada nos sites.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Padrão LIGADO (Modo Lista Negra)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Ativado em todos os sites por padrão. Desativar sites específicos.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Padrão DESLIGADO (Modo Lista Branca)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Desativado em todos os sites por padrão. Ativar sites específicos.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Alterar o modo de ativação afetará como a extensão funciona em todos os sites. Continuar?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Lista Negra",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Lista Branca",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Esta extensão impede 'Enter para Enviar' em sites e altera para 'Ctrl+Enter' para enviar.\nSelecione seu modo de ativação preferido (Lista Branca/Lista Negra) e configure as definições por site conforme necessário.",
+    "description": "Options page description"
   }
 }

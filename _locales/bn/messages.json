@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "এই এক্সটেনশনটি Enter কী এর আচরণ পরিবর্তন করে:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "আপনি পপআপ ব্যবহার করে প্রতি সাইটে এক্সটেনশন সক্ষম/নিষ্ক্রিয় করতে পারেন।",
+    "message": "যেকোনো মোডে, আপনি পপআপ থেকে পৃথকভাবে এক্সটেনশনটি চালু/বন্ধ করতে পারেন।",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "আপনি সেটিংস থেকে 'ডিফল্ট বন্ধ (হোয়াইটলিস্ট মোড)' এ পরিবর্তন করতে পারেন।",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "শনাক্তকরণ মোড কনফিগার করতে এবং সমস্ত ডোমেইন পরিচালনা করতে উন্নত সেটিংসে যান৷",
+    "message": "* কিছু সাইটের (যেমন টুইটার, গুগল অনুসন্ধান) ভিন্ন ডিফল্ট সেটিংস রয়েছে।",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "সতর্কতা উপেক্ষা করুন এবং চালিয়ে যান",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "সক্রিয়করণ মোড",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "ওয়েবসাইটগুলিতে এক্সটেনশনটি কীভাবে সক্রিয় হবে তা চয়ন করুন।",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "ডিফল্ট চালু (ব্ল্যাকলিস্ট মোড)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "ডিফল্টরূপে সমস্ত সাইটে সক্ষম। নির্দিষ্ট সাইট অক্ষম করুন।",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "ডিফল্ট বন্ধ (হোয়াইটলিস্ট মোড)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "ডিফল্টরূপে সমস্ত সাইটে অক্ষম। নির্দিষ্ট সাইট সক্ষম করুন।",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "সক্রিয়করণ মোড পরিবর্তন করা সমস্ত ওয়েবসাইটে এক্সটেনশনটি কীভাবে কাজ করে তা প্রভাবিত করবে। চালিয়ে যাবেন?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "ব্ল্যাকলিস্ট",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "হোয়াইটলিস্ট",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "এই এক্সটেনশনটি ওয়েবসাইটগুলিতে 'পাঠাতে এন্টার' প্রতিরোধ করে এবং পাঠানোর জন্য 'Ctrl+Enter' এ পরিবর্তন করে।\nআপনার পছন্দের সক্রিয়করণ মোড (হোয়াইটলিস্ট/ব্ল্যাকলিস্ট) নির্বাচন করুন এবং প্রয়োজন অনুসারে প্রতি-সাইট সেটিংস কনফিগার করুন।",
+    "description": "Options page description"
   }
 }

@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Cette extension modifie le comportement de la touche Entrée :",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Vous pouvez activer/désactiver l'extension par site via la popup.",
+    "message": "Dans les deux modes, vous pouvez activer/désactiver individuellement l'extension via la popup.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "Par défaut, l'extension est activée pour la plupart des sites, sauf certains sites comme X/Twitter et Google Search.",
+    "message": "Vous pouvez également passer en 'Défaut DÉSACTIVÉ (Mode Liste blanche)' depuis les paramètres.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Visitez les paramètres avancés pour configurer les modes de détection et gérer tous les domaines.",
+    "message": "* Certains sites (comme Twitter, Google Recherche) ont des paramètres par défaut différents.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Ignorer l'avertissement et continuer",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Mode d'activation",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Choisissez comment l'extension est activée sur les sites Web.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Défaut ACTIVÉ (Mode Liste noire)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Activé sur tous les sites par défaut. Désactiver des sites spécifiques.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Défaut DÉSACTIVÉ (Mode Liste blanche)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Désactivé sur tous les sites par défaut. Activer des sites spécifiques.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Changer le mode d'activation affectera le fonctionnement de l'extension sur tous les sites Web. Continuer ?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Liste noire",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Liste blanche",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Cette extension empêche 'Entrée pour envoyer' sur les sites Web et le change en 'Ctrl+Entrée' pour envoyer.\nSélectionnez votre mode d'activation préféré (Liste blanche/Liste noire) et configurez les paramètres par site si nécessaire.",
+    "description": "Options page description"
   }
 }

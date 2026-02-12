@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "此擴充功能變更 Enter 鍵的行為：",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "您可以使用彈出視窗為每個網站啟用/停用擴充功能。",
+    "message": "無論在哪種模式下，您都可以透過彈出視窗單獨開啟/關閉擴充功能。",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "除部分網站（X/Twitter、Google搜尋等）外，預設情況下為開啟狀態。",
+    "message": "您也可以在設定中切換為「預設關閉（白名單模式）」。",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "訪問進階設定以配置偵測模式並管理所有網域。",
+    "message": "※ 部分網站（如 Twitter, Google 搜尋）有不同的預設設定。",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "忽略警告並繼續",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "啟動模式",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "選擇擴充功能在網站上的啟動方式。",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "預設開啟（黑名單模式）",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "預設在所有網站開啟。可停用特定網站。",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "預設關閉（白名單模式）",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "預設在所有網站關閉。可開啟特定網站。",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "更改啟動模式將影響擴充功能在所有網站上的運作方式。是否繼續？",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "黑名單",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "白名單",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "此擴充功能可防止在網站上「按 Enter 發送」，並將其更改為「按 Ctrl+Enter」發送。\n選擇您偏好的啟動模式（白名單/黑名單），並根據需要設定每個網站。",
+    "description": "Options page description"
   }
 }

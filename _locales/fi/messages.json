@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Tämä laajennus muuttaa Enter-näppäimen toimintaa:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Voit ottaa laajennuksen käyttöön/poistaa käytöstä sivustokohtaisesti ponnahdusikkunan avulla.",
+    "message": "Kummassakin tilassa voit kytkeä laajennuksen PÄÄLLE/POIS erikseen ponnahdusikkunasta.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "Voit myös vaihtaa 'Oletus POIS (Sallittujen lista -tila)' -asetukseen asetuksista.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Käy Lisäasetuksissa määrittääksesi tunnistustilat ja hallitaksesi kaikkia verkkotunnuksia.",
+    "message": "* Joillakin sivustoilla (kuten Twitter, Google Haku) on erilaiset oletusasetukset.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Ohita varoitus ja jatka",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Aktivointitila",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Valitse, miten laajennus aktivoidaan verkkosivustoilla.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Oletus PÄÄLLÄ (Estettyjen lista -tila)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Käytössä kaikilla sivustoilla oletuksena. Poista käytöstä tietyt sivustot.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Oletus POIS (Sallittujen lista -tila)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Poissa käytöstä kaikilla sivustoilla oletuksena. Ota käyttöön tietyt sivustot.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Aktivointitilan muuttaminen vaikuttaa siihen, miten laajennus toimii kaikilla verkkosivustoilla. Jatka?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Estettyjen lista",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Sallittujen lista",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Tämä laajennus estää 'Enter lähettääksesi' verkkosivustoilla ja muuttaa sen muotoon 'Ctrl+Enter' lähettääksesi.\nValitse haluamasi aktivointitila (Sallittujen lista/Estettyjen lista) ja määritä sivustokohtaiset asetukset tarvittaessa.",
+    "description": "Options page description"
   }
 }

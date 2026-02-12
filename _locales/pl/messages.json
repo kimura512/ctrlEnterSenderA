@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "To rozszerzenie zmienia zachowanie klawisza Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Możesz włączyć/wyłączyć rozszerzenie dla każdej strony za pomocą wyskakującego okienka.",
+    "message": "W obu trybach możesz indywidualnie włączyć/wyłączyć rozszerzenie z wyskakującego okienka.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "Domyślnie rozszerzenie jest włączone dla większości stron, z wyjątkiem niektórych stron, takich jak X/Twitter i Google Search.",
+    "message": "Możesz także zmienić na 'Domyślnie WYŁĄCZONE (Tryb Białej Listy)' w ustawieniach.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Odwiedź Ustawienia zaawansowane, aby skonfigurować tryby wykrywania i zarządzać wszystkimi domenami.",
+    "message": "* Niektóre strony (jak Twitter, Wyszukiwarka Google) mają inne ustawienia domyślne.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Zignoruj ostrzeżenie i kontynuuj",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Tryb aktywacji",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Wybierz sposób aktywacji rozszerzenia na stronach internetowych.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Domyślnie WŁĄCZONE (Tryb Czarnej Listy)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Domyślnie włączone na wszystkich stronach. Wyłącz określone strony.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Domyślnie WYŁĄCZONE (Tryb Białej Listy)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Domyślnie wyłączone na wszystkich stronach. Włącz określone strony.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Zmiana trybu aktywacji wpłynie na działanie rozszerzenia na wszystkich stronach internetowych. Kontynuować?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Czarna lista",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Biała lista",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "To rozszerzenie zapobiega 'Enter, aby wysłać' na stronach internetowych i zmienia je na 'Ctrl+Enter', aby wysłać.\nWybierz preferowany tryb aktywacji (Biała lista/Czarna lista) i skonfiguruj ustawienia dla poszczególnych stron według potrzeb.",
+    "description": "Options page description"
   }
 }

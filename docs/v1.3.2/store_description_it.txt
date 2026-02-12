@@ -1,0 +1,55 @@
+★★ Smetti di inviare accidentalmente "Lettere d'Amore" al tuo capo. ★★
+
+Ecco alcune statistiche completamente fittizie che sembrano comunque emotivamente accurate:
+
+● 1 nuovo assunto su 5 viene "battezzato" al lavoro inviando un messaggio Slack/Teams non finito.
+● 5 persone su 5 provano pura disperazione quando ChatGPT risponde a una frase che non hanno mai finito.
+
+E poi ci sono questi... incidenti davvero terrificanti:
+
+【Esempio 1】
+Il "Typo Aggressivo"
+Hai digitato: "Ti ucciderò" (Inteso: "Ucciderò il tuo ticket nel sistema" - cioè lo chiuderò.)
+
+【Esempio 2】
+La "Confessione Improvvisa"
+Hai digitato: "Ti amo" (Inteso: "Amo aggiornamenti come questo.")
+
+Ci siamo passati tutti. Ma non dobbiamo rimanerci.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Caratteristiche principali
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Previeni invii accidentali
+Invio non invia più messaggi.
+Inserisce semplicemente una nuova riga: esattamente come dovrebbe essere la comunicazione civile.
+
+▼ Scorciatoie unificate ovunque
+Invia con Ctrl+Invio (o Cmd+Invio su Mac) su tutti i siti supportati.
+
+▼ Funziona sulle principali piattaforme
+AI: ChatGPT / Claude / Gemini
+Lavoro: Slack / Microsoft Teams / Google Meet
+Social: Discord / Facebook Messenger / X (Twitter)
+...e molti altri.
+*Nota: Google Chat e YouTube Live Chat non sono attualmente supportati.*
+
+▼ Rilevamento e controllo intelligente
+Rileva automaticamente gli input della chat sulla maggior parte dei siti web.
+Attiva/Disattiva l'estensione per sito tramite l'icona.
+Ora più semplice che mai: nessuna modalità complessa, funziona e basta.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Politica sulla privacy
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Questa estensione NON raccoglie, archivia o trasmette alcuna pressione dei tasti o contenuto dei messaggi. Solo le tue impostazioni di preferenza (siti abilitati/disabilitati) sono archiviate localmente nel tuo browser. Per maggiori dettagli, visita la pagina GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+
+
+
+▼ Modalità di attivazione
+Ora puoi scegliere tra le modalità "Predefinito ACCESO (Lista nera)" e "Predefinito SPENTO (Lista bianca)".
+
+▼ Siti supportati (Modalità lista bianca)
+Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai

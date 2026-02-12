@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "ส่วนขยายนี้เปลี่ยนพฤติกรรมของปุ่ม Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "คุณสามารถเปิด/ปิดส่วนขยายต่อเว็บไซต์ได้โดยใช้ป๊อปอัป",
+    "message": "ในโหมดใดก็ตาม คุณสามารถเปิด/ปิดส่วนขยายแยกกันได้จากป๊อปอัป",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "โดยค่าเริ่มต้น ส่วนขยายจะเปิดใช้งานสำหรับเว็บไซต์ส่วนใหญ่ ยกเว้นเว็บไซต์บางแห่ง เช่น X/Twitter และ Google Search",
+    "message": "คุณยังสามารถเปลี่ยนเป็น 'ปิดโดยค่าเริ่มต้น (โหมดไวท์ลิสต์)' ได้จากการตั้งค่า",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "เยี่ยมชมการตั้งค่าขั้นสูงเพื่อกำหนดค่าโหมดการตรวจจับและจัดการโดเมนทั้งหมด",
+    "message": "* บางเว็บไซต์ (เช่น Twitter, Google Search) มีการตั้งค่าเริ่มต้นที่แตกต่างกัน",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "เพิกเฉยต่อคำเตือนและดำเนินการต่อ",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "โหมดการเปิดใช้งาน",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "เลือกวิธีเปิดใช้งานส่วนขยายบนเว็บไซต์",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "เปิดโดยค่าเริ่มต้น (โหมดแบล็คลิสต์)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "เปิดใช้งานบนทุกเว็บไซต์โดยค่าเริ่มต้น ปิดใช้งานเฉพาะเว็บไซต์",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "ปิดโดยค่าเริ่มต้น (โหมดไวท์ลิสต์)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "ปิดใช้งานบนทุกเว็บไซต์โดยค่าเริ่มต้น เปิดใช้งานเฉพาะเว็บไซต์",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "การเปลี่ยนโหมดการเปิดใช้งานจะส่งผลต่อการทำงานของส่วนขยายบนเว็บไซต์ทั้งหมด ดำเนินการต่อหรือไม่?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "แบล็คลิสต์",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "ไวท์ลิสต์",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "ส่วนขยายนี้ป้องกัน 'Enter เพื่อส่ง' บนเว็บไซต์และเปลี่ยนเป็น 'Ctrl+Enter' เพื่อส่ง\nเลือกโหมดการเปิดใช้งานที่คุณต้องการ (ไวท์ลิสต์/แบล็คลิสต์) และกำหนดค่าการตั้งค่าต่อเว็บไซต์ตามต้องการ",
+    "description": "Options page description"
   }
 }

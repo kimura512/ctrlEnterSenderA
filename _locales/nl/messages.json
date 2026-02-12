@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Deze extensie verandert het gedrag van de Enter-toets:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "U kunt de extensie per site in-/uitschakelen via de pop-up.",
+    "message": "In beide modi kunt u de extensie individueel AAN/UIT zetten via de pop-up.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "Standaard is de extensie ingeschakeld voor de meeste sites, behalve voor sommige sites zoals X/Twitter en Google Search.",
+    "message": "U kunt ook overschakelen naar 'Standaard UIT (Witte lijst-modus)' via de instellingen.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Bezoek Geavanceerde instellingen om detectiemodi te configureren en alle domeinen te beheren.",
+    "message": "* Sommige sites (zoals Twitter, Google Zoeken) hebben andere standaardinstellingen.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Waarschuwing negeren en doorgaan",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Activeringsmodus",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Kies hoe de extensie op websites wordt geactiveerd.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Standaard AAN (Zwarte lijst-modus)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Standaard ingeschakeld op alle sites. Specifieke sites uitschakelen.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Standaard UIT (Witte lijst-modus)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Standaard uitgeschakeld op alle sites. Specifieke sites inschakelen.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Het wijzigen van de activeringsmodus beïnvloedt hoe de extensie werkt op alle websites. Doorgaan?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Zwarte lijst",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Witte lijst",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Deze extensie voorkomt 'Enter om te verzenden' op websites en wijzigt dit in 'Ctrl+Enter' om te verzenden.\nSelecteer uw voorkeursactiveringsmodus (Witte lijst/Zwarte lijst) en configureer indien nodig instellingen per site.",
+    "description": "Options page description"
   }
 }

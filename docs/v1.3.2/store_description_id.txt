@@ -1,0 +1,55 @@
+★★ Berhenti mengirim "Surat Cinta" yang tidak disengaja kepada bos Anda. ★★
+
+Berikut adalah beberapa statistik yang sepenuhnya fiksi namun terasa akurat secara emosional:
+
+● 1 dari 5 karyawan baru "dibaptis" di tempat kerja dengan mengirim pesan Slack/Teams yang belum selesai.
+● 5 dari 5 orang mengalami keputusasaan murni ketika ChatGPT menanggapi kalimat yang tidak pernah mereka selesaikan.
+
+Dan kemudian ada ini... kecelakaan yang benar-benar menakutkan:
+
+【Contoh 1】
+"Typo Agresif"
+Anda mengetik: "Aku akan membunuhmu" (Dimaksudkan: "Aku akan membunuh tiketmu di sistem" - yaitu menutupnya.)
+
+【Contoh 2】
+"Pengakuan Tiba-tiba"
+Anda mengetik: "Aku mencintaimu" (Dimaksudkan: "Aku menyukai pembaruan seperti ini.")
+
+Kita semua pernah mengalaminya. Tapi kita tidak harus tetap di sana.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Fitur Utama
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Cegah Pengiriman Tidak Disengaja
+Enter tidak lagi mengirim pesan.
+Itu hanya menyisipkan baris baru—persis bagaimana komunikasi yang beradab seharusnya.
+
+▼ Pintasan Terpadu Di Mana Saja
+Kirim dengan Ctrl+Enter (atau Cmd+Enter di Mac) di semua situs yang didukung.
+
+▼ Bekerja di Platform Utama
+AI: ChatGPT / Claude / Gemini
+Kerja: Slack / Microsoft Teams / Google Meet
+Sosial: Discord / Facebook Messenger / X (Twitter)
+...dan banyak lagi.
+*Catatan: Google Chat dan YouTube Live Chat saat ini tidak didukung.*
+
+▼ Deteksi & Kontrol Cerdas
+Secara otomatis mendeteksi input obrolan di sebagian besar situs web.
+Aktifkan/Nonaktifkan ekstensi per situs melalui ikon.
+Sekarang lebih sederhana dari sebelumnya—tidak ada mode yang rumit, hanya berfungsi.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Kebijakan Privasi
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Ekstensi ini TIDAK mengumpulkan, menyimpan, atau mengirimkan penekanan tombol atau konten pesan Anda. Hanya pengaturan preferensi Anda (situs yang diaktifkan/dinonaktifkan) yang disimpan secara lokal di browser Anda. Untuk detail lebih lanjut, silakan kunjungi halaman GitHub:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+
+
+
+▼ Mode Aktivasi
+Anda sekarang dapat memilih antara mode "Default NYALA (Daftar Hitam)" dan "Default MATI (Daftar Putih)".
+
+▼ Situs yang Didukung (Mode Daftar Putih)
+Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai

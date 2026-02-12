@@ -1,0 +1,55 @@
+★★ Patronunuza yanlışlıkla "Aşk Mektupları" göndermeyi bırakın. ★★
+
+İşte tamamen kurgusal olan ancak yine de duygusal olarak doğru hissettiren bazı istatistikler:
+
+● Her 5 yeni işe alımdan 1'i, bitmemiş bir Slack/Teams mesajı göndererek iş yerinde "vaftiz" edilir.
+● Her 5 kişiden 5'i, ChatGPT hiç bitirmedikleri bir cümleye yanıt verdiğinde saf bir umutsuzluk yaşar.
+
+Ve bir de bu... gerçekten korkunç kazalar var:
+
+【Örnek 1】
+"Saldırgan Yazım Hatası"
+Yazdınız: "Seni öldüreceğim" (Amaçlanan: "Sistemdeki biletini öldüreceğim" - yani kapatacağım.)
+
+【Örnek 2】
+"Ani İtiraf"
+Yazdınız: "Seni seviyorum" (Amaçlanan: "Bunun gibi güncellemeleri seviyorum.")
+
+Hepimiz oradaydık. Ama orada kalmak zorunda değiliz.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Temel Özellikler
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+▼ Yanlışlıkla Gönderimleri Önleyin
+Enter artık mesaj göndermiyor.
+Sadece yeni bir satır ekliyor — tam da medeni iletişimin olması gerektiği gibi.
+
+▼ Her Yerde Birleşik Kısayollar
+Desteklenen tüm sitelerde Ctrl+Enter (veya Mac'te Cmd+Enter) ile gönderin.
+
+▼ Başlıca Platformlarda Çalışır
+Yapay Zeka: ChatGPT / Claude / Gemini
+İş: Slack / Microsoft Teams / Google Meet
+Sosyal: Discord / Facebook Messenger / X (Twitter)
+...ve çok daha fazlası.
+*Not: Google Chat ve YouTube Live Chat şu anda desteklenmemektedir.*
+
+▼ Akıllı Algılama ve Kontrol
+Çoğu web sitesindeki sohbet girişlerini otomatik olarak algılar.
+Simge aracılığıyla uzantıyı site başına AÇIK/KAPALI duruma getirin.
+Şimdi her zamankinden daha basit — karmaşık modlar yok, sadece çalışıyor.
+
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+◆ Gizlilik Politikası
+＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+Bu uzantı, tuş vuruşlarınızın veya mesaj içeriğinizin hiçbirini toplamaz, saklamaz veya iletmez. Yalnızca tercih ayarlarınız (etkinleştirilmiş/devre dışı bırakılmış siteler) tarayıcınızda yerel olarak saklanır. Daha fazla ayrıntı için lütfen GitHub sayfasını ziyaret edin:
+https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
+
+
+
+▼ Etkinleştirme Modları
+Artık "Varsayılan AÇIK (Kara Liste)" ve "Varsayılan KAPALI (Beyaz Liste)" modları arasında seçim yapabilirsiniz.
+
+▼ Desteklenen Siteler (Beyaz Liste Modu)
+Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai

@@ -1,10 +1,27 @@
-import { DomainConfig, StorageSchema } from '../types';
+import { ActivationMode, DomainConfig, StorageSchema } from '../types';
 
 const STORAGE_KEY = 'ctrl_enter_sender_config';
 
 // Domains that are disabled by default
 // Note: google.com is added but only exact match (not subdomains) to allow gemini.google.com and other Google services
 const DEFAULT_DISABLED_DOMAINS = ['x.com', 'twitter.com', 'google.com', 'docs.google.com'];
+
+// Domains that are enabled by default in whitelist mode
+const DEFAULT_WHITELIST_DOMAINS = [
+    'chatgpt.com',
+    'claude.ai',
+    'gemini.google.com',
+    'grok.com',
+    'chat.deepseek.com',
+    'z.ai',
+    'chat.z.ai',
+    'perplexity.ai',
+    'web.telegram.org',
+    'app.slack.com',
+    'discord.com',
+    'teams.live.com',
+    'wechat.com',
+];
 
 function getHostnameFromOrigin(origin: string): string {
     try {
@@ -58,9 +75,38 @@ function isDefaultDisabledDomain(origin: string): boolean {
     });
 }
 
+function isDefaultWhitelistedDomain(origin: string): boolean {
+    const hostname = getHostnameFromOrigin(origin);
+    return DEFAULT_WHITELIST_DOMAINS.some(domain => {
+        return hostname === domain || hostname.endsWith('.' + domain);
+    });
+}
+
+export function isDefaultDisabledOrigin(origin: string): boolean {
+    return isDefaultDisabledDomain(origin);
+}
+
+export function isDefaultWhitelistedOrigin(origin: string): boolean {
+    return isDefaultWhitelistedDomain(origin);
+}
+
+export async function getActivationMode(): Promise<ActivationMode> {
+    const data = await chrome.storage.sync.get(STORAGE_KEY);
+    const config = data[STORAGE_KEY] as StorageSchema | undefined;
+    return config?.activationMode || 'blacklist';
+}
+
+export async function setActivationMode(mode: ActivationMode): Promise<void> {
+    const data = await chrome.storage.sync.get(STORAGE_KEY);
+    const schema = (data[STORAGE_KEY] as StorageSchema) || { domains: {} };
+    schema.activationMode = mode;
+    await chrome.storage.sync.set({ [STORAGE_KEY]: schema });
+}
+
 export async function getDomainConfig(origin: string): Promise<DomainConfig> {
     const data = await chrome.storage.sync.get(STORAGE_KEY);
     const config = data[STORAGE_KEY] as StorageSchema | undefined;
+    const mode = config?.activationMode || 'blacklist';
 
     if (config?.domains?.[origin]) {
         const savedConfig = config.domains[origin];
@@ -73,17 +119,21 @@ export async function getDomainConfig(origin: string): Promise<DomainConfig> {
         return cleanConfig;
     }
 
-    // Check if this is a default disabled domain
-    if (isDefaultDisabledDomain(origin)) {
-        return {
-            enabled: false
-        };
+    // Whitelist mode: default OFF for all sites, unless it's a default whitelist domain
+    if (mode === 'whitelist') {
+        if (isDefaultWhitelistedDomain(origin)) {
+            return { enabled: true };
+        }
+        return { enabled: false };
     }
 
-    // Default config
-    return {
-        enabled: true
-    };
+    // Blacklist mode: check if this is a default disabled domain
+    if (isDefaultDisabledDomain(origin)) {
+        return { enabled: false };
+    }
+
+    // Blacklist mode: default ON
+    return { enabled: true };
 }
 
 export async function setDomainConfig(origin: string, config: DomainConfig): Promise<void> {
@@ -127,33 +177,64 @@ export async function getAllConfigs(): Promise<StorageSchema> {
     try {
         const data = await chrome.storage.sync.get(STORAGE_KEY);
         const schema = (data[STORAGE_KEY] as StorageSchema) || { domains: {} };
+        const mode = schema.activationMode || 'blacklist';
         
         // Include default disabled domains if they're not already in the config
         const allDomains = { ...schema.domains };
         
-        // Add default disabled domains that aren't explicitly configured
-        // We need to check common origin patterns for these domains
-        // Note: google.com is added but only exact match (not subdomains) to allow gemini.google.com and other Google services
-        const defaultDisabledOrigins = [
-            'https://x.com',
-            'https://www.x.com',
-            'https://twitter.com',
-            'https://www.twitter.com',
-            'https://google.com',
-            'https://www.google.com',
-            'https://docs.google.com'
-        ];
-        
-        for (const origin of defaultDisabledOrigins) {
-            // Only add if not already configured and matches default disabled domain
-            if (!allDomains[origin] && isDefaultDisabledDomain(origin)) {
-                allDomains[origin] = {
-                    enabled: false
-                };
+        // Only add default disabled domains in blacklist mode
+        if (mode === 'blacklist') {
+            // Add default disabled domains that aren't explicitly configured
+            // We need to check common origin patterns for these domains
+            // Note: google.com is added but only exact match (not subdomains) to allow gemini.google.com and other Google services
+            const defaultDisabledOrigins = [
+                'https://x.com',
+                'https://www.x.com',
+                'https://twitter.com',
+                'https://www.twitter.com',
+                'https://google.com',
+                'https://www.google.com',
+                'https://docs.google.com'
+            ];
+            
+            for (const origin of defaultDisabledOrigins) {
+                // Only add if not already configured and matches default disabled domain
+                if (!allDomains[origin] && isDefaultDisabledDomain(origin)) {
+                    allDomains[origin] = {
+                        enabled: false
+                    };
+                }
             }
         }
         
-        return { domains: allDomains };
+        // Only add default whitelist domains in whitelist mode
+        if (mode === 'whitelist') {
+            const defaultWhitelistOrigins = [
+                'https://chatgpt.com',
+                'https://claude.ai',
+                'https://gemini.google.com',
+                'https://grok.com',
+                'https://chat.deepseek.com',
+                'https://z.ai',
+                'https://chat.z.ai',
+                'https://www.perplexity.ai',
+                'https://web.telegram.org',
+                'https://app.slack.com',
+                'https://discord.com',
+                'https://teams.live.com',
+                'https://www.wechat.com',
+            ];
+            
+            for (const origin of defaultWhitelistOrigins) {
+                if (!allDomains[origin] && isDefaultWhitelistedDomain(origin)) {
+                    allDomains[origin] = {
+                        enabled: true
+                    };
+                }
+            }
+        }
+        
+        return { activationMode: mode, domains: allDomains };
     } catch (error) {
         console.error('Failed to get all configs:', error);
         // エラーが発生した場合は空のデータを返す
@@ -161,10 +242,6 @@ export async function getAllConfigs(): Promise<StorageSchema> {
     }
 }
 
-// Check if an origin is a default disabled domain (for UI display)
-export function isDefaultDisabledOrigin(origin: string): boolean {
-    return isDefaultDisabledDomain(origin);
-}
 
 export function getDefaultDisabledDomains(): string[] {
     return DEFAULT_DISABLED_DOMAINS;
@@ -216,6 +293,11 @@ async function getMigrationVersion(): Promise<string | null> {
 
 async function setMigrationVersion(version: string): Promise<void> {
     await chrome.storage.local.set({ [MIGRATION_VERSION_KEY]: version });
+}
+
+// Reset all settings to default
+export async function resetAllSettings(): Promise<void> {
+    await chrome.storage.sync.remove(STORAGE_KEY);
 }
 
 /**

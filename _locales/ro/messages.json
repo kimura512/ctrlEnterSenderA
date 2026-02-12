@@ -98,7 +98,7 @@
     "description": "Onboarding title"
   },
   "onboardingDescription": {
-    "message": "Această extensie schimbă comportamentul tastei Enter:",
+    "message": "By default, 'Enter' behavior on all websites is changed from 'Send' to 'New Line'.",
     "description": "Onboarding description start"
   },
   "onboardingEnterNewline": {
@@ -110,15 +110,15 @@
     "description": "Ctrl+Enter key behavior"
   },
   "onboardingSiteToggle": {
-    "message": "Puteți activa/dezactiva extensia pe site folosind popup-ul.",
+    "message": "În orice mod, puteți activa/dezactiva extensia individual din fereastra pop-up.",
     "description": "Site toggle explanation"
   },
   "onboardingDefaultEnabled": {
-    "message": "By default, the extension is ON for most sites, except for some sites like X/Twitter and Google Search.",
+    "message": "De asemenea, puteți schimba la 'Implicit OPRIT (Mod Lista Albă)' din setări.",
     "description": "Explanation that extension is ON by default"
   },
   "onboardingAdvancedSettings": {
-    "message": "Vizitați Setările avansate pentru a configura modurile de detectare și a gestiona toate domeniile.",
+    "message": "* Unele site-uri (precum Twitter, Căutare Google) au setări implicite diferite.",
     "description": "Advanced settings explanation"
   },
   "onboardingGotIt": {
@@ -196,5 +196,45 @@
   "ignoreWarningCheckbox": {
     "message": "Ignoră avertismentul și continuă",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Mod de Activare",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Alegeți cum este activată extensia pe site-uri web.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Implicit PORNIT (Mod Lista Neagră)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Activat pe toate site-urile implicit. Dezactivați site-uri specifice.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Implicit OPRIT (Mod Lista Albă)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Dezactivat pe toate site-urile implicit. Activați site-uri specifice.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Schimbarea modului de activare va afecta modul în care extensia funcționează pe toate site-urile web. Continuați?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Lista Neagră",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Lista Albă",
+    "description": "Short label for whitelist mode"
+  },
+  "optionsDescription": {
+    "message": "Această extensie previne 'Enter pentru a Trimite' pe site-uri web și îl schimbă în 'Ctrl+Enter' pentru a trimite.\nSelectați modul de activare preferat (Lista Albă/Lista Neagră) și configurați setările pe site după cum este necesar.",
+    "description": "Options page description"
   }
 }
