@@ -171,6 +171,9 @@ function App() {
             )}
 
             <div className="footer">
+                <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                    v{currentVersion}
+                </div>
                 <button
                     className="link-button"
                     onClick={() => chrome.runtime.openOptionsPage()}

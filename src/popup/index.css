@@ -20,6 +20,9 @@ body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   width: 320px;
+  /* Attempt to round the popup corners */
+  border-radius: 16px;
+  overflow: hidden;
 }
 
 .container {
@@ -27,6 +30,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  min-height: 100vh; /* Ensure full height */
+  box-sizing: border-box;
 }
 
 .header {

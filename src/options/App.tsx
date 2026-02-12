@@ -361,6 +361,9 @@ function App() {
                     <span>🐛</span> {getMessage('reportIssue')}
                 </a>
             </div>
+            <div style={{ marginTop: '32px', textAlign: 'center', color: 'var(--text-secondary)', fontSize: '13px' }}>
+                Ctrl+Enter Sender v{currentVersion}
+            </div>
         </div>
         </>
     );
