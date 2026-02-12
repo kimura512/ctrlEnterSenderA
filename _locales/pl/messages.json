@@ -196,5 +196,41 @@
   "ignoreWarningCheckbox": {
     "message": "Zignoruj ostrzeżenie i kontynuuj",
     "description": "Checkbox label to ignore warning"
+  },
+  "activationMode": {
+    "message": "Activation Mode",
+    "description": "Activation mode section title"
+  },
+  "activationModeDescription": {
+    "message": "Choose how the extension is activated on websites.",
+    "description": "Activation mode description"
+  },
+  "blacklistMode": {
+    "message": "Blacklist Mode (Default ON)",
+    "description": "Blacklist mode option label"
+  },
+  "blacklistModeDesc": {
+    "message": "Enabled on all sites by default. Disable specific sites.",
+    "description": "Blacklist mode description"
+  },
+  "whitelistMode": {
+    "message": "Whitelist Mode (Default OFF)",
+    "description": "Whitelist mode option label"
+  },
+  "whitelistModeDesc": {
+    "message": "Disabled on all sites by default. Enable specific sites.",
+    "description": "Whitelist mode description"
+  },
+  "activationModeChangeConfirm": {
+    "message": "Changing the activation mode will affect how the extension works on all websites. Continue?",
+    "description": "Confirmation message when changing activation mode"
+  },
+  "modeBlacklist": {
+    "message": "Blacklist",
+    "description": "Short label for blacklist mode"
+  },
+  "modeWhitelist": {
+    "message": "Whitelist",
+    "description": "Short label for whitelist mode"
   }
 }

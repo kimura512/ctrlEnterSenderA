@@ -196,7 +196,41 @@
   "ignoreWarningCheckbox": {
     "message": "警告を無視して実行する",
     "description": "警告を無視するチェックボックスのラベル"
+  },
+  "activationMode": {
+    "message": "有効化モード",
+    "description": "有効化モードセクションのタイトル"
+  },
+  "activationModeDescription": {
+    "message": "拡張機能のウェブサイトでの有効化方法を選択します。",
+    "description": "有効化モードの説明"
+  },
+  "blacklistMode": {
+    "message": "ブラックリストモード（デフォルトON）",
+    "description": "ブラックリストモードのオプションラベル"
+  },
+  "blacklistModeDesc": {
+    "message": "デフォルトで全サイト有効。個別のサイトで無効化。",
+    "description": "ブラックリストモードの説明"
+  },
+  "whitelistMode": {
+    "message": "ホワイトリストモード（デフォルトOFF）",
+    "description": "ホワイトリストモードのオプションラベル"
+  },
+  "whitelistModeDesc": {
+    "message": "デフォルトで全サイト無効。個別のサイトで有効化。",
+    "description": "ホワイトリストモードの説明"
+  },
+  "activationModeChangeConfirm": {
+    "message": "有効化モードを変更すると、全ウェブサイトでの拡張機能の動作が変わります。続行しますか？",
+    "description": "有効化モード変更時の確認メッセージ"
+  },
+  "modeBlacklist": {
+    "message": "ブラックリスト",
+    "description": "ブラックリストモードの短縮ラベル"
+  },
+  "modeWhitelist": {
+    "message": "ホワイトリスト",
+    "description": "ホワイトリストモードの短縮ラベル"
   }
 }
-
-

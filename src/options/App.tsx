@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { getAllConfigs, setDomainConfig, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin } from '../background/storage';
-import { StorageSchema, DomainConfig } from '../types';
+import { getAllConfigs, setDomainConfig, getActivationMode, setActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin } from '../background/storage';
+import { StorageSchema, DomainConfig, ActivationMode } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
 import { WhatsNew } from '../components/WhatsNew';
@@ -8,6 +8,7 @@ import { WhatsNew } from '../components/WhatsNew';
 function App() {
     // 初期状態を空のデータに設定（オフラインでも表示できるように）
     const [data, setData] = useState<StorageSchema>({ domains: {} });
+    const [activationMode, setActivationModeState] = useState<ActivationMode>('blacklist');
     const [showOnboarding, setShowOnboarding] = useState<boolean>(false);
     const [showWhatsNew, setShowWhatsNew] = useState<boolean>(false);
     const [currentVersion, setCurrentVersion] = useState<string>('');
@@ -36,6 +37,7 @@ function App() {
         });
 
         loadData();
+        getActivationMode().then(mode => setActivationModeState(mode));
     }, []);
 
     const loadData = async () => {
@@ -61,9 +63,20 @@ function App() {
         try {
             await setDomainConfig(origin, newConfig);
             await loadData();
+            const mode = await getActivationMode();
+            setActivationModeState(mode);
         } catch (error) {
             await loadData();
         }
+    };
+
+    const handleModeChange = async (newMode: ActivationMode) => {
+        if (newMode === activationMode) return;
+        const confirmMsg = getMessage('activationModeChangeConfirm');
+        if (!confirm(confirmMsg)) return;
+        await setActivationMode(newMode);
+        setActivationModeState(newMode);
+        await loadData();
     };
 
     // Group domains by normalized origin
@@ -139,8 +152,50 @@ function App() {
                 </button>
             </div>
 
-            {/* 初期設定済みドメイン */}
-            {defaultDisabledOrigins.length > 0 && (
+            {/* モード切替セクション */}
+            <div className="card" style={{ marginBottom: '24px' }}>
+                <div className="card-header" style={{ justifyContent: 'flex-start' }}>
+                    {getMessage('activationMode')}
+                </div>
+                <div style={{ padding: '16px' }}>
+                    <p style={{ margin: '0 0 16px 0', color: 'var(--text-secondary)', fontSize: '13px', lineHeight: '1.5' }}>
+                        {getMessage('activationModeDescription')}
+                    </p>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                        <label style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', cursor: 'pointer', padding: '12px', borderRadius: '8px', border: activationMode === 'blacklist' ? '2px solid var(--accent-primary)' : '2px solid var(--border-color)', backgroundColor: activationMode === 'blacklist' ? 'rgba(59, 130, 246, 0.05)' : 'transparent', transition: 'all 0.2s' }}>
+                            <input
+                                type="radio"
+                                name="activationMode"
+                                value="blacklist"
+                                checked={activationMode === 'blacklist'}
+                                onChange={() => handleModeChange('blacklist')}
+                                style={{ marginTop: '2px' }}
+                            />
+                            <div>
+                                <div style={{ fontWeight: 600, marginBottom: '4px' }}>{getMessage('blacklistMode')}</div>
+                                <div style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>{getMessage('blacklistModeDesc')}</div>
+                            </div>
+                        </label>
+                        <label style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', cursor: 'pointer', padding: '12px', borderRadius: '8px', border: activationMode === 'whitelist' ? '2px solid var(--accent-primary)' : '2px solid var(--border-color)', backgroundColor: activationMode === 'whitelist' ? 'rgba(59, 130, 246, 0.05)' : 'transparent', transition: 'all 0.2s' }}>
+                            <input
+                                type="radio"
+                                name="activationMode"
+                                value="whitelist"
+                                checked={activationMode === 'whitelist'}
+                                onChange={() => handleModeChange('whitelist')}
+                                style={{ marginTop: '2px' }}
+                            />
+                            <div>
+                                <div style={{ fontWeight: 600, marginBottom: '4px' }}>{getMessage('whitelistMode')}</div>
+                                <div style={{ fontSize: '12px', color: 'var(--text-secondary)' }}>{getMessage('whitelistModeDesc')}</div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            {/* 初期設定済みドメイン (ブラックリストモードのみ表示) */}
+            {activationMode === 'blacklist' && defaultDisabledOrigins.length > 0 && (
                 <div className="card">
                     <div 
                         className="card-header" 

@@ -1,3 +1,5 @@
+export type ActivationMode = 'blacklist' | 'whitelist';
+
 export interface DomainConfig {
     enabled: boolean;
     customTargets?: string[];
@@ -5,6 +7,7 @@ export interface DomainConfig {
 }
 
 export interface StorageSchema {
+    activationMode?: ActivationMode;
     domains: {
         [origin: string]: DomainConfig;
     };

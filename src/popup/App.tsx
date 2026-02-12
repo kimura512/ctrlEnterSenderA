@@ -1,6 +1,6 @@
 import { useEffect, useState, ChangeEvent } from 'react';
-import { getDomainConfig, setDomainConfig, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
-import { DomainConfig } from '../types';
+import { getDomainConfig, setDomainConfig, getActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
+import { DomainConfig, ActivationMode } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
 import { WhatsNew } from '../components/WhatsNew';
@@ -12,6 +12,7 @@ function App() {
     const [showWhatsNew, setShowWhatsNew] = useState<boolean>(false);
     const [currentVersion, setCurrentVersion] = useState<string>('');
     const [isLoaded, setIsLoaded] = useState<boolean>(false);
+    const [activationMode, setActivationModeState] = useState<ActivationMode>('blacklist');
 
     useEffect(() => {
         // Get current version from manifest
@@ -55,8 +56,10 @@ function App() {
                     if (!isCancelled) {
                         setOrigin(tabOrigin);
                         const loadedConfig = await getDomainConfig(tabOrigin);
+                        const mode = await getActivationMode();
                         if (!isCancelled) {
                             setConfig(loadedConfig);
+                            setActivationModeState(mode);
                             setIsLoaded(true);
                             // Clear timeout since we successfully loaded
                             if (timeoutId) {
@@ -134,6 +137,9 @@ function App() {
             <div className="card">
                 <div className="domain-label">{getMessage('currentDomain')}</div>
                 <div className="domain-value">{origin || getMessage('noDomainAvailable')}</div>
+                <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '4px' }}>
+                    {activationMode === 'whitelist' ? getMessage('modeWhitelist') : getMessage('modeBlacklist')}
+                </div>
             </div>
 
             {!isSpecialPage && config && (
