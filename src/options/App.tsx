@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getAllConfigs, setDomainConfig, getActivationMode, setActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin, resetAllSettings } from '../background/storage';
+import { getAllConfigs, setDomainConfig, getActivationMode, setActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew, groupDomainsByNormalizedOrigin, isDefaultDisabledOrigin, isDefaultWhitelistedOrigin, resetAllSettings } from '../background/storage';
 import { StorageSchema, DomainConfig, ActivationMode } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
@@ -84,11 +84,11 @@ function App() {
     const normalizedOrigins = Object.keys(groupedDomains);
     
     // Separate default disabled domains and user configured domains
-    const defaultDisabledOrigins = normalizedOrigins
-        .filter(origin => isDefaultDisabledOrigin(origin))
+    const defaultOrigins = normalizedOrigins
+        .filter(origin => activationMode === 'blacklist' ? isDefaultDisabledOrigin(origin) : isDefaultWhitelistedOrigin(origin))
         .sort();
     const userConfiguredOrigins = normalizedOrigins
-        .filter(origin => !isDefaultDisabledOrigin(origin))
+        .filter(origin => activationMode === 'blacklist' ? !isDefaultDisabledOrigin(origin) : !isDefaultWhitelistedOrigin(origin))
         .sort();
 
     // Domain table component
@@ -190,8 +190,8 @@ function App() {
                 </div>
             </div>
 
-            {/* 初期設定済みドメイン (ブラックリストモードのみ表示) */}
-            {activationMode === 'blacklist' && defaultDisabledOrigins.length > 0 && (
+            {/* 初期設定済みドメインリスト */}
+            {defaultOrigins.length > 0 && (
                 <div className="card">
                     <div 
                         className="card-header" 
@@ -199,15 +199,15 @@ function App() {
                         onClick={() => setShowDefaultDomains(!showDefaultDomains)}
                     >
                         <span style={{ marginRight: '8px' }}>{showDefaultDomains ? '▼' : '▶'}</span>
-                        {getMessage('defaultConfiguredDomains')} ({defaultDisabledOrigins.length})
+                        {getMessage('defaultConfiguredDomains')} ({defaultOrigins.length})
                     </div>
 
-                    {showDefaultDomains && <DomainTable origins={defaultDisabledOrigins} />}
+                    {showDefaultDomains && <DomainTable origins={defaultOrigins} />}
                 </div>
             )}
 
             {/* ユーザー設定ドメイン */}
-            <div className="card" style={{ marginTop: defaultDisabledOrigins.length > 0 ? '24px' : '0' }}>
+            <div className="card" style={{ marginTop: defaultOrigins.length > 0 ? '24px' : '0' }}>
                 <div 
                     className="card-header" 
                     style={{ cursor: 'pointer', userSelect: 'none', justifyContent: 'flex-start' }}

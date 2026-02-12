@@ -6,6 +6,9 @@ const STORAGE_KEY = 'ctrl_enter_sender_config';
 // Note: google.com is added but only exact match (not subdomains) to allow gemini.google.com and other Google services
 const DEFAULT_DISABLED_DOMAINS = ['x.com', 'twitter.com', 'google.com', 'docs.google.com'];
 
+// Domains that are enabled by default in whitelist mode
+const DEFAULT_WHITELIST_DOMAINS = ['chatgpt.com', 'claude.ai'];
+
 function getHostnameFromOrigin(origin: string): string {
     try {
         const url = new URL(origin);
@@ -58,6 +61,21 @@ function isDefaultDisabledDomain(origin: string): boolean {
     });
 }
 
+function isDefaultWhitelistedDomain(origin: string): boolean {
+    const hostname = getHostnameFromOrigin(origin);
+    return DEFAULT_WHITELIST_DOMAINS.some(domain => {
+        return hostname === domain || hostname.endsWith('.' + domain);
+    });
+}
+
+export function isDefaultDisabledOrigin(origin: string): boolean {
+    return isDefaultDisabledDomain(origin);
+}
+
+export function isDefaultWhitelistedOrigin(origin: string): boolean {
+    return isDefaultWhitelistedDomain(origin);
+}
+
 export async function getActivationMode(): Promise<ActivationMode> {
     const data = await chrome.storage.sync.get(STORAGE_KEY);
     const config = data[STORAGE_KEY] as StorageSchema | undefined;
@@ -87,8 +105,11 @@ export async function getDomainConfig(origin: string): Promise<DomainConfig> {
         return cleanConfig;
     }
 
-    // Whitelist mode: default OFF for all sites
+    // Whitelist mode: default OFF for all sites, unless it's a default whitelist domain
     if (mode === 'whitelist') {
+        if (isDefaultWhitelistedDomain(origin)) {
+            return { enabled: true };
+        }
         return { enabled: false };
     }
 
@@ -172,6 +193,22 @@ export async function getAllConfigs(): Promise<StorageSchema> {
             }
         }
         
+        // Only add default whitelist domains in whitelist mode
+        if (mode === 'whitelist') {
+            const defaultWhitelistOrigins = [
+                'https://chatgpt.com',
+                'https://claude.ai'
+            ];
+            
+            for (const origin of defaultWhitelistOrigins) {
+                if (!allDomains[origin] && isDefaultWhitelistedDomain(origin)) {
+                    allDomains[origin] = {
+                        enabled: true
+                    };
+                }
+            }
+        }
+        
         return { activationMode: mode, domains: allDomains };
     } catch (error) {
         console.error('Failed to get all configs:', error);
@@ -181,9 +218,13 @@ export async function getAllConfigs(): Promise<StorageSchema> {
 }
 
 // Check if an origin is a default disabled domain (for UI display)
-export function isDefaultDisabledOrigin(origin: string): boolean {
-    return isDefaultDisabledDomain(origin);
-}
+// Check if an origin is a default disabled domain (for UI display)
+// export function isDefaultDisabledOrigin(origin: string): boolean {
+//     return isDefaultDisabledDomain(origin);
+// }
+// This was duplicate, removing it. Actually, I need to keep one export.
+// The previous edit added one at the top. I should remove this one at the bottom.
+
 
 export function getDefaultDisabledDomains(): string[] {
     return DEFAULT_DISABLED_DOMAINS;
