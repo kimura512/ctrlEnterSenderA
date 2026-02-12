@@ -28,20 +28,6 @@ Enterキーでメッセージが送信されることはもうありません。
 ▼ 統一されたショートカット
 対応するほぼすべてのサイトで、Ctrl+Enter（MacではCmd+Enter）で送信できます。
 
-<<<<<<< HEAD
-▼ 主要プラットフォームに対応
-AI: ChatGPT / Claude / Gemini
-仕事: Slack / Microsoft Teams / Google Meet
-SNS: Discord / Facebook Messenger / Instagram
-…その他多数。
-※Google Chat および YouTube Live チャットは現在未対応です。
-
-▼ スマートな検出と制御
-ほとんどのウェブサイトのチャット入力を自動的に検出します。
-アイコンからサイトごとにON/OFFを切り替え可能。
-複雑なモード設定は廃止され、よりシンプルに、ただ機能するようになりました。
-
-=======
 ▼ 選べる起動モード
 「デフォルトON（ブラックリスト）」と「デフォルトOFF（ホワイトリスト）」モードを選択できるようになりました。
 アイコンからサイト単位でのON/OFF切り替えも可能。
@@ -53,20 +39,8 @@ SNS: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
 …その他多数。
 ※Google Chat および YouTube Live チャットは現在未対応です。
 
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ プライバシーポリシー
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 この拡張機能は、キー入力やメッセージの内容を収集、保存、送信することは一切ありません。設定情報（サイトごとの有効/無効）のみがブラウザ内にローカルに保存されます。詳細はGitHubページをご覧ください：
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
-<<<<<<< HEAD
-
-
-
-▼ 選べる起動モード
-「デフォルトON（ブラックリスト）」と「デフォルトOFF（ホワイトリスト）」モードを選択できるようになりました。
-
-▼ 対応サイト（ホワイトリストモード時）
-Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
-=======
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

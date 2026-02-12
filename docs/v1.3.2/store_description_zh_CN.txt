@@ -1,23 +1,5 @@
 ★★ 别再给老板误发“情书”了。 ★★
 
-<<<<<<< HEAD
-以下是一些完全虚构但感觉非常真实的统计数据：
-
-● 5名新员工中就有1名因发送未写完的Slack/Teams消息而在工作中受到“洗礼”。
-● 5个人中有5个人在ChatGPT回复他们尚未写完的句子时感到纯粹的绝望。
-
-还有这些……真正可怕的事故：
-
-【案例1】
-“攻击性错别字”
-你输入：“我要杀了你”（原意：“我要杀掉系统里的这个工单。”）
-
-【案例2】
-“突然表白”
-你输入：“我爱你”（原意：“我爱这样的更新。”）
-
-我们都经历过。但我们不必一直这样。
-=======
 这里有一些虽然是虚构的、但听起来在情感上非常真实的统计数据：
 
 ● 1/5 的新员工通过发送未完成的 Slack/Teams 消息在工作中接受“洗礼”。
@@ -32,32 +14,11 @@
 “猝不及防的表白” 你输入的是："I love u"（原意："I love updates like this one." 我喜欢这样的更新。）
 
 我们都经历过这些。但我们不必一直忍受。
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ 主要功能
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
-<<<<<<< HEAD
-▼ 防止误发送
-Enter键不再发送消息。
-它只会插入换行符——这才是文明沟通应有的方式。
-
-▼ 统一快捷键
-在所有支持的网站上，使用 Ctrl+Enter（Mac 上为 Cmd+Enter）发送消息。
-
-▼ 支持主要平台
-AI：ChatGPT / Claude / Gemini
-工作：Slack / Microsoft Teams / Google Meet
-社交：Discord / Facebook Messenger / X (Twitter)
-……以及更多。
-*注意：目前不支持 Google Chat 和 YouTube Live Chat。*
-
-▼ 智能检测与控制
-自动检测大多数网站上的聊天输入。
-通过图标切换每个网站的扩展开/关。
-现在比以往更简单——没有复杂的模式，直接可用。
-=======
 ▼ 防止误发
 按 Enter 键不再发送消息。
 它只会插入换行符——这才是文明沟通该有的样子。
@@ -75,23 +36,9 @@ AI: ChatGPT / Claude / Gemini / Grok / DeepSeek / Perplexity / Z.ai
 社交: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
 ……以及更多。
 *注意：目前不支持 Google Chat 和 YouTube 直播聊天。*
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ 隐私政策
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-<<<<<<< HEAD
-本扩展程序绝不会收集、存储或传输您的任何按键或消息内容。只有您的偏好设置（启用/禁用的网站）会存储在您的浏览器本地。详情请访问 GitHub 页面：
-https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
-
-
-
-▼ 激活模式
-您现在可以在“默认开启（黑名单）”和“默认关闭（白名单）”模式之间进行选择。
-
-▼ 支持的站点（白名单模式）
-Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
-=======
 此扩展程序不会收集、存储或传输您的任何按键信息 or 消息内容。只有您的偏好设置（启用/禁用的网站）会存储在您的浏览器本地。更多详情，请访问 GitHub 页面：
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

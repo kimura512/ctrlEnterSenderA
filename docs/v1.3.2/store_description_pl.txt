@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-★★ Przestań przypadkowo wysyłać "Listy Miłosne" do swojego szefa. ★★
-
-Oto kilka całkowicie fikcyjnych statystyk, które jednak wydają się emocjonalnie trafne:
-
-● 1 na 5 nowych pracowników zostaje "ochrzczony" w pracy przez wysłanie niedokończonej wiadomości na Slacku/Teams.
-● 5 na 5 osób doświadcza czystej rozpaczy, gdy ChatGPT odpowiada na zdanie, którego nigdy nie dokończyli.
-
-A potem są te... naprawdę przerażające wypadki:
-
-【Przykład 1】
-"Agresywna Literówka"
-Napisałeś: "Zabiję cię" (Zamierzone: "Zabiję twój bilet w systemie" - czyli go zamknę.)
-
-【Przykład 2】
-"Nagłe Wyznanie"
-Napisałeś: "Kocham cię" (Zamierzone: "Kocham takie aktualizacje.")
-=======
 ★★ Przestań wysyłać przypadkowe „listy miłosne” do swojego szefa. ★★
 
 Oto kilka całkowicie fikcyjnych statystyk, które wciąż wydają się emocjonalnie trafne:
@@ -30,48 +12,10 @@ A są jeszcze te… naprawdę przerażające wypadki:
 
 【Przykład 2】
 „Nagle wyznanie”. Napisałeś: „I love u” (Miało być: „I love updates like this one” — „Uwielbiam takie aktualizacje”).
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 Wszyscy tam byliśmy. Ale nie musimy tam zostawać.
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-<<<<<<< HEAD
-◆ Kluczowe Cechy
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-▼ Zapobiegaj Przypadkowym Wysłaniom
-Enter nie wysyła już wiadomości.
-Po prostu wstawia nową linię — dokładnie tak, jak powinna wyglądać cywilizowana komunikacja.
-
-▼ Ujednolicone Skróty Wszędzie
-Wysyłaj za pomocą Ctrl+Enter (lub Cmd+Enter na Macu) na wszystkich obsługiwanych stronach.
-
-▼ Działa na Głównych Platformach
-AI: ChatGPT / Claude / Gemini
-Praca: Slack / Microsoft Teams / Google Meet
-Społecznościowe: Discord / Facebook Messenger / X (Twitter)
-...i wiele innych.
-*Uwaga: Google Chat i YouTube Live Chat nie są obecnie obsługiwane.*
-
-▼ Inteligentne Wykrywanie i Kontrola
-Automatycznie wykrywa pola czatu na większości stron internetowych.
-Włącz/Wyłącz rozszerzenie dla każdej strony za pomocą ikony.
-Teraz prostsze niż kiedykolwiek — bez skomplikowanych trybów, po prostu działa.
-
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-◆ Polityka Prywatności
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-To rozszerzenie NIE zbiera, nie przechowuje ani nie przesyła żadnych naciśnięć klawiszy ani treści wiadomości. Tylko twoje ustawienia preferencji (włączone/wyłączone strony) są przechowywane lokalnie w twojej przeglądarce. Aby uzyskać więcej szczegółów, odwiedź stronę GitHub:
-https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
-
-
-
-▼ Tryby aktywacji
-Teraz możesz wybierać między trybami „Domyślnie WŁĄCZONE (Czarna lista)” i „Domyślnie WYŁĄCZONE (Biała lista)”.
-
-▼ Obsługiwane strony (Tryb białej listy)
-Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
-=======
 ◆ Kluczowe funkcje
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -98,4 +42,3 @@ Społeczności: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 To rozszerzenie NIE gromadzi, nie przechowuje ani nie przesyła żadnych naciśnięć klawiszy ani treści wiadomości. Tylko Twoje ustawienia preferencji (włączone/wyłączone witryny) są przechowywane lokalnie w Twojej przeglądarce. Aby uzyskać więcej informacji, odwiedź stronę na GitHubie:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

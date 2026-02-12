@@ -1,23 +1,5 @@
 ★★ Deja de enviar "cartas de amor" accidentales a tu jefe. ★★
 
-<<<<<<< HEAD
-Aquí hay algunas estadísticas completamente ficticias que aún se sienten emocionalmente precisas:
-
-● 1 de cada 5 nuevos empleados es "bautizado" en el trabajo enviando un mensaje de Slack/Teams sin terminar.
-● 5 de cada 5 personas experimentan pura desesperación cuando ChatGPT responde a una oración que nunca terminaron.
-
-Y luego están estos... accidentes verdaderamente aterradores:
-
-【Ejemplo 1】
-El "Error tipográfico agresivo"
-Escribiste: "Te mataré" (Pretendido: "Mataré tu ticket en el sistema" - es decir, lo cerraré).
-
-【Ejemplo 2】
-La "Confesión repentina"
-Escribiste: "Te amo" (Pretendido: "Amo las actualizaciones como esta").
-
-Todos hemos estado allí. Pero no tenemos que quedarnos allí.
-=======
 Aquí hay algunas estadísticas completamente ficticias pero que se sienten emocionalmente exactas:
 
 ● 1 de cada 5 nuevos empleados recibe su "bautismo" en el trabajo enviando un mensaje inacabado de Slack/Teams.
@@ -32,36 +14,18 @@ El "error tipográfico agresivo". Escribiste: "I will kill you" (Intención: "I 
 La "confesión repentina". Escribiste: "I love u" (Intención: "I love updates like this one." - Me encantan las actualizaciones como esta).
 
 Todos hemos pasado por eso. Pero no tenemos por qué seguir así.
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Características principales
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 ▼ Prevenir envíos accidentales
-<<<<<<< HEAD
-Enter ya no envía mensajes.
-=======
 La tecla Enter ya no envía mensajes.
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 Simplemente inserta una nueva línea, exactamente como debería ser la comunicación civilizada.
 
 ▼ Atajos unificados en todas partes
 Envía con Ctrl+Enter (o Cmd+Enter en Mac) en todos los sitios compatibles.
 
-<<<<<<< HEAD
-▼ Funciona en las principales plataformas
-IA: ChatGPT / Claude / Gemini
-Trabajo: Slack / Microsoft Teams / Google Meet
-Social: Discord / Facebook Messenger / X (Twitter)
-...y muchos más.
-*Nota: Google Chat y YouTube Live Chat no son compatibles actualmente.*
-
-▼ Detección y control inteligente
-Detecta automáticamente las entradas de chat en la mayoría de los sitios web.
-Activa/desactiva la extensión por sitio a través del icono.
-Ahora más simple que nunca: sin modos complejos, simplemente funciona.
-=======
 ▼ Modos de activación
 Ahora puedes elegir entre los modos "Activado por defecto (Lista negra)" y "Desactivado por defecto (Lista blanca)" en las opciones.
 Activa/desactiva la extensión por sitio mediante el icono.
@@ -72,23 +36,9 @@ Trabajo: Slack / Microsoft Teams / Google Meet
 Social: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
 …y muchos más.
 *Nota: Google Chat y YouTube Live Chat no son compatibles actualmente.*
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Política de privacidad
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-<<<<<<< HEAD
-Esta extensión NO recopila, almacena ni transmite ninguna de tus pulsaciones de teclas o contenido de mensajes. Solo tus configuraciones de preferencia (sitios habilitados/deshabilitados) se almacenan localmente en tu navegador. Para más detalles, visita la página de GitHub:
-https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
-
-
-
-▼ Modos de activación
-Ahora puedes elegir entre los modos "Predeterminado ACTIVADO (Lista negra)" y "Predeterminado DESACTIVADO (Lista blanca)".
-
-▼ Sitios compatibles (Modo Lista blanca)
-Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
-=======
 Esta extensión NO recopila, almacena ni transmite ninguna de sus pulsaciones de teclas ni el contenido de sus mensajes. Solo sus ajustes de preferencia (sitios activados/desactivados) se almacenan localmente en su navegador. Para más detalles, visite la página de GitHub:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

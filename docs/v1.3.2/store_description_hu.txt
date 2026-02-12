@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-★★ Hagyja abba a véletlen "szerelmes levelek" küldését a főnökének. ★★
-
-Íme néhány teljesen kitalált statisztika, amely mégis érzelmileg pontosnak tűnik:
-
-● 5 új alkalmazottból 1-et "megkeresztelnek" a munkahelyen egy befejezetlen Slack/Teams üzenet elküldésével.
-● 5 emberből 5 tiszta kétségbeesést él át, amikor a ChatGPT válaszol egy olyan mondatra, amelyet soha nem fejeztek be.
-
-És aztán ott vannak ezek... az igazán félelmetes balesetek:
-
-【1. példa】
-Az "Agresszív elírás"
-Ön ezt írta: "Megöllek" (Szándékolt: "Megölöm a jegyedet a rendszerben" - azaz lezárom.)
-
-【2. példa】
-A "Hirtelen vallomás"
-Ön ezt írta: "Szeretlek" (Szándékolt: "Szeretem az ilyen frissítéseket.")
-
-Mindannyian voltunk már így. De nem kell így maradnunk.
-=======
 ★★ Ne küldjön többé véletlenül „szerelmes leveleket” a főnökének. ★★
 
 Íme néhány teljesen kitalált statisztika, amely mégis érzelmileg pontosnak tűnik:
@@ -34,46 +14,12 @@ Az „agresszív elírás”. Ezt gépelte: „I will kill you” (Eredetileg: �
 A „hirtelen vallomás”. Ezt gépelte: „I love u” (Eredetileg: „I love updates like this one.” – Szeretem az ilyen frissítéseket.)
 
 Mindannyian jártunk már így. De nem kell, hogy így maradjon.
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
 
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 ◆ Főbb jellemzők
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
 ▼ Véletlen küldés megakadályozása
-<<<<<<< HEAD
-Az Enter többé nem küld üzeneteket.
-Egyszerűen beszúr egy új sort – pontosan úgy, ahogy a civilizált kommunikációnak lennie kellene.
-
-▼ Egységes parancsikonok mindenhol
-Küldés Ctrl+Enter (vagy Mac-en Cmd+Enter) billentyűkombinációval minden támogatott oldalon.
-
-▼ Működik a főbb platformokon
-MI: ChatGPT / Claude / Gemini
-Munka: Slack / Microsoft Teams / Google Meet
-Közösségi: Discord / Facebook Messenger / X (Twitter)
-...és még sok más.
-*Megjegyzés: A Google Chat és a YouTube Live Chat jelenleg nem támogatott.*
-
-▼ Intelligens észlelés és vezérlés
-Automatikusan észleli a csevegési bemeneteket a legtöbb webhelyen.
-Kapcsolja BE/KI a bővítményt webhelyenként az ikonon keresztül.
-Most egyszerűbb, mint valaha – nincsenek bonyolult módok, csak működik.
-
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-◆ Adatvédelmi irányelvek
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-Ez a bővítmény NEM gyűjt, tárol vagy továbbít semmilyen billentyűleütést vagy üzenettartalmat. Csak az Ön beállításai (engedélyezett/letiltott webhelyek) tárolódnak helyileg a böngészőjében. További részletekért kérjük, látogasson el a GitHub oldalra:
-https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
-
-
-
-▼ Aktiválási módok
-Mostantól választhat az „Alapértelmezett BE (Feketelista)” és az „Alapértelmezett KI (Fehérlista)” módok között.
-
-▼ Támogatott webhelyek (Fehérlista mód)
-Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
-=======
 Az Enter többé nem küldi el az üzeneteket.
 Egyszerűen új sort szúr be – pontosan úgy, ahogy a civilizált kommunikációnak működnie kellene.
 
@@ -96,4 +42,3 @@ Social: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 Ez a bővítmény NEM gyűjti, tárolja vagy továbbítja a leütött billentyűket vagy az üzenetek tartalmát. Csak az Ön beállításai (engedélyezett/tiltott webhelyek) tárolódnak helyben a böngészőben. További részletekért látogasson el a GitHub oldalra:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)

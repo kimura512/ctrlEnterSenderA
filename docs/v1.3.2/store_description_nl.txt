@@ -1,60 +1,3 @@
-<<<<<<< HEAD
-★★ Stop met het per ongeluk sturen van "Liefdesbrieven" naar je baas. ★★
-
-Hier zijn wat volledig fictieve statistieken die toch emotioneel accuraat aanvoelen:
-
-● 1 op de 5 nieuwe werknemers wordt op het werk "gedoopt" door het sturen van een onafgemaakt Slack/Teams bericht.
-● 5 van de 5 mensen ervaren pure wanhoop wanneer ChatGPT reageert op een zin die ze nooit hebben afgemaakt.
-
-En dan zijn er nog deze... werkelijk angstaanjagende ongelukken:
-
-【Voorbeeld 1】
-De "Agressieve Typfout"
-Je typte: "Ik vermoord je" (Bedoeld: "Ik vermoord je ticket in het systeem" - oftewel ik sluit het.)
-
-【Voorbeeld 2】
-De "Plotselinge Bekentenis"
-Je typte: "Ik hou van je" (Bedoeld: "Ik hou van updates zoals deze.")
-
-We hebben het allemaal meegemaakt. Maar we hoeven er niet te blijven.
-
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-◆ Belangrijkste Functies
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-
-▼ Voorkom Per Ongeluk Verzenden
-Enter verstuurt geen berichten meer.
-Het voegt gewoon een nieuwe regel in - precies zoals beschaafde communicatie zou moeten zijn.
-
-▼ Eenduidige Sneltoetsen Overal
-Verstuur met Ctrl+Enter (of Cmd+Enter op Mac) op alle ondersteunde sites.
-
-▼ Werkt op Grote Platforms
-AI: ChatGPT / Claude / Gemini
-Werk: Slack / Microsoft Teams / Google Meet
-Sociaal: Discord / Facebook Messenger / X (Twitter)
-...en nog veel meer.
-*Opmerking: Google Chat en YouTube Live Chat worden momenteel niet ondersteund.*
-
-▼ Slimme Detectie & Controle
-Detecteert automatisch chat-invoer op de meeste websites.
-Schakel de extensie AAN/UIT per site via het icoon.
-Nu eenvoudiger dan ooit - geen complexe modi, het werkt gewoon.
-
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-◆ Privacybeleid
-＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
-Deze extensie verzamelt, bewaart of verzendt GEEN van uw toetsaanslagen of berichtinhoud. Alleen uw voorkeursinstellingen (ingeschakelde/uitgeschakelde sites) worden lokaal in uw browser opgeslagen. Bezoek voor meer details de GitHub-pagina:
-https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
-
-
-
-▼ Activeringsmodi
-U kunt nu kiezen tussen de modi "Standaard AAN (Zwarte lijst)" en "Standaard UIT (Witte lijst)".
-
-▼ Ondersteunde sites (Witte lijst-modus)
-Gemini, Grok, Claude, ChatGPT, DeepSeek, Perplexity, Discord, Slack, Microsoft Teams, Telegram, WeChat, z.ai
-=======
 ★★ Stop met het per ongeluk versturen van "liefdesbrieven" naar je baas. ★★
 
 Hier zijn enkele volledig fictieve statistieken die nog steeds emotioneel accuraat aanvoelen:
@@ -99,4 +42,3 @@ Sociaal: Discord / Facebook Messenger / X (Twitter) / WeChat / Telegram
 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 Deze extensie verzamelt, bewaart of verzendt GEEN van uw toetsaanslagen of berichtinhoud. Alleen uw voorkeursinstellingen (ingeschakelde/uitgeschakelde sites) worden lokaal in uw browser opgeslagen. Voor meer details kunt u de GitHub-pagina bezoeken:
 https://github.com/kimura512/ctrlEnterSenderA/blob/main/PRIVACY.md
->>>>>>> 5e3da27 (docs: add store descriptions for v1.3.2 in all languages to main branch)
