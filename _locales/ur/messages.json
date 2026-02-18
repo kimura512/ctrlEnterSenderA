@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "ڈیفالٹ آن (بلیک لسٹ موڈ)",
+    "message": "ڈیفالٹ آن موڈ\n(بلیک لسٹ موڈ)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "ڈیفالٹ کے طور پر تمام سائٹس پر فعال۔ مخصوص سائٹس کو غیر فعال کریں۔",
+    "message": "پہلے سے طے شدہ طور پر تمام سائٹس پر فعال۔\nغیر فعال/فعال کرنے کے لیے انفرادی طور پر ٹوگل کریں۔",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "ڈیفالٹ آف (وائٹ لسٹ موڈ)",
+    "message": "ڈیفالٹ آف موڈ\n(وائٹ لسٹ موڈ)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "ڈیفالٹ کے طور پر تمام سائٹس پر غیر فعال۔ مخصوص سائٹس کو فعال کریں۔",
+    "message": "پہلے سے طے شدہ طور پر تمام سائٹس پر غیر فعال۔\nفعال/غیر فعال کرنے کے لیے انفرادی طور پر ٹوگل کریں۔",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

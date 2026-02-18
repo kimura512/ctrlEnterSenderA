@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Lalai ON (Mod Senarai Hitam)",
+    "message": "Mod Lalai HIDUP\n(Mod Senarai Hitam)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Didayakan pada semua laman secara lalai. Lumpuhkan laman tertentu.",
+    "message": "Didayakan pada semua tapak secara lalai.\nTogol secara individu untuk lumpuhkan/dayakan.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Lalai OFF (Mod Senarai Putih)",
+    "message": "Mod Lalai MATI\n(Mod Senarai Putih)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Dilumpuhkan pada semua laman secara lalai. Dayakan laman tertentu.",
+    "message": "Dilumpuhkan pada semua tapak secara lalai.\nTogol secara individu untuk dayakan/lumpuhkan.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "ברירת מחדל פועל (מצב רשימה שחורה)",
+    "message": "מצב ברירת מחדל פעיל\n(מצב רשימה שחורה)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "מופעל בכל האתרים כברירת מחדל. השבת אתרים ספציפיים.",
+    "message": "מופעל בכל האתרים כברירת מחדל.\nהחלף בנפרד כדי להשבית/להפעיל.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "ברירת מחדל כבוי (מצב רשימה לבנה)",
+    "message": "מצב ברירת מחדל כבוי\n(מצב רשימה לבנה)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "מושבת בכל האתרים כברירת מחדל. הפעל אתרים ספציפיים.",
+    "message": "מושבת בכל האתרים כברירת מחדל.\nהחלף בנפרד כדי להפעיל/להשבית.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

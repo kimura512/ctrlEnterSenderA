@@ -106,6 +106,7 @@ interface SiteAdapter {
 
 ## 按键事件处理流程
 
+
 ### 图表：按键输入处理的整体流程
 
 ```mermaid
@@ -114,7 +115,10 @@ flowchart TD
 
     Capture --> Check1{event.isTrusted?}
     Check1 -->|NO| End1[结束]
-    Check1 -->|YES| Check2{currentConfig.enabled?}
+    Check1 -->|YES| CheckIME{shouldIgnoreKeyEvent?}
+    CheckIME -->|YES| End1[结束]
+    CheckIME -->|NO| Check2{currentConfig.enabled?}
+
     Check2 -->|NO| End2[结束]
     Check2 -->|YES| Check3{adapter.isEditable?}
     Check3 -->|NO| End3[结束]
@@ -141,6 +145,7 @@ flowchart TD
 
 1. **Capture Phase (捕获阶段)**:
    - 大部分处理都在这里进行。
+   - **IME 输入保护**: `shouldIgnoreKeyEvent` 防止IME输入期间的Enter键（确认）被错误地处理为发送或换行。
    - `adapter.nativeSendKey === 'enter'` 的站点（Discord等）在此控制发送和换行。
    - `adapter.nativeSendKey === 'ctrl+enter'` 的站点（标准）仅在此处理Enter（强制换行），并将Ctrl+Enter留给Bubble Phase。
 
@@ -176,10 +181,10 @@ flowchart TD
 
 ## UI组件
 
-- **Popup UI**: 当前站点设置（ON/OFF）
+- **Popup UI**: 当前站点设置（ON/OFF切换，黑名单/白名单模式切换）
 - **Options Page**: 所有域名设置管理，开发者支持链接
 - **Onboarding**: 首次启动时的指南（v1.3.2改进了文本）
-- **国际化**: 支持37种语言 (`_locales/`)
+- **国际化**: 支持34种语言 (`_locales/`)
 
 ---
 

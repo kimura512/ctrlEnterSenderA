@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Oletus PÄÄLLÄ (Estettyjen lista -tila)",
+    "message": "Oletuksena PÄÄLLÄ\n(Kieltolistatila)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Käytössä kaikilla sivustoilla oletuksena. Poista käytöstä tietyt sivustot.",
+    "message": "Käytössä kaikilla sivustoilla oletuksena.\nVaihda yksitellen poistaaksesi/ottaaksesi käyttöön.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Oletus POIS (Sallittujen lista -tila)",
+    "message": "Oletuksena POIS\n(Sallittujen listan tila)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Poissa käytöstä kaikilla sivustoilla oletuksena. Ota käyttöön tietyt sivustot.",
+    "message": "Poissa käytöstä kaikilla sivustoilla oletuksena.\nVaihda yksitellen ottaaksesi käyttöön/poistaaksesi.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

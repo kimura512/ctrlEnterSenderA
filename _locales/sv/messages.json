@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Standard PÅ (Svartlistläge)",
+    "message": "Standard PÅ-läge\n(Svartlisteläge)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Aktiverat på alla webbplatser som standard. Inaktivera specifika webbplatser.",
+    "message": "Aktiverat på alla webbplatser som standard.\nVäxla individuellt för att inaktivera/aktivera.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Standard AV (Vitlistläge)",
+    "message": "Standard AV-läge\n(Vitlisteläge)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Inaktiverat på alla webbplatser som standard. Aktivera specifika webbplatser.",
+    "message": "Inaktiverat på alla webbplatser som standard.\nVäxla individuellt för att aktivera/inaktivera.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

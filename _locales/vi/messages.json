@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Mặc định BẬT (Chế độ Danh sách đen)",
+    "message": "Chế độ Mặc định BẬT\n(Chế độ Danh sách đen)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Được bật trên tất cả các trang web theo mặc định. Tắt các trang web cụ thể.",
+    "message": "Được bật trên tất cả các trang web theo mặc định.\nChuyển đổi riêng lẻ để tắt/bật.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Mặc định TẮT (Chế độ Danh sách trắng)",
+    "message": "Chế độ Mặc định TẮT\n(Chế độ Danh sách trắng)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Bị tắt trên tất cả các trang web theo mặc định. Bật các trang web cụ thể.",
+    "message": "Bị tắt trên tất cả các trang web theo mặc định.\nChuyển đổi riêng lẻ để bật/tắt.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

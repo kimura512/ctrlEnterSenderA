@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Varsayılan AÇIK (Kara Liste Modu)",
+    "message": "Varsayılan AÇIK Modu\n(Kara Liste Modu)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Varsayılan olarak tüm sitelerde etkin. Belirli siteleri devre dışı bırakın.",
+    "message": "Varsayılan olarak tüm sitelerde etkin.\nDevre dışı bırakmak/etkinleştirmek için ayrı ayrı geçiş yapın.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Varsayılan KAPALI (Beyaz Liste Modu)",
+    "message": "Varsayılan KAPALI Modu\n(Beyaz Liste Modu)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Varsayılan olarak tüm sitelerde devre dışı. Belirli siteleri etkinleştirin.",
+    "message": "Varsayılan olarak tüm sitelerde devre dışı.\nEtkinleştirmek/devre dışı bırakmak için ayrı ayrı geçiş yapın.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

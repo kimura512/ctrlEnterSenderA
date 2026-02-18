@@ -106,6 +106,7 @@ Basically the same as before, but with `getAdapter()` added for adapter resoluti
 
 ## Key Event Processing Flow
 
+
 ### Diagram: Overall Key Input Processing Flow
 
 ```mermaid
@@ -114,7 +115,10 @@ flowchart TD
 
     Capture --> Check1{event.isTrusted?}
     Check1 -->|NO| End1[End]
-    Check1 -->|YES| Check2{currentConfig.enabled?}
+    Check1 -->|YES| CheckIME{shouldIgnoreKeyEvent?}
+    CheckIME -->|YES| End1[End]
+    CheckIME -->|NO| Check2{currentConfig.enabled?}
+
     Check2 -->|NO| End2[End]
     Check2 -->|YES| Check3{adapter.isEditable?}
     Check3 -->|NO| End3[End]
@@ -141,6 +145,7 @@ flowchart TD
 
 1. **Capture Phase**:
    - Most processing happens here.
+   - **IME Input Guard**: `shouldIgnoreKeyEvent` prevents Enter key (composition confirm) during IME input from being incorrectly processed as send or newline.
    - Sites where `adapter.nativeSendKey === 'enter'` (Discord, etc.) handle both sending and newline here.
    - Sites where `adapter.nativeSendKey === 'ctrl+enter'` (Standard) handle only Enter (to force newline) here, and leave Ctrl+Enter to the Bubble Phase.
 
@@ -176,10 +181,10 @@ Each domain has `enabled`, `customTargets`, and `customExcludes`.
 
 ## UI Components
 
-- **Popup UI**: Current site settings (ON/OFF)
+- **Popup UI**: Current site settings (ON/OFF toggle, Blacklist/Whitelist mode toggle)
 - **Options Page**: All domain settings, developer support links
 - **Onboarding**: Guide on first launch (text improved in v1.3.2)
-- **Internationalization**: Supports 37 languages (`_locales/`)
+- **Internationalization**: Supports 34 languages (`_locales/`)
 
 ---
 

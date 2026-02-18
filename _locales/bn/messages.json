@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "ডিফল্ট চালু (ব্ল্যাকলিস্ট মোড)",
+    "message": "ডিফল্ট অন মোড\n(কালো তালিকা মোড)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "ডিফল্টরূপে সমস্ত সাইটে সক্ষম। নির্দিষ্ট সাইট অক্ষম করুন।",
+    "message": "ডিফল্টভাবে সব সাইটে সক্রিয়।\nনিষ্ক্রিয়/সক্রিয় করতে আলাদাভাবে টগল করুন。",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "ডিফল্ট বন্ধ (হোয়াইটলিস্ট মোড)",
+    "message": "ডিফল্ট অফ মোড\n(সাদা তালিকা মোড)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "ডিফল্টরূপে সমস্ত সাইটে অক্ষম। নির্দিষ্ট সাইট সক্ষম করুন।",
+    "message": "ডিফল্টভাবে সব সাইটে নিষ্ক্রিয়।\nসক্রিয়/নিষ্ক্রিয় করতে আলাদাভাবে টগল করুন。",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

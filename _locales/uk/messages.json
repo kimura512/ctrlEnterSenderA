@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "За замовчуванням УВІМК (Режим чорного списку)",
+    "message": "Режим за замовчуванням УВІМК\n(Чорний список)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Увімкнено на всіх сайтах за замовчуванням. Вимкнути певні сайти.",
+    "message": "Увімкнено на всіх сайтах за замовчуванням.\nПеремикайте окремо для вимк/увімк.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "За замовчуванням ВИМК (Режим білого списку)",
+    "message": "Режим за замовчуванням ВИМК\n(Білий список)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Вимкнено на всіх сайтах за замовчуванням. Увімкнути певні сайти.",
+    "message": "Вимкнено на всіх сайтах за замовчуванням.\nПеремикайте окремо для увімк/вимк.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

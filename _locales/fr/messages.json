@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Défaut ACTIVÉ (Mode Liste noire)",
+    "message": "Mode par défaut ACTIVÉ\n(Mode liste noire)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Activé sur tous les sites par défaut. Désactiver des sites spécifiques.",
+    "message": "Activé sur tous les sites par défaut.\nBasculer individuellement pour désactiver/activer.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Défaut DÉSACTIVÉ (Mode Liste blanche)",
+    "message": "Mode par défaut DÉSACTIVÉ\n(Mode liste blanche)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Désactivé sur tous les sites par défaut. Activer des sites spécifiques.",
+    "message": "Désactivé sur tous les sites par défaut.\nBasculer individuellement pour activer/désactiver.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

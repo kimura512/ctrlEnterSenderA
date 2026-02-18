@@ -1,9 +1,10 @@
 import { useEffect, useState, ChangeEvent } from 'react';
-import { getDomainConfig, setDomainConfig, getActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
+import { getDomainConfig, setDomainConfig, getActivationMode, setActivationMode, hasOnboardingBeenShown, setOnboardingShown, shouldShowWhatsNew } from '../background/storage';
 import { DomainConfig, ActivationMode } from '../types';
 import { getMessage } from '../utils/i18n';
 import { Onboarding } from '../components/Onboarding';
 import { WhatsNew } from '../components/WhatsNew';
+import { Toggle } from '../components/Toggle';
 
 function App() {
     const [origin, setOrigin] = useState<string | null>(null); // null = まだ読み込み中、'' = 取得不可
@@ -48,7 +49,7 @@ function App() {
             try {
                 const tabs = await chrome.tabs.query({ active: true, currentWindow: true });
                 if (isCancelled) return;
-                
+
                 const tab = tabs[0];
                 if (tab?.url && !tab.url.startsWith('chrome://') && !tab.url.startsWith('chrome-extension://') && !tab.url.startsWith('about:')) {
                     const url = new URL(tab.url);
@@ -112,6 +113,21 @@ function App() {
         await setDomainConfig(origin, newConfig);
     };
 
+    const handleModeChange = async (e: ChangeEvent<HTMLInputElement>) => {
+        const newMode = e.target.checked ? 'blacklist' : 'whitelist';
+        const confirmMsg = getMessage('activationModeChangeConfirm');
+        if (!confirm(confirmMsg)) return;
+
+        await setActivationMode(newMode as ActivationMode);
+        setActivationModeState(newMode as ActivationMode);
+
+        // Reload domain config for the current origin since mode changed
+        if (origin) {
+            const reloadedConfig = await getDomainConfig(origin);
+            setConfig(reloadedConfig);
+        }
+    };
+
 
     // まだ読み込み中（origin === null）の場合のみローディング表示
     if (origin === null && !isLoaded) {
@@ -130,67 +146,76 @@ function App() {
                 <WhatsNew onClose={() => setShowWhatsNew(false)} version={currentVersion} />
             )}
             <div className="container">
-            <div className="header">
-                <h2 className="title">{getMessage('popupTitle')}</h2>
-                <button
-                    className="help-button"
-                    onClick={() => setShowOnboarding(true)}
-                    title={getMessage('helpTitle')}
-                >
-                    ?
-                </button>
-            </div>
-
-            <div className="card">
-                <div className="domain-label">{getMessage('currentDomain')}</div>
-                <div className="domain-value">{origin || getMessage('noDomainAvailable')}</div>
-                <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginTop: '4px' }}>
-                    {activationMode === 'whitelist' ? getMessage('modeWhitelist') : getMessage('modeBlacklist')}
+                <div className="header">
+                    <h2 className="title">{getMessage('popupTitle')}</h2>
+                    <button
+                        className="help-button"
+                        onClick={() => setShowOnboarding(true)}
+                        title={getMessage('helpTitle')}
+                    >
+                        ?
+                    </button>
                 </div>
-            </div>
 
-            {!isSpecialPage && config && (
+                <div className="card">
+                    <div className="domain-label">{getMessage('currentDomain')}</div>
+                    <div className="domain-value">{origin || getMessage('noDomainAvailable')}</div>
+                </div>
+
                 <div className="card row">
-                    <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>{getMessage('enableForThisSite')}</label>
-                    <label className="switch">
-                        <input
+                    <div>
+                        <label htmlFor="mode-toggle" className="label" style={{ cursor: 'pointer', whiteSpace: 'pre-line', display: 'block' }}>
+                            {activationMode === 'blacklist' ? getMessage('blacklistMode') : getMessage('whitelistMode')}
+                        </label>
+                        <div className="mode-description" style={{ whiteSpace: 'pre-line' }}>
+                            {activationMode === 'blacklist' ? getMessage('blacklistModeDesc') : getMessage('whitelistModeDesc')}
+                        </div>
+                    </div>
+                    <Toggle
+                        id="mode-toggle"
+                        checked={activationMode === 'blacklist'}
+                        onChange={handleModeChange}
+                    />
+                </div>
+
+                {!isSpecialPage && config && (
+                    <div className="card row">
+                        <label htmlFor="enabled-toggle" className="label" style={{ cursor: 'pointer' }}>{getMessage('enableForThisSite')}</label>
+                        <Toggle
                             id="enabled-toggle"
-                            type="checkbox"
                             checked={config.enabled}
                             onChange={handleEnabledChange}
                         />
-                        <span className="slider"></span>
-                    </label>
-                </div>
-            )}
+                    </div>
+                )}
 
-            {isSpecialPage && (
-                <div className="card" style={{ padding: '12px', color: 'var(--text-secondary)', fontSize: '13px' }}>
-                    {getMessage('specialPageNotSupported')}
-                </div>
-            )}
+                {isSpecialPage && (
+                    <div className="card" style={{ padding: '12px', color: 'var(--text-secondary)', fontSize: '13px' }}>
+                        {getMessage('specialPageNotSupported')}
+                    </div>
+                )}
 
-            <div className="footer">
-                <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
-                    v{currentVersion}
+                <div className="footer">
+                    <div style={{ fontSize: '11px', color: 'var(--text-secondary)', marginBottom: '8px' }}>
+                        v{currentVersion}
+                    </div>
+                    <button
+                        className="link-button"
+                        onClick={() => chrome.runtime.openOptionsPage()}
+                    >
+                        <span>⚙️</span> {getMessage('advancedSettings')}
+                    </button>
+                    <span style={{ margin: '0 8px', color: 'var(--border-color)' }}>•</span>
+                    <a
+                        className="link-button"
+                        href="https://github.com/kimura512/ctrlEnterSenderA/issues"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>🐛</span> {getMessage('reportIssue')}
+                    </a>
                 </div>
-                <button
-                    className="link-button"
-                    onClick={() => chrome.runtime.openOptionsPage()}
-                >
-                    <span>⚙️</span> {getMessage('advancedSettings')}
-                </button>
-                <span style={{ margin: '0 8px', color: 'var(--border-color)' }}>•</span>
-                <a
-                    className="link-button"
-                    href="https://github.com/kimura512/ctrlEnterSenderA/issues"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <span>🐛</span> {getMessage('reportIssue')}
-                </a>
             </div>
-        </div>
         </>
     );
 }

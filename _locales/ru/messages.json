@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "По умолчанию ВКЛ (Режим черного списка)",
+    "message": "Режим по умолчанию ВКЛ\n(Черный список)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Включено на всех сайтах по умолчанию. Отключить для конкретных сайтов.",
+    "message": "Включено на всех сайтах по умолчанию.\nПереключайте индивидуально для откл/вкл.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "По умолчанию ВЫКЛ (Режим белого списка)",
+    "message": "Режим по умолчанию ВЫКЛ\n(Белый список)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Отключено на всех сайтах по умолчанию. Включить для конкретных сайтов.",
+    "message": "Отключено на всех сайтах по умолчанию.\nПереключайте индивидуально для вкл/откл.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

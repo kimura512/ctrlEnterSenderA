@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "預設開啟（黑名單模式）",
+    "message": "預設開啟模式\n(黑名單模式)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "預設在所有網站開啟。可停用特定網站。",
+    "message": "預設在所有網站啟用。\n可單獨切換以停用/啟用。",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "預設關閉（白名單模式）",
+    "message": "預設關閉模式\n(白名單模式)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "預設在所有網站關閉。可開啟特定網站。",
+    "message": "預設在所有網站停用。\n可單獨切換以啟用/停用。",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

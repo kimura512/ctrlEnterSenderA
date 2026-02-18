@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Standaard AAN (Zwarte lijst-modus)",
+    "message": "Standaard AAN-modus\n(Zwarte lijst-modus)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Standaard ingeschakeld op alle sites. Specifieke sites uitschakelen.",
+    "message": "Standaard ingeschakeld op alle sites.\nIndividueel schakelen om uit/in te schakelen.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Standaard UIT (Witte lijst-modus)",
+    "message": "Standaard UIT-modus\n(Witte lijst-modus)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Standaard uitgeschakeld op alle sites. Specifieke sites inschakelen.",
+    "message": "Standaard uitgeschakeld op alle sites.\nIndividueel schakelen om in/uit te schakelen.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Predefinito ACCESO (Modalità Lista nera)",
+    "message": "Modalità predefinita ON\n(Modalità lista nera)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Abilitato su tutti i siti per impostazione predefinita. Disabilita siti specifici.",
+    "message": "Abilitato su tutti i siti per impostazione predefinita.\nAttiva/disattiva individualmente.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Predefinito SPENTO (Modalità Lista bianca)",
+    "message": "Modalità predefinita OFF\n(Modalità lista bianca)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabilitato su tutti i siti per impostazione predefinita. Abilita siti specifici.",
+    "message": "Disabilitato su tutti i siti per impostazione predefinita.\nAttiva/disattiva individualmente.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

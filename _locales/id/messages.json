@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default NYALA (Mode Daftar Hitam)",
+    "message": "Mode Default NYALA\n(Mode Daftar Hitam)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Diaktifkan di semua situs secara default. Nonaktifkan situs tertentu.",
+    "message": "Diaktifkan di semua situs secara default.\nBeralih satu per satu untuk menonaktifkan/mengaktifkan.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default MATI (Mode Daftar Putih)",
+    "message": "Mode Default MATI\n(Mode Daftar Putih)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Dinonaktifkan di semua situs secara default. Aktifkan situs tertentu.",
+    "message": "Dinonaktifkan di semua situs secara default.\nBeralih satu per satu untuk mengaktifkan/menonaktifkan.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Προεπιλογή ON (Λειτουργία Μαύρης Λίστας)",
+    "message": "Προεπιλογή ΕΝΕΡΓΟ\n(Λειτουργία Μαύρης Λίστας)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Ενεργοποιημένο σε όλους τους ιστότοπους από προεπιλογή. Απενεργοποίηση συγκεκριμένων ιστότοπων.",
+    "message": "Ενεργοποιημένο σε όλους τους ιστότοπους από προεπιλογή.\nΕναλλαγή μεμονωμένα για απενεργοποίηση/ενεργοποίηση.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Προεπιλογή OFF (Λειτουργία Λευκής Λίστας)",
+    "message": "Προεπιλογή ΑΝΕΝΕΡΓΟ\n(Λειτουργία Λευκής Λίστας)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Απενεργοποιημένο σε όλους τους ιστότοπους από προεπιλογή. Ενεργοποίηση συγκεκριμένων ιστότοπων.",
+    "message": "Απενεργοποιημένο σε όλους τους ιστότοπους από προεπιλογή.\nΕναλλαγή μεμονωμένα για ενεργοποίηση/απενεργοποίηση.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

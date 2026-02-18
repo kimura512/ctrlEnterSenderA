@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "默认开启（黑名单模式）",
+    "message": "默认开启模式\n(黑名单模式)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "默认在所有网站开启。可禁用特定网站。",
+    "message": "默认在所有网站启用。\n可单独切换以禁用/启用。",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "默认关闭（白名单模式）",
+    "message": "默认关闭模式\n(白名单模式)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "默认在所有网站关闭。可开启特定网站。",
+    "message": "默认在所有网站禁用。\n可单独切换以启用/禁用。",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

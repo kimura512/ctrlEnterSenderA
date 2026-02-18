@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Implicit PORNIT (Mod Lista Neagră)",
+    "message": "Mod Implicit PORNIT\n(Mod Listă Neagră)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Activat pe toate site-urile implicit. Dezactivați site-uri specifice.",
+    "message": "Activat pe toate site-urile în mod implicit.\nComutați individual pentru dezactivare/activare.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Implicit OPRIT (Mod Lista Albă)",
+    "message": "Mod Implicit OPRIT\n(Mod Listă Albă)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Dezactivat pe toate site-urile implicit. Activați site-uri specifice.",
+    "message": "Dezactivat pe toate site-urile în mod implicit.\nComutați individual pentru activare/dezactivare.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

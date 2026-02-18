@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "پیش‌فرض روشن (حالت لیست سیاه)",
+    "message": "حالت پیش‌فرض روشن\n(حالت لیست سیاه)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "به‌صورت پیش‌فرض در همه سایت‌ها فعال است. سایت‌های خاصی را غیرفعال کنید.",
+    "message": "به طور پیش‌فرض در همه سایت‌ها فعال است.\nبرای غیرفعال/فعال کردن به صورت جداگانه تغییر دهید.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "پیش‌فرض خاموش (حالت لیست سفید)",
+    "message": "حالت پیش‌فرض خاموش\n(حالت لیست سفید)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "به‌صورت پیش‌فرض در همه سایت‌ها غیرفعال است. سایت‌های خاصی را فعال کنید.",
+    "message": "به طور پیش‌فرض در همه سایت‌ها غیرفعال است.\nبرای فعال/غیرفعال کردن به صورت جداگانه تغییر دهید.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

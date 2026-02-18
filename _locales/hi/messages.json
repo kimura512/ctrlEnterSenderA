@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "डिफ़ॉल्ट चालू (ब्लैकलिस्ट मोड)",
+    "message": "डिफ़ॉल्ट चालू मोड\n(ब्लैकलिस्ट मोड)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "डिफ़ॉल्ट रूप से सभी साइटों पर सक्षम। विशिष्ट साइटों को अक्षम करें।",
+    "message": "डिफ़ॉल्ट रूप से सभी साइटों पर सक्षम।\nअक्षम/सक्षम करने के लिए व्यक्तिगत रूप से टॉगल करें。",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "डिफ़ॉल्ट बंद (व्हाइटलिस्ट मोड)",
+    "message": "डिफ़ॉल्ट बंद मोड\n(व्हाइटलिस्ट मोड)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "डिफ़ॉल्ट रूप से सभी साइटों पर अक्षम। विशिष्ट साइटों को सक्षम करें।",
+    "message": "डिफ़ॉल्ट रूप से सभी साइटों पर अक्षम।\nसक्षम/अक्षम करने के लिए व्यक्तिगत रूप से टॉगल करें।",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

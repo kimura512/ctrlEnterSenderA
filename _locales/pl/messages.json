@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Domyślnie WŁĄCZONE (Tryb Czarnej Listy)",
+    "message": "Tryb domyślnie WŁĄCZONY\n(Tryb czarnej listy)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Domyślnie włączone na wszystkich stronach. Wyłącz określone strony.",
+    "message": "Domyślnie włączone na wszystkich stronach.\nPrzełączaj indywidualnie, aby wyłączyć/włączyć.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Domyślnie WYŁĄCZONE (Tryb Białej Listy)",
+    "message": "Tryb domyślnie WYŁĄCZONY\n(Tryb białej listy)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Domyślnie wyłączone na wszystkich stronach. Włącz określone strony.",
+    "message": "Domyślnie wyłączone na wszystkich stronach.\nPrzełączaj indywidualnie, aby włączyć/wyłączyć.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
