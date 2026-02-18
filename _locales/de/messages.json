@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Standard EIN (Blacklist-Modus)",
+    "message": "Standard-AN-Modus\n(Blacklist-Modus)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Standardmäßig auf allen Websites aktiviert. Spezifische Websites deaktivieren.",
+    "message": "Standardmäßig auf allen Seiten aktiviert.\nIndividuell umschalten zum Deaktivieren/Aktivieren.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Standard AUS (Whitelist-Modus)",
+    "message": "Standard-AUS-Modus\n(Whitelist-Modus)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Standardmäßig auf allen Websites deaktiviert. Spezifische Websites aktivieren.",
+    "message": "Standardmäßig auf allen Seiten deaktiviert.\nIndividuell umschalten zum Aktivieren/Deaktivieren.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

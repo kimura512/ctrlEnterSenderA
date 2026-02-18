@@ -210,19 +210,19 @@
     "description": "有効化モードの説明"
   },
   "blacklistMode": {
-    "message": "デフォルトON（ブラックリストモード）",
+    "message": "デフォルトONモード\n（ブラックリストモード）",
     "description": "ブラックリストモードのオプションラベル"
   },
   "blacklistModeDesc": {
-    "message": "デフォルトで全サイト有効。個別のサイトで無効化。",
+    "message": "デフォルトで全サイト有効化中。\n個別に無効/有効を切り替え可能。",
     "description": "ブラックリストモードの説明"
   },
   "whitelistMode": {
-    "message": "デフォルトOFF（ホワイトリストモード）",
+    "message": "デフォルトOFFモード\n（ホワイトリストモード）",
     "description": "ホワイトリストモードのオプションラベル"
   },
   "whitelistModeDesc": {
-    "message": "デフォルトで全サイト無効。個別のサイトで有効化。",
+    "message": "デフォルトで全サイト無効化中。\n個別に有効/無効を切り替え可能。",
     "description": "ホワイトリストモードの説明"
   },
   "activationModeChangeConfirm": {

@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Výchozí ZAPNUTO (Režim blokovaných)",
+    "message": "Výchozí režim ZAP\n(Režim černé listiny)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Ve výchozím nastavení povoleno na všech webech. Zakázat konkrétní weby.",
+    "message": "Ve výchozím nastavení povoleno na všech stránkách.\nMožnost individuálního vypnutí/zapnutí.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Výchozí VYPNUTO (Režim povolených)",
+    "message": "Výchozí režim VYP\n(Režim bílé listiny)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Ve výchozím nastavení zakázáno na všech webech. Povolit konkrétní weby.",
+    "message": "Ve výchozím nastavení zakázáno na všech stránkách.\nMožnost individuálního zapnutí/vypnutí.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

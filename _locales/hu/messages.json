@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Alapértelmezett BE (Feketelista mód)",
+    "message": "Alapértelmezett BE mód\n(Feketelista mód)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Alapértelmezés szerint engedélyezve minden oldalon. Adott oldalak letiltása.",
+    "message": "Alapértelmezés szerint minden webhelyen engedélyezve.\nEgyéni váltás a letiltáshoz/engedélyezéshez.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Alapértelmezett KI (Fehérlista mód)",
+    "message": "Alapértelmezett KI mód\n(Fehérlista mód)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Alapértelmezés szerint letiltva minden oldalon. Adott oldalak engedélyezése.",
+    "message": "Alapértelmezés szerint minden webhelyen letiltva.\nEgyéni váltás az engedélyezéshez/letiltáshoz.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

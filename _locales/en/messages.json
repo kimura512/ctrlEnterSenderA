@@ -210,19 +210,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Default ON (Blacklist Mode)",
+    "message": "Default ON Mode\n(Blacklist Mode)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Enabled on all sites by default. Disable specific sites.",
+    "message": "Enabled on all sites by default.\nToggle individually to disable/enable.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Default OFF (Whitelist Mode)",
+    "message": "Default OFF Mode\n(Whitelist Mode)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Disabled on all sites by default. Enable specific sites.",
+    "message": "Disabled on all sites by default.\nToggle individually to enable/disable.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

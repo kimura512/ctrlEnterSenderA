@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "افتراضي تشغيل (وضع القائمة السوداء)",
+    "message": "الوضع الافتراضي مفعل\n(وضع القائمة السوداء)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "ممكن في جميع المواقع بشكل افتراضي. تعطيل مواقع محددة.",
+    "message": "مفعل في جميع المواقع افتراضيًا.\nبدّل فرديًا للتعطيل/التمكين.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "افتراضي إيقاف (وضع القائمة البيضاء)",
+    "message": "الوضع الافتراضي معطل\n(وضع القائمة البيضاء)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "معطل في جميع المواقع بشكل افتراضي. تمكين مواقع محددة.",
+    "message": "معطل في جميع المواقع افتراضيًا.\nبدّل فرديًا للتمكين/التعطيل.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

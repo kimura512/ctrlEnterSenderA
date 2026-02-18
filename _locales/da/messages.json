@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Standard TIL (Sortliste-tilstand)",
+    "message": "Standard TIL-tilstand\n(Sortliste-tilstand)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Aktiveret på alle websteder som standard. Deaktiver bestemte websteder.",
+    "message": "Aktiveret på alle sider som standard.\nSkift individuelt for at deaktivere/aktivere.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Standard FRA (Hvidliste-tilstand)",
+    "message": "Standard FRA-tilstand\n(Hvidliste-tilstand)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Deaktiveret på alle websteder som standard. Aktiver bestemte websteder.",
+    "message": "Deaktiveret på alle sider som standard.\nSkift individuelt for at aktivere/deaktivere.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

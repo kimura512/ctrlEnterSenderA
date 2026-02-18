@@ -1,6 +1,7 @@
 import { getAdapter } from './adapters/registry';
 import { getDomainConfig } from '../background/storage';
 import { DomainConfig } from '../types';
+import { shouldIgnoreKeyEvent } from './keyClassifier';
 
 let currentConfig: DomainConfig | null = null;
 const origin = window.location.origin;
@@ -36,6 +37,7 @@ function attachListeners(doc: Document) {
     captureTarget.addEventListener('keydown', (evt) => {
         const event = evt as KeyboardEvent;
         if (!event.isTrusted) return;
+        if (shouldIgnoreKeyEvent(event)) return;
         if (!currentConfig || !currentConfig.enabled) return;
 
         const target = event.target as HTMLElement;
@@ -83,6 +85,7 @@ function attachListeners(doc: Document) {
     if (adapter.nativeSendKey === 'ctrl+enter') {
         doc.addEventListener('keydown', (event) => {
             if (!event.isTrusted) return;
+            if (shouldIgnoreKeyEvent(event)) return;
             if (!currentConfig || !currentConfig.enabled) return;
 
             const target = event.target as HTMLElement;

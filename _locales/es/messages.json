@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "Predeterminado ACTIVADO (Modo Lista negra)",
+    "message": "Modo predeterminado ACTIVADO\n(Modo lista negra)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "Activado en todos los sitios por defecto. Desactivar sitios específicos.",
+    "message": "Activado en todos los sitios por defecto.\nAlternar individualmente para desactivar/activar.",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "Predeterminado DESACTIVADO (Modo Lista blanca)",
+    "message": "Modo predeterminado DESACTIVADO\n(Modo lista blanca)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "Desactivado en todos los sitios por defecto. Activar sitios específicos.",
+    "message": "Desactivado en todos los sitios por defecto.\nAlternar individualmente para activar/desactivar.",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {

@@ -206,19 +206,19 @@
     "description": "Activation mode description"
   },
   "blacklistMode": {
-    "message": "เปิดโดยค่าเริ่มต้น (โหมดแบล็คลิสต์)",
+    "message": "โหมดเปิดตามค่าเริ่มต้น\n(โหมดบัญชีดำ)",
     "description": "Blacklist mode option label"
   },
   "blacklistModeDesc": {
-    "message": "เปิดใช้งานบนทุกเว็บไซต์โดยค่าเริ่มต้น ปิดใช้งานเฉพาะเว็บไซต์",
+    "message": "เปิดใช้งานในทุกเว็บไซต์ตามค่าเริ่มต้น\nสลับทีละเว็บไซต์เพื่อปิด/เปิดใช้งาน",
     "description": "Blacklist mode description"
   },
   "whitelistMode": {
-    "message": "ปิดโดยค่าเริ่มต้น (โหมดไวท์ลิสต์)",
+    "message": "โหมดปิดตามค่าเริ่มต้น\n(โหมดบัญชีขาว)",
     "description": "Whitelist mode option label"
   },
   "whitelistModeDesc": {
-    "message": "ปิดใช้งานบนทุกเว็บไซต์โดยค่าเริ่มต้น เปิดใช้งานเฉพาะเว็บไซต์",
+    "message": "ปิดใช้งานในทุกเว็บไซต์ตามค่าเริ่มต้น\nสลับทีละเว็บไซต์เพื่อเปิด/ปิดใช้งาน",
     "description": "Whitelist mode description"
   },
   "activationModeChangeConfirm": {
