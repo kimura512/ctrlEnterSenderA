@@ -75,15 +75,21 @@ This project is built with:
 
 This extension supports 30+ languages. The appropriate language is automatically selected based on your browser's language settings.
 
+
 ## Changelog
+
+### v1.3.3 (2026-02-18)
+
+- **IME Bug Fix**: Fixed an issue where the Enter key during IME composition (e.g., Japanese input) was incorrectly processed as a newline.
+- **UI Improvements**: Added a toggle switch to the popup menu to switch between "Blacklist Mode (Default ON)" and "Whitelist Mode (Default OFF)".
+- **i18n Enhancements**: Improved and applied translations for all 34 supported languages.
 
 ### v1.3.2 (2026-02-12)
 
-- **Site Adapter Architecture**: Completely rewritten internal engine with isolated site-specific logic. This prevents regressions where fixing one site breaks another.
-- **New Supported Sites (for Whitelist Mode)**: Added 11 sites to default whitelist:
-  - Gemini, Grok, DeepSeek, Perplexity, Telegram, Discord, Slack, Microsoft Teams, WeChat, z.ai
-- **Onboarding & UI**: Improved onboarding text and layout for better clarity.
-- **i18n**: Fully localized onboarding and options pages into 37 languages.
+- **Site Adapter Architecture**: Completely rewritten internal engine with isolated site-specific logic. This prevents regressions where fixing one site breaks another. See [Architecture Explanation](ARCHITECTURE_en.md) for details.
+- **New Supported Sites**: Added support for Gemini, Grok, DeepSeek, Perplexity, Telegram, Discord, Slack, Microsoft Teams, WeChat, z.ai, and more.
+- **Onboarding & UI**: Improved onboarding text and layout.
+- **i18n**: Fully localized UI.
 
 ## License
 

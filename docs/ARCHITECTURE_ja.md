@@ -106,6 +106,7 @@ interface SiteAdapter {
 
 ## キーイベント処理フロー
 
+
 ### 図解：キー入力処理の全体フロー
 
 ```mermaid
@@ -114,7 +115,10 @@ flowchart TD
 
     Capture --> Check1{event.isTrusted?}
     Check1 -->|NO| End1[終了]
-    Check1 -->|YES| Check2{currentConfig.enabled?}
+    Check1 -->|YES| CheckIME{shouldIgnoreKeyEvent?}
+    CheckIME -->|YES| End1
+    CheckIME -->|NO| Check2{currentConfig.enabled?}
+
     Check2 -->|NO| End2[終了]
     Check2 -->|YES| Check3{adapter.isEditable?}
     Check3 -->|NO| End3[終了]
@@ -141,6 +145,7 @@ flowchart TD
 
 1. **Capture Phase**:
    - ほとんどの処理はここで行われます。
+   - **IME入力ガード**: `shouldIgnoreKeyEvent` により、IME入力中のEnterキー（変換確定）が誤って送信や改行として処理されるのを防ぎます。
    - `adapter.nativeSendKey === 'enter'` のサイト（Discord等）は、ここで送信と改行の両方を制御します。
    - `adapter.nativeSendKey === 'ctrl+enter'` のサイト（標準）は、Enter（改行化）のみここで処理し、Ctrl+EnterはBubble Phaseに任せます。
 
@@ -176,10 +181,10 @@ flowchart TD
 
 ## UIコンポーネント
 
-- **Popup UI**: 現在のサイトの設定（ON/OFF）
+- **Popup UI**: 現在のサイトの設定（ON/OFF切替、ブラックリスト/ホワイトリストモード切替）
 - **Options Page**: 全ドメインの設定管理、開発者支援リンク
 - **Onboarding**: 初回起動時のガイド（v1.3.2でテキスト改善）
-- **多言語対応**: 37言語に対応 (`_locales/`)
+- **多言語対応**: 34言語に対応 (`_locales/`)
 
 ---
 
