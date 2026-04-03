@@ -8,7 +8,7 @@ export function shouldIgnoreKeyEvent(event: Pick<KeyboardEvent, 'isComposing' | 
     return event.isComposing || event.keyCode === 229;
 }
 
-export type SendKeyType = 'enter' | 'ctrl+enter';
+export type SendKeyType = 'enter' | 'ctrl+enter' | 'none';
 
 export interface KeyClassification {
     action: 'send' | 'newline' | 'ignore';
@@ -40,8 +40,8 @@ export function classifyKeyEvent(
         // Enter-to-Send apps (Discord, Slack, Claude, etc.)
         if (isSendKey) return { action: 'send' };
         if (isPlainEnter) return { action: 'newline' };
-    } else {
-        // Standard apps (nativeSendKey === 'ctrl+enter')
+    } else if (nativeSendKey === 'ctrl+enter' || nativeSendKey === 'none') {
+        // Standard apps and native-send apps
         // Capture phase only handles plain Enter → newline
         if (isPlainEnter) return { action: 'newline' };
     }

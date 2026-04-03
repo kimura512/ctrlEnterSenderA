@@ -24,8 +24,9 @@ export interface SiteAdapter {
      * Native send behavior of this site.
      * - 'enter': site sends on Enter (Discord, Teams, Grok, Claude)
      * - 'ctrl+enter': site sends on Ctrl+Enter (or doesn't send at all)
+     * - 'none': site natively handles Cmd/Ctrl+Enter; extension edits only Enter for newline.
      */
-    readonly nativeSendKey: 'enter' | 'ctrl+enter';
+    readonly nativeSendKey: 'enter' | 'ctrl+enter' | 'none';
 
     /** Check if the event target is an editable area this adapter should handle */
     isEditable(element: Element, config?: DomainConfig): boolean;

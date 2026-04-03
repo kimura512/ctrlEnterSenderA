@@ -34,7 +34,9 @@ function App() {
         });
 
         let isCancelled = false;
-        let timeoutId: number | null = null;
+        // let timeoutId: number | null = null;
+        let timeoutId: ReturnType<typeof setTimeout> | null = null;
+
 
         // Timeout fallback (2 seconds) - only fires if loadTabInfo doesn't complete
         timeoutId = setTimeout(() => {

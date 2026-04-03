@@ -222,6 +222,56 @@ describe('classifyKeyEvent (nativeSendKey = "ctrl+enter")', () => {
 });
 
 // ============================================================
+// classifyKeyEvent — native-send apps (no extension override for sending)
+// ============================================================
+
+describe('classifyKeyEvent (nativeSendKey = "none")', () => {
+    const nativeSendKey: SendKeyType = 'none';
+
+    describe('IME composing', () => {
+        it('should ignore Enter during IME composition', () => {
+            const result = classifyKeyEvent(
+                makeEvent({ isComposing: true }),
+                nativeSendKey,
+                true,
+            );
+            expect(result.action).toBe('ignore');
+        });
+    });
+
+    describe('plain Enter → newline', () => {
+        it('should classify plain Enter as newline', () => {
+            const result = classifyKeyEvent(
+                makeEvent(),
+                nativeSendKey,
+                true,
+            );
+            expect(result.action).toBe('newline');
+        });
+    });
+
+    describe('Cmd/Ctrl+Enter → ignore (let app handle)', () => {
+        it('should ignore Cmd+Enter on Mac', () => {
+            const result = classifyKeyEvent(
+                makeEvent({ metaKey: true }),
+                nativeSendKey,
+                true,
+            );
+            expect(result.action).toBe('ignore');
+        });
+
+        it('should ignore Ctrl+Enter on non-Mac', () => {
+            const result = classifyKeyEvent(
+                makeEvent({ ctrlKey: true }),
+                nativeSendKey,
+                false,
+            );
+            expect(result.action).toBe('ignore');
+        });
+    });
+});
+
+// ============================================================
 // Edge cases: Mac IME Enter after composition ends
 // ============================================================
 

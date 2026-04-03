@@ -66,10 +66,10 @@ function attachListeners(doc: Document) {
                 adapter.insertNewline(target);
                 return;
             }
-        } else {
-            // --- Standard apps (nativeSendKey === 'ctrl+enter') ---
+        } else if (adapter.nativeSendKey === 'ctrl+enter' || adapter.nativeSendKey === 'none') {
+            // --- Standard apps and Native-send apps ---
             // Only handle plain Enter in capture phase (to prevent default send/newline).
-            // Ctrl+Enter is handled in bubble phase (see below).
+            // Ctrl+Enter is either handled in bubble phase ('ctrl+enter') or completely ignored ('none').
             if (isPlainEnter) {
                 event.preventDefault();
                 event.stopImmediatePropagation();

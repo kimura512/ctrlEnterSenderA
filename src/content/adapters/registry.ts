@@ -6,6 +6,8 @@ import { grokAdapter } from './grok';
 import { chatgptAdapter } from './chatgpt';
 import { teamsAdapter } from './teams';
 import { defaultAdapter } from './default';
+import { perplexityAdapter } from './perplexity';
+
 
 /**
  * Adapter registry.
@@ -22,6 +24,7 @@ const adapters: SiteAdapter[] = [
     grokAdapter,
     chatgptAdapter,
     teamsAdapter,
+    perplexityAdapter,
     // defaultAdapter is always last
     defaultAdapter,
 ];
