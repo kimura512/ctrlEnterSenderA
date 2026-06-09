@@ -93,4 +93,4 @@ This extension supports 30+ languages. The appropriate language is automatically
 
 ## License
 
-MIT
+[MIT License](../LICENSE)

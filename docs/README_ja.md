@@ -93,4 +93,4 @@
 
 ## ライセンス
 
-MIT
+[MIT License](../LICENSE)
